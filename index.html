@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<meta name="theme-color" content="#0d1117">
+<meta name="description" content="GitHub 热门开源项目情报日报 2026-09-09">
+<title>🔥 GitHub 热门项目日报｜2026-09-09</title>
+<style>
+:root{
+  --bg:#0d1117; --bg2:#161b22; --bg3:#1c2230; --bd:#30363d;
+  --tx:#e6edf3; --tx2:#9da7b3; --tx3:#6e7681;
+  --accent:#58a6ff; --accent2:#79c0ff;
+  --green:#3fb950; --yellow:#d29922; --orange:#e8873a; --red:#f85149; --purple:#bc8cff; --cyan:#39d0d8; --pink:#f778ba;
+  --grad:linear-gradient(135deg,#6e40ff 0%,#58a6ff 50%,#39d0d8 100%);
+}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",Roboto,Helvetica,Arial,sans-serif;
+  background:var(--bg); color:var(--tx); line-height:1.62; font-size:15px;
+  -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
+  padding-bottom:env(safe-area-inset-bottom);
+}
+.wrap{max-width:760px;margin:0 auto;padding:0 16px}
+a{color:var(--accent2);text-decoration:none;word-break:break-word}
+a:active{opacity:.7}
+code{font-family:"SF Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.86em;background:var(--bg3);padding:.1em .4em;border-radius:5px;color:var(--accent2)}
+.hero{
+  position:relative; overflow:hidden; padding:30px 0 26px; margin-bottom:8px;
+  background:radial-gradient(120% 120% at 0% 0%,rgba(110,64,255,.22),transparent 60%),radial-gradient(120% 120% at 100% 0%,rgba(57,208,216,.16),transparent 55%);
+  border-bottom:1px solid var(--bd);
+}
+.hero h1{
+  font-size:clamp(23px,6.4vw,30px); line-height:1.32; font-weight:800; letter-spacing:-.5px;
+  background:var(--grad); -webkit-background-clip:text; background-clip:text; color:transparent;
+}
+.hero .sub{margin-top:10px;color:var(--tx2);font-size:13px}
+.hero .meta{margin-top:14px;display:flex;flex-wrap:wrap;gap:8px}
+.chip{
+  display:inline-flex;align-items:center;gap:5px;font-size:11.5px;font-weight:600;
+  background:var(--bg3);border:1px solid var(--bd);color:var(--tx2);
+  padding:4px 9px;border-radius:999px;
+}
+.chip b{color:var(--accent2)}
+.dot{width:7px;height:7px;border-radius:50%;display:inline-block}
+section{padding:22px 0 4px;border-bottom:1px solid rgba(48,54,61,.5)}
+section:last-of-type{border-bottom:none}
+.sh{
+  display:flex;align-items:center;gap:9px;font-size:19px;font-weight:800;
+  margin-bottom:4px;letter-spacing:-.3px;
+}
+.sh .n{color:var(--tx3);font-size:12px;font-weight:700;margin-left:auto;white-space:nowrap}
+.lead{color:var(--tx2);font-size:13px;margin:2px 0 16px}
+.card{
+  background:linear-gradient(180deg,var(--bg2),var(--bg));
+  border:1px solid var(--bd); border-radius:14px; padding:15px 15px 13px;
+  margin-bottom:12px; position:relative; overflow:hidden;
+}
+.card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--grad);opacity:.85}
+.card .top{display:flex;align-items:flex-start;gap:8px;flex-wrap:wrap}
+.rank{
+  flex:0 0 auto;min-width:26px;height:26px;border-radius:8px;display:flex;align-items:center;justify-content:center;
+  font-weight:800;font-size:13px;background:var(--bg3);border:1px solid var(--bd);color:var(--accent2);margin-top:1px;
+}
+.r1{background:linear-gradient(135deg,#f778ba,#e8873a);color:#fff;border-color:transparent}
+.r2{background:linear-gradient(135deg,#bc8cff,#6e40ff);color:#fff;border-color:transparent}
+.r3{background:linear-gradient(135deg,#e8873a,#d29922);color:#1a1a1a;border-color:transparent}
+.pname{font-weight:800;font-size:16.5px;word-break:break-word;line-height:1.35}
+.pname a{color:var(--tx)}
+.pname a:hover{text-decoration:underline}
+.tags{display:flex;flex-wrap:wrap;gap:5px;margin:9px 0 10px}
+.tag{
+  font-size:10.5px;font-weight:700;padding:2px 7px;border-radius:6px;
+  background:var(--bg3);border:1px solid var(--bd);color:var(--tx2);white-space:nowrap;
+}
+.t-ai{color:var(--cyan);border-color:rgba(57,208,216,.35)}
+.t-dev{color:var(--accent);border-color:rgba(88,166,255,.35)}
+.t-infra{color:var(--purple);border-color:rgba(188,140,255,.35)}
+.t-model{color:var(--green);border-color:rgba(63,185,80,.35)}
+.t-fire{color:#1a1a1a;background:linear-gradient(135deg,#ff8a3d,#f85149);border-color:transparent}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin:10px 0 12px}
+.stat{background:var(--bg3);border:1px solid var(--bd);border-radius:9px;padding:7px 9px}
+.stat .l{font-size:9.5px;color:var(--tx3);font-weight:700;text-transform:uppercase;letter-spacing:.4px}
+.stat .v{font-size:14px;font-weight:800;margin-top:1px}
+.stat .v small{font-size:10px;font-weight:700;color:var(--tx2)}
+.stat.up .v{color:var(--green)}
+.stat.st .v{color:var(--yellow)}
+.stat.fk .v{color:var(--accent2)}
+.blk{margin:9px 0}
+.blk .bt{font-size:11px;font-weight:800;color:var(--tx3);text-transform:uppercase;letter-spacing:.5px;margin-bottom:3px;display:flex;align-items:center;gap:5px}
+.blk .bd{font-size:13.5px;color:var(--tx)}
+.blk .bd b{color:var(--accent2);font-weight:700}
+.blk .bd em{color:var(--yellow);font-style:normal;font-weight:700}
+.stars{color:var(--yellow);letter-spacing:1px;font-size:14px}
+.risk{color:var(--orange)}
+.warn{color:var(--red)}
+ol,ul{padding-left:19px}
+ol.trend li,ul.opps li{margin:9px 0;color:var(--tx);font-size:13.8px}
+ol.trend li b,ul.opps li b{color:var(--accent2)}
+ol.trend li .h{color:var(--cyan);font-weight:800}
+.note{
+  font-size:12px;color:var(--tx3);background:var(--bg3);border:1px dashed var(--bd);
+  border-radius:9px;padding:10px 12px;margin-top:14px;line-height:1.6;
+}
+.note b{color:var(--orange)}
+.final{
+  background:linear-gradient(180deg,rgba(110,64,255,.12),transparent);
+  border:1px solid rgba(110,64,255,.4);border-radius:16px;padding:18px 16px;margin-top:6px;
+}
+.final .row{padding:7px 0;border-bottom:1px solid rgba(48,54,61,.4)}
+.final .row:last-child{border:none}
+.final .q{font-size:11px;color:var(--tx3);font-weight:800}
+.final .a{font-size:14px;color:var(--tx);margin-top:2px}
+.final .a b{color:var(--accent2)}
+.foot{text-align:center;color:var(--tx3);font-size:11px;padding:22px 0 28px;line-height:1.7}
+.foot .m{color:var(--tx2)}
+.toc{background:var(--bg2);border:1px solid var(--bd);border-radius:12px;padding:12px 14px;margin:14px 0 4px}
+.toc .tt{font-size:11px;color:var(--tx3);font-weight:800;margin-bottom:7px}
+.toc a{display:inline-block;font-size:12.5px;margin:3px 8px 3px 0;color:var(--accent2)}
+.toc a::before{content:"# "}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="hero">
+  <h1>🔥 GitHub 热门项目日报</h1>
+  <div class="sub">开源情报 · 趋势研判 · 创业机会</div>
+  <div class="meta">
+    <span class="chip"><span class="dot" style="background:var(--green)"></span> 2026-09-09</span>
+    <span class="chip">三榜去重 <b>52</b> 个项目</span>
+    <span class="chip">Today <b>16</b> · Week <b>20</b> · Month <b>23</b></span>
+    <span class="chip">数据源 GitHub Trending + API</span>
+  </div>
+</header>
+
+<nav class="toc">
+  <div class="tt">快速跳转</div>
+  <a href="#fire">今日最火</a><a href="#week">本周值得</a><a href="#month">本月值得</a><a href="#top">综合Top5</a><a href="#trend">技术趋势</a><a href="#opp">创业机会</a><a href="#conclu">最终结论</a>
+</nav>
+
+<section id="fire">
+  <div class="sh">🔥 今日最火 Top 5 <span class="n">Today · 09-09</span></div>
+  <p class="lead">按"今日新增 Star"排序。重点关注 AI Agent、视频生成、浏览器自动化方向。</p>
+
+  <div class="card">
+    <div class="top"><span class="rank r1">1</span>
+      <div class="pname"><a href="https://github.com/heygen-com/hyperframes" target="_blank" rel="noopener">heygen-com/hyperframes</a></div></div>
+    <div class="tags"><span class="tag t-ai">AI/视频生成</span><span class="tag t-dev">Agent</span><span class="tag">TypeScript</span><span class="tag">Apache-2.0</span></div>
+    <div class="stats">
+      <div class="stat up"><div class="l">今日新增</div><div class="v">+2,627</div></div>
+      <div class="stat st"><div class="l">总 Star</div><div class="v">47.8k</div></div>
+      <div class="stat fk"><div class="l">Fork</div><div class="v">4.4k</div></div>
+    </div>
+    <div class="blk"><div class="bt">📌 它是什么</div><div class="bd">HeyGen 开源的视频生成框架：<b>写 HTML/CSS，渲染成确定性 MP4 视频</b>，专为 AI Agent 设计。</div></div>
+    <div class="blk"><div class="bt">🔥 为什么火</div><div class="bd">把"写网页"变成"做视频"——Agent 用熟悉的 HTML 语法即可生成动画视频，填补了 <b>Agent → 视频产出</b> 的工具空白，HeyGen 厂商背书。</div></div>
+    <div class="blk"><div class="bt">🎯 适合谁</div><div class="bd">AI 应用开发者、内容/营销自动化团队。</div></div>
+    <div class="blk"><div class="bt">🔮 长期潜力</div><div class="bd">中期机会，视频生成 Agent 工具链的新分支。<span class="stars">⭐⭐⭐⭐</span></div></div>
+  </div>
+
+  <div class="card">
+    <div class="top"><span class="rank r2">2</span>
+      <div class="pname"><a href="https://github.com/microsoft/markitdown" target="_blank" rel="noopener">microsoft/markitdown</a></div></div>
+    <div class="tags"><span class="tag t-ai">AI/数据</span><span class="tag t-dev">开发工具</span><span class="tag">Python</span><span class="tag">MIT</span></div>
+    <div class="stats">
+      <div class="stat up"><div class="l">今日新增</div><div class="v">+2,047</div></div>
+      <div class="stat st"><div class="l">总 Star</div><div class="v">181.7k</div></div>
+      <div class="stat fk"><div class="l">Fork</div><div class="v">13.3k</div></div>
+    </div>
+    <div class="blk"><div class="bt">📌 它是什么</div><div class="bd">微软出品的文件/Office 文档 → Markdown 转换工具，LLM 时代的通用输入层。</div></div>
+    <div class="blk"><div class="bt">🔥 为什么火</div><div class="bd">Markdown 是 LLM 的"通用语"，markitdown 持续作为 RAG/Agent 摄入层的标准件，老牌但反复上榜。</div></div>
+    <div class="blk"><div class="bt">🔮 长期潜力</div><div class="bd">长期基础设施，已近事实标准。<span class="stars">⭐⭐⭐⭐⭐</span></div></div>
+  </div>
+
+  <div class="card">
+    <div class="top"><span class="rank r3">3</span>
+      <div class="pname"><a href="https://github.com/affaan-m/ECC" target="_blank" rel="noopener">affaan-m/ECC</a></div></div>
+    <div class="tags"><span class="tag t-ai">Agent/Skills</span><span class="tag t-fire">🔥持续热门 D+W</span><span class="tag">JavaScript</span><span class="tag">MIT</span></div>
+    <div class="stats">
+      <div class="stat up"><div class="l">今日新增</div><div class="v">+1,427</div></div>
+      <div class="stat st"><div class="l">总 Star</div><div class="v">254.3k</div></div>
+      <div class="stat fk"><div class="l">Fork</div><div class="v">38.1k</div></div>
+    </div>
+    <div class="blk"><div class="bt">📌 它是什么</div><div class="bd">自称"Agent harness 性能优化系统"，含 skills 与上下文管理。具体机制描述较空泛。</div></div>
+    <div class="blk"><div class="bt">🔥 为什么火</div><div class="bd">搭上 Agent Skills 浪潮，README 多语言 + star-history 徽章，典型的"追榜"包装。</div></div>
+    <div class="blk"><div class="bt">⚠️ 谨慎</div><div class="bd risk">单作者、254k 星与较空的内容不匹配，疑似刷量/营销热度，<b>不建议作为技术参考深究</b>，仅作现象观察。</div></div>
+    <div class="blk"><div class="bt">🔮 长期潜力</div><div class="bd">存疑。<span class="stars">⭐⭐⭐</span></div></div>
+  </div>
+
+  <div class="card">
+    <div class="top"><span class="rank">4</span>
+      <div class="pname"><a href="https://github.com/jo-inc/camofox-browser" target="_blank" rel="noopener">jo-inc/camofox-browser</a></div></div>
+    <div class="tags"><span class="tag t-ai">Agent/浏览器</span><span class="tag">自动化</span><span class="tag">JavaScript</span><span class="tag">MIT</span></div>
+    <div class="stats">
+      <div class="stat up"><div class="l">今日新增</div><div class="v">+871</div></div>
+      <div class="stat st"><div class="l">总 Star</div><div class="v">10.5k</div></div>
+      <div class="stat fk"><div class="l">Fork</div><div class="v">1.1k</div></div>
+    </div>
+    <div class="blk"><div class="bt">📌 它是什么</div><div class="bd">为 AI Agent 设计的<b>隐身 headless 浏览器</b>，主打绕过 Cloudflare 等反爬检测。</div></div>
+    <div class="blk"><div class="bt">🎯 适合谁</div><div class="bd">爬虫/自动化/Agent 浏览器方向开发者。</div></div>
+    <div class="blk"><div class="bt">🔮 长期潜力</div><div class="bd">中期，但处灰色地带，<b>合规风险</b>需自担。<span class="stars">⭐⭐⭐⭐</span></div></div>
+  </div>
+
+  <div class="card">
+    <div class="top"><span class="rank">5</span>
+      <div class="pname"><a href="https://github.com/cathrynlavery/diagram-design" target="_blank" rel="noopener">cathrynlavery/diagram-design</a></div></div>
+    <div class="tags"><span class="tag t-ai">Agent/Skills</span><span class="tag t-fire">🔥持续热门 D+M</span><span class="tag">HTML</span><span class="tag">MIT</span></div>
+    <div class="stats">
+      <div class="stat up"><div class="l">今日新增</div><div class="v">+710</div></div>
+      <div class="stat st"><div class="l">总 Star</div><div class="v">34.8k</div></div>
+      <div class="stat fk"><div class="l">Fork</div><div class="v">2.2k</div></div>
+    </div>
+    <div class="blk"><div class="bt">📌 它是什么</div><div class="bd">为 Claude Code / Codex 等 Agent 提供的 <b>38 种编辑级图表 Skill</b>，自包含 HTML+SVG，重绘 draw.io/Mermaid 源。</div></div>
+    <div class="blk"><div class="bt">🔥 为什么火</div><div class="bd">Agent Skills 生态 + 可视化刚需双重驱动，D+M 双榜持续热门。</div></div>
+    <div class="blk"><div class="bt">🔮 长期潜力</div><div class="bd">Skill 生态的可视化组件，有生态价值。<span class="stars">⭐⭐⭐⭐</span></div></div>
+  </div>
+</section>
+
+<section id="week">
+  <div class="sh">📈 本周最值得关注 Top 5 <span class="n">This Week</span></div>
+  <p class="lead">本周形成明显趋势：<b>Agent Skills 生态</b>与<b>自我改进 Agent</b>齐头并进。</p>
+
+  <div class="card">
+    <div class="top"><span class="rank r1">1</span>
+      <div class="pname"><a href="https://github.com/mattpocock/skills" target="_blank" rel="noopener">mattpocock/skills</a></div></div>
+    <div class="tags"><span class="tag t-ai">Agent/Skills</span><span class="tag t-dev">工程方法论</span><span class="tag">Shell</span><span class="tag">MIT</span></div>
+    <div class="stats">
+      <div class="stat up"><div class="l">周新增</div><div class="v">+13,419</div></div>
+      <div class="stat st"><div class="l">总 Star</div><div class="v">257.0k</div></div>
+      <div class="stat fk"><div class="l">Fork</div><div class="v">21.6k</div></div>
+    </div>
+    <div class="blk"><div class="bt">📌 它是什么</div><div class="bd">知名 TS 教育者 Matt Pocock 个人每日在用的 Agent Skills——<b>"给真实工程师用，反对 vibe coding"</b>，强调小而可组合、适配任意模型。</div></div>
+    <div class="blk"><div class="bt">🔥 为什么火</div><div class="bd">作者影响力 + 对"GSD/BMAD 全托管流程"的反叛理念，引发工程派共鸣。</div></div>
+    <div class="blk"><div class="bt">🔮 长期潜力</div><div class="bd">Skills 生态的重要方法论贡献。<span class="stars">⭐⭐⭐⭐</span></div></div>
+  </div>
+
+  <div class="card">
+    <div class="top"><span class="rank r2">2</span>
+      <div class="pname"><a href="https://github.com/tt-a1i/archify" target="_blank" rel="noopener">tt-a1i/archify</a></div></div>
+    <div class="tags"><span class="tag t-ai">Agent/Skills</span><span class="tag t-fire">🔥持续热门 W+M · ⚡爆发</span><span class="tag">JavaScript</span><span class="tag">MIT</span></div>
+    <div class="stats">
+      <div class="stat up"><div class="l">周新增</div><div class="v">+13,318</div></div>
+      <div class="stat st"><div class="l">总 Star</div><div class="v">54.7k</div></div>
+      <div class="stat fk"><div class="l">Fork</div><div class="v">3.6k</div></div>
+    </div>
+    <div class="blk"><div class="bt">📌 它是什么</div><div class="bd">把代码库/系统描述变成<b>可交互的系统地图</b>，支持 Cursor / Claude Code / Codex / OpenCode；Agent 产出类型化 JSON IR，Archify 确定性编译成 HTML/SVG。</div></div>
+    <div class="blk"><div class="bt">🔥 为什么火</div><div class="bd">解决"架构可视化 + 变更对比"（Before/Delta/After），本月 <em>+44,220</em> 星，爆发性增长。</div></div>
+    <div class="blk"><div class="bt">🔮 长期潜力</div><div class="bd">把架构治理纳入 Agent skill 链，落地性强。<span class="stars">⭐⭐⭐⭐⭐</span></div></div>
+  </div>
+
+  <div class="card">
+    <div class="top"><span class="rank r3">3</span>
+      <div class="pname"><a href="https://github.com/DietrichGebert/ponytail" target="_blank" rel="noopener">DietrichGebert/ponytail</a></div></div>
+    <div class="tags"><span class="tag t-ai">Agent/Skills</span><span class="tag">Prompt优化</span><span class="tag">JavaScript</span><span class="tag">MIT</span></div>
+    <div class="stats">
+      <div class="stat up"><div class="l">周新增</div><div class="v">+12,598</div></div>
+      <div class="stat st"><div class="l">总 Star</div><div class="v">132.2k</div></div>
+      <div class="stat fk"><div class="l">Fork</div><div class="v">7.1k</div></div>
+    </div>
+    <div class="blk"><div class="bt">📌 它是什么</div><div class="bd">"让你的 Agent 像最懒的资深工程师一样思考"，实测 <b>减约 54% 代码、降约 20% 成本、快约 27%</b>。</div></div>
+    <div class="blk"><div class="bt">🔥 为什么火</div><div class="bd">"少写代码"理念 + 真实 session 基准数据，引发性能派关注。</div></div>
+    <div class="blk"><div class="bt">🔮 长期潜力</div><div class="bd">中期，Prompt/Skill 层优化代表。<span class="stars">⭐⭐⭐⭐</span></div></div>
+  </div>
+
+  <div class="card">
+    <div class="top"><span class="rank">4</span>
+      <div class="pname"><a href="https://github.com/blader/humanizer" target="_blank" rel="noopener">blader/humanizer</a></div></div>
+    <div class="tags"><span class="tag t-ai">Agent/Skills</span><span class="tag">写作</span><span class="tag">Python</span><span class="tag">MIT</span></div>
+    <div class="stats">
+      <div class="stat up"><div class="l">周新增</div><div class="v">+5,790</div></div>
+      <div class="stat st"><div class="l">总 Star</div><div class="v">45.4k</div></div>
+      <div class="stat fk"><div class="l">Fork</div><div class="v">3.7k</div></div>
+    </div>
+    <div class="blk"><div class="bt">📌 它是什么</div><div class="bd">Agent Skill：去除 AI 生成写作痕迹。</div></div>
+    <div class="blk"><div class="bt">🔥 为什么火</div><div class="bd">"AI 内容过载 + 反检测"需求驱动，与 humanizer/去 AI 化社会情绪共振。</div></div>
+    <div class="blk"><div class="bt">🔮 长期潜力</div><div class="bd">中期，灰色但刚需。<span class="stars">⭐⭐⭐</span></div></div>
+  </div>
+
+  <div class="card">
+    <div class="top"><span class="rank">5</span>
+      <div class="pname"><a href="https://github.com/NousResearch/hermes-agent" target="_blank" rel="noopener">NousResearch/hermes-agent</a></div></div>
+    <div class="tags"><span class="tag t-ai">Agent 框架</span><span class="tag t-model">开源模型</span><span class="tag">Python</span><span class="tag">MIT</span></div>
+    <div class="stats">
+      <div class="stat up"><div class="l">周新增</div><div class="v">+4,221</div></div>
+      <div class="stat st"><div class="l">总 Star</div><div class="v">243.5k</div></div>
+      <div class="stat fk"><div class="l">Fork</div><div class="v">50.2k</div></div>
+    </div>
+    <div class="blk"><div class="bt">📌 它是什么</div><div class="bd">Nous Research 的<b>自我改进 Agent</b>：内置学习循环，从经验自动创建/改进 skill，跨会话搜索记忆，逐步建立对用户的深度画像。</div></div>
+    <div class="blk"><div class="bt">🔥 为什么火</div><div class="bd">Nous 名气 + "自学习 + 持久记忆"是 Agent 的下一代范式。</div></div>
+    <div class="blk"><div class="bt">🔮 长期潜力</div><div class="bd">高，自改进 Agent 框架代表。<span class="stars">⭐⭐⭐⭐⭐</span></div></div>
+  </div>
+  <div class="note">本周趋势小结：Skills 类项目（mattpocock/skills、archify、ponytail、ECC、humanizer）占据周榜半壁江山，<b>Agent Skills 开放生态</b>正在成为 GitHub 最显眼的集群。</div>
+</section>
+
+<section id="month">
+  <div class="sh">🚀 本月最值得关注 Top 5 <span class="n">This Month</span></div>
+  <p class="lead">月榜看长期：架构治理、大厂核心开源、Agent 上下文基础设施、端侧小模型。</p>
+
+  <div class="card">
+    <div class="top"><span class="rank r1">1</span>
+      <div class="pname"><a href="https://github.com/tt-a1i/archify" target="_blank" rel="noopener">tt-a1i/archify</a></div></div>
+    <div class="tags"><span class="tag t-ai">Agent/Skills</span><span class="tag t-fire">本月 +44,220 ⚡</span><span class="tag">MIT</span></div>
+    <div class="stats">
+      <div class="stat up"><div class="l">月新增</div><div class="v">+44,220</div></div>
+      <div class="stat st"><div class="l">总 Star</div><div class="v">54.7k</div></div>
+      <div class="stat fk"><div class="l">Fork</div><div class="v">3.6k</div></div>
+    </div>
+    <div class="blk"><div class="bt">📌 它是什么</div><div class="bd">代码库 → 可交互系统地图 + 架构变更 Before/Delta/After 对比（见本周详解）。</div></div>
+    <div class="blk"><div class="bt">🔮 长期潜力</div><div class="bd">月增第一，落地性最强。<span class="stars">⭐⭐⭐⭐⭐</span></div></div>
+  </div>
+
+  <div class="card">
+    <div class="top"><span class="rank r2">2</span>
+      <div class="pname"><a href="https://github.com/cathrynlavery/diagram-design" target="_blank" rel="noopener">cathrynlavery/diagram-design</a></div></div>
+    <div class="tags"><span class="tag t-ai">Agent/Skills</span><span class="tag t-fire">本月 +30,797</span><span class="tag">MIT</span></div>
+    <div class="stats">
+      <div class="stat up"><div class="l">月新增</div><div class="v">+30,797</div></div>
+      <div class="stat st"><div class="l">总 Star</div><div class="v">34.8k</div></div>
+      <div class="stat fk"><div class="l">Fork</div><div class="v">2.2k</div></div>
+    </div>
+    <div class="blk"><div class="bt">📌 它是什么</div><div class="bd">38 种编辑级图表 Skill，自包含 HTML+SVG（见今日详解）。</div></div>
+    <div class="blk"><div class="bt">🔮 长期潜力</div><div class="bd">Skill 生态可视化组件。<span class="stars">⭐⭐⭐⭐</span></div></div>
+  </div>
+
+  <div class="card">
+    <div class="top"><span class="rank r3">3</span>
+      <div class="pname"><a href="https://github.com/xai-org/x-algorithm" target="_blank" rel="noopener">xai-org/x-algorithm</a></div></div>
+    <div class="tags"><span class="tag t-infra">大厂核心开源</span><span class="tag">推荐系统</span><span class="tag">Rust</span><span class="tag">Apache-2.0</span></div>
+    <div class="stats">
+      <div class="stat up"><div class="l">月新增</div><div class="v">+6,114</div></div>
+      <div class="stat st"><div class="l">总 Star</div><div class="v">32.9k</div></div>
+      <div class="stat fk"><div class="l">Fork</div><div class="v">5.4k</div></div>
+    </div>
+    <div class="blk"><div class="bt">📌 它是什么</div><div class="bd">X（原 Twitter）<b>"For You"推荐流核心算法开源</b>：混合 in/out-network 内容、过滤、transformer 排序，2026-08 持续更新。</div></div>
+    <div class="blk"><div class="bt">🔥 为什么火</div><div class="bd">大厂推荐算法开源属稀有事件，透明度与学习价值双高。</div></div>
+    <div class="blk"><div class="bt">🔮 长期潜力</div><div class="bd">高，工业级推荐系统参考实现。<span class="stars">⭐⭐⭐⭐⭐</span></div></div>
+  </div>
+
+  <div class="card">
+    <div class="top"><span class="rank">4</span>
+      <div class="pname"><a href="https://github.com/volcengine/OpenViking" target="_blank" rel="noopener">volcengine/OpenViking</a></div></div>
+    <div class="tags"><span class="tag t-infra">Agent 上下文</span><span class="tag">数据库</span><span class="tag">Python</span><span class="tag">AGPL-3.0</span></div>
+    <div class="stats">
+      <div class="stat up"><div class="l">月新增</div><div class="v">+8,115</div></div>
+      <div class="stat st"><div class="l">总 Star</div><div class="v">36.1k</div></div>
+      <div class="stat fk"><div class="l">Fork</div><div class="v">2.8k</div></div>
+    </div>
+    <div class="blk"><div class="bt">📌 它是什么</div><div class="bd">字节跳动（火山引擎）开源的 <b>AI Agent 上下文数据库</b>：自演化、统一 Agent 记忆/上下文。</div></div>
+    <div class="blk"><div class="bt">🔥 为什么火</div><div class="bd">"上下文管理"正成为独立基础设施层 + 大厂背书，与 Mem0/Letta 等同赛道。</div></div>
+    <div class="blk"><div class="bt">🔮 长期潜力</div><div class="bd">高，Agent 记忆基础设施。<span class="stars">⭐⭐⭐⭐⭐</span></div></div>
+  </div>
+
+  <div class="card">
+    <div class="top"><span class="rank">5</span>
+      <div class="pname"><a href="https://github.com/cactus-compute/needle" target="_blank" rel="noopener">cactus-compute/needle</a></div></div>
+    <div class="tags"><span class="tag t-model">端侧小模型</span><span class="tag">工具调用</span><span class="tag">Python</span><span class="tag">Apache-2.0</span></div>
+    <div class="stats">
+      <div class="stat up"><div class="l">月新增</div><div class="v">+7,220</div></div>
+      <div class="stat st"><div class="l">总 Star</div><div class="v">10.6k</div></div>
+      <div class="stat fk"><div class="l">Fork</div><div class="v">677</div></div>
+    </div>
+    <div class="blk"><div class="bt">📌 它是什么</div><div class="bd"><b>Needle 2</b>：45M 参数、单个 <b>14MB</b> 二进制的工具调用/结构化抽取模型，约 28MB RAM 跑一整个 session，面向手机/可穿戴等微型设备。</div></div>
+    <div class="blk"><div class="bt">🔥 为什么火</div><div class="bd">端侧小模型 + "工具调用"刚需，体积比同类小 5–70 倍。</div></div>
+    <div class="blk"><div class="bt">🔮 长期潜力</div><div class="bd">中-高，端侧 assistant 的关键拼图，但 45M 能力上限有限。<span class="stars">⭐⭐⭐⭐</span></div></div>
+  </div>
+  <div class="note">月榜其他亮点：<a href="https://github.com/public-apis/public-apis">public-apis/public-apis</a> +23.4k（常青资源库持续被新人发现）、<a href="https://github.com/freestylefly/awesome-gpt-image-2">freestylefly/awesome-gpt-image-2</a> +19.7k（GPT-Image-2 工业级提示词库 530+ 案例）、<a href="https://github.com/omacom/omarchy">omacom/omarchy</a> +15.2k（极致 Linux 桌面）、<a href="https://github.com/THU-MAIC/OpenMAIC">THU-MAIC/OpenMAIC</a> +13k（清华多 Agent 互动课堂）、<a href="https://github.com/AprilNEA/OpenLogi">AprilNEA/OpenLogi</a> +11.9k（Rust 写的 Logitech Options+ 替代）。</div>
+</section>
+
+<section id="top">
+  <div class="sh">🏆 综合推荐 Top 5 <span class="n">最值得深入研究</span></div>
+  <p class="lead">综合热度、增长、创新性、长期价值与可落地性。</p>
+
+  <div class="card">
+    <div class="top"><span class="rank r1">1</span><div class="pname"><a href="https://github.com/NousResearch/hermes-agent" target="_blank" rel="noopener">NousResearch/hermes-agent</a></div></div>
+    <div class="tags"><span class="tag t-ai">Agent 框架</span><span class="tag t-fire">🔥范式代表</span></div>
+    <div class="blk"><div class="bt">为什么推荐</div><div class="bd">自改进 + 持久记忆 + 自动造 skill，代表了 Agent 的下一代范式，Nous 研究背书。</div></div>
+    <div class="blk"><div class="bt">最大价值</div><div class="bd">"Agent 会自己变强"的学习闭环，是个人 Agent / 助理的关键能力。</div></div>
+    <div class="blk"><div class="bt">最大风险</div><div class="bd">对底层模型依赖强，记忆/画像涉及隐私合规。</div></div>
+    <div class="blk"><div class="bt">适合谁</div><div class="bd">AI Agent 研究者、个人 assistant 产品团队。 <span class="stars">⭐⭐⭐⭐⭐</span></div></div>
+  </div>
+
+  <div class="card">
+    <div class="top"><span class="rank r2">2</span><div class="pname"><a href="https://github.com/tt-a1i/archify" target="_blank" rel="noopener">tt-a1i/archify</a></div></div>
+    <div class="tags"><span class="tag t-ai">架构治理</span><span class="tag t-fire">月 +44k</span></div>
+    <div class="blk"><div class="bt">为什么推荐</div><div class="bd">最具体可落地的 Skills 项目，月增第一，跨 Agent 通用。</div></div>
+    <div class="blk"><div class="bt">最大价值</div><div class="bd">把"架构可视化 + 变更治理"纳入 Agent 工作流，企业工程团队刚需。</div></div>
+    <div class="blk"><div class="bt">最大风险</div><div class="bd">若 Skills 标准碎片化，可能被大厂插件体系吞并。</div></div>
+    <div class="blk"><div class="bt">适合谁</div><div class="bd">平台工程、架构师、DevOps。 <span class="stars">⭐⭐⭐⭐⭐</span></div></div>
+  </div>
+
+  <div class="card">
+    <div class="top"><span class="rank r3">3</span><div class="pname"><a href="https://github.com/xai-org/x-algorithm" target="_blank" rel="noopener">xai-org/x-algorithm</a></div></div>
+    <div class="tags"><span class="tag t-infra">大厂核心开源</span></div>
+    <div class="blk"><div class="bt">为什么推荐</div><div class="bd">大厂推荐流算法开源，稀有且透明度高。</div></div>
+    <div class="blk"><div class="bt">最大价值</div><div class="bd">工业级推荐系统学习范本 + 算法透明度样板。</div></div>
+    <div class="blk"><div class="bt">最大风险</div><div class="bd">只是部分代码、无数据与线上权重，无法直接复现效果。</div></div>
+    <div class="blk"><div class="bt">适合谁</div><div class="bd">推荐系统/ML 工程师、算法研究者。 <span class="stars">⭐⭐⭐⭐⭐</span></div></div>
+  </div>
+
+  <div class="card">
+    <div class="top"><span class="rank">4</span><div class="pname"><a href="https://github.com/volcengine/OpenViking" target="_blank" rel="noopener">volcengine/OpenViking</a></div></div>
+    <div class="tags"><span class="tag t-infra">Agent 上下文 DB</span></div>
+    <div class="blk"><div class="bt">为什么推荐</div><div class="bd">字节背书，"上下文成基础设施层"的代表性实现。</div></div>
+    <div class="blk"><div class="bt">最大价值</div><div class="bd">统一 Agent 记忆/上下文，解决长期记忆与上下文爆炸痛点。</div></div>
+    <div class="blk"><div class="bt">最大风险</div><div class="bd">AGPL 协议、与 Mem0/Letta 激烈竞争，胜负未定。</div></div>
+    <div class="blk"><div class="bt">适合谁</div><div class="bd">Agent 平台/中间件团队。 <span class="stars">⭐⭐⭐⭐</span></div></div>
+  </div>
+
+  <div class="card">
+    <div class="top"><span class="rank">5</span><div class="pname"><a href="https://github.com/heygen-com/hyperframes" target="_blank" rel="noopener">heygen-com/hyperframes</a></div></div>
+    <div class="tags"><span class="tag t-ai">Agent→视频</span></div>
+    <div class="blk"><div class="bt">为什么推荐</div><div class="bd">"用 HTML 写代码，渲染成视频"，厂商背书、范式新颖、今日最火。</div></div>
+    <div class="blk"><div class="bt">最大价值</div><div class="bd">填补 Agent→确定性视频产出空白，营销/内容自动化新工具链。</div></div>
+    <div class="blk"><div class="bt">最大风险</div><div class="bd">视频生成赛道竞争激烈，确定性渲染 vs 创意上限的取舍。</div></div>
+    <div class="blk"><div class="bt">适合谁</div><div class="bd">AI 内容/营销自动化、视频工具开发者。 <span class="stars">⭐⭐⭐⭐</span></div></div>
+  </div>
+</section>
+
+<section id="trend">
+  <div class="sh">🔮 GitHub 技术趋势 <span class="n">3～5 个</span></div>
+  <ol class="trend">
+    <li><span class="h">① Agent Skills 开放生态爆发</span><br>OpenAI（skills→<a href="https://github.com/openai/plugins">plugins</a>）、Anthropic（<a href="https://github.com/anthropics/claude-plugins-community">claude-plugins-community</a>）、Cursor（<a href="https://github.com/cursor/plugins">plugins</a>）三家厂商 + <b>agentskills.io</b> 开放标准，叠加 <a href="https://github.com/obra/superpowers">obra/superpowers</a>、<a href="https://github.com/mattpocock/skills">mattpocock/skills</a>、<a href="https://github.com/tt-a1i/archify">archify</a>、<a href="https://github.com/cathrynlavery/diagram-design">diagram-design</a>、<a href="https://github.com/DietrichGebert/ponytail">ponytail</a> 等社区项目。<b>一个跨厂商可移植的"Agent 技能包"格式正在形成</b>，是当前 GitHub 最显眼的集群。</li>
+    <li><span class="h">② Agent 上下文/记忆成独立基础设施层</span><br><a href="https://github.com/mksglu/context-mode">context-mode</a>（上下文压缩）、<a href="https://github.com/semantica-agi/semantica">semantica</a>（图原生上下文+知识图谱）、<a href="https://github.com/volcengine/OpenViking">OpenViking</a>（Agent 上下文数据库）、<a href="https://github.com/akitaonrails/ai-memory">ai-memory</a>（跨 Agent 长期记忆）、hermes-agent（记忆环）。<b>"上下文管理"正从 prompt 技巧升级为独立中间件层</b>。</li>
+    <li><span class="h">③ Agent 浏览器自动化 + 反检测</span><br><a href="https://github.com/ChromeDevTools/chrome-devtools-mcp">chrome-devtools-mcp</a>（DevTools 即 MCP）、<a href="https://github.com/browser-use/browser-use">browser-use</a>（113k，浏览器即 Agent）、<a href="https://github.com/jo-inc/camofox-browser">camofox-browser</a>（隐身反检测）。<b>浏览器作为 Agent 执行面 + MCP 标准化</b>双向成熟。</li>
+    <li><span class="h">④ 大厂核心系统开源</span><br><a href="https://github.com/xai-org/x-algorithm">x-algorithm</a>（X 推荐流）、<a href="https://github.com/modular/modular">modular/modular</a>（Mojo 语言 + MAX 平台开源）。<b>大厂愿意把"看家算法/平台"拿出来</b>，透明度与生态拉拢并重。</li>
+    <li><span class="h">⑤ 端侧微型模型与本地训练</span><br><a href="https://github.com/cactus-compute/needle">needle</a>（14MB 工具调用模型）、<a href="https://github.com/unslothai/unsloth">unsloth</a>（本地训练/运行 LLM）。<b>端侧 + 离线 + 隐私</b>路线在小模型侧持续突破。</li>
+  </ol>
+</section>
+
+<section id="opp">
+  <div class="sh">💡 开发者 / 创业机会 <span class="n">从应用角度看</span></div>
+  <ul class="opps">
+    <li><b>值得学：</b>Agent Skills 开放标准（agentskills.io + 三家厂商 plugin 规范）、context-mode 的上下文压缩思路、Mojo 语言、X 推荐流的 transformer 排序工程实践。</li>
+    <li><b>可二次开发：</b>基于 <a href="https://github.com/tt-a1i/archify">archify</a>/<a href="https://github.com/cathrynlavery/diagram-design">diagram-design</a> 做行业级架构治理 SaaS；基于 <a href="https://github.com/heygen-com/hyperframes">hyperframes</a> 做自动化短视频/营销素材；基于 <a href="https://github.com/cactus-compute/needle">needle</a> 做端侧本地 assistant；基于 <a href="https://github.com/volcengine/OpenViking">OpenViking</a>/<a href="https://github.com/semantica-agi/semantica">semantica</a> 做垂直知识图谱 Agent。</li>
+    <li><b>产品机会：</b>① <b>Agent Skill 市场/分发与评分</b>（现多靠 README 自荐，缺可信分发）；② <b>Agent 上下文中间件层</b>（压缩、记忆、检索一体化）；③ <b>合规版反检测浏览器</b>（camofox 灰色，合规版有空间）；④ <b>端侧工具调用模型</b>（离线 assistant/可穿戴）；⑤ <b>本地 TTS/语音</b>（<a href="https://github.com/debpalash/VoiceStudio">VoiceStudio</a> 16 TTS+11 ASR 引擎，本地 ElevenLabs 替代）；⑥ <b>AI 内容去痕与反去痕</b>（humanizer 引出的对抗赛道）。</li>
+  </ul>
+</section>
+
+<section id="conclu">
+  <div class="sh">🎯 今日最终结论 <span class="n">结论优先</span></div>
+  <div class="final">
+    <div class="row"><div class="q">当前最火的项目？</div><div class="a"><b>heygen-com/hyperframes</b>（今日 +2,627，"写 HTML 渲染视频"）与 <b>affaan-m/ECC</b>（D+W 持续热门，但内容存疑需谨慎）。</div></div>
+    <div class="row"><div class="q">最值得长期关注的项目？</div><div class="a"><b>NousResearch/hermes-agent</b>（自改进 Agent 范式）、<b>volcengine/OpenViking</b>（Agent 上下文基础设施）、<b>xai-org/x-algorithm</b>（大厂核心算法开源）。</div></div>
+    <div class="row"><div class="q">如果只能研究一个？</div><div class="a">👉 <b>NousResearch/hermes-agent</b>——"自学习 + 持久记忆 + 自动造 skill"是 Agent 的未来范式，最值得投入时间深入。若偏落地工程，则选 <b>tt-a1i/archify</b>（月增第一、最具体可落地）。</div></div>
+    <div class="row"><div class="q">最值得关注的技术趋势？</div><div class="a"><b>Agent Skills 开放生态</b>（跨厂商可移植技能包格式正在成型）+ <b>Agent 上下文成独立基础设施层</b>，二者叠加定义了下一阶段 AI Agent 的工程重心。</div></div>
+  </div>
+</section>
+
+<div class="note">
+  <b>📊 数据与真实性说明</b><br>
+  • Star/Fork/新增/语言/协议/更新时间：来自 GitHub Trending 页面解析 + GitHub API（<code>gh</code> 鉴权）核实，截至 2026-09-09。<br>
+  • <b>affaan-m/ECC</b>（254k 星）与 <b>multica-ai/andrej-karpathy-skills</b>（211k 星，最后推送 2026-04-20，已 5 个月未更新却现身日榜）单作者、星数与内容不匹配，疑似刷量/营销，已标注谨慎。<br>
+  • <b>megadose/holehe</b> 出现在月榜但最后更新为 2024-09-10（近 2 年未更新），属"被重新发现的经典"，非活跃项目。<br>
+  • "为什么火"含推测成分，凡无可靠证据者已弱化为"可能原因"，不强行下结论。
+</div>
+
+<div class="foot">
+  由 Multica · GitHub 开源情报分析员 自动生成<br>
+  <span class="m">数据源：GitHub Trending (daily/weekly/monthly) × GitHub API</span><br>
+  关注 AI · Agent · LLM · AI Coding · MCP · RAG · 开发工具 · 基础设施
+</div>
+
+</div>
+</body>
+</html>
