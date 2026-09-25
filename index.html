@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<meta name="description" content="GitHub 热门项目日报 2026-09-24：Google ax 登顶日榜、Cloudflare 安全审计 skill 连庄周冠、archify 月榜爆发见顶——Trending 日/周/月三榜分析、技术趋势与创业机会">
-<title>🔥 GitHub 热门项目日报｜2026-09-24</title>
+<meta name="description" content="GitHub 热门项目日报 2026-09-25：Hindsight 记忆层登顶日榜、google/ax 连续第二日、阿里 open-code-review 周增量第一、archify 月冠见顶——Trending 日/周/月三榜分析、技术趋势与创业机会">
+<title>🔥 GitHub 热门项目日报｜2026-09-25</title>
 <style>
 
   :root{
@@ -82,16 +82,16 @@
 <body>
 <div class="wrap">
 <header class="hero">
-<h1>🔥 GitHub 热门项目日报｜2026-09-24</h1>
-<div class="sub">数据抓取于 2026-09-24 09:15 前后（UTC+8）· Trending 日/周/月三榜 · GitHub API 逐仓核实</div>
+<h1>🔥 GitHub 热门项目日报｜2026-09-25</h1>
+<div class="sub">数据抓取于 2026-09-25 09:15 前后（UTC+8）· Trending 日/周/月三榜 · GitHub API 逐仓核实</div>
 <div class="lede">
-今日主线一句话：<b>Google 把"Agent 的 Kubernetes 时刻"摆上了台面</b>。google/ax（声明式 agent 编排运行时）今日 +1,543 星登顶日榜增量第一，其执行层 agent-substrate/substrate 同日 +558 跟进上榜——编排层 + 沙箱层同天双上榜，是"agent 是一种新工作负载"这个判断目前最重的背书。周榜格局延续：Cloudflare security-audit-skill（+15,280）连续第二周周增量第一，阿里 open-code-review（+9,833）稳居 GitHub 周榜排序首位并突破 4 万星。月榜之王 archify 单月 +55,857，但对比 9-22 的 +54,494，两日仅增 1,363——<b>爆发期已过，进入长尾消化期</b>。
+今日主线一句话：<b>"Agent 的记忆层"接棒成为日榜最强叙事</b>。vectorize-io/hindsight（"会学习的 agent 记忆系统"，LongMemEval SOTA）今日 +1,668 星登顶日榜增量第一，且同时挂在周榜——继昨天"K8s for Agents"（编排层）之后，今天的爆点是"记忆层"。google/ax 连续第二日上榜（+1,373，昨日 +1,543 曾登顶），"agent 基础设施化"叙事在持续而非一日游。周榜格局刷新：alibaba/open-code-review 周增量 +6,920 跃居第一，上周连庄的 cloudflare/security-audit-skill 已退出周榜（月榜仍第 2）；月榜之王 archify 单月 +56,351，但对比昨日 +55,857，24 小时仅增约 500 星，<b>见顶信号确认</b>。唯一同时出现在日/周/月三个榜单的项目：superdesigndev/treg（"工具界的 OpenRouter"）。
 </div>
 <div class="pills">
-<span class="pill">日榜 17 项（GitHub 实际返回）</span>
+<span class="pill">日榜 14 项（GitHub 实际返回）</span>
 <span class="pill">周榜 20 项</span>
-<span class="pill">月榜 21 项</span>
-<span class="pill">去重 51 仓 · API 核实 51/51</span>
+<span class="pill">月榜 22 项</span>
+<span class="pill">去重 50 仓 · API 核实 49/50</span>
 </div>
 </header>
 <nav class="toc">
@@ -109,329 +109,349 @@
 <!-- ================= 今日 ================= -->
 <section id="today">
 <h2 class="sec">🔥 今日最火 Top 5</h2>
-<p class="secnote">按今日 Star 增量与信号强度综合排序。今日 GitHub Trending 日榜实际返回 17 个项目（官方页面行为，非抓取缺失）。</p>
+<p class="secnote">按今日 Star 增量与信号强度综合排序。今日 GitHub Trending 日榜实际返回 14 个项目（官方页面行为，非抓取缺失）。</p>
 <div class="card">
-<span class="no">1</span><h3><a href="https://github.com/google/ax" target="_blank">google/ax</a></h3>
-<div class="meta"><span>Go</span><span class="stars">⭐ 9,079</span><span>🍴 437</span><span class="up">今日 +1,543（增量第一）</span><span>贡献者 10</span><span>2026-03 创建</span></div>
-<div class="tags"><span class="tag org">Google 出品</span><span class="tag">⚡ 日榜增量第一</span><span class="tag">Agent 编排</span><span class="tag">声明式</span><span class="tag">v0.3.0（09-20 发布）</span></div>
+<span class="no">1</span><h3><a href="https://github.com/vectorize-io/hindsight" target="_blank">vectorize-io/hindsight</a></h3>
+<div class="meta"><span>Python</span><span class="stars">⭐ 27,790</span><span>🍴 2,682</span><span class="up">今日 +1,668（增量第一）</span><span>贡献者 246</span><span>2025-10 创建</span><span>MIT</span></div>
+<div class="tags"><span class="tag">🔥⚡ 日周双榜</span><span class="tag">Agent Memory</span><span class="tag">LongMemEval SOTA</span><span class="tag">有论文</span><span class="tag">MCP Server</span></div>
 <dl>
-<dt>它是什么 / 为什么火</dt><dd>Google 开源的<b>声明式 agent 编排运行时</b>，自我定位一句话讲清："如果你用过 Kubernetes，ax 会感觉很熟悉"。用 YAML 声明 Workspace（预装 Git 仓库/MCP/skill 的热启动环境）、Task（沙箱内跑不可信 agent 代码）、Gateway（出站流量白名单）、Model（平台自身用哪个 LLM）四种原语，`ax apply / watch / ssh / suspend / resume` 一套命令管理整个生命周期，目标单集群跑<b>十亿级 agent 任务</b>。9-20 刚发 v0.3.0，今天增量直接冲到日榜第一——大厂背书 + "K8s for Agents" 叙事 + 新版本三重驱动。README 明确警告：stable 之前会有重大破坏性变更。</dd>
-<dt>核心能力</dt><dd>把"agent 该怎么跑在生产环境"翻译成基础设施问题：沙箱隔离、网络围栏、空闲暂停/原地恢复（省钱的要害——agent 大部分时间在空转）、可 SSH 旁观。执行层跑在 agent-substrate/substrate 上（见今日 #5）。</dd>
-<dt>适合谁 / 长期潜力</dt><dd>平台工程 / Infra 团队、agent 创业公司。如果 agent 负载真如其所料爆炸，这是"调度层标准"的早期种子选手——长期基础设施方向的头部候选，但 v0.x 阶段变动风险高。</dd>
+<dt>它是什么 / 为什么火</dt><dd>Vectorize 公司开源的 <b>"会学习的 agent 记忆系统"</b>——口号是"让 agent 学习，而不只是记住"。与 RAG / 知识图谱路线不同，它通过 retain / recall / reflect 三操作维护"心智模型与知识页"，官方声称在 LongMemEval 长期记忆基准上达到 SOTA（有 arXiv 论文背书）。今日 +1,668 登顶日榜增量第一，同时挂在周榜 +3,363——"记忆层"作为 agent 栈的独立一层，正在从概念变成有基准、有论文、有商业公司押注的基础设施方向。</dd>
+<dt>核心能力</dt><dd>两行代码的 LLM Wrapper 即插即用；Python / TS 双客户端 + MCP Server，可直接接 Claude 等编码 agent；支持无服务器嵌入式运行；MIT 开源 + 云托管商业版双轨。</dd>
+<dt>适合谁 / 长期潜力</dt><dd>做 agent 产品的团队、需要跨会话个性化记忆的应用。长期基础设施方向的头部候选，但记忆层是大厂（以及模型厂商）必然下场的赛道，独立项目要靠基准领先度和迭代速度保持位置。</dd>
 </dl>
-<div class="rate"><span class="stars">⭐⭐⭐⭐</span><span class="verdict"><b>今日最强信号</b>：方向价值大于当下可用性，值得跟踪不建议生产</span></div>
+<div class="rate"><span class="stars">⭐⭐⭐⭐⭐</span><span class="verdict"><b>今日最强信号</b>：方向、数据、论文三要素齐</span></div>
 </div>
 <div class="card">
-<span class="no">2</span><h3><a href="https://github.com/dream-num/univer" target="_blank">dream-num/univer</a></h3>
-<div class="meta"><span>TypeScript</span><span class="stars">⭐ 16,335</span><span>🍴 1,435</span><span class="up">今日 +1,142</span><span>贡献者 67</span><span>2022-10 创建（4 年项目）</span></div>
-<div class="tags"><span class="tag">国产开源</span><span class="tag">Office SDK</span><span class="tag">Agent × 办公</span><span class="tag">Apache-2.0</span></div>
+<span class="no">2</span><h3><a href="https://github.com/google/ax" target="_blank">google/ax</a></h3>
+<div class="meta"><span>Go</span><span class="stars">⭐ 10,466</span><span>🍴 506</span><span class="up">今日 +1,373</span><span>贡献者 11</span><span>2026-03 创建</span><span>Apache-2.0</span></div>
+<div class="tags"><span class="tag org">Google 出品</span><span class="tag">连续第二日上榜</span><span class="tag">Agent 编排</span><span class="tag">"K8s for Agents"</span></div>
 <dl>
-<dt>它是什么 / 为什么火</dt><dd>国产团队 dream-num 的开源 Office 全家桶 SDK（表格/文档/演示/多维表格/白板），定位已升级为 <b>"The Office Harness for AI Agents"</b>——注意这个词 harness：不 只 做"网页版 Excel"，而是做"agent 操控办公文档的执行环境"。4 年老项目、67 位贡献者、有商业公司支撑，今天 +1,142 说明"agent 需要动手操作办公软件"的叙事正在兑现：agent 生成/编辑表格文档，比让它生成代码更接近普通企业的日常。</dd>
-<dt>核心能力</dt><dd>Canvas 渲染的高性能表格引擎（不是 DOM 模拟）、完整公式引擎、插件架构、浏览器与 Node.js 同构 Facade API——可嵌入式集成到任意 SaaS。</dd>
-<dt>适合谁 / 长期潜力</dt><dd>做企业 SaaS / 办公自动化 / agent 应用集成的团队。"agent 的手"是确定性需求，办公场景是最肥的市场之一——长期价值扎实。</dd>
+<dt>它是什么 / 为什么火</dt><dd>Google 开源的<b>声明式 agent 编排运行时</b>："如果你用过 Kubernetes，ax 会感觉很熟悉"。用 YAML 声明 Task（沙箱任务）、Workspace（预装 Git 仓库 / MCP / skill 的热启动环境）、Model（平台自身用哪个 LLM）等原语，<code>ax apply / watch / ssh / suspend / resume</code> 管理全生命周期，目标单集群承载十亿级 agent 任务；执行层跑在 agent-substrate/substrate 上。昨天 +1,543 登顶日榜，今天 +1,373 继续稳居第二——<b>连续两日上榜说明不是单日脉冲</b>，"agent 是一种新工作负载"的判断正在获得持续关注。</dd>
+<dt>核心能力</dt><dd>沙箱隔离与 CPU/内存限制、空闲暂停 / 原地恢复（agent 大部分时间在空转，这是成本要害）、ax ssh 旁观运行中的 agent、声明式manifest 一键部署到 K8s。README 明确警告：stable 前会有重大破坏性变更。</dd>
+<dt>适合谁 / 长期潜力</dt><dd>平台工程 / Infra 团队、agent 创业公司。如果 agent 负载规模化成立，这是"调度层标准"的早期种子选手；当前 v0.x，适合跟踪与试点，不适合生产。</dd>
 </dl>
-<div class="rate"><span class="stars">⭐⭐⭐⭐</span><span class="verdict">"agent 操控 Office"赛道的<b>工程底座首选</b>，比竞品成熟度高</span></div>
+<div class="rate"><span class="stars">⭐⭐⭐⭐</span><span class="verdict"><b>连续性得到验证</b>：方向价值大于当下可用性</span></div>
 </div>
 <div class="card">
-<span class="no">3</span><h3><a href="https://github.com/browser-use/video-use" target="_blank">browser-use/video-use</a></h3>
-<div class="meta"><span>Python</span><span class="stars">⭐ 26,496</span><span>🍴 3,166</span><span class="up">今日 +746</span><span>贡献者 8</span><span>2026-04 创建</span><span class="tag warn">最近推送 08-30</span></div>
-<div class="tags"><span class="tag">browser-use 团队</span><span class="tag">AI 视频剪辑</span><span class="tag">Coding Agent 应用</span><span class="tag">MIT</span></div>
+<span class="no">3</span><h3><a href="https://github.com/dream-num/univer" target="_blank">dream-num/univer</a></h3>
+<div class="meta"><span>TypeScript</span><span class="stars">⭐ 17,688</span><span>🍴 1,527</span><span class="up">今日 +1,082</span><span>贡献者 78</span><span>2022-09 创建（4 年项目）</span><span>Apache-2.0</span></div>
+<div class="tags"><span class="tag">国产开源</span><span class="tag">Office SDK</span><span class="tag">Agent × 办公</span><span class="tag">定位升级</span></div>
 <dl>
-<dt>它是什么 / 为什么火</dt><dd>browser-use 团队（agent 浏览器操作明星团队）出品：把素材丢进文件夹，对 Claude Code 说句话，拿回剪好的 final.mp4。自动去口癖/静音段、逐段自动调色、30ms 音频淡入淡出防爆音、烧录字幕、并行子 agent 生成动画叠层（Remotion/Manim 等），每刀边界先自评估再给人看。火的原因直观：这是"coding agent 不 只 能写代码"最直观的演示之一，且 100% 开源。</dd>
-<dt>核心能力</dt><dd>一套完整可复用的 skill 工程：安装脚本 + skill 注册 + 会话记忆持久化（下周继续剪）。本质是"agent 驱动 ffmpeg 工作流"的参考实现，模式可迁移到音频/图片/数据流水线。</dd>
-<dt>适合谁 / 长期潜力</dt><dd>内容创作者、想学 agent 工作流工程的开发者。注意两点：依赖 ElevenLabs 等外部 API（非全本地）；主仓库 08-30 后无推送，迭代热度需观察。中期机会。</dd>
+<dt>它是什么 / 为什么火</dt><dd>开源 Office 全家桶 SDK（表格 / 文档 / 演示 / 多维表格 / 白板），README 定位已升级为 <b>"The Office Harness for AI Agents"</b>。注意 harness（执行挽具）这个词正在从 coding agent 圈向所有软件扩散：univer 想做的是"agent 操控办公文档的执行环境"。4 年老项目、78 位贡献者、有商业公司支撑，今天 +1,082 说明"agent 操作办公软件"的叙事正在兑现——对企业来说，让 agent 生成/编辑表格文档，比让它写代码更日常。</dd>
+<dt>核心能力</dt><dd>Canvas 渲染的高性能表格引擎（非 DOM 模拟）、完整公式引擎、插件架构、浏览器与 Node.js 同构 Facade API，可嵌入任意 SaaS 产品。</dd>
+<dt>适合谁 / 长期潜力</dt><dd>做企业 SaaS / 内部工具的团队，以及需要"agent 可操作的办公层"的产品。长期价值明确：办公是 agent 落地最大的场景之一，univer 是这个生态位目前最成熟的开源底座。</dd>
 </dl>
-<div class="rate"><span class="stars">⭐⭐⭐</span><span class="verdict">学<b>agent 工作流设计</b>的优质教材，产品化还有距离</span></div>
+<div class="rate"><span class="stars">⭐⭐⭐⭐</span><span class="verdict"><b>生态位清晰</b>：成熟项目 + 新叙事共振</span></div>
 </div>
 <div class="card">
-<span class="no">4</span><h3><a href="https://github.com/anthropics/financial-services" target="_blank">anthropics/financial-services</a></h3>
-<div class="meta"><span>Python</span><span class="stars">⭐ 36,947</span><span>🍴 5,377</span><span class="up">今日 +664</span><span class="up">本周 +1,895</span><span>贡献者 12</span><span>2026-02 创建</span></div>
-<div class="tags"><span class="tag org">Anthropic 官方</span><span class="tag">🔥 日+周双榜</span><span class="tag">金融垂类 Agent</span><span class="tag">Apache-2.0</span></div>
+<span class="no">4</span><h3><a href="https://github.com/obra/superpowers" target="_blank">obra/superpowers</a></h3>
+<div class="meta"><span>Shell</span><span class="stars">⭐ 291,233</span><span>🍴 26,055</span><span class="up">今日 +611</span><span>贡献者 44</span><span>2025-10 创建</span><span>MIT</span></div>
+<div class="tags"><span class="tag">今日上榜总量第一</span><span class="tag">Skills 框架</span><span class="tag">开发方法论</span><span class="tag">多 harness 适配</span></div>
 <dl>
-<dt>它是什么 / 为什么火</dt><dd>Anthropic 面向金融行业的官方 agent/skill/数据连接器仓库：投行、股票研究、PE、财富管理四大场景，Pitch Agent、Market Researcher、GL Reconciler 等成套工作流 agent。最大看点是<b>"一份内容、两种交付"</b>：同一条系统提示和技能，既能装进 Claude Cowork 当插件，也能通过 Managed Agents API 部署到自己的工作流引擎里。连日在榜说明：模型厂亲自做行业模板，"怎么用"比"用什么模型"更稀缺了。</dd>
-<dt>核心能力</dt><dd>DCF、可比公司分析、财报摘要等金融技能命令（/comps /dcf /earnings）+ 数据连接器；每一步产出都定位为"分析师草稿、需人工签核"，合规姿态清晰。</dd>
-<dt>适合谁 / 长期潜力</dt><dd>金融机构科技团队、做行业 agent 的创业公司（这是官方免费的最佳参考架构）。垂类 agent 落地的长期风向标。</dd>
+<dt>它是什么 / 为什么火</dt><dd>Jesse Vincent（obra）的 <b>"agent 技能框架 + 软件开发方法论"</b>：不是让 agent 直接写代码，而是先逼出规格、分段确认设计、生成实现计划，再用子 agent 驱动开发逐任务执行，强调 TDD / YAGNI / DRY。29 万星是今日上榜项目中的总量第一，支持 Claude Code / Codex / Cursor / Gemini CLI / Kimi Code 等十余种 harness。<b>为什么重要：它证明了"skill + 方法论"这种纯文本形态的分发物可以积累出数十万星</b>——skills 正在成为 agent 时代的"包"。</dd>
+<dt>核心能力</dt><dd>可组合技能库、子 agent 驱动开发流程、跨 harness 安装、失败时的系统化排查流程。</dd>
+<dt>适合谁 / 长期潜力</dt><dd>所有用编码 agent 的开发者。长期看是"agent 工作方式"的事实标准候选之一；风险是方法论类项目易被官方功能吸收。</dd>
 </dl>
-<div class="rate"><span class="stars">⭐⭐⭐⭐</span><span class="verdict"><b>行业 agent 的官方范本</b>，二开与对标都有直接价值</span></div>
+<div class="rate"><span class="stars">⭐⭐⭐⭐</span><span class="verdict"><b>生态标杆</b>：看懂它就看懂 skills 生态</span></div>
 </div>
 <div class="card">
-<span class="no">5</span><h3><a href="https://github.com/agent-substrate/substrate" target="_blank">agent-substrate/substrate</a></h3>
-<div class="meta"><span>Go</span><span class="stars">⭐ 3,502</span><span>🍴 413</span><span class="up">今日 +558</span><span>贡献者 95</span><span>2026-05 创建</span></div>
-<div class="tags"><span class="tag">Agent 沙箱运行时</span><span class="tag">与 google/ax 同日上榜</span><span class="tag">microVM / gVisor</span><span class="tag warn">标注"非官方 Google 产品"</span></div>
+<span class="no">5</span><h3><a href="https://github.com/superdesigndev/treg" target="_blank">superdesigndev/treg</a></h3>
+<div class="meta"><span>Python</span><span class="stars">⭐ 3,166</span><span>🍴 262</span><span class="up">今日 +468</span><span>贡献者 16</span><span>2026-07 创建（2 个月）</span></div>
+<div class="tags"><span class="tag org">唯一三榜同列</span><span class="tag">工具界的 OpenRouter</span><span class="tag">按次计费</span><span class="tag warn">自定义 License</span></div>
 <dl>
-<dt>它是什么 / 为什么火</dt><dd>google/ax 的执行层：secure-by-default 的 agent 沙箱运行时，声称比标准容器<b>高 10 倍密度</b>跑百万级沙箱、恢复耗时亚 500ms、每秒 500+ 次挂起/恢复。核心洞察很"infra"：agent 大部分时间在空转，把一批"actor"复用到少量热"worker"上就能把成本压掉一个数量级。今天与 ax 同日上榜不是巧合——Google 在推"编排（ax）+ 运行时（substrate）"组合拳。注意：README 明确标注非官方支持产品。</dd>
-<dt>核心能力</dt><dd>microVM/gVisor 双沙箱技术统一生命周期 API、基于 K8s 的调度、零信任内核与网络隔离。是"跑别人家 agent 代码"的云厂商/平台的刚需组件。</dd>
-<dt>适合谁 / 长期潜力</dt><dd>云平台、Serverless、安全团队。95 位贡献者、133 天 3.5k 星，属于闷声做事型。若 agent FaaS 成为默认形态，这一层会吃到最大红利——长期基础设施。</dd>
+<dt>它是什么 / 为什么火</dt><dd><b>"OpenRouter，但面向 agent 工具而非模型"</b>：一个 base URL + 一个 token，agent 即可调用 60+ 供应商的 3,000+ 工具端点（SEO 外链、社媒趋势、企业信息 enrichment、爬虫、图像视频生成……），按次计费低至一美分，无需逐家注册账号——解决"agent 干活需要的工具都锁在订阅墙后面"的真实痛点（Semrush $139/月、Crunchbase $99/月）。<b>它是今天唯一同时出现在日 / 周 / 月三个榜单的项目</b>：总量只有 3,166 星却三榜同列，说明增长斜率极陡。</dd>
+<dt>核心能力</dt><dd>按"任务"而非"工具名"搜索目录；团队自有 key / skill / CLI 统一注册、凭证不出服务器；代理只转发不加工，上游 API 变更也能存活；可自托管。</dd>
+<dt>适合谁 / 长期潜力</dt><dd>重度 agent 用户、独立开发者、小团队。如果"工具调用聚合"成为 agent 的默认取用方式，这是中间件层的高赔率早期标的；注意 License 为非标准（NOASSERTION），商用前需核对条款。</dd>
 </dl>
-<div class="rate"><span class="stars">⭐⭐⭐⭐</span><span class="verdict">ax 的地基，<b>组合观察价值极高</b>，单独可用性尚早</span></div>
+<div class="rate"><span class="stars">⭐⭐⭐⭐</span><span class="verdict"><b>高赔率小盘</b>：方向真、盘子小、条款需审</span></div>
 </div>
 <div class="minis">
-<div class="t">今日榜单其他值得一看</div>
-<div class="mini">🔎 <a href="https://github.com/mvt-project/mvt" target="_blank">mvt-project/mvt</a> — ⭐14,483 · 今日 +543。Amnesty International 移动设备取证工具箱（检测手机是否被间谍软件监控），5 年老项目今日异动，疑似新闻事件驱动（导火索无法确认）。</div>
-<div class="mini">🔀 <a href="https://github.com/superdesigndev/treg" target="_blank">superdesigndev/treg</a> — ⭐2,719 · 今日 +506、本周 +1,067。自称"agent 工具的 OpenRouter"：统一路由调用各家 agent 工具。建库仅 70 天，日+周双榜，概念先行阶段。</div>
-<div class="mini">🦸 <a href="https://github.com/obra/superpowers" target="_blank">obra/superpowers</a> — ⭐290,687 · 今日 +474。Agent 技能框架 + 软件开发方法论，本榜 Star 总量第一的常青树，仍在日榜。</div>
-<div class="mini">🎨 <a href="https://github.com/pbakaus/impeccable" target="_blank">pbakaus/impeccable</a> — ⭐70,345 · 今日 +304。"让 AI harness 更擅长设计"的设计语言 skill，今日仍在更新。</div>
-<div class="mini">🧠 <a href="https://github.com/DeusData/codebase-memory-mcp" target="_blank">DeusData/codebase-memory-mcp</a> — ⭐44,569 · 今日 +190。高性能代码情报 MCP server，把代码库索引成持久记忆。</div>
-<div class="mini">🇨🇳 <a href="https://github.com/TNT-Likely/PanWatch" target="_blank">TNT-Likely/PanWatch</a> — ⭐1,509 · 今日 +95。盯盘侠：自托管 AI 盯盘助手，集成 TradingAgents 多 Agent 投资决策，A股/港股/美股。中文项目。</div>
-<div class="mini">🛠️ <a href="https://github.com/davila7/claude-code-templates" target="_blank">davila7/claude-code-templates</a> — ⭐31,503 · 今日 +389、本周 +613。Claude Code 配置与监控 CLI 工具，日+周双榜常客。</div>
-<div class="mini">📊 <a href="https://github.com/Open-Dev-Society/OpenStock" target="_blank">Open-Dev-Society/OpenStock</a> — ⭐18,833 · 今日 +344、本周 +4,356。开源行情平台（前两日日榜增量冠军，热度回落中）。</div>
+<div class="t">📋 今日榜单其余项目速览（按增量排序）</div>
+<div class="mini"><a href="https://github.com/anthropics/financial-services" target="_blank">anthropics/financial-services</a> · Python · ⭐ 37,357 · 今日 +509 · 🔥 日周双榜。Anthropic 官方金融服务行业仓库（行业工作流 / 插件模式），官方垂直化战略的代表，与 knowledge-work-plugins 组成"行业 agent 套装"。</div>
+<div class="mini"><a href="https://github.com/strands-agents/harness-sdk" target="_blank">strands-agents/harness-sdk</a> · Python · ⭐ 8,261 · 今日 +455 · "构建 agent harness 并端到端控制"的开源 SDK。Strands Agents（AWS 主导的开源 agent SDK 生态）家族新成员：进程内运行、无托管控制面、生命周期控制（turn 上限 / token 预算 / 取消）、MCP、多 agent 模式。298 位贡献者。"harness"一词今天已同时出现在 Google、AWS、Orca、Univer 的叙事里。</div>
+<div class="mini"><a href="https://github.com/HKUDS/CLI-Anything" target="_blank">HKUDS/CLI-Anything</a> · Python · ⭐ 50,335 · 今日 +413 · 港大 HKUDS 出品，"让所有软件 agent 原生化"。50K 常青项目。</div>
+<div class="mini"><a href="https://github.com/rohitg00/ai-engineering-from-scratch" target="_blank">rohitg00/ai-engineering-from-scratch</a> · Python · ⭐ 56,569 · 今日 +347 · "Learn it. Build it. Ship it." 系统性 AI 工程学习仓库，教育类常青。</div>
+<div class="mini"><a href="https://github.com/mvt-project/mvt" target="_blank">mvt-project/mvt</a> · Python · ⭐ 14,732 · 今日 +272 · 大赦国际的手机取证工具包（检查手机被间谍软件监控的痕迹）。2021 年老项目再度上榜，短期传播驱动，具体导火索无法确认。</div>
+<div class="mini"><a href="https://github.com/FxEmbed/FxEmbed" target="_blank">FxEmbed/FxEmbed</a> · TypeScript · ⭐ 5,368 · 今日 +182 · 修复 X/Twitter 与 Bluesky 的网页卡片嵌入（多图 / 视频 / 投票）。</div>
+<div class="mini"><a href="https://github.com/julyx10/lap" target="_blank">julyx10/lap</a> · Vue · ⭐ 2,877 · 今日 +122 · 离线优先的大容量本地照片管理器，小而美的个人数据工具。</div>
+<div class="mini"><a href="https://github.com/NVIDIA/Model-Optimizer" target="_blank">NVIDIA/Model-Optimizer</a> · Python · ⭐ 4,082 · 今日 +44 · NVIDIA 模型优化统一库（量化 / 剪枝 / 蒸馏）。</div>
+<div class="mini"><a href="https://github.com/leejet/stable-diffusion.cpp" target="_blank">leejet/stable-diffusion.cpp</a> · C++ · ⭐ 7,248 · 今日 +36 · 纯 C++ 扩散模型推理（SD / Flux / Wan / Qwen Image），本地推理路线常青。</div>
 </div>
 </section>
 <!-- ================= 本周 ================= -->
 <section id="week">
 <h2 class="sec">📈 本周最值得关注 Top 5</h2>
-<p class="secnote">按周增量与工程价值综合排序；周月双榜项目标注 🔥 持续热门。周/月增量为 Trending 页滚动窗口展示值。</p>
+<p class="secnote">按周增量与综合价值排序。本周重要变化：上周连庄周冠的 cloudflare/security-audit-skill 退出周榜（月榜仍第 2，+18,441）；alibaba/open-code-review 接棒周增量第一。</p>
 <div class="card">
-<span class="no">1</span><h3><a href="https://github.com/cloudflare/security-audit-skill" target="_blank">cloudflare/security-audit-skill</a></h3>
-<div class="meta"><span>JavaScript</span><span class="stars">⭐ 20,917</span><span>🍴 1,198</span><span class="up">本周 +15,280（周增量第一）</span><span class="up">本月 +17,893</span><span>贡献者 3</span><span>2026-06 开源</span></div>
-<div class="tags"><span class="tag org">Cloudflare 官方</span><span class="tag">🔥 周+月双榜 · 连续两周周增量第一</span><span class="tag">AI 安全审计</span><span class="tag">Agent Skill</span></div>
+<span class="no">1</span><h3><a href="https://github.com/alibaba/open-code-review" target="_blank">alibaba/open-code-review</a></h3>
+<div class="meta"><span>Go</span><span class="stars">⭐ 40,802</span><span>🍴 2,932</span><span class="up">本周 +6,920（周增量第一）</span><span>贡献者 192</span><span>2026-05 创建</span><span>Apache-2.0</span></div>
+<div class="tags"><span class="tag org">阿里出品</span><span class="tag">🔥 周月双榜</span><span class="tag">AI Code Review</span><span class="tag">自带 Benchmark</span></div>
 <dl>
-<dt>它是什么 / 为什么火</dt><dd>把 coding agent 变成安全审计员的六阶段 skill：侦察 → 覆盖率账本驱动的隔离猎手搜寻 → 候选验证 → 结构化输出 → 独立复核 → 中立报告。配套 Cloudflare 博客《Build your own vulnerability harness》，是其内部全公司漏洞发现体系的单仓起点。9-22 报告时即以 +15,675 居周增量第一，本周 +15,280 <b>连庄</b>——97 天攒下 2.09 万星，其中约 1.79 万是本月新增的，仍在放量而非衰减。</dd>
-<dt>核心能力</dt><dd>反幻觉设计教科书：每个候选漏洞交给全新上下文的验证 agent 专门去<b>证伪</b>；结论分 confirmed / needs_validation / rejected 三态；同一仓库反复审计通过覆盖率账本增量叠加，不重复劳动。仅 3 位贡献者——方法论密度极高的"小团队大杠杆"样本。</dd>
-<dt>适合谁 / 长期潜力</dt><dd>安全工程师、平台团队、研究 agent 可靠性的人。"agent 做审计"会成为安全行业标配工作流——长期基础设施。</dd>
+<dt>它是什么 / 为什么火</dt><dd>阿里集团内部官方 AI 代码评审助手开源：两年内部服务数万开发者、识别百万级缺陷后孵化开源。读 Git diff → agent 读全文件 / 搜代码库 → 行级结构化评审意见。本周 +6,920 接棒周增量第一，且周月双榜同列——<b>这不是流量项目，是被生产环境验证过的工程资产</b>。</dd>
+<dt>核心能力</dt><dd>精度优先：官方 benchmark（50 个开源仓 / 200 个真实 PR / 10 种语言 / 80+ 高工标注 1,505 个真问题）显示同模型下精确率与 F1 显著高于通用 agent（如 Claude Code），token 消耗仅约 1/9；`ocr scan` 支持全文件审计陌生代码库。</dd>
+<dt>适合谁 / 长期潜力</dt><dd>任何有 PR 流程的工程团队，当天可落地。长期是"工程规则硬约束 × LLM 判断"范式的标杆；代价是召回率换精度（噪音少但可能漏）。</dd>
 </dl>
-<div class="rate"><span class="stars">⭐⭐⭐⭐⭐</span><span class="verdict"><b>连庄周王</b>：流程设计比代码更值钱，可直接搬进企业安全流程</span></div>
+<div class="rate"><span class="stars">⭐⭐⭐⭐⭐</span><span class="verdict"><b>本周最有含金量</b>：生产验证 + 可直接用</span></div>
 </div>
 <div class="card">
-<span class="no">2</span><h3><a href="https://github.com/alibaba/open-code-review" target="_blank">alibaba/open-code-review</a></h3>
-<div class="meta"><span>Go</span><span class="stars">⭐ 40,204</span><span>🍴 2,887</span><span class="up">本周 +9,833（GitHub 周榜排序第 1）</span><span class="up">本月 +19,196</span><span>贡献者 100+</span><span>2026-05 开源</span></div>
-<div class="tags"><span class="tag org">阿里官方</span><span class="tag">🔥 周+月双榜 · 突破 4 万星</span><span class="tag">AI Code Review</span><span class="tag">生产级验证</span><span class="tag">v1.12.9（09-22）</span></div>
+<span class="no">2</span><h3><a href="https://github.com/stablyai/orca" target="_blank">stablyai/orca</a></h3>
+<div class="meta"><span>TypeScript</span><span class="stars">⭐ 77,549</span><span>🍴 5,079</span><span class="up">本周 +6,547</span><span>贡献者 389</span><span>2026-03 创建</span><span>MIT</span></div>
+<div class="tags"><span class="tag">Agent IDE / ADE</span><span class="tag">并行 agent 舰队</span><span class="tag">移动端伴侣</span></div>
 <dl>
-<dt>它是什么 / 为什么火</dt><dd>阿里集团内部跑了两年、服务数万开发者的官方 AI 代码评审助手开源版，本周突破 4 万星。核心是<b>"确定性工程 × Agent"混合架构</b>：文件选择、智能捆绑、规则匹配由工程逻辑硬约束，LLM 只做判断。官方 benchmark：同模型下精度与 F1 显著高于通用 agent（如 Claude Code），token 只花约 1/9。9-22 时 39,218 星 → 今日 40,204，两天 +986，热度从爆发转入<b>稳定高热度平台期</b>。</dd>
-<dt>核心能力</dt><dd>读 diff → 按文件特征匹配规则 → 相关文件捆绑为独立子 agent 并发评审 → 行级精准评论；`ocr scan` 可整体审计陌生代码库；配置任意模型 endpoint 即可用，不锁模型厂。</dd>
-<dt>适合谁 / 长期潜力</dt><dd>所有工程团队（半天可接入 CI）。有两年生产数据和大规模人肉验证——AI code review 开源标准的最强候选。</dd>
+<dt>它是什么 / 为什么火</dt><dd>"100x builders 的 AI 编排器"：桌面应用，让 Codex / Claude Code / OpenCode 等多个 CLI agent <b>并行跑在不同 git worktree 里</b>，统一追踪、比较结果、合并胜者。手机 App 可远程监控和追加指令。半年 77.5K 星、389 位贡献者——它定义了 "ADE（Agent Development Environment）" 这个新品类：agent 时代的 IDE 不再是编辑器，而是舰队驾驶舱。</dd>
+<dt>核心能力</dt><dd>一提示扇出五 agent 并行、WebGL 终端分屏、Design Mode 点击 UI 元素直接喂给 agent、GitHub / Linear 原生集成、SSH 远程 worktree、Orca CLI 让 agent 驱动 Orca 自身。</dd>
+<dt>适合谁 / 长期潜力</dt><dd>重度 agent 用户、并行开发团队。品类已验证但竞争白热化（官方 harness 都在自带并行能力），开放 Issue+PR 达 6,778 也说明工程负担重。</dd>
 </dl>
-<div class="rate"><span class="stars">⭐⭐⭐⭐⭐</span><span class="verdict">本榜<b>工程价值密度最高</b>的项目，能直接落地的生产力</span></div>
+<div class="rate"><span class="stars">⭐⭐⭐⭐</span><span class="verdict"><b>新品类定义者</b>：看好方向，警惕官方挤压</span></div>
 </div>
 <div class="card">
 <span class="no">3</span><h3><a href="https://github.com/affaan-m/ECC" target="_blank">affaan-m/ECC</a></h3>
-<div class="meta"><span>JavaScript</span><span class="stars">⭐ 266,196</span><span>🍴 39,781</span><span class="up">本周 +6,695</span><span>贡献者 100+</span><span>2026-01 创建</span></div>
-<div class="tags"><span class="tag">Agent Harness 优化</span><span class="tag">Skills / 记忆 / 安全</span><span class="tag">MIT</span><span class="tag warn">README 首屏为防仿冒声明</span></div>
+<div class="meta"><span>JavaScript</span><span class="stars">⭐ 266,922</span><span>🍴 39,885</span><span class="up">本周 +6,193</span><span>贡献者 382</span><span>2026-01 创建</span><span>MIT</span></div>
+<div class="tags"><span class="tag">周榜总量第一</span><span class="tag">harness 性能优化系统</span><span class="tag">68 agents / 292 skills</span><span class="tag warn">README 首屏防伪警告</span></div>
 <dl>
-<dt>它是什么 / 为什么火</dt><dd>"Agent harness 性能优化系统"：skills、instincts、记忆、安全的一揽子增强，npm 包（ecc-universal / ecc-agentshield）+ GitHub App 分发，248 天 26.6 万星、3.98 万 fork——体量是本榜 fork 数第一。值得注意的是其 README 第一屏是<b>大段"仅认准官方渠道"防仿冒警告</b>：热度大到被假镜像盯上，这既是流行度的反证，也是安装时的风险提示。</dd>
-<dt>核心能力</dt><dd>面向多 harness 的性能/安全增强套件（含 agentshield 安全组件）。坦白说：其工程细节与效果数据的公开证据密度，低于榜单前排项目，本条判断以可核实数据（Star/Fork/贡献者/发布渠道）为准。</dd>
-<dt>适合谁 / 长期潜力</dt><dd>重度 coding agent 用户可试，但建议先读源码再引入。社区热度极高、可持续性待观察——中期机会，谨慎乐观。</dd>
+<dt>它是什么 / 为什么火</dt><dd>"Agent harness 性能优化系统"：plan → test → implement → review → verify → remember → improve 的完整工程循环装进 agent，内置 68 个专职 agent、292 个 skills、hooks / 规则 / 记忆 / 持续学习和 AgentShield 安全扫描。26.7 万星、单维护者每周发版、支持 7 种 harness。注意其 README 首屏是<b>防伪警告</b>（仿冒镜像可能带恶意软件）——爆红项目的仿冒风险已成行业现实信号。</dd>
+<dt>核心能力</dt><dd>"优化上下文窗口，其余一切持久化"；ECC Pro 托管 GitHub App 做私有仓库（$19/席/月），开源版 MIT 永久免费。</dd>
+<dt>适合谁 / 长期潜力</dt><dd>想给编码 agent 装上完整工程纪律的个人与小团队。生态位与 superpowers 相邻，商业闭环更清晰；护城河仍偏浅（文本资产可复制），靠迭代速度维持。</dd>
 </dl>
-<div class="rate"><span class="stars">⭐⭐⭐</span><span class="verdict">体量巨大但<b>信息透明度一般</b>，先围观后上车</span></div>
+<div class="rate"><span class="stars">⭐⭐⭐⭐</span><span class="verdict"><b>常青巨物</b>：装机量大，含付费转化样本</span></div>
 </div>
 <div class="card">
-<span class="no">4</span><h3><a href="https://github.com/stablyai/orca" target="_blank">stablyai/orca</a></h3>
-<div class="meta"><span>TypeScript</span><span class="stars">⭐ 76,605</span><span>🍴 5,019</span><span class="up">本周 +6,435</span><span>贡献者 100+</span><span>2026-03 创建</span><span>v1.4.209（高频发版）</span></div>
-<div class="tags"><span class="tag">Agent 舰队 IDE（ADE）</span><span class="tag">并行 Worktree</span><span class="tag">手机 Companion</span><span class="tag">MIT</span></div>
+<span class="no">4</span><h3><a href="https://github.com/Tencent/WeKnora" target="_blank">Tencent/WeKnora</a></h3>
+<div class="meta"><span>Go</span><span class="stars">⭐ 29,717</span><span>🍴 3,999</span><span class="up">本周 +3,749</span><span>贡献者 249</span><span>2025-07 创建</span></div>
+<div class="tags"><span class="tag org">腾讯出品</span><span class="tag">🔥 周月双榜</span><span class="tag">企业知识库 / RAG</span><span class="tag warn">非标准 License</span></div>
 <dl>
-<dt>它是什么 / 为什么火</dt><dd>"给用 100 倍速工作的 builder 的 AI 编排器"：Codex、Claude Code、OpenCode、Pi 并排跑，各占独立 git worktree，一处追踪。190 天 7.66 万星、100+ 贡献者、单日多版发版。它火的前提是"一个人同时带一队 agent"已成真实工作形态——手机 companion 收完成通知、随时下发追问，说明用户连离开终端的时间都要利用。</dd>
-<dt>核心能力</dt><dd>一 prompt 扇出五个 agent 各写一版再择优合并；WebGL 终端分屏；Design Mode 点选真实 Chromium 页面元素把 HTML/CSS/截图直接喂进 agent 提示词；GitHub/Linear 原生集成。注意 6,682 个 open issue——用户量和痛点一样大。</dd>
-<dt>适合谁 / 长期潜力</dt><dd>重度 coding agent 用户、小团队。ADE（Agent Development Environment）正在成为独立品类，orca 是当前开源头部——中期到长期。</dd>
+<dt>它是什么 / 为什么火</dt><dd>腾讯开源的企业级 LLM 知识框架：同一知识库上跑 <b>RAG 检索、agent 多步任务、wiki 组织</b>三种模式。249 位贡献者、周月双榜——它是"企业知识库自动化"目前最完整的开源落地：27 家模型厂商可换、飞书 / Confluence / Notion / 语雀 / 钉钉文档自动同步、企微 / 飞书 / Slack / Telegram 问答接入、内置 MCP Server、多空间 RBAC 与审计日志、Langfuse 追踪。</dd>
+<dt>核心能力</dt><dd>检索块可编辑 / diff / 回滚、跨会话长期记忆、10+ 文档格式（Office 由自研 anydoc 进程内解析）、Docker / K8s 私有化部署，数据不出环境。</dd>
+<dt>适合谁 / 长期潜力</dt><dd>要做企业知识库 / 内部问答的团队，尤其国内生态（飞书 / 企微 / 腾讯文档）。长期是最可能被直接采用的企业级底座；License 非标准（NOASSERTION），商用前务必核对。</dd>
 </dl>
-<div class="rate"><span class="stars">⭐⭐⭐⭐</span><span class="verdict">"带 agent 队伍"的<b>日用工具化样本</b>，装了就能提效</span></div>
+<div class="rate"><span class="stars">⭐⭐⭐⭐⭐</span><span class="verdict"><b>企业落地首选</b>：完整度罕见</span></div>
 </div>
 <div class="card">
-<span class="no">5</span><h3><a href="https://github.com/Tencent/WeKnora" target="_blank">Tencent/WeKnora</a></h3>
-<div class="meta"><span>Go</span><span class="stars">⭐ 29,355</span><span>🍴 3,950</span><span class="up">本周 +4,522</span><span class="up">本月 +9,078</span><span>贡献者 100+</span><span>2026-01 开源</span></div>
-<div class="tags"><span class="tag org">腾讯官方</span><span class="tag">🔥 周+月双榜</span><span class="tag">企业 RAG 知识库</span><span class="tag">Auto-Wiki</span><span class="tag warn">自定义 License（需评估）</span></div>
+<span class="no">5</span><h3><a href="https://github.com/addyosmani/agent-skills" target="_blank">addyosmani/agent-skills</a></h3>
+<div class="meta"><span>JavaScript</span><span class="stars">⭐ 98,898</span><span>🍴 10,387</span><span class="up">本周 +3,345</span><span>贡献者 83</span><span>2026-02 创建</span><span>MIT</span></div>
+<div class="tags"><span class="tag org">Addy Osmani（Google Chrome 团队）</span><span class="tag">生产级 Skills</span><span class="tag">Skills 生态标志物</span></div>
 <dl>
-<dt>它是什么 / 为什么火</dt><dd>腾讯开源的企业级 LLM 知识平台：RAG 快问快答 + ReAct Agent（编排检索/MCP 工具/技能目录/沙箱/联网搜索）+ 跨会话长期记忆。本周热度主要由新能力拉动：<b>Wiki Mode</b>——agent 把原始文档蒸馏成自维护、互链的 markdown 知识库，带知识图谱、手工编辑、版本历史与一键回滚。周月双榜连续在位，是国内大厂开源里少见的"产品完成度高 + 迭代快"样本。</dd>
-<dt>核心能力</dt><dd>多源接入（飞书 wiki/云文档、GitLab、Notion、语雀、钉钉文档、RSS）；检索分块可像文档一样编辑/diff/回滚；作用域 API key 支持程序化集成；网站挂件把 agent 发布到外部站点。</dd>
-<dt>适合谁 / 长期潜力</dt><dd>企业知识管理、想二开行业知识库的团队。RAG 进入"自动运维知识库"阶段的代表——长期，但先读自定义 License。</dd>
+<dt>它是什么 / 为什么火</dt><dd>Addy Osmani 维护的<b>"给 AI 编码 agent 的生产级工程技能库"</b>。9.9 万星、本周 +3,345——它的意义超过仓库本身：当 Chrome 团队资深工程师把个人品牌押在"skills 分发格式"上，等于为这个生态再添一块基石。与 superpowers（方法论）、ECC（全家桶）、tech-leads-club（注册表）共同构成 skills 生态的四个不同切面。</dd>
+<dt>核心能力</dt><dd>即装即用的工程技能集（性能、架构、代码评审等生产实践），MIT 开放复用。</dd>
+<dt>适合谁 / 长期潜力</dt><dd>所有编码 agent 用户。技能内容会不断被复制改编，护城河在作者影响力与更新频率；作为生态风向标价值大于单仓价值。</dd>
 </dl>
-<div class="rate"><span class="stars">⭐⭐⭐⭐</span><span class="verdict">中文生态<b>最完整的企业 RAG 落地方案</b>，二开首选之一</span></div>
+<div class="rate"><span class="stars">⭐⭐⭐⭐</span><span class="verdict"><b>生态风向标</b>：装了就有效，更是信号</span></div>
 </div>
 <div class="minis">
-<div class="t">本周榜单其他值得一看</div>
-<div class="mini">🧩 <a href="https://github.com/addyosmani/agent-skills" target="_blank">addyosmani/agent-skills</a> — ⭐98,717 · 本周 +3,867。Addy Osmani（Chrome 团队）出品的工程技能库：/spec /plan /build /test /review /ship 覆盖开发生命周期。</div>
-<div class="mini">💻 <a href="https://github.com/anthropics/claude-code" target="_blank">anthropics/claude-code</a> — ⭐147,811 · 本周 +2,762。Agent 编程工具本体，周榜常青树。</div>
-<div class="mini">🐙 <a href="https://github.com/TencentCloud/Octop" target="_blank">TencentCloud/Octop</a> — ⭐4,763 · 本周 +1,877。腾讯云自托管多用户 AI 助手，77 天 4.7k 星。</div>
-<div class="mini">🦜 <a href="https://github.com/JustVugg/colibri" target="_blank">JustVugg/colibri</a> — ⭐37,363 · 本周 +2,739。纯 C、零依赖跑 744B–2.8T MoE 大模型：把存储/RAM/VRAM 当统一内存分层，消费级硬件跑前沿模型。</div>
-<div class="mini">📐 <a href="https://github.com/Fission-AI/OpenSpec" target="_blank">Fission-AI/OpenSpec</a> — ⭐70,057 · 本周 +1,538。Spec 驱动开发（SDD）工具，"先写规格再让 agent 动手"流派代表。</div>
-<div class="mini">🏢 <a href="https://github.com/anthropics/knowledge-work-plugins" target="_blank">anthropics/knowledge-work-plugins</a> — ⭐25,501 · 本周 +1,358。Anthropic 面向知识工作的插件仓库，与金融仓库同套路。</div>
-<div class="mini">🌲 常青树区：<a href="https://github.com/cline/cline" target="_blank">cline</a>（⭐69,182）、<a href="https://github.com/danny-avila/LibreChat" target="_blank">LibreChat</a>（⭐44,797）、<a href="https://github.com/pytorch/pytorch" target="_blank">pytorch</a>（⭐103,218）、<a href="https://github.com/cilium/cilium" target="_blank">cilium</a>、<a href="https://github.com/cloudflare/quiche" target="_blank">quiche</a> 均在周榜，基线热度稳定。</div>
+<div class="t">📋 本周榜单其余亮点（按增量排序）</div>
+<div class="mini"><a href="https://github.com/anthropics/claude-code" target="_blank">anthropics/claude-code</a> · ⭐ 147,969 · 周 +2,384 · 生态常青树，agent 工具链的参照系。</div>
+<div class="mini"><a href="https://github.com/JustVugg/colibri" target="_blank">JustVugg/colibri</a> · C · ⭐ 37,541 · 周 +2,055 · <b>纯 C、零依赖跑 744B–2.8T 参数 MoE 模型</b>（GLM-5.3 / Kimi K3 / DeepSeek V4.1 Flash / Qwen3.8），把存储+内存+显存当一个推理层级用。193 位贡献者。"用你已有的硬件跑前沿模型"叙事的极端样本。</div>
+<div class="mini"><a href="https://github.com/TencentCloud/Octop" target="_blank">TencentCloud/Octop</a> · Python · ⭐ 4,869 · 周 +1,608 · 腾讯云自托管 AI 助手（多用户 / 多 agent / 本地优先）。</div>
+<div class="mini"><a href="https://github.com/Fission-AI/OpenSpec" target="_blank">Fission-AI/OpenSpec</a> · TypeScript · ⭐ 70,235 · 周 +1,415 · 规格驱动开发（SDD）for AI 编码助手，70K 常青。</div>
+<div class="mini"><a href="https://github.com/akitaonrails/ai-memory" target="_blank">akitaonrails/ai-memory</a> · Rust · ⭐ 8,347 · 周 +1,243 · <b>跨 agent 跨机器的长期记忆服务器</b>：Claude Code 中途退出、Codex 原目录接手，交接是类型化协议而非约定俗成；20+ harness 共享一份记忆。与 hindsight 同周上榜——记忆层需求双重验证。</div>
+<div class="mini"><a href="https://github.com/anthropics/knowledge-work-plugins" target="_blank">anthropics/knowledge-work-plugins</a> · Python · ⭐ 25,557 · 周 +1,118 · Anthropic 官方知识工作插件库。</div>
+<div class="mini"><a href="https://github.com/davila7/claude-code-templates" target="_blank">davila7/claude-code-templates</a> · Python · ⭐ 31,732 · 周 +965 · Claude Code 配置与监控 CLI。</div>
+<div class="mini"><a href="https://github.com/LibreChat-AI/LibreChat" target="_blank">LibreChat-AI/LibreChat</a> · TypeScript · ⭐ 44,898 · 周 +743 · 自托管 ChatGPT 替代（Agents / MCP / Skills）常青。</div>
+<div class="mini"><a href="https://github.com/cloudflare/quiche" target="_blank">cloudflare/quiche</a> · Rust · ⭐ 12,579 · 周 +741 · QUIC / HTTP-3 协议实现，基础设施常青。</div>
+<div class="mini"><a href="https://github.com/cline/cline" target="_blank">cline/cline</a> · TypeScript · ⭐ 69,249 · 周 +855 · 自主编码 agent（SDK / IDE / CLI）。</div>
+<div class="mini"><a href="https://github.com/cilium/cilium" target="_blank">cilium/cilium</a> · Go · ⭐ 25,536 · 周 +362 · eBPF 网络 / 安全 / 可观测，1,432 位贡献者。</div>
+<div class="mini"><a href="https://github.com/pytorch/pytorch" target="_blank">pytorch/pytorch</a> · Python · ⭐ 103,263 · 周 +228 · 深度学习框架基石常青。</div>
 </div>
 </section>
 <!-- ================= 本月 ================= -->
 <section id="month">
 <h2 class="sec">🚀 本月最值得关注 Top 5</h2>
-<p class="secnote">按月增量与后续潜力综合排序。月榜是"过去 30 天"的滚动窗口，包含已进入平台期的项目。</p>
+<p class="secnote">按月增量排序。月榜是"爆发项目"的墓志铭与名人堂：看哪些在兑现、哪些已见顶。archify 月冠位置未变，但日增速持续走低，爆发期确认结束。</p>
 <div class="card">
 <span class="no">1</span><h3><a href="https://github.com/tt-a1i/archify" target="_blank">tt-a1i/archify</a></h3>
-<div class="meta"><span>JavaScript</span><span class="stars">⭐ 70,618</span><span>🍴 4,748</span><span class="up">本月 +55,857（全榜第一）</span><span>贡献者 34</span><span>2026-04 创建</span></div>
-<div class="tags"><span class="tag">⚡ 月增量全场第一</span><span class="tag">Agent Skill</span><span class="tag">可交互可视化</span><span class="tag">Kimi Work 等赞助</span><span class="tag warn">爆发期已过</span></div>
+<div class="meta"><span>JavaScript</span><span class="stars">⭐ 71,240</span><span>🍴 4,787</span><span class="up">本月 +56,351（月增量第一）</span><span>贡献者 34</span><span>2026-04 创建</span><span>MIT</span></div>
+<div class="tags"><span class="tag">月榜冠军</span><span class="tag warn">见顶确认（日增速 ~500）</span><span class="tag">Agent Skill</span><span class="tag">交互式可视化</span></div>
 <dl>
-<dt>它是什么 / 为什么火</dt><dd>一个 agent skill：对 agent 说句话，产出<b>可探索、可改、可分享的交互式 HTML</b>——架构图、时序图、旅行计划、学习地图。`npx skills add tt-a1i/archify -g` 一条命令接入 Cursor / Claude Code / Codex CLI。161 天 7.06 万星，其中约 79% 集中在本月——单月 +55,857 是三榜所有项目之最。但对比 9-22 的 +54,494，<b>两日仅 +1,363</b>：媒体级传播结束，进入长尾消化期。</dd>
-<dt>核心能力</dt><dd>"不用先有仓库"——从一句描述或让 agent 读仓库生成有源可溯的可视化；生成物是自包含 HTML，可继续对话式修改（"加个鉴权""高亮缓存未命中路径"）。本质是把"文档/图表"从静态产物变成对话产物。</dd>
-<dt>适合谁 / 长期潜力</dt><dd>所有 agent 用户（装了就有用）、做开发者工具的团队。需求真实且普适，但 skill 形态护城河浅——价值在品类被验证，而非单品垄断。</dd>
+<dt>它是什么 / 为什么火</dt><dd>"把任何想理解、规划或分享的东西变成可交互的视觉"——一个 agent skill：对着 agent 描述系统，它生成交互式 HTML 架构图 / 流程图 / 学习地图，可继续追加修改。已进入 Kimi Work 插件商店。<b>月度 +56,351 冠军，但对比昨日 +55,857，24 小时仅增约 500 星，且已跌出日 / 周榜——爆发期结束，进入长尾消化</b>。</dd>
+<dt>核心能力</dt><dd>一句话生成可探索的交互图表（Signal Flow / Blueprint 等风格）、对话式迭代、可读仓库生成源码级架构图。</dd>
+<dt>适合谁 / 长期潜力</dt><dd>需要向他人解释复杂系统的人（文档 / 汇报 / 教学）。作为 skill 分发物护城河浅，长期价值取决于能否沉淀为"可视化工作流"标准；作为用户装一个很值，作为竞品已晚。</dd>
 </dl>
-<div class="rate"><span class="stars">⭐⭐⭐⭐</span><span class="verdict">月度现象级：验证了"<b>对话式产出可视化</b>"品类，长期归属待定</span></div>
+<div class="rate"><span class="stars">⭐⭐⭐</span><span class="verdict"><b>现象级但已见顶</b>：用它，别追它</span></div>
 </div>
 <div class="card">
 <span class="no">2</span><h3><a href="https://github.com/bilawalsidhu/gods-eye-view" target="_blank">bilawalsidhu/gods-eye-view</a></h3>
-<div class="meta"><span>JavaScript</span><span class="stars">⭐ 41,912</span><span>🍴 8,530</span><span class="up">本月 +41,118</span><span>贡献者 25</span><span>2026-06 创建</span></div>
-<div class="tags"><span class="tag">实时公开数据</span><span class="tag">3D 地球可视化</span><span class="tag">语音 Agent</span><span class="tag">内容驱动增长</span></div>
+<div class="meta"><span>JavaScript</span><span class="stars">⭐ 42,482</span><span>🍴 8,639</span><span class="up">本月 +41,715</span><span>贡献者 26</span><span>2026-06 创建</span></div>
+<div class="tags"><span class="tag">单月几乎全部增量</span><span class="tag">公开数据 3D 地球</span><span class="tag">语音控制</span><span class="tag warn">非标准 License</span></div>
 <dl>
-<dt>它是什么 / 为什么火</dt><dd>"浏览器里的间谍卫星模拟器——然后你发现数据源全是公开的、数据是真的"：写实 3D 地球上实时叠加航班、船舶、卫星、地震、交通、公共摄像头，语音免手操控。背后是作者 5M+ 播放的 YouTube 系列视频（全社交 25M+ 曝光），2026 年 8 月曾登 GitHub Trending 日/周双榜第一。93 天 4.19 万星——<b>内容驱动开源</b>的教科书案例：先有病毒内容，开源是流量的收割器。</dd>
-<dt>核心能力</dt><dd>多源公开数据（ADS-B 等）的聚合渲染管线 + 实时 AI 语音 agent 交互。技术上是"数据可视化 × agent 交互"的高完成度演示。</dd>
-<dt>适合谁 / 长期潜力</dt><dd>GIS/可视化开发者、内容创作者。热度与作者内容节奏强绑定，作为产品长期性一般，作为学习样本极佳。</dd>
+<dt>它是什么 / 为什么火</dt><dd>"浏览器里的间谍卫星模拟器——然后你发现数据源全是公开的、数据是真的"：3D 地球叠加实时飞机 / 船舶 / 卫星 / 地震 / 公共摄像头，语音免提操控。背后是 YouTube 500 万+播放的病毒视频系列（8 月曾登 GitHub Trending 日周双榜第一，Product Hunt 日榜第 8，Brendan Eich 点赞）。<b>典型"内容驱动型"开源：先有爆款视频，再有爆款仓库</b>——42.5K 星里 98% 是本月新增。</dd>
+<dt>核心能力</dt><dd>聚合公开信号源（ADS-B 飞机应答、AIS 船舶信标、轨道根数、地震台网、公共摄像头），无 API key 可启动，每层可扩展。</dd>
+<dt>适合谁 / 长期价值</dt><dd>地理 / 数据可视化爱好者、内容创作者。工程上是数据源聚合展示，长期基础设施价值有限，但它是"开源 × 内容营销"打法的教学案例。</dd>
 </dl>
-<div class="rate"><span class="stars">⭐⭐⭐⭐</span><span class="verdict"><b>"开源即营销"最佳样本</b>，工程与传播都值得拆解</span></div>
+<div class="rate"><span class="stars">⭐⭐⭐</span><span class="verdict"><b>传播学样本</b>：玩赏与借鉴打法，非生产工具</span></div>
 </div>
 <div class="card">
-<span class="no">3</span><h3><a href="https://github.com/debpalash/VoiceStudio" target="_blank">debpalash/VoiceStudio</a></h3>
-<div class="meta"><span>Python</span><span class="stars">⭐ 34,900</span><span>🍴 4,121</span><span class="up">本月 +23,623</span><span>贡献者 69</span><span>2026-04 创建</span></div>
-<div class="tags"><span class="tag">本地语音全家桶</span><span class="tag">开源 ElevenLabs 替代</span><span class="tag">646 语言</span><span class="tag warn">AGPL-3.0</span></div>
+<span class="no">3</span><h3><a href="https://github.com/ayghri/i-have-adhd" target="_blank">ayghri/i-have-adhd</a></h3>
+<div class="meta"><span>Python</span><span class="stars">⭐ 50,991</span><span>🍴 2,942</span><span class="up">本月 +27,473</span><span>贡献者 50</span><span>2026-05 创建</span><span>MIT</span></div>
+<div class="tags"><span class="tag">输出体验 Skill</span><span class="tag">痛点普世</span><span class="tag">SKILL.md 形态</span></div>
 <dl>
-<dt>它是什么 / 为什么火</dt><dd>全本地运行的语音工作台：克隆声音、设计声音、视频配音、听写、转写、有声书制作，支持 646 种语言，默认引擎 k2-fsa/OmniVoice，Electron 桌面端一条命令安装。"云端语音 API 贵 + 数据不能出门"是刚需双痛点，167 天 3.49 万星、69 位贡献者，月度 +23,623 说明本地语音栈到了产品成熟度拐点。还带本地 API 与 MCP 接口——agent 可以直接调它干活。</dd>
-<dt>核心能力</dt><dd>克隆/设计/配音/批量任务一站式；本地模型管理；远程 worker 可选。AGPL 协议——自用没问题，商用集成前先过法务。</dd>
-<dt>适合谁 / 长期潜力</dt><dd>内容团队、出海产品（多语言配音）、隐私敏感企业。"本地多媒体栈"是长期方向，二开价值高。</dd>
+<dt>它是什么 / 为什么火</dt><dd>一个改变 AI 助手<b>输出风格</b>的 skill：行动优先、步骤编号、结尾给一个两分钟内可做的下一步、砍掉"Hope this helps"式废话——README 里 before / after 对比一目了然。10 条规则就是一个 SKILL.md 文件，5 万星证明"agent 输出体验差"是被普遍感知却无人系统解决的痛点。<b>这是本月最有产品洞察的上榜项目：最小形态解决最大公约数问题</b>。</dd>
+<dt>核心能力</dt><dd>一行提示词安装；规则文本 MIT 开放，fork 自定义即可。</dd>
+<dt>适合谁 / 长期价值</dt><dd>所有 AI 工具用户（无需 ADHD 诊断，README 原话）。长期看这类规则会被官方产品吸收（部分已是默认行为），但作为"输出即产品"的证明案例值得记住。</dd>
 </dl>
-<div class="rate"><span class="stars">⭐⭐⭐⭐</span><span class="verdict">本地语音赛道<b>完成度最高的开源品</b>，注意 AGPL</span></div>
+<div class="rate"><span class="stars">⭐⭐⭐</span><span class="verdict"><b>产品课样本</b>：洞察真，寿命短</span></div>
 </div>
 <div class="card">
-<span class="no">4</span><h3><a href="https://github.com/THU-MAIC/OpenMAIC" target="_blank">THU-MAIC/OpenMAIC</a></h3>
-<div class="meta"><span>TypeScript</span><span class="stars">⭐ 38,793</span><span>🍴 6,065</span><span class="up">本月 +18,072</span><span>贡献者 100+</span><span>2026-03 创建</span><span>v1.0.0（08-27）</span></div>
-<div class="tags"><span class="tag org">清华出品</span><span class="tag">多 Agent 课堂</span><span class="tag">AI 教育</span><span class="tag">MIT</span></div>
+<span class="no">4</span><h3><a href="https://github.com/debpalash/VoiceStudio" target="_blank">debpalash/VoiceStudio</a></h3>
+<div class="meta"><span>Python</span><span class="stars">⭐ 35,255</span><span>🍴 4,154</span><span class="up">本月 +23,857</span><span>贡献者 79</span><span>2026-04 创建</span><span>AGPL-3.0</span></div>
+<div class="tags"><span class="tag">本地 ElevenLabs 替代</span><span class="tag">646 种语言</span><span class="tag">MCP 接口</span><span class="tag warn">AGPL 条款</span></div>
 <dl>
-<dt>它是什么 / 为什么火</dt><dd>清华 MAIC 中心的"多 agent 交互课堂"：一句话生成整门课程。8-27 发布的 v1.0.0 加入 <b>Agent 工作台</b>——像和 agent 结对一样规划课程、逐页生成与修订，会话可中断/恢复/随时改方向，能直接吃文档、音频、视频素材。100+ 贡献者、38.7k 星，是国内学术团队少见的"产品化程度赶得上创业公司"的开源项目。</dd>
-<dt>核心能力</dt><dd>课程生成 + 24 个内置技能（幻灯/测验/互动/PBL/图片/视频/语音，支持 .pptx 导入）；模型、媒体、搜索 provider 全部自选——"中立设计"。</dd>
-<dt>适合谁 / 长期潜力</dt><dd>教育培训机构、企业内训、知识付费团队。AI 教育是长坡厚雪，MIT 协议友好——长期看好其作为二开底座。</dd>
+<dt>它是什么 / 为什么火</dt><dd><b>全本地开源语音工作室</b>：语音克隆、语音设计、视频配音、听写、转写、有声书制作，支持 646 种语言，默认引擎 k2-fsa/OmniVoice，桌面端一条命令安装。"ElevenLabs 替代"叙事 + 本地隐私 + 创作者刚需，月增 2.4 万星顺理成章。开放 Issue 仅 16，说明当前质量口碑稳。</dd>
+<dt>核心能力</dt><dd>本地 API + MCP Server 供 agent 调用；远程服务可选；引擎可换。</dd>
+<dt>适合谁 / 长期价值</dt><dd>内容创作者、播客 / 视频团队、做语音功能的 agent 应用。本地语音栈的中期机会真实存在；AGPL-3.0 对商业集成有传染性约束，选型前看清。</dd>
 </dl>
-<div class="rate"><span class="stars">⭐⭐⭐⭐</span><span class="verdict">学术背景 × 产品完成度的<b>稀有组合</b>，教育方向首选底座</span></div>
+<div class="rate"><span class="stars">⭐⭐⭐⭐</span><span class="verdict"><b>刚需兑现</b>：付费意愿已被订阅市场验证</span></div>
 </div>
 <div class="card">
-<span class="no">5</span><h3><a href="https://github.com/ayghri/i-have-adhd" target="_blank">ayghri/i-have-adhd</a></h3>
-<div class="meta"><span>Python</span><span class="stars">⭐ 50,697</span><span>🍴 2,927</span><span class="up">本月 +27,477</span><span>2026-05 创建</span></div>
-<div class="tags"><span class="tag">Agent 输出体验</span><span class="tag">微型 Skill</span><span class="tag">病毒式传播</span><span class="tag warn">09-19 后无推送</span></div>
+<span class="no">5</span><h3><a href="https://github.com/cloudflare/security-audit-skill" target="_blank">cloudflare/security-audit-skill</a></h3>
+<div class="meta"><span>JavaScript</span><span class="stars">⭐ 21,320</span><span>🍴 1,226</span><span class="up">本月 +18,441（月榜第 2）</span><span>贡献者 4</span><span>2026-06 创建</span><span>MIT</span></div>
+<div class="tags"><span class="tag org">Cloudflare 出品</span><span class="tag">六阶段安全审计</span><span class="tag">已退出周榜</span><span class="tag">多 agent 编排范式</span></div>
 <dl>
-<dt>它是什么 / 为什么火</dt><dd>极小的 skill：让 coding agent "别把答案埋起来"——结论先行、步骤编号、不说"希望这帮到你"。README 用 before/after 对比一目了然。133 天 5.07 万星、月度 +27,477：一个纯提示词工程的项目冲进月榜前列，说明<b>"agent 的输出礼仪"本身就是一大类未被满足的需求</b>——每个被 agent 废话折磨过的用户都是潜在传播者。</dd>
-<dt>核心能力</dt><dd>一份可复制的输出规范 + 安装即用。没有代码护城河，价值在理念传播与踩中情绪。</dd>
-<dt>适合谁 / 长期潜力</dt><dd>所有 agent 用户（10 秒安装）。这类"礼仪 skill"最终会被官方 harness 吸收为默认行为——作为独立项目短期热点属性强。</dd>
+<dt>它是什么 / 为什么火</dt><dd>把编码 agent 变成安全审计员：六阶段流水线——侦察（架构 / 信任边界 / 覆盖账本）→ 覆盖导向猎洞（隔离猎手 + 覆盖批评者）→ 候选验证（新 agent 专职证伪）→ 结构化输出（confirmed / needs_validation / rejected 三态）→ 独立复核 → 中立报告。它是 Cloudflare 内部漏洞发现 harness 的开源起点。<b>上周连续两周周增量冠军，本周退出周榜、月榜仍第 2——热度自然回落，但范式价值不变：这是"用多个小 agent 互相制衡"做严肃工作流的最佳参考实现之一</b>。</dd>
+<dt>核心能力</dt><dd>覆盖账本驱动（不漏扫）、证伪式验证（不误报）、schema 校验的结构化产出。4 位贡献者写出 2.1 万星，说明是精干团队的内功输出。</dd>
+<dt>适合谁 / 长期价值</dt><dd>安全团队、以及所有要做"多 agent 制衡工作流"的工程师（可迁移到法务审查、数据质检）。作为直接可用工具偏基础，作为范式教材价值高。</dd>
 </dl>
-<div class="rate"><span class="stars">⭐⭐⭐</span><span class="verdict"><b>需求洞察满分</b>、工程含量有限——装它，别研究它</span></div>
+<div class="rate"><span class="stars">⭐⭐⭐⭐</span><span class="verdict"><b>范式教材</b>：热度回落，价值沉淀</span></div>
 </div>
 <div class="minis">
-<div class="t">本月榜单其他值得一看</div>
-<div class="mini">🖼️ <a href="https://github.com/freestylefly/awesome-gpt-image-2" target="_blank">freestylefly/awesome-gpt-image-2</a> — ⭐33,397 · 本月 +21,457。中文"Prompt as Code"图像提示词库：530+ 案例、20+ 工业级模板。国产项目月度爆发。</div>
-<div class="mini">🔬 <a href="https://github.com/K-Dense-AI/scientific-agent-skills" target="_blank">K-Dense-AI/scientific-agent-skills</a> — ⭐46,347 · 本月 +12,304。"把任意 agent 变成 AI 科学家"的科研技能库，配套 arXiv 论文。</div>
-<div class="mini">🌐 <a href="https://github.com/Tencent/BrowserSkill" target="_blank">Tencent/BrowserSkill</a> — ⭐6,928 · 本月 +5,647。腾讯出品：让 agent 用你已登录的真实浏览器干活且不打断你，93 天冲上月榜。</div>
-<div class="mini">📈 <a href="https://github.com/every-app/open-seo" target="_blank">every-app/open-seo</a> — ⭐20,560 · 本月 +7,313。开源 Semrush/Ahrefs 替代，SEO 工具民主化。</div>
-<div class="mini">🧠 <a href="https://github.com/jingyaogong/minimind" target="_blank">jingyaogong/minimind</a> — ⭐62,338 · 本月 +7,561。2 小时从零训一个 64M 参数 LLM 的教学经典，中文社区常青树。</div>
-<div class="mini">🐧 <a href="https://github.com/omacom/omarchy" target="_blank">omacom/omarchy</a> — ⭐42,879 · 本月 +14,577。"漂亮、现代、有主见"的 Arch Linux 桌面，非 AI 赛道的月度黑马。</div>
-<div class="mini">⏱️ <a href="https://github.com/google-research/timesfm" target="_blank">google-research/timesfm</a> — ⭐33,580 · 本月 +5,563。Google 时序基础模型，预测类场景的底座型项目。</div>
-<div class="mini">💼 <a href="https://github.com/melgarafael/DeskcommCRM" target="_blank">melgarafael/DeskcommCRM</a> — ⭐3,613 · 本月 +3,113。自托管 AI 销售 OS（原生 agent + WhatsApp），月榜尾部但方向典型。</div>
+<div class="t">📋 本月榜单其余亮点（按增量排序）</div>
+<div class="mini"><a href="https://github.com/THU-MAIC/OpenMAIC" target="_blank">THU-MAIC/OpenMAIC</a> · TypeScript · ⭐ 38,946 · 月 +18,202 · 清华 <b>多智能体交互课堂</b>：一句话生成整门课程；v1.0（8-27）新增 agent 工作台 / 持久会话 / 上传材料授课 / 24 个内置技能，模型与存储可换。教育 × 多 agent 的头部队列。</div>
+<div class="mini"><a href="https://github.com/alibaba/open-code-review" target="_blank">alibaba/open-code-review</a> · 月 +19,583 · 周月双榜，见本周 #1。</div>
+<div class="mini"><a href="https://github.com/omacom/omarchy" target="_blank">omacom/omarchy</a> · Shell · ⭐ 43,030 · 月 +13,665 · "美观现代且固执己见的 Arch Linux"，DHH 系，530 位贡献者。</div>
+<div class="mini"><a href="https://github.com/K-Dense-AI/scientific-agent-skills" target="_blank">K-Dense-AI/scientific-agent-skills</a> · Python · ⭐ 46,537 · 月 +12,450 · "把任何 AI agent 变成 AI 科学家"的技能库——skills 生态向科研领域纵深。</div>
+<div class="mini"><a href="https://github.com/jingyaogong/minimind" target="_blank">jingyaogong/minimind</a> · Python · ⭐ 62,485 · 月 +7,689 · "2 小时从零训练 64M 参数 LLM"教学项目，两年常青。</div>
+<div class="mini"><a href="https://github.com/every-app/open-seo" target="_blank">every-app/open-seo</a> · TypeScript · 月 +7,668 · 开源 Semrush / Ahrefs 替代（API 元数据核实失败，星数取自 Trending 页展示值，无法确认）。</div>
+<div class="mini"><a href="https://github.com/Lakr233/vphone-cli" target="_blank">Lakr233/vphone-cli</a> · Swift · ⭐ 14,351 · 月 +6,390 · 命令行虚拟手机（为 agent 提供隔离的移动环境场景）。</div>
+<div class="mini"><a href="https://github.com/Tencent/BrowserSkill" target="_blank">Tencent/BrowserSkill</a> · TypeScript · ⭐ 7,124 · 月 +5,854 · 腾讯：让 agent 用你真实登录态的浏览器而不打扰你。</div>
+<div class="mini"><a href="https://github.com/google-research/timesfm" target="_blank">google-research/timesfm</a> · Python · ⭐ 33,648 · 月 +5,545 · Google 时序基础模型，预测类基础设施。</div>
+<div class="mini"><a href="https://github.com/cursor/plugins" target="_blank">cursor/plugins</a> · TypeScript · ⭐ 8,574 · 月 +3,861 · Cursor 官方插件规范与插件——编辑器厂商全面拥抱插件生态的信号。</div>
+<div class="mini"><a href="https://github.com/ever-co/ever-gauzy" target="_blank">ever-co/ever-gauzy</a> · TypeScript · ⭐ 7,918 · 月 +3,770 · 开源企业管理平台（ERP/CRM/HRM），7 年老项目。</div>
+<div class="mini"><a href="https://github.com/magnitudedev/magnitude" target="_blank">magnitudedev/magnitude</a> · TypeScript · ⭐ 5,031 · 月 +3,518 · "跑在你已有硬件上"的开源推理引擎。</div>
+<div class="mini"><a href="https://github.com/melgarafael/DeskcommCRM" target="_blank">melgarafael/DeskcommCRM</a> · TypeScript · ⭐ 3,717 · 月 +3,225 · 开源 AI 销售 OS：自托管 CRM + 原生 AI agent + WhatsApp。</div>
+<div class="mini"><a href="https://github.com/JetBrains/go-modern-guidelines" target="_blank">JetBrains/go-modern-guidelines</a> · Go · ⭐ 3,700 · 月 +2,858 · "帮 AI 编码 agent 写现代 Go"——工具厂商为 agent 时代重写语言规范。</div>
+<div class="mini"><a href="https://github.com/tech-leads-club/agent-skills" target="_blank">tech-leads-club/agent-skills</a> · TypeScript · ⭐ 6,770 · 月 +1,821 · "专业 AI 编码 agent 的安全验证技能注册表"——skills 生态的 npm 时刻又近一步。</div>
 </div>
 </section>
 <!-- ================= 综合 ================= -->
 <section id="top">
 <h2 class="sec">🏆 综合推荐 Top 5</h2>
-<p class="secnote">跨三榜、以"值得投入研究时间"为标准的编辑选择：工程价值 × 可落地性 × 长期潜力，不按 Star 排。</p>
+<p class="secnote">跨三榜综合：增长速度 × 工程成熟度 × 长期价值 × 可落地性。与本日报观点一致：不看总量看含金量。</p>
 <div class="card">
-<span class="no">1</span><h3><a href="https://github.com/alibaba/open-code-review" target="_blank">alibaba/open-code-review</a> <span style="color:#bf8700">⭐⭐⭐⭐⭐</span></h3>
-<div class="meta"><span>为什么是它</span><span>内部两年生产验证 + 突破 4 万星 + 周月双榜</span></div>
+<span class="no">1</span><h3><a href="https://github.com/alibaba/open-code-review" target="_blank">alibaba/open-code-review</a></h3>
+<div class="meta"><span class="stars">⭐ 40,802</span><span class="up">周 +6,920 / 月 +19,583</span><span>贡献者 192</span><span>Apache-2.0</span></div>
 <dl>
-<dt>为什么推荐 / 最大价值</dt><dd>三榜里唯一"今天就能给团队装上、当天见效"的项目。混合架构（工程规则硬约束 × LLM 只做判断）是当前 agent 落地最稀缺的范式：token 1/9、精度反超通用 agent——"小而专"打败"大而全"的实证。CI 接入成本低，且不锁任何模型厂。</dd>
-<dt>最大风险 / 值不值得投入</dt><dd>评审质量上限依赖所配模型；中文社区项目，国际化节奏待观察。<b>值得投入：半天试用 + 一周观察，适合直接进 CI。</b></dd>
+<dt>为什么推荐 / 最大价值</dt><dd>榜单上<b>唯一"今天装上今天见效"的项目</b>：内部两年、数万开发者、百万级缺陷识别的生产验证，自带严谨 benchmark，Apache-2.0 无商用顾虑。最大价值是范式："工程规则硬约束 × LLM 判断 × 精度优先"可以直接迁移到你自己的任何 agent 场景（评审、审计、质检）。</dd>
+<dt>最大风险 / 适合谁</dt><dd>精度换召回，漏报率高于通用 agent，别当唯一防线；效果依赖所配模型质量。适合所有工程团队。</dd>
 </dl>
-<div class="rate"><span class="verdict">适合：所有工程团队 · <b>研究/落地比最高的选择</b></span></div>
+<div class="rate"><span class="stars">⭐⭐⭐⭐⭐</span><span class="verdict"><b>如果只研究一个</b>：工具价值 + 范式价值双收</span></div>
 </div>
 <div class="card">
-<span class="no">2</span><h3><a href="https://github.com/google/ax" target="_blank">google/ax</a> + <a href="https://github.com/agent-substrate/substrate" target="_blank">agent-substrate/substrate</a> <span style="color:#bf8700">⭐⭐⭐⭐</span></h3>
-<div class="meta"><span>为什么是它们</span><span>今日双上榜的"编排 + 运行时"组合，方向价值全场最大</span></div>
+<span class="no">2</span><h3><a href="https://github.com/vectorize-io/hindsight" target="_blank">vectorize-io/hindsight</a></h3>
+<div class="meta"><span class="stars">⭐ 27,790</span><span class="up">今日 +1,668 / 周 +3,363</span><span>贡献者 246</span><span>MIT</span></div>
 <dl>
-<dt>为什么推荐 / 最大价值</dt><dd>"agent 是新工作负载"正在从口号变成基础设施：声明式编排（ax）+ 高密度沙箱运行时（substrate）正好对应 K8s 时代的"控制器 + 容器运行时"。如果你做平台工程，这是提前 12 个月卡位的机会窗口；即使不用，其四原语设计（Task/Workspace/Gateway/Model）也是最好的架构参考。</dd>
-<dt>最大风险 / 值不值得投入</dt><dd>v0.3 早期、README 明示破坏性变更、substrate 标注"非官方支持 Google 产品"。<b>值得投入：跑通 demo + 精读设计文档；生产采用再等两个版本。</b></dd>
+<dt>为什么推荐 / 最大价值</dt><dd>agent 记忆层的头部开源实现：有基准（LongMemEval SOTA）、有论文、有 246 位贡献者的社区底盘、日周双榜。所有做个性化 / 跨会话 agent 应用的团队都会撞上记忆问题，这是目前最完整的参考答案。</dd>
+<dt>最大风险 / 适合谁</dt><dd>记忆是模型厂商与云厂商的必争之地，独立实现可能被上游吸收。适合 agent 应用开发者、做 AI 中间件的团队。</dd>
 </dl>
-<div class="rate"><span class="verdict">适合：平台/Infra 工程师、agent 创业公司 · <b>买的是方向</b></span></div>
+<div class="rate"><span class="stars">⭐⭐⭐⭐⭐</span><span class="verdict"><b>新基础设施层的种子选手</b></span></div>
 </div>
 <div class="card">
-<span class="no">3</span><h3><a href="https://github.com/cloudflare/security-audit-skill" target="_blank">cloudflare/security-audit-skill</a> <span style="color:#bf8700">⭐⭐⭐⭐</span></h3>
-<div class="meta"><span>为什么是它</span><span>连续两周周增量第一 · 97 天 2 万星 · 反幻觉审计范式</span></div>
+<span class="no">3</span><h3><a href="https://github.com/Tencent/WeKnora" target="_blank">Tencent/WeKnora</a></h3>
+<div class="meta"><span class="stars">⭐ 29,717</span><span class="up">周 +3,749 / 月 +9,356</span><span>贡献者 249</span></div>
 <dl>
-<dt>为什么推荐 / 最大价值</dt><dd>它的价值超出安全领域：用覆盖率账本管理"查过什么"、用全新上下文 agent 专门证伪候选结论、三态结论（confirmed/needs_validation/rejected）——这套<b>反幻觉流程设计可以直接迁移到法务审查、合规审计、代码评审、尽调</b>任何"agent 结论必须可信"的场景。3 个贡献者撬动 2 万星，方法论密度全场第一。</dd>
-<dt>最大风险 / 值不值得投入</dt><dd>skill 形态依赖底层 agent 能力上限；维护人手少。<b>值得投入：精读其六阶段流程与验证脚本设计（半天），安全团队直接试用。</b></dd>
+<dt>为什么推荐 / 最大价值</dt><dd>企业知识库自动化<b>最完整的开源落地</b>：RAG + agent + wiki 三模式同库、27 家模型可换、国内生态（飞书 / 企微 / 语雀 / 钉钉）集成最深、RBAC / 审计 / 追踪企业级特性齐备。双榜在列、249 位贡献者，不是 demo 是产品。</dd>
+<dt>最大风险 / 适合谁</dt><dd>非标准 License（NOASSERTION）商用需法务核对；组件多、运维有门槛。适合要私有化知识库的企业与集成商。</dd>
 </dl>
-<div class="rate"><span class="verdict">适合：安全/平台团队、所有要做"可信 agent"的人 · <b>抄流程比抄代码值钱</b></span></div>
+<div class="rate"><span class="stars">⭐⭐⭐⭐⭐</span><span class="verdict"><b>企业采用概率最高</b></span></div>
 </div>
 <div class="card">
-<span class="no">4</span><h3><a href="https://github.com/Tencent/WeKnora" target="_blank">Tencent/WeKnora</a> <span style="color:#bf8700">⭐⭐⭐⭐</span></h3>
-<div class="meta"><span>为什么是它</span><span>周月双榜 · 29k 星 · 企业 RAG 完成度最高的开源方案之一</span></div>
+<span class="no">4</span><h3><a href="https://github.com/affaan-m/ECC" target="_blank">affaan-m/ECC</a></h3>
+<div class="meta"><span class="stars">⭐ 266,922</span><span class="up">周 +6,193</span><span>贡献者 382</span><span>MIT + 商业版</span></div>
 <dl>
-<dt>为什么推荐 / 最大价值</dt><dd>RAG 从"检索问答"进化到"自动运维的知识库"（Auto-Wiki + 可编辑分块 + 版本回滚 + 长期记忆），WeKnora 是这一步跨得最实的开源项目。飞书/Notion/语雀/钉钉多源接入直击国内企业真实工具链，二开做行业知识库（法务/医疗/制造）起点极高。</dd>
-<dt>最大风险 / 值不值得投入</dt><dd>自定义 License（非标准开源协议，商用前必须评估）；大厂开源的长期投入存在不确定性。<b>值得投入：一周部署试用 + License 评估，二开候选。</b></dd>
+<dt>为什么推荐 / 最大价值</dt><dd>agent harness 方法论的<b>集大成与商业化样本</b>：完整工程循环 + 68 agents / 292 skills + 安全扫描，26.7 万星的同时做到开源免费 / Pro 订阅的干净分层——它是"skills 生态怎么赚钱"目前最好的答案。</dd>
+<dt>最大风险 / 适合谁</dt><dd>单维护者节奏风险；文本资产可复制、护城河浅；仿冒镜像已出现（README 首屏防伪警告）。适合个人与小组快速获得完整工程纪律。</dd>
 </dl>
-<div class="rate"><span class="verdict">适合：企业 IT、行业 SaaS 团队 · <b>中文生态二开首选</b></span></div>
+<div class="rate"><span class="stars">⭐⭐⭐⭐</span><span class="verdict"><b>装机即用</b> + 商业模式教材</span></div>
 </div>
 <div class="card">
-<span class="no">5</span><h3><a href="https://github.com/stablyai/orca" target="_blank">stablyai/orca</a> <span style="color:#bf8700">⭐⭐⭐⭐</span></h3>
-<div class="meta"><span>为什么是它</span><span>76.6k 星 · 一天多版发版 · "agent 舰队"日常工具化</span></div>
+<span class="no">5</span><h3><a href="https://github.com/stablyai/orca" target="_blank">stablyai/orca</a></h3>
+<div class="meta"><span class="stars">⭐ 77,549</span><span class="up">周 +6,547</span><span>贡献者 389</span><span>MIT</span></div>
 <dl>
-<dt>为什么推荐 / 最大价值</dt><dd>一人带多 agent 并行开发已从概念变成日常，orca 是这个工作形态目前最顺手的开源指挥台：worktree 并行、择优合并、手机遥控、Design Mode 点选页面元素直接喂 prompt。对新形态工作流的"手感"打磨（终端分屏、会话恢复）是硬功夫。</dd>
-<dt>最大风险 / 值不值得投入</dt><dd>6,682 个 open issue 说明稳定性负担不小；商业化产品与开源版边界会演变。<b>值得投入：装上用一周，个人提效立竿见影；团队引入先评估 issue 积压。</b></dd>
+<dt>为什么推荐 / 最大价值</dt><dd>"ADE（Agent 开发环境）"品类的定义者：并行 worktree、舰队管理、移动端监控、Design Mode——它回答了"一个人同时指挥 N 个 agent 时，工作界面长什么样"。对所有做多 agent 产品的团队是现成的交互参考。</dd>
+<dt>最大风险 / 适合谁</dt><dd>官方 harness（Claude Code / Codex 等）自带并行与 fleet 能力后的挤压；开放 Issue+PR 6,778 的工程负担。适合重度 agent 用户与 agent 工具创业者。</dd>
 </dl>
-<div class="rate"><span class="verdict">适合：重度 coding agent 用户 · <b>今天就能用的生产力</b></span></div>
+<div class="rate"><span class="stars">⭐⭐⭐⭐</span><span class="verdict"><b>交互范式参考</b> + 重度用户生产力</span></div>
 </div>
 <div class="minis">
-<div class="t">候补观察名单（差一步进前五）</div>
-<div class="mini">🎨 <a href="https://github.com/tt-a1i/archify" target="_blank">tt-a1i/archify</a> — 月增第一但已见顶，观察留存而非追高。</div>
-<div class="mini">🏢 <a href="https://github.com/dream-num/univer" target="_blank">dream-num/univer</a> — "agent 的 Office 之手"，B 端嵌入价值被低估。</div>
-<div class="mini">🎙️ <a href="https://github.com/debpalash/VoiceStudio" target="_blank">debpalash/VoiceStudio</a> — 本地语音栈二开价值高，AGPL 是门槛。</div>
-<div class="mini">🤔 <a href="https://github.com/affaan-m/ECC" target="_blank">affaan-m/ECC</a> — 26.6 万星体量巨大，透明度不足，列入验证清单。</div>
+<div class="t">🎲 观察仓（未进 Top 5，但值得盯）</div>
+<div class="mini"><a href="https://github.com/superdesigndev/treg" target="_blank">superdesigndev/treg</a> · 唯一日周月三榜项目，3.1K 星 / 2 个月 / 增长斜率极陡。若"工具聚合按次计费"跑通，就是 agent 时代的 API 网关生意；自定义 License 是主要不确定性。</div>
+<div class="mini"><a href="https://github.com/google/ax" target="_blank">google/ax</a> · 连续两日上榜的编排层种子选手，v0.x 高风险高赔率，平台工程师的长线仓。</div>
 </div>
 </section>
 <!-- ================= 趋势 ================= -->
 <section id="trends">
 <h2 class="sec">📊 GitHub 技术趋势</h2>
-<p class="secnote">基于三榜 51 个项目的分布与增量结构，识别出 5 个趋势。</p>
+<p class="secnote">基于三榜 50 仓的分布与本周变化归纳，按证据强度排序。</p>
 <div class="trend">
-<h3>1️⃣ Agent 基础设施化：编排与运行时分层成型</h3>
-<div class="tmeta">信号强度：★★★★★ · 今日最强</div>
-<p>google/ax（声明式编排，YAML 定义 Task/Workspace/Gateway/Model）与其执行层 substrate（10 倍密度沙箱）同日双上榜；同周还有 strands-agents/harness-sdk（agent harness SDK）、BuilderIO/agent-native（agent 应用框架）、Fission-AI/OpenSpec（规格驱动）。"agent 是一种新工作负载，需要自己的 K8s"已从论文话题变成 Google 亲自下场的产品——编排、沙箱、网络围栏、成本控制四件套同时出现，是基础设施层成型的标志。</p>
-<div class="refs"><a href="https://github.com/google/ax" target="_blank">google/ax</a><a href="https://github.com/agent-substrate/substrate" target="_blank">substrate</a><a href="https://github.com/strands-agents/harness-sdk" target="_blank">harness-sdk</a></div>
+<h3>1️⃣ Agent Skills 正在成为"新的包管理生态"</h3>
+<div class="tmeta">证据强度：★★★★★ · 本月榜单 22 席中 8 席与 skills 直接相关</div>
+<p>superpowers（29.1 万）、agent-skills（9.9 万）、i-have-adhd（5.1 万）、scientific-agent-skills（4.7 万，月 +1.2 万）、archify（7.1 万）、security-audit-skill（2.1 万）全部是 skill 形态；tech-leads-club 在做"安全验证注册表"，JetBrains 在为 agent 重写 Go 语言规范，Cursor 发官方插件规范，archify 用 `npx skills add` 一行安装。skills 已从"提示词集合"进化为<b>有安装器、有注册表诉求、有安全审计需求的分发格式</b>——2026 年的 npm 时刻正在酝酿。</p>
+<div class="refs"><a href="https://github.com/obra/superpowers">superpowers</a><a href="https://github.com/addyosmani/agent-skills">agent-skills</a><a href="https://github.com/tech-leads-club/agent-skills">tech-leads-club</a><a href="https://github.com/cursor/plugins">cursor/plugins</a><a href="https://github.com/JetBrains/go-modern-guidelines">go-modern-guidelines</a></div>
 </div>
 <div class="trend">
-<h3>2️⃣ Agent Skills 成为新的"包"，并开始长出市场层</h3>
-<div class="tmeta">信号强度：★★★★★ · 覆盖三榜</div>
-<p>今天三榜里以 skill 为主要形态的项目超过 10 个：archify（可视化）、security-audit-skill（安全）、addyosmani/agent-skills（工程流程）、scientific-agent-skills（科研）、i-have-adhd（输出礼仪）、cursor/plugins（官方规范）。更关键的是<b>分发与信任层</b>开始出现：tech-leads-club/agent-skills 自称"经验证的 skill 注册表"，treg 定位"agent 工具的 OpenRouter"，安装统一收敛到 `npx skills add`。像极了 npm 早期——单元标准化之后，市场必然出现。</p>
-<div class="refs"><a href="https://github.com/tt-a1i/archify" target="_blank">archify</a><a href="https://github.com/addyosmani/agent-skills" target="_blank">agent-skills</a><a href="https://github.com/tech-leads-club/agent-skills" target="_blank">skill 注册表</a></div>
+<h3>2️⃣ "Harness / 编排"军备竞赛：Agent 运行层被同时标准化</h3>
+<div class="tmeta">证据强度：★★★★☆ · Google、AWS 系、独立项目同周竞逐同一层</div>
+<p>google/ax（声明式 agent 编排，"K8s for Agents"，连续两日上榜）、strands-agents/harness-sdk（AWS 系 Strands 的 harness SDK）、orca（ADE 桌面端）、ECC（方法论 harness）、甚至 univer 都自称 "Office Harness"——<b>harness 一词本周从 coding 圈扩散到所有软件品类</b>。"agent 怎么跑起来"这一层（沙箱、编排、生命周期、成本控制）正被大厂与独立开发者从不同角度同时标准化，与上周判断一致且证据更强。</p>
+<div class="refs"><a href="https://github.com/google/ax">google/ax</a><a href="https://github.com/strands-agents/harness-sdk">harness-sdk</a><a href="https://github.com/stablyai/orca">orca</a><a href="https://github.com/dream-num/univer">univer</a></div>
 </div>
 <div class="trend">
-<h3>3️⃣ AI Code Review 进入"混合架构"成熟期</h3>
-<div class="tmeta">信号强度：★★★★ · 工程范式信号</div>
-<p>alibaba/open-code-review 用数据证明"工程规则硬约束 + LLM 只做判断"显著优于通用 agent 直评（精度/F1 更高、token 约 1/9）。同期 OpenSpec（规格驱动开发）上榜，指向同一件事：<b>把 LLM 塞进确定性流程的缝隙里，而不是让它从头到尾自由发挥</b>。这个范式正在从 code review 扩散到一切严肃工作流。</p>
-<div class="refs"><a href="https://github.com/alibaba/open-code-review" target="_blank">open-code-review</a><a href="https://github.com/Fission-AI/OpenSpec" target="_blank">OpenSpec</a></div>
+<h3>3️⃣ Agent Memory 独立成层：本周双项目验证</h3>
+<div class="tmeta">证据强度：★★★★☆ · 日榜增量第一 + 周榜新入，同一周</div>
+<p>hindsight 今日 +1,668 登顶（"让 agent 学习而不只是记住"，LongMemEval SOTA + 论文 + 商业公司），akitaonrails/ai-memory 周榜 +1,243（跨 20+ harness、跨机器的共享记忆服务器，交接即协议）。记忆正从各 agent 的内置功能<b>独立为可插拔的基础设施层</b>——上周还是单点信号，本周已成双验证趋势。</p>
+<div class="refs"><a href="https://github.com/vectorize-io/hindsight">hindsight</a><a href="https://github.com/akitaonrails/ai-memory">ai-memory</a></div>
 </div>
 <div class="trend">
-<h3>4️⃣ 垂直行业 Agent 从 demo 走向合规工作流</h3>
-<div class="tmeta">信号强度：★★★★ · 月榜结构信号</div>
-<p>金融（anthropics/financial-services、OpenStock、PanWatch）、教育（OpenMAIC）、销售（DeskcommCRM）、SEO（open-seo）、科研（scientific-agent-skills）本月齐刷刷在榜。共同特征：不再是聊天 demo，而是"草稿产出 + 人工签核"的合规姿态（Anthropic 金融仓库把这一点写进了 README 首屏）。模型厂亲自做行业模板，意味着<b>行业 know-how 的封装速度将成为 next 波竞争点</b>。</p>
-<div class="refs"><a href="https://github.com/anthropics/financial-services" target="_blank">financial-services</a><a href="https://github.com/THU-MAIC/OpenMAIC" target="_blank">OpenMAIC</a><a href="https://github.com/every-app/open-seo" target="_blank">open-seo</a></div>
+<h3>4️⃣ 中国大厂集体押注"企业级 AI 开源"</h3>
+<div class="tmeta">证据强度：★★★★☆ · 三榜 50 席中 6 席来自中国机构</div>
+<p>Tencent 三线出击（WeKnora 企业知识库周月双榜、BrowserSkill 真实浏览器技能、腾讯云 Octop 自托管助手）、阿里 open-code-review 周增量第一、清华 OpenMAIC 月 +1.8 万、港大 CLI-Anything 5 万常青。共同特征：<b>面向企业落地、国内生态集成最深、自带中文文档</b>；但 License 多样化（WeKnora 非标准），商用需逐个核对。</p>
+<div class="refs"><a href="https://github.com/Tencent/WeKnora">WeKnora</a><a href="https://github.com/alibaba/open-code-review">open-code-review</a><a href="https://github.com/THU-MAIC/OpenMAIC">OpenMAIC</a><a href="https://github.com/TencentCloud/Octop">Octop</a></div>
 </div>
 <div class="trend">
-<h3>5️⃣ 本地推理下探 + 安全工具 AI 化，两条暗线同涨</h3>
-<div class="tmeta">信号强度：★★★ · 暗线但扎实</div>
-<p>colibri 用纯 C 在消费级硬件跑 2.8T 参数 MoE（存储/RAM/VRAM 统一分层），VoiceStudio 全本地跑 646 语言语音栈，magnitude 做"用你已有的硬件"的推理引擎——"前沿模型本地化"从口号变成工程。另一边安全赛道双响：security-audit-skill（AI 审计）与 mvt（移动取证）同日上榜——AI 帮防守者，也在帮攻击者，双向军备竞赛刚开场。</p>
-<div class="refs"><a href="https://github.com/JustVugg/colibri" target="_blank">colibri</a><a href="https://github.com/debpalash/VoiceStudio" target="_blank">VoiceStudio</a><a href="https://github.com/mvt-project/mvt" target="_blank">mvt</a></div>
+<h3>5️⃣ "跑在你自己的硬件上"：本地优先回潮</h3>
+<div class="tmeta">证据强度：★★★☆☆ · 推理 / 语音 / 助手三线并发</div>
+<p>colibri 用纯 C 零依赖在消费级硬件上跑 744B–2.8T 的 MoE 模型（把存储+内存+显存当一个分层），VoiceStudio 全本地语音克隆 / 配音（646 语言），Octop 本地优先助手，magnitude"跑在你已有硬件上的推理引擎"，stable-diffusion.cpp 常青。驱动力是双重的：<b>隐私合规 + 摆脱订阅费</b>（treg 的 README 就在明算这笔账）。</p>
+<div class="refs"><a href="https://github.com/JustVugg/colibri">colibri</a><a href="https://github.com/debpalash/VoiceStudio">VoiceStudio</a><a href="https://github.com/magnitudedev/magnitude">magnitude</a></div>
 </div>
 </section>
 <!-- ================= 机会 ================= -->
 <section id="opp">
 <h2 class="sec">💡 开发者 / 创业机会</h2>
-<p class="secnote">从"能学什么、能改什么、能做什么"三个层次拆解，均基于本期榜单证据。</p>
 <div class="opp">
-<h3>📚 技术学习：优先补这三样</h3>
-<p>① <b>Agent skill 工程</b>——怎么写、怎么评测、怎么分发（读 archify + addyosmani/agent-skills 的结构，一周可入门，这是当前性价比最高的新技能）；② <b>混合架构 agent 设计</b>——工程约束 × LLM 判断（精读 open-code-review 的文件捆绑与规则匹配）；③ <b>声明式 agent ops</b>——跑通 google/ax 的 demo，理解 Task/Workspace/Gateway/Model 为什么这么切。</p>
-<div class="who">适合：所有方向的开发者 · 时间投入：每项 2–5 天</div>
+<h3>🧩 机会一：Skills 市场与质检（生态缺口最大）</h3>
+<p>skills 分发格式已被 29 万星（superpowers）与 9.9 万星（agent-skills）验证，但<b>注册表、质量分级、安全扫描三者无人做全</b>。tech-leads-club 只做了"安全验证"一角，ECC 的防伪警告（仿冒镜像可能带恶意软件）证明安全痛点已是现实而非假设。做"npm + npm audit + 质量徽章"的合体，是当前 agent 生态最明显的空位。</p>
+<div class="who">适合：开发者工具创业者 · 时间窗口：3–6 个月内格局初定</div>
 </div>
 <div class="opp">
-<h3>🔧 二次开发：四个现成底座</h3>
-<p>① <b>WeKnora</b> → 行业知识库产品（法务/医疗/制造文档问答 + Auto-Wiki 运维，先过 License）；② <b>univer</b> → agent 操控表格/文档的 B 端 SaaS（报表自动化、智能核对）；③ <b>VoiceStudio</b> → 垂直语音产品（出海多语言配音、有声书、客服，AGPL 注意）；④ <b>OpenMAIC</b> → 企业内训/知识付费平台（MIT 协议友好）。共同点：都过了"产品完成度"拐点，缺的只是行业包装。</p>
-<div class="who">适合：独立开发者、小团队 · 时间投入：2–6 周出 MVP</div>
+<h3>🧠 机会二：Agent 记忆层的企业版</h3>
+<p>hindsight 与 ai-memory 同周上榜，证明个人与团队都缺记忆基础设施。企业版缺口在：<b>权限隔离（谁能读谁的记忆）、审计日志（agent 记了什么）、合规删除（GDPR 式遗忘）</b>。开源方案都没做深这三点——这是典型的"开源验证需求、闭源收企业钱"结构。</p>
+<div class="who">适合：AI 中间件团队 · 参考：hindsight 的云托管版只做了最浅一层</div>
 </div>
 <div class="opp">
-<h3>🚀 产品机会：五个空白带</h3>
-<p>① <b>Skills 市场与质检</b>——注册表 + 质量分级 + 安全扫描（treg/tech-leads-club 已起苗，无人做成"npm + 安全审计"合体）；② <b>Agent 成本/安全网关</b>——ax 的 Gateway 原语指明需求：预算上限、出站白名单、审计日志，做成 SaaS；③ <b>行业垂类合规工作流</b>——照 anthropic 金融仓库的"草稿+签核"模式做医疗/法务版本；④ <b>对话式可视化组件</b>——archify 验证了需求，做 B 端文档/汇报场景的深度版；⑤ <b>agent 输出体验工具链</b>——i-have-adhd 5 万星证明痛点普世，可做团队级输出规范管理。</p>
-<div class="who">适合：创业者 · 判断依据：需求已被榜单验证，供给仍是空位</div>
+<h3>🚪 机会三：Agent 网关 / 成本与安全控制面</h3>
+<p>google/ax 把 Gateway（出站白名单）列为核心原语、treg 解决工具凭证不外泄、ECC 内置 AgentShield——三家从不同方向指向同一需求：<b>agent 的预算上限、出站管控、审计日志</b>。ax 要 K8s 才能跑，中小企业需要的是 SaaS 版的"agent 防火墙 + 账单"。</p>
+<div class="who">适合：安全 / FinOps 背景的创业者 · 判断依据：三家头部项目各自内建了一部分，说明需求真实且分散</div>
+</div>
+<div class="opp">
+<h3>🏭 机会四：垂直行业 agent 工作流（照抄 Anthropic 模式）</h3>
+<p>anthropics/financial-services（3.7 万星，日周双榜）验证了"官方垂类仓库"打法：行业工作流 + 合规签核 + 示例资产打包开源。<b>医疗、法务、制造业的同类资产包仍是空白</b>——先做垂直包占据行业心智，再接实施与托管，路径已被验证。</p>
+<div class="who">适合：行业 SaaS 团队 · 参照：financial-services + knowledge-work-plugins 双仓结构</div>
+</div>
+<div class="opp">
+<h3>🎤 机会五：本地语音栈的产品化</h3>
+<p>VoiceStudio 月 +2.4 万星证明"本地 ElevenLabs"需求爆发，但它是工具箱不是产品。向上做一层：<b>面向播客 / 短视频团队的本地配音工作流</b>（批量、时间轴对齐、多人声库管理），或向 agent 生态做"语音技能标准件"（MCP 接口它已有雏形）。注意 AGPL 传染性——自研引擎或商业授权是护城河。</p>
+<div class="who">适合：内容工具团队 · 时间投入：MVP 4–8 周</div>
 </div>
 <div class="opp">
 <h3>⚠️ 风险提示</h3>
-<p>① 单月爆星的 skill/模板类项目护城河浅，跟进要快、止损要更快（参考 archify 已见顶）；② <b>仿冒镜像诈骗开始出现</b>——ECC 的 README 首屏防伪警告是行业信号，安装任何热门 agent 工具前核对官方源；③ 大厂开源（Google "非官方支持"、腾讯自定义 License、阿里社区节奏）的商业条款需逐个评估，别把"开源"当"可商用"。</p>
+<p>① 单月爆星的 skill / 模板类项目护城河浅，archify 已见顶（日增速 ~500）、gods-eye-view 98% 星来自单月——跟进要快、止损要更快；② <b>仿冒镜像诈骗常态化</b>——ECC 首屏防伪警告是行业信号，安装任何热门 agent 工具前核对官方源；③ 大厂开源的商业条款需逐个评估：本周榜上 WeKnora / treg / gods-eye-view 均为非标准 License，VoiceStudio 为 AGPL——"开源"不等于"可商用"。</p>
 <div class="who">适合：所有人</div>
 </div>
 </section>
@@ -440,23 +460,23 @@
 <h2 class="sec">🎯 今日最终结论</h2>
 <div class="concl">
 <div class="q">❓ 当前最火的项目是什么？</div>
-<div class="a">今天："<b>K8s for Agents</b>"组合——google/ax（今日 +1,543，增量第一）+ agent-substrate/substrate（+558）同日上榜，是今日 GitHub 最强叙事。本周：cloudflare/security-audit-skill（+15,280，连续两周周增量第一）与 alibaba/open-code-review（GitHub 周榜排序第一，突破 4 万星）。</div>
+<div class="a">今日：vectorize-io/<b>hindsight</b>（+1,668，日榜增量第一，"会学习的 agent 记忆"接棒昨日 google/ax 的"K8s for Agents"成为最强叙事）；本周：alibaba/<b>open-code-review</b>（+6,920 周增量第一，接棒连庄两周后退出周榜的 cloudflare/security-audit-skill）；常青巨物：affaan-m/<b>ECC</b>（26.7 万星，周 +6,193）。</div>
 <div class="q">❓ 当前最值得长期关注的项目是什么？</div>
-<div class="a">三个：① <b>google/ax + substrate</b>——agent 基础设施层的种子选手，方向价值最大；② <b>alibaba/open-code-review</b>——"混合架构"工程范式的标杆，长期生产力；③ <b>Tencent/WeKnora</b>——企业知识库自动化的最完整落地。</div>
+<div class="a">三个：① <b>vectorize-io/hindsight</b>——agent 记忆层的头部开源（基准 + 论文 + 社区三要素齐）；② <b>alibaba/open-code-review</b>——"工程规则 × LLM 判断"范式标杆，生产验证最扎实；③ <b>Tencent/WeKnora</b>——企业知识自动化最完整落地（商用先核 License）。长线再加一个观察仓：superdesigndev/treg（唯一三榜项目，工具聚合中间件）。</div>
 <div class="q">❓ 如果只能研究一个项目，研究哪个？</div>
-<div class="a"><b>alibaba/open-code-review</b>。理由：生产验证最扎实、当天可落地见效、其"工程规则硬约束 × LLM 判断"范式可迁移到你自己的任何 agent 场景——研究它的收益是三份：工具价值 + 范式价值 + benchmark 方法论价值。平台工程师例外：你的答案是 google/ax。</div>
+<div class="a"><b>alibaba/open-code-review</b>。理由不变且更强：当天可落地见效、自带 benchmark 方法论可复用、其"精度优先 + 工程硬约束"范式可迁移到评审 / 审计 / 质检任何场景——研究它是三份收益。例外：做平台工程的选 google/ax，做 agent 应用的选 hindsight。</div>
 <div class="q">❓ 最近最值得关注的技术趋势是什么？</div>
-<div class="a"><b>Agent 基础设施化 + Skills 标准化</b>两条主线本周同时被 Google（ax/substrate）、Cloudflare（security-audit-skill）、阿里（open-code-review）三家从不同角度验证——"agent 怎么跑起来"和"agent 用什么能力"两层正在同时标准化。2026 下半年最确定的两个赛道。</div>
+<div class="a"><b>Agent 栈的三层同时标准化</b>：编排运行层（ax / harness-sdk / orca，"agent 怎么跑"）、记忆层（hindsight / ai-memory 同周双验证，"agent 记住什么"）、技能分发层（superpowers / 注册表 / 官方插件规范，"agent 用什么能力"）。加上中国大厂密集押注企业级落地与本地优先回潮——2026 下半年最确定的四条主线。</div>
 </div>
 </section>
 <footer>
 <b>数据与口径说明</b><br>
-① 数据来源：GitHub Trending 日 / 周 / 月三个实时榜单页面（抓取于 2026-09-24 09:15 前后，UTC+8），以及 GitHub REST API 对全部 51 个去重仓库的逐一核实（Star / Fork / Open Issues / 贡献者数 / 创建与最近推送时间 / License / 最新 Release，核实成功率 51/51）。<br>
+① 数据来源：GitHub Trending 日 / 周 / 月三个实时榜单页面（抓取于 2026-09-25 09:15 前后，UTC+8），以及 GitHub REST API 对全部 50 个去重仓库的逐一核实（Star / Fork / Open Issues+PR / 贡献者数 / 创建与最近推送时间 / License / Watch 数，核实成功 49/50；every-app/open-seo 元数据核实失败，其星数标注"无法确认"）。<br>
 ② "今日 / 本周 / 本月 +N 星"为 Trending 页面展示的滚动窗口值（相邻两日数值变化属窗口滚动，非矛盾）；总 Star 为抓取时点快照，几分钟内存在个位数漂移属正常。<br>
-③ 与 2026-09-22 日报对比的增减（如 archify +55,857 对比 +54,494）基于两日报告的 Trending 展示值，用于判断趋势方向。<br>
-④ 项目功能描述基于各自 README、Release 与仓库页面；"为什么火"包含推断成分，已尽量以可验证事实（发布时间、官方博客、传播数据、贡献者数）支撑，无法确认处已注明。<br>
+③ 与 2026-09-24 日报对比的增减（如 archify +56,351 对比昨日 +55,857）基于两日报告的 Trending 展示值，用于判断趋势方向；"Open Issues+PR"为 GitHub API 聚合口径（含 PR）。<br>
+④ 项目功能描述基于各自 README、Release 与仓库页面；"为什么火"包含推断成分，已尽量以可验证事实（发布时间、贡献者数、官方背景、传播数据）支撑，无法确认处已注明（如 mvt 上榜导火索）。<br>
 ⑤ 推荐指数与"值得研究"判断为编辑观点，与上述事实数据相互独立。<br>
-⑥ 历史日报：<a href="https://xiaofei68.github.io/github-trending-daily/2026-09-22.html" target="_blank">2026-09-22</a> · <a href="https://xiaofei68.github.io/github-trending-daily/2026-09-21.html" target="_blank">2026-09-21</a> · <a href="https://xiaofei68.github.io/github-trending-daily/2026-09-16.html" target="_blank">2026-09-16</a> · <a href="https://xiaofei68.github.io/github-trending-daily/2026-09-14.html" target="_blank">2026-09-14</a><br>
+⑥ 历史日报：<a href="https://xiaofei68.github.io/github-trending-daily/2026-09-24.html" target="_blank">2026-09-24</a> · <a href="https://xiaofei68.github.io/github-trending-daily/2026-09-22.html" target="_blank">2026-09-22</a> · <a href="https://xiaofei68.github.io/github-trending-daily/2026-09-21.html" target="_blank">2026-09-21</a> · <a href="https://xiaofei68.github.io/github-trending-daily/2026-09-16.html" target="_blank">2026-09-16</a> · <a href="https://xiaofei68.github.io/github-trending-daily/2026-09-14.html" target="_blank">2026-09-14</a><br>
 ⑦ 本日报由 Multica 自动化智能体每日生成并推送 · 数据与观点仅供参考，不构成投资建议。
 </footer>
 </div>
