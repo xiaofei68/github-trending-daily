@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="description" content="GitHub 热门项目日报 2026-11-08：cloudflare/security-audit-skill 停更 55 天仍日增第一、OpenMausBot 日增第二昨天刚发新版、rea 月增 42.98 万星现象级、t3code 周增 1.71 万兑现破 5 万星、Agent Skills 成行业事实标准；三榜单去重 35 项分析、技术趋势与创业机会">
+<title>🔥 GitHub 热门项目日报｜2026-11-08</title>
+<style>
+  :root{
+    --bg:#f5f6f8; --card:#ffffff; --ink:#1f2328; --sub:#57606a; --line:#e4e7eb;
+    --accent:#0969da; --hot:#cf222e; --ok:#1a7f37; --warn:#9a6700;
+    --hero1:#0d1117; --hero2:#161b22; --chip:#f0f3f6;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{-webkit-text-size-adjust:100%;}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    background:var(--bg); color:var(--ink); font-size:15.5px; line-height:1.75;
+  }
+  a{color:var(--accent); text-decoration:none; word-break:break-all;}
+  a:hover{text-decoration:underline;}
+  .wrap{max-width:720px; margin:0 auto; padding:0 14px 40px;}
+  .hero{
+    background:linear-gradient(135deg,var(--hero1),var(--hero2));
+    color:#fff; padding:30px 16px 26px; border-radius:0 0 20px 20px; text-align:center;
+  }
+  .hero h1{font-size:23px; line-height:1.4; letter-spacing:.5px;}
+  .hero .sub{margin-top:10px; font-size:13px; color:#8b949e;}
+  .hero .stats{display:flex; flex-wrap:wrap; gap:8px; justify-content:center; margin-top:14px;}
+  .hero .stats span{
+    background:rgba(255,255,255,.09); border:1px solid rgba(255,255,255,.14);
+    border-radius:999px; padding:3px 12px; font-size:12.5px; color:#c9d1d9;
+  }
+  section{margin-top:26px;}
+  .sec-head{display:flex; align-items:center; gap:8px; margin-bottom:12px;}
+  .sec-head h2{font-size:18.5px;}
+  .sec-note{font-size:12.5px; color:var(--sub); margin:-6px 0 12px 2px;}
+  .card{
+    background:var(--card); border:1px solid var(--line); border-radius:14px;
+    padding:14px 14px 12px; margin-bottom:12px;
+    box-shadow:0 1px 2px rgba(31,35,40,.04);
+  }
+  .p-head{display:flex; align-items:flex-start; gap:10px;}
+  .rank{
+    flex:none; width:26px; height:26px; border-radius:8px; margin-top:3px;
+    background:var(--chip); color:var(--sub); font-weight:700; font-size:13.5px;
+    display:flex; align-items:center; justify-content:center;
+  }
+  .rank.top{background:#fff0f0; color:var(--hot);}
+  .p-title{flex:1; min-width:0;}
+  .p-name{font-size:16px; font-weight:700; line-height:1.45;}
+  .p-growth{font-size:12.5px; color:var(--hot); font-weight:700; margin-top:2px;}
+  .chips{display:flex; flex-wrap:wrap; gap:6px; margin-top:8px;}
+  .chips span{
+    background:var(--chip); border-radius:6px; padding:1px 8px; font-size:12px; color:var(--sub);
+  }
+  .p-body{margin-top:9px; font-size:14px; color:#3b424b;}
+  .p-body b{color:var(--ink);}
+  .p-body .row{margin-top:4px;}
+  .p-body .lbl{color:var(--sub); font-weight:700;}
+  .stars{color:var(--warn); font-weight:700;}
+  .rate{color:var(--warn); letter-spacing:1px;}
+  .mini{
+    background:var(--card); border:1px solid var(--line); border-radius:12px;
+    padding:8px 12px; margin-bottom:6px; font-size:13px; color:#3b424b;
+    display:flex; justify-content:space-between; gap:10px; align-items:baseline; flex-wrap:wrap;
+  }
+  .mini .g{color:var(--hot); font-weight:700; font-size:12.5px; white-space:nowrap;}
+  .mini .s{color:var(--sub); font-size:12.5px; white-space:nowrap;}
+  .trend{
+    background:var(--card); border:1px solid var(--line); border-left:4px solid var(--accent); border-radius:12px;
+    padding:12px 14px; margin-bottom:10px; font-size:14px; color:#3b424b;
+  }
+  .trend b{color:var(--ink); display:block; margin-bottom:3px; font-size:14.5px;}
+  .opp{background:var(--card); border:1px solid var(--line); border-radius:12px; padding:12px 14px; margin-bottom:10px; font-size:14px;}
+  .opp b{color:var(--ink);}
+  .final{
+    background:linear-gradient(135deg,#f0f6ff,#fdfaff); border:1px solid #d8e3f5;
+    border-radius:14px; padding:14px 16px;
+  }
+  .qa{font-size:14px; margin-bottom:12px; color:#3b424b;}
+  .qa .q{font-weight:700; color:var(--ink);}
+  .foot{margin-top:26px; font-size:12px; color:var(--sub); line-height:1.7;}
+  h3{font-size:15px; margin:14px 0 8px; color:var(--ink);}
+  ul{padding-left:20px; font-size:14px; color:#3b424b;}
+  li{margin-bottom:5px;}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <h1>🔥 GitHub 热门项目日报｜2026-11-08</h1>
+  <div class="sub">三榜单去重 35 个项目 · 17 项经 GitHub API 逐项核实 · Multica 开源情报智能体出品</div>
+  <div class="stats">
+    <span>去重 35 项目</span>
+    <span>日榜 15 · 周榜 19 · 月榜 10</span>
+    <span>✅ 17/35 API 核实</span>
+    <span>📅 周日</span>
+  </div>
+</div>
+
+<div class="wrap">
+
+<!-- ============ 今日最火 ============ -->
+<section>
+  <div class="sec-head"><h2>🔥 今日最火 Top 5</h2></div>
+  <div class="sec-note">按今日增量与榜单地位综合排序（增量数据来自 Trending 页抓取，总星数经 GitHub API 核实）。昨日「波谷日」后回暖：日榜与周榜的交集项目从 0 个恢复到 4 个（anthropics/skills、mattpocock/skills、agent-browser、OpenMausBot），agent 生态重新霸榜。最大看点：① security-audit-skill 停更 55 天仍连续第二日日增第一；② sherlock（2018 年老牌 OSINT 工具）无新版本却日增 +1,766 回潮；③ 日榜 15 席中 6 席与 Agent Skills 直接相关。</div>
+
+  <div class="card">
+    <div class="p-head"><div class="rank top">1</div><div class="p-title">
+      <div class="p-name"><a href="https://github.com/cloudflare/security-audit-skill" target="_blank">cloudflare/security-audit-skill</a></div>
+      <div class="p-growth">▲ +2,085 / 今日（日增第一 · 连续第二日）· 日+月双榜 · 总星 65.8K · 月增 +39,571</div>
+    </div></div>
+    <div class="chips"><span>JavaScript</span><span>安全审计 Agent Skill</span><span>Cloudflare 官方</span><span>仅 3 贡献者</span><span>119 open issues</span><span>⚠️ 09-14 后未推送（55 天）</span></div>
+    <div class="p-body">
+      <div class="row"><span class="lbl">是什么：</span>把编码 agent 变成安全审计员的六阶段编排 skill：侦察 → 覆盖率引导狩猎 → 候选验证 → 结构化输出 → 独立复核 → 中立报告。Cloudflare 官方漏洞挖掘 harness 的单仓库起点（其官方博客有完整方法论文）。</div>
+      <div class="row"><span class="lbl">为什么火：</span>停更 55 天却连续两日日增第一，月增从 38,004 扩大到 39,571——官方品牌 + 安全审计刚需的「余温燃烧」，增长完全由口碑驱动（推测：安全社区与 skills 生态的双重二次传播仍在发酵）。</div>
+      <div class="row"><span class="lbl">价值与判断：</span>3 个贡献者撑起 6.6 万星，官方品牌型项目的极端结构。作为「多 agent 编排做安全审计」的参考架构，学习价值大于直接采用价值；停更本身是重要信号——社区维护 fork 与复刻正当时。</div>
+      <div class="row"><span class="lbl">推荐指数：</span><span class="rate">⭐⭐⭐⭐</span>（安全工程师重点研究其编排思想；创业者注意维护空窗带来的机会）</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="p-head"><div class="rank top">2</div><div class="p-title">
+      <div class="p-name"><a href="https://github.com/milind-soni/OpenMausBot" target="_blank">milind-soni/OpenMausBot</a></div>
+      <div class="p-growth">▲ +1,955 / 今日（新项目日增第一）· 日+周双榜 · 总星 17.0K · 周增 +7,077</div>
+    </div></div>
+    <div class="chips"><span>TypeScript · React 19 · Electron</span><span>AI Agent 消费应用</span><span>191 贡献者</span><span>825 open issues</span><span>🆕 v0.1.148（11-07 发布）</span><span>2026-08 创建</span></div>
+    <div class="p-body">
+      <div class="row"><span class="lbl">是什么：</span>开源版 Grok Bot：一个聊天 App，侧边栏里每个 bot 都是真实 agent（本地运行的 Claude / Codex），有独立人格、独立模型、独立云电脑和已连接应用。对标 Meta Muse、OpenAI dots、Cue by Manus，BYO-agent、本地优先。</div>
+      <div class="row"><span class="lbl">为什么火：</span>Grok Bot 引爆「AI 即时通讯」产品形态后，大厂全线跟进，开源替代需求集中释放到这个项目。3 个月 1.7 万星、825 个 open issue 说明真实用户量大；昨天刚发 v0.1.148，发布节奏极密。README 专门声明「无任何关联代币」——热度已高到需要防蹭。</div>
+      <div class="row"><span class="lbl">价值与判断：</span>agent 消费化形态目前最完整的开源样本：把「多 agent + 人格 + 云电脑 + 审批」封装成 IM 交互。中期机会型项目——形态对，但竞争直接对标大厂产品，独立项目能否持续跟跑取决于维护者精力。</div>
+      <div class="row"><span class="lbl">推荐指数：</span><span class="rate">⭐⭐⭐⭐</span>（产品经理与客户端开发者必看；研究「agent 如何做消费级交互」的最佳开源教材）</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="p-head"><div class="rank top">3</div><div class="p-title">
+      <div class="p-name"><a href="https://github.com/sherlock-project/sherlock" target="_blank">sherlock-project/sherlock</a></div>
+      <div class="p-growth">▲ +1,766 / 今日 · 总星 100.5K · 1.19 万 fork</div>
+    </div></div>
+    <div class="chips"><span>Python</span><span>OSINT 经典</span><span>2018 年创建</span><span>364 open issues</span><span>近月无大版本（v0.16.2 · 09-08）</span></div>
+    <div class="p-body">
+      <div class="row"><span class="lbl">是什么：</span>用用户名在 400+ 社交平台批量检索账号的老牌 OSINT 工具，安全研究与社会工程测试的标配。</div>
+      <div class="row"><span class="lbl">为什么火：</span><b>无法确认具体触发事件</b>——近期无新版本（最新 v0.16.2 是 9 月发布，近三日提交仅为横幅布局调整）。推测与两个背景相关：agent + OSINT 组合场景扩散（rea 的逆向/情报热度外溢），以及社媒账号挖掘工具的周期性需求回潮。</div>
+      <div class="row"><span class="lbl">价值与判断：</span>长期基础设施型项目，日增爆发属于「老树新芽」——本身不因这波热度改变性质。注意使用场景的合规边界（需授权的测试/调查用途）。</div>
+      <div class="row"><span class="lbl">推荐指数：</span><span class="rate">⭐⭐⭐</span>（安全/情报从业者的既有标配；普通开发者了解即可）</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="p-head"><div class="rank top">4</div><div class="p-title">
+      <div class="p-name"><a href="https://github.com/mattpocock/skills" target="_blank">mattpocock/skills</a></div>
+      <div class="p-growth">▲ +1,100 / 今日 · 日+周双榜 · 总星 317.7K · 周增 +9,664（周增第二）</div>
+    </div></div>
+    <div class="chips"><span>Shell</span><span>Agent Skills 集合</span><span>Matt Pocock（Total TypeScript）</span><span>仅 4 贡献者</span><span>219 open issues</span><span>2026-02 创建</span></div>
+    <div class="p-body">
+      <div class="row"><span class="lbl">是什么：</span>「Skills for Real Engineers」——TypeScript 圈最有影响力的教育者 Matt Pocock 把自己 .agents 目录里的工程实践 skills 直接开源。</div>
+      <div class="row"><span class="lbl">为什么火：</span>个人品牌 + Agent Skills 标准爆发的叠加：9 个月 31.8 万星、周增近万，但只有 4 个贡献者——这是「个人知识库型仓库」的极端结构，热度几乎全部来自作者影响力与内容质量。</div>
+      <div class="row"><span class="lbl">价值与判断：</span>把它当「一线工程师怎么给 agent 写 skills」的范本读，比当工具库用更有价值。风险：依赖单人维护，内容更新随作者精力波动。</div>
+      <div class="row"><span class="lbl">推荐指数：</span><span class="rate">⭐⭐⭐⭐</span>（所有在写 SKILL.md 的人都该对照学习）</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="p-head"><div class="rank top">5</div><div class="p-title">
+      <div class="p-name"><a href="https://github.com/zed-industries/zed" target="_blank">zed-industries/zed</a></div>
+      <div class="p-growth">▲ +1,114 / 今日 · 总星 94.3K · 🆕 v1.27.0（11-04 发布）</div>
+    </div></div>
+    <div class="chips"><span>Rust</span><span>高性能编辑器</span><span>1.16 万 fork</span><span>常青项目</span></div>
+    <div class="p-body">
+      <div class="row"><span class="lbl">是什么：</span>Rust 编写的高性能多人协作代码编辑器，「以思考的速度写代码」。</div>
+      <div class="row"><span class="lbl">为什么火：</span>常青基线热度 + v1.27.0 新版本（11-04）带动。AI 时代的编辑器之争（VS Code / Cursor / Zed）中，Zed 是性能与开源双旗帜。</div>
+      <div class="row"><span class="lbl">价值与判断：</span>长期基础设施，趋势不必多说；对开发者而言是「用 Rust 写极致性能桌面应用」的教科书级代码库。</div>
+      <div class="row"><span class="lbl">推荐指数：</span><span class="rate">⭐⭐⭐⭐</span>（Rust 学习者与编辑器关注者）</div>
+    </div>
+  </div>
+
+  <h3>日榜其余看点</h3>
+  <div class="mini"><span>🤖 <a href="https://github.com/google/skills" target="_blank">google/skills</a> — Google 官方 Agent Skills 仓库（2026-03 入场）</span><span class="g">▲ +443/日 · 23.4K ⭐</span><span class="s">官方背书 · 持续更新至 11-07</span></div>
+  <div class="mini"><span>🤖 <a href="https://github.com/anthropics/skills" target="_blank">anthropics/skills</a> — Anthropic 官方 Agent Skills（标准发起方）</span><span class="g">▲ +390/日 · 188.8K ⭐</span><span class="s">1,492 issues · 生态核心</span></div>
+  <div class="mini"><span>🦀 <a href="https://github.com/astral-sh/ruff" target="_blank">astral-sh/ruff</a> — Rust 编写的极速 Python linter/格式化器</span><span class="g">▲ +350/日 · 51.0K ⭐</span><span class="s">常青</span></div>
+  <div class="mini"><span>📊 <a href="https://github.com/prometheus/prometheus" target="_blank">prometheus/prometheus</a> — 监控与时序数据库事实标准</span><span class="g">▲ +322/日 · 67.4K ⭐</span><span class="s">常青</span></div>
+  <div class="mini"><span>🌐 <a href="https://github.com/vercel-labs/agent-browser" target="_blank">vercel-labs/agent-browser</a> — 给 AI agent 用的浏览器自动化 CLI</span><span class="g">▲ +190/日 · 46.8K ⭐</span><span class="s">日+周双榜 · 118 贡献者</span></div>
+  <div class="mini"><span>🧩 <a href="https://github.com/ranxianglei/billion-context" target="_blank">ranxianglei/billion-context</a> — 中文项目：月级超长会话的上下文压缩插件</span><span class="g">▲ +191/日 · 4.6K ⭐</span><span class="s">909 issues · 早期</span></div>
+  <div class="mini"><span>🏠 <a href="https://github.com/mbillow/localthings" target="_blank">mbillow/localthings</a> — 局域网直控三星家电接入 Home Assistant</span><span class="g">▲ +186/日 · 1.1K ⭐</span><span class="s">小而美</span></div>
+  <div class="mini"><span>🎨 <a href="https://github.com/tailwindlabs/tailwindcss" target="_blank">tailwindlabs/tailwindcss</a> — 实用优先 CSS 框架</span><span class="g">▲ +122/日 · 98.5K ⭐</span><span class="s">常青</span></div>
+  <div class="mini"><span>⚙️ <a href="https://github.com/dsx-ai-factory/nvke" target="_blank">dsx-ai-factory/nvke</a> — NVIDIA GPU Kubernetes 管理平面（裸金属）</span><span class="g">▲ +123/日 · 560 ⭐</span><span class="s">AI Infra 早期项目</span></div>
+  <div class="mini"><span>🎨 <a href="https://github.com/meta/astryx" target="_blank">meta/astryx</a> — Meta 开源可定制、agent-ready 设计系统</span><span class="g">▲ +96/日 · 14.5K ⭐</span><span class="s">大厂设计系统</span></div>
+</section>
+
+<!-- ============ 本周趋势 ============ -->
+<section>
+  <div class="sec-head"><h2>📈 本周最值得关注 Top 5</h2></div>
+  <div class="sec-note">按周增量排序。本周主线极其清晰：Agent Skills 集体爆发（mattpocock 31.8 万星、anthropics 官方、superpowers、hallmark、impeccable 同时在榜）+ agent 工作流外设层（t3code、claude-mem、worktrunk、agent-browser）。昨日预测「t3code 将破 5 万星」今日兑现（51,293 ⭐）。</div>
+
+  <div class="card">
+    <div class="p-head"><div class="rank top">1</div><div class="p-title">
+      <div class="p-name"><a href="https://github.com/pingdotgg/t3code" target="_blank">pingdotgg/t3code</a></div>
+      <div class="p-growth">▲ +17,100 / 周（周增第一 · 领先第二名 77%）· 周+月双榜 · 总星 51.3K（已破 5 万 ✓）</div>
+    </div></div>
+    <div class="chips"><span>TypeScript</span><span>Agent Harness 控制面板</span><span>Theo（pingdotgg · T3 Stack 作者）</span><span>479 贡献者</span><span>5,776 open issues</span><span>2026-02 创建</span></div>
+    <div class="p-body">
+      <div class="row"><span class="lbl">是什么：</span>「agent harness 控制面板」：用移动 App（iOS/Android）、Web、桌面端控制跑在你机器上的七种 agent——Claude Code、Codex、Cursor、Grok Build、OpenCode、Google Antigravity、fx。明确宣称「不卖任何东西」，完全开源。</div>
+      <div class="row"><span class="lbl">为什么火：</span>多 agent 并行开发已成主流工作流，但「agent 跑在本机、人在外面」的管理缺口没人补——t3code 用一个免费开源产品直接填坑，加上 Theo 的社区影响力（T3 Stack 作者）与 479 人的贡献者规模，增长既有需求驱动也有传播杠杆。</div>
+      <div class="row"><span class="lbl">价值与判断：</span>agent 外设生态的核心拼图之一，社区健康度本周榜内最佳（479 贡献者 vs impeccable 58 / claude-mem 343）。5,776 个 open issue 是双刃剑：说明用户量巨大，也说明维护压力已达单人团队极限——团队化/商业化几乎是必然下一步。长期基础设施潜力大。</div>
+      <div class="row"><span class="lbl">推荐指数：</span><span class="rate">⭐⭐⭐⭐⭐</span>（每天并行跑多个 agent 的开发者应立即试用；观察「开源工具如何长成平台」的活案例）</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="p-head"><div class="rank top">2</div><div class="p-title">
+      <div class="p-name"><a href="https://github.com/D4Vinci/Scrapling" target="_blank">D4Vinci/Scrapling</a></div>
+      <div class="p-growth">▲ +8,712 / 周（周增第三）· 总星 99.3K · 逼近 10 万星</div>
+    </div></div>
+    <div class="chips"><span>Python</span><span>自适应爬虫框架</span><span>仅 15 open issues（维护极佳）</span><span>2024-10 创建 · 两年 9.9 万星</span></div>
+    <div class="p-body">
+      <div class="row"><span class="lbl">是什么：</span>「从一个请求到整个浏览器」全覆盖的爬虫框架：智能元素追踪、自适应反反爬、页面自愈，号称 The BEST Web Scraping framework。</div>
+      <div class="row"><span class="lbl">为什么火：</span>AI agent 需要大量高质量网页数据，爬虫从「脚本技巧」升级为「agent 基础设施」——agent-browser 管交互，Scrapling 管数据采集，同一波需求的两侧。</div>
+      <div class="row"><span class="lbl">价值与判断：</span>9.9 万星 + 15 个 open issue 的比例是本周榜内工程质量标杆，长期基础设施属性明确。数据工程与 agent 开发者的标配候选。</div>
+      <div class="row"><span class="lbl">推荐指数：</span><span class="rate">⭐⭐⭐⭐⭐</span>（数据/爬虫方向必研究；合规使用前提下生产力倍增器）</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="p-head"><div class="rank top">3</div><div class="p-title">
+      <div class="p-name"><a href="https://github.com/pbakaus/impeccable" target="_blank">pbakaus/impeccable</a></div>
+      <div class="p-growth">▲ +7,623 / 周 · 周+月双榜 · 总星 105.6K · 月增 +27,680</div>
+    </div></div>
+    <div class="chips"><span>Rust</span><span>编码 agent 设计词汇表</span><span>Paul Bakaus（ex-Google）</span><span>58 贡献者</span><span>72 open issues</span><span>一条命令接入 20+ 编码工具</span></div>
+    <div class="p-body">
+      <div class="row"><span class="lbl">是什么：</span>给编码 agent 一套「设计词汇」：用 <b>polish / bolder</b> 指令调风格，用 <b>critique / audit</b> 让 agent 审查自己的 UI——目标是在发布前抓住 AI 垃圾审美（anti-slop）。npx impeccable install 一条命令接入 Claude Code、Cursor、Codex 等 20+ 工具。</div>
+      <div class="row"><span class="lbl">为什么火：</span>vibe coding 产出量爆炸后，「AI 生成的东西一眼假」成了全行业痛点——impeccable 把「审美」变成 agent 可执行的指令集，正好踩中 anti-slop 趋势的第一波产品化。</div>
+      <div class="row"><span class="lbl">价值与判断：</span>中期机会型：方向新颖、增长凶猛（一年 10.5 万星），但「设计词汇」的护城河深度待验证——大厂 coding 工具内置类似能力是最大风险。</div>
+      <div class="row"><span class="lbl">推荐指数：</span><span class="rate">⭐⭐⭐⭐</span>（所有做 AI 生成 UI 的人；创业者重点研究其「指令化审美」的产品思路）</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="p-head"><div class="rank top">4</div><div class="p-title">
+      <div class="p-name"><a href="https://github.com/thedotmack/claude-mem" target="_blank">thedotmack/claude-mem</a></div>
+      <div class="p-growth">▲ +7,482 / 周 · 周+月双榜 · 总星 114.5K · 月增 +17,493</div>
+    </div></div>
+    <div class="chips"><span>TypeScript</span><span>Agent 跨会话记忆</span><span>343 贡献者</span><span>仅 86 open issues</span><span>Vercel OSS Program</span></div>
+    <div class="p-body">
+      <div class="row"><span class="lbl">是什么：</span>「为每个 agent 保存跨会话持久上下文」——自动捕获 agent 会话里发生的一切，下次会话直接续命。</div>
+      <div class="row"><span class="lbl">为什么火：</span>会话结束记忆清零是 agent 落地最疼的断点之一；名字虽叫 claude-mem，定位已是「Every Agent」通用记忆层。343 贡献者 + 86 issues 的比例说明工程管理成熟。</div>
+      <div class="row"><span class="lbl">价值与判断：</span>长期基础设施候选——记忆是 agent 的水电煤，谁做成标准层谁吃长期红利。与官方记忆功能的关系是最大变数。</div>
+      <div class="row"><span class="lbl">推荐指数：</span><span class="rate">⭐⭐⭐⭐⭐</span>（重度 agent 用户立刻装；关注其记忆压缩与检索方案）</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="p-head"><div class="rank top">5</div><div class="p-title">
+      <div class="p-name"><a href="https://github.com/Nutlope/hallmark" target="_blank">Nutlope/hallmark</a></div>
+      <div class="p-growth">▲ +6,624 / 周 · 周+月双榜 · 总星 50.3K · 月增 +20,523</div>
+    </div></div>
+    <div class="chips"><span>CSS</span><span>Anti-AI-slop 设计 skill</span><span>Nutlope（Together AI）</span><span>11 贡献者</span><span>2026-04 创建 · 半年 5 万星</span></div>
+    <div class="p-body">
+      <div class="row"><span class="lbl">是什么：</span>面向 Claude Code / Cursor / Codex 的「反 AI 垃圾设计」skill——让 agent 生成的界面摆脱千篇一律的 AI 味。</div>
+      <div class="row"><span class="lbl">为什么火：</span>与 impeccable 同一趋势的两翼：impeccable 做指令词汇，hallmark 做设计规范。两人都在解决「AI 生成 UI 的塑料感」，说明痛点真实且普遍。</div>
+      <div class="row"><span class="lbl">价值与判断：</span>方向已验证（半年 5 万星），单项目形态更像「内容型 skill 仓库」；长期价值取决于能否从 skill 演进为持续更新的设计系统。</div>
+      <div class="row"><span class="lbl">推荐指数：</span><span class="rate">⭐⭐⭐⭐</span>（与 impeccable 对照研究，理解 anti-slop 两条路线）</div>
+    </div>
+  </div>
+
+  <h3>周榜其余看点</h3>
+  <div class="mini"><span>🎮 <a href="https://github.com/Donchitos/Claude-Code-Game-Studios" target="_blank">Donchitos/Claude-Code-Game-Studios</a> — 49 个游戏 AI agent + 72 工作流 skill</span><span class="g">▲ +5,719/周 · 36.6K ⭐</span></div>
+  <div class="mini"><span>🌌 <a href="https://github.com/Renhuai123/ziwei-doushu" target="_blank">Renhuai123/ziwei-doushu</a> — 中文项目：紫微斗数开源排盘引擎（倪海厦体系）</span><span class="g">▲ +4,906/周 · 16.7K ⭐</span></div>
+  <div class="mini"><span>🎬 <a href="https://github.com/calesthio/OpenMontage" target="_blank">calesthio/OpenMontage</a> — 开源 agentic 视频生产系统（12 条管线）</span><span class="g">▲ +4,369/周 · 78.3K ⭐</span></div>
+  <div class="mini"><span>⚡ <a href="https://github.com/obra/superpowers" target="_blank">obra/superpowers</a> — agentic skills 框架与开发方法论</span><span class="g">▲ +4,466/周 · 314.1K ⭐</span></div>
+  <div class="mini"><span>💫 <a href="https://github.com/github/spec-kit" target="_blank">github/spec-kit</a> — GitHub 官方规格驱动开发（SDD）工具包</span><span class="g">▲ +4,280/周 · 148.4K ⭐</span></div>
+  <div class="mini"><span>📈 <a href="https://github.com/shiyu-coder/Kronos" target="_blank">shiyu-coder/Kronos</a> — 金融市场时序基础模型</span><span class="g">▲ +2,937/周 · 47.3K ⭐</span></div>
+  <div class="mini"><span>🌲 <a href="https://github.com/max-sixty/worktrunk" target="_blank">max-sixty/worktrunk</a> — 为并行 AI agent 设计的 git worktree CLI（Rust）</span><span class="g">▲ +2,292/周 · 11.9K ⭐</span><span class="s">88 贡献者</span></div>
+  <div class="mini"><span>🧩 <a href="https://github.com/jakubkrehel/skills" target="_blank">jakubkrehel/skills</a> — 帮你做好界面的 agent skills 集合</span><span class="g">▲ +1,938/周 · 11.5K ⭐</span></div>
+  <div class="mini"><span>🚀 <a href="https://github.com/The-PR-Agent/pr-agent" target="_blank">The-PR-Agent/pr-agent</a> — 老牌开源 PR 审查 agent（声明非 Qodo 版）</span><span class="g">▲ +1,576/周 · 15.5K ⭐</span></div>
+  <div class="mini"><span>🖥️ <a href="https://github.com/hyprwm/Hyprland" target="_blank">hyprwm/Hyprland</a> — 动态平铺 Wayland 合成器（常青）</span><span class="g">▲ +1,436/周 · 40.5K ⭐</span></div>
+</section>
+
+<!-- ============ 本月趋势 ============ -->
+<section>
+  <div class="sec-head"><h2>🚀 本月最值得关注 Top 5</h2></div>
+  <div class="sec-note">按月增量排序（本月 = 近 30 天）。月榜是「已经跑出来的结果」：rea 以月增 42.98 万星刷新认知（总星 44.1 万中 97% 来自本月），是本月毫无争议的现象级项目。月榜 10 席全部是 2026 年创建或今年爆发的新面孔，老项目已完全退出月榜——开源热点的换血速度在加快。</div>
+
+  <div class="card">
+    <div class="p-head"><div class="rank top">1</div><div class="p-title">
+      <div class="p-name"><a href="https://github.com/morluto/rea" target="_blank">morluto/rea</a></div>
+      <div class="p-growth">▲ +429,845 / 月（本月全网第一 · 现象级）· 总星 441.1K · 10.9 万 fork</div>
+    </div></div>
+    <div class="chips"><span>TypeScript</span><span>MCP · 逆向工程</span><span>367 贡献者</span><span>1,593 open issues</span><span>npm: rea-agents</span><span>2026-04 创建 · 7 个月 44 万星</span></div>
+    <div class="p-body">
+      <div class="row"><span class="lbl">是什么：</span>REA = Reverse Engineer Anything：一个 MCP server，让 agent 能对二进制、应用与运行时行为做逆向工程——「看到喜欢的功能，就理解它到二进制级怎么实现的」。带 MCP 工具目录、RL 环境构建能力、16 种语言 README 和活跃 Discord。</div>
+      <div class="row"><span class="lbl">为什么火：</span><b>精确触发事件无法确认</b>，但从结构可读出三个条件同时成立：① MCP 生态本月全面成熟（agent 侧接口就绪）；② 逆向工程是安全研究 + 借鉴学习两侧的刚需，此前完全没有 agent 化产品；③ README 专门警告仿冒仓库——传播已出圈到会被山寨盯上。97% 的星来自最近 30 天，属于典型「单点引爆」。</div>
+      <div class="row"><span class="lbl">价值与判断：</span>短期热度极高，但底座扎实（MCP 契约 + 367 贡献者），长期看是「安全/逆向 agent 化」的基础设施候选。对普通开发者的价值：读它的 MCP 工具目录设计，是学习「怎么把专业领域能力封装给 agent」的最佳教材。风险：版权与合规边界（逆向的对象与用途）需要使用者自己把关。</div>
+      <div class="row"><span class="lbl">推荐指数：</span><span class="rate">⭐⭐⭐⭐⭐</span>（安全研究员 + MCP 开发者双料必读；本月最值得投入时间研究的项目）</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="p-head"><div class="rank top">2</div><div class="p-title">
+      <div class="p-name"><a href="https://github.com/debpalash/VoiceStudio" target="_blank">debpalash/VoiceStudio</a></div>
+      <div class="p-growth">▲ +49,671 / 月（月增第二）· 总星 103.9K · 132 贡献者 · 11-07 仍在推送</div>
+    </div></div>
+    <div class="chips"><span>Python</span><span>本地语音栈</span><span>ElevenLabs 开源替代</span><span>2026-04 创建 · 7 个月 10.4 万星</span></div>
+    <div class="p-body">
+      <div class="row"><span class="lbl">是什么：</span>全本地、开箱即用的 ElevenLabs 替代：语音克隆等语音生成能力全部跑在自己机器上，不出网。</div>
+      <div class="row"><span class="lbl">为什么火：</span>语音 AI 从「云 API 时代」进入「本地化时代」的标志性开源项目——隐私、成本、可定制三重需求叠加，与 VoiceStudio 同期的本地化浪潮（LLM 本地化之后轮到语音模态）。</div>
+      <div class="row"><span class="lbl">价值与判断：</span>长期基础设施潜力大：本地语音栈是播客、有声书、配音、agent 语音交互的底座。中文等语种的产品化封装是明显空位。</div>
+      <div class="row"><span class="lbl">推荐指数：</span><span class="rate">⭐⭐⭐⭐</span>（内容创作者与语音方向创业者）</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="p-head"><div class="rank top">3</div><div class="p-title">
+      <div class="p-name"><a href="https://github.com/boykopovar/AnyPS5" target="_blank">boykopovar/AnyPS5</a></div>
+      <div class="p-growth">▲ +43,690 / 月 · 总星 52.1K</div>
+    </div></div>
+    <div class="chips"><span>C++</span><span>游戏主机移植</span><span>硬核系统工具</span></div>
+    <div class="p-body">
+      <div class="row"><span class="lbl">是什么：</span>把 PS5 可执行文件自动移植到 Linux / Windows 的工具。</div>
+      <div class="row"><span class="lbl">为什么火：</span>主机模拟/移植社区长期压抑的刚需——「自动移植」把过去手工逆向的活儿流水线化，与 rea 的「逆向 agent 化」是同一枚硬币的两面。具体触发无法确认。</div>
+      <div class="row"><span class="lbl">价值与判断：</span>垂直硬核圈层项目，短期热点属性强于长期生态价值；但与 rea 一起印证了「逆向工程自动化」是本月真实趋势而非孤例。</div>
+      <div class="row"><span class="lbl">推荐指数：</span><span class="rate">⭐⭐⭐</span>（系统/逆向方向关注；注意法律边界）</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="p-head"><div class="rank top">4</div><div class="p-title">
+      <div class="p-name"><a href="https://github.com/storytold/artcraft" target="_blank">storytold/artcraft</a></div>
+      <div class="p-growth">▲ +35,633 / 月 · 总星 39.6K（昨日空降月榜，本周持续）</div>
+    </div></div>
+    <div class="chips"><span>Rust</span><span>创作引擎</span><span>面向艺术家/设计师/制片人</span></div>
+    <div class="p-body">
+      <div class="row"><span class="lbl">是什么：</span>「意向性创作引擎」（intentional crafting engine）——为艺术家、设计师与制片人打造的创作工具，强调创作意图的保留（细节需进一步研究源码确认）。</div>
+      <div class="row"><span class="lbl">为什么火：</span>AI 生成内容泛滥后，「有意图的创作」成为创作者社区的集体情绪，artcraft 精准踩中这个叙事。</div>
+      <div class="row"><span class="lbl">价值与判断：</span>信息尚少（描述偏概念化），月增 3.6 万星证明叙事成功，但产品成熟度无法确认——建议观察而非立刻投入。</div>
+      <div class="row"><span class="lbl">推荐指数：</span><span class="rate">⭐⭐⭐</span>（创作工具方向关注其「意图引擎」具体落地形态）</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="p-head"><div class="rank top">5</div><div class="p-title">
+      <div class="p-name"><a href="https://github.com/heygen-com/hyperframes" target="_blank">heygen-com/hyperframes</a></div>
+      <div class="p-growth">▲ +22,531 / 月 · 总星 80.6K · 128 贡献者 · 11-08 当天仍在推送</div>
+    </div></div>
+    <div class="chips"><span>TypeScript</span><span>Agent 原生视频</span><span>HeyGen 官方开源</span><span>npm: hyperframes</span></div>
+    <div class="p-body">
+      <div class="row"><span class="lbl">是什么：</span>「Write HTML. Render Video. Built for agents.」——写 HTML 就能渲染成视频，商业视频公司 HeyGen 官方开源，为 agent 生成视频而设计。</div>
+      <div class="row"><span class="lbl">为什么火：</span>商业公司把核心生产能力开源给 agent 生态，是「agent 原生媒体管线」的标志性事件：agent 写代码最熟练，那就让视频用 HTML 表达。与 OpenMontage（12 条生产管线）共同构成本月「代码即视频」趋势。</div>
+      <div class="row"><span class="lbl">价值与判断：</span>长期价值高：大厂官方维护 + npm 分发 + 当天仍在推送的活跃度。对开发者，「HTML→视频」是最容易上手的程序化视频方案，做产品演示、数据动画、社媒内容都直接可用。</div>
+      <div class="row"><span class="lbl">推荐指数：</span><span class="rate">⭐⭐⭐⭐⭐</span>（内容工程师与独立开发者直接可用；创业方向重点）</div>
+    </div>
+  </div>
+
+  <h3>月榜其余看点</h3>
+  <div class="mini"><span>🛡️ <a href="https://github.com/cloudflare/security-audit-skill" target="_blank">cloudflare/security-audit-skill</a> — 月增 +39,571（详见日榜第 1）</span><span class="g">▲ 39.6K/月 · 65.8K ⭐</span></div>
+  <div class="mini"><span>🎨 <a href="https://github.com/pbakaus/impeccable" target="_blank">pbakaus/impeccable</a> — 月增 +27,680（详见周榜第 3）</span><span class="g">▲ 27.7K/月 · 105.6K ⭐</span></div>
+  <div class="mini"><span>🎛️ <a href="https://github.com/pingdotgg/t3code" target="_blank">pingdotgg/t3code</a> — 月增 +24,785（详见周榜第 1）</span><span class="g">▲ 24.8K/月 · 51.3K ⭐</span></div>
+  <div class="mini"><span>✨ <a href="https://github.com/Nutlope/hallmark" target="_blank">Nutlope/hallmark</a> — 月增 +20,523（详见周榜第 5）</span><span class="g">▲ 20.5K/月 · 50.3K ⭐</span></div>
+  <div class="mini"><span>🧠 <a href="https://github.com/thedotmack/claude-mem" target="_blank">thedotmack/claude-mem</a> — 月增 +17,493（详见周榜第 4）</span><span class="g">▲ 17.5K/月 · 114.5K ⭐</span></div>
+</section>
+
+<!-- ============ 综合推荐 ============ -->
+<section>
+  <div class="sec-head"><h2>🏆 综合 Top 5（最值得深入研究）</h2></div>
+  <div class="sec-note">综合三榜单地位、增长质量、社区健康度与技术纵深选出。评选标准：增长是必要条件，「能从中学到什么」是充分条件。</div>
+
+  <div class="card">
+    <div class="p-head"><div class="rank top">1</div><div class="p-title">
+      <div class="p-name"><a href="https://github.com/morluto/rea" target="_blank">morluto/rea</a> — 现象级增长 + 领域纵深</div>
+    </div></div>
+    <div class="p-body">
+      <div class="row"><span class="lbl">为什么推荐：</span>月增 42.98 万星是本月全网独一档，且它不是玩具——MCP 契约 + 逆向工程工作流 + RL 环境构建的组合有真实技术纵深。</div>
+      <div class="row"><span class="lbl">最大价值：</span>双教材属性：学「专业领域能力如何封装成 agent 工具」（MCP 目录设计），也学「单点刚需 + 生态成熟期」的爆品规律。</div>
+      <div class="row"><span class="lbl">最大风险：</span>增长过快透支维护（1,593 issues）；逆向对象的法律边界在部分司法辖区模糊。</div>
+      <div class="row"><span class="lbl">适合谁：</span>安全研究员、MCP 开发者、想理解爆品传播的产品人。值得投入时间：<b>是</b>。</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="p-head"><div class="rank top">2</div><div class="p-title">
+      <div class="p-name"><a href="https://github.com/pingdotgg/t3code" target="_blank">pingdotgg/t3code</a> — agent 外设生态核心</div>
+    </div></div>
+    <div class="p-body">
+      <div class="row"><span class="lbl">为什么推荐：</span>周增 +17,100 领先第二名 77%，479 贡献者是本周榜内社区健康度第一，且明确「不卖东西」——先占生态位再谈别的。</div>
+      <div class="row"><span class="lbl">最大价值：</span>立刻可用（多 agent 开发者的移动遥控器）；同时是研究「开源工具长成平台」的活案例。</div>
+      <div class="row"><span class="lbl">最大风险：</span>5,776 个 open issue 的维护压力；七家 agent 厂商任一改 CLI 协议都要跟。</div>
+      <div class="row"><span class="lbl">适合谁：</span>并行跑多个 agent 的开发者、开发者工具创业者。值得投入时间：<b>是（直接装）</b>。</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="p-head"><div class="rank top">3</div><div class="p-title">
+      <div class="p-name"><a href="https://github.com/anthropics/skills" target="_blank">Agent Skills 生态</a>（<a href="https://github.com/anthropics/skills" target="_blank">anthropics/skills</a> + <a href="https://github.com/mattpocock/skills" target="_blank">mattpocock/skills</a> + <a href="https://github.com/google/skills" target="_blank">google/skills</a> 对照研究）</div>
+    </div></div>
+    <div class="p-body">
+      <div class="row"><span class="lbl">为什么推荐：</span>今日三榜单 8 个 skills 相关项目同框：Anthropic 官方（188.8K）、Google 官方入场、个人作者 mattpocock 冲到 317.7K、Cloudflare 用它做安全审计——一个跨厂商事实标准正在肉眼可见地成型。</div>
+      <div class="row"><span class="lbl">最大价值：</span>现在学会写 skills，等于 2013 年学会写 npm 包：生态位空、需求真实、分发成本低。三方对照（官方规范 vs 个人实践 vs 企业应用）是最好的教材。</div>
+      <div class="row"><span class="lbl">最大风险：</span>标准仍在演化，今天的 skill 明天可能被平台能力吸收。</div>
+      <div class="row"><span class="lbl">适合谁：</span>所有 agent 用户。值得投入时间：<b>是（本周就该动手写第一个 skill）</b>。</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="p-head"><div class="rank top">4</div><div class="p-title">
+      <div class="p-name"><a href="https://github.com/milind-soni/OpenMausBot" target="_blank">milind-soni/OpenMausBot</a> — agent 消费化形态样本</div>
+    </div></div>
+    <div class="p-body">
+      <div class="row"><span class="lbl">为什么推荐：</span>Grok Bot 引爆的「AI 即时通讯」形态，目前最完整的开源实现：多 bot 人格 + 各自云电脑 + 审批流 + 本地优先，昨天刚发 v0.1.148。</div>
+      <div class="row"><span class="lbl">最大价值：</span>产品经理与客户端开发者的「消费级 agent 交互」教材：审批怎么做、人格怎么设、云电脑怎么分配都有实现可读。</div>
+      <div class="row"><span class="lbl">最大风险：</span>直接对标大厂产品线（Meta Muse / OpenAI dots / Cue），独立项目长期跟跑难度大；825 issues 折射质量打磨仍在早期。</div>
+      <div class="row"><span class="lbl">适合谁：</span>产品经理、Electron/React 开发者、agent 创业者。值得投入时间：<b>中度（读代码与交互设计，不必急于依赖）</b>。</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="p-head"><div class="rank top">5</div><div class="p-title">
+      <div class="p-name"><a href="https://github.com/heygen-com/hyperframes" target="_blank">heygen-com/hyperframes</a> — agent 原生媒体管线</div>
+    </div></div>
+    <div class="p-body">
+      <div class="row"><span class="lbl">为什么推荐：</span>商业视频公司把生产能力开源给 agent 生态，「Write HTML, Render Video」把程序化视频的门槛降到会写网页就会做视频，月增 2.25 万且当天仍在推送。</div>
+      <div class="row"><span class="lbl">最大价值：</span>直接生产力：产品演示、数据动画、社媒短视频都能用；「HTML 作为视频中间表示」的思路值得所有内容工具借鉴。</div>
+      <div class="row"><span class="lbl">最大风险：</span>HeyGen 开源的边界（哪些能力进开源、哪些留商业版）未明，长期投入前先验证核心链路。</div>
+      <div class="row"><span class="lbl">适合谁：</span>内容工程师、独立开发者、营销自动化方向。值得投入时间：<b>是（当天就能产出作品）</b>。</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 技术趋势 ============ -->
+<section>
+  <div class="sec-head"><h2>📊 GitHub 技术趋势</h2></div>
+  <div class="sec-note">基于三榜单 35 个项目的去重分析，按信号强度排序。</div>
+
+  <div class="trend"><b>① Agent Skills 正在成为跨厂商行业事实标准</b>
+  今日三榜单 8 个 skills 相关项目同框：anthropics/skills（官方规范，188.8K ⭐）、google/skills（第二家大厂官方入场）、mattpocock/skills（个人实践，317.7K ⭐）、cloudflare/security-audit-skill（企业级应用，日增第一）、superpowers（314.1K ⭐）、hallmark、impeccable、jakubkrehel/skills。一个由单一厂商发起的规范，半年内聚齐「官方规范 + 竞对跟进 + 个人爆款 + 企业落地」四要素——这是标准成型的典型路径。</div>
+
+  <div class="trend"><b>② Agent 外设生态成型：记忆、控制台、并行工作区各就各位</b>
+  t3code（agent harness 控制面板，周增 +17,100）、claude-mem（跨会话记忆，114.5K ⭐）、worktrunk（git worktree 并行 agent）、agent-browser（agent 的浏览器之手）。agent 本体（模型+CLI）之上，「键盘鼠标显示器」式的外设层正在被逐个造出来——这是比单个项目更重要的结构性信号。</div>
+
+  <div class="trend"><b>③ Agent 消费化：IM 形态成为新战场</b>
+  OpenMausBot（Grok Bot 开源替代，日增 +1,955）README 直接列出对标矩阵：Meta Muse、OpenAI dots、Cue by Manus。「一堆有人格的 agent 住在你的聊天列表里」从 Grok 的产品创意变成全行业赛道，开源替代几乎同步出现——agent 产品的传播周期已压缩到以周计。</div>
+
+  <div class="trend"><b>④ 「代码即媒体」：agent 原生内容管线爆发</b>
+  hyperframes（HeyGen 官方：HTML→视频，月增 +22.5K）、OpenMontage（agentic 视频生产，78.3K ⭐）、VoiceStudio（本地语音，月增 +49.7K）、artcraft（意图创作引擎，月增 +35.6K）。「写代码生成视频/语音」正在替代「拖时间轴」，创作工具的 agent 化比预期来得更快。</div>
+
+  <div class="trend"><b>⑤ 安全与逆向是 agent 落地最快的高价值垂直</b>
+  rea（agent 逆向工程，月增 +42.98 万）、security-audit-skill（agent 安全审计，日增第一）、sherlock 回潮（+1,766/日）、Scrapling（agent 数据采集，周增 +8,712）、AnyPS5（自动移植）。安全场景「高价值 + 可验证 + 愿付费」三特征齐备，是 agent 从玩具到生产力最先跑通的垂直。</div>
+</section>
+
+<!-- ============ 创业机会 ============ -->
+<section>
+  <div class="sec-head"><h2>💡 开发者 / 创业机会</h2></div>
+
+  <div class="opp"><b>🎯 值得学习（本周就能动手）</b>
+  <ul>
+    <li><b>写第一个 Agent Skill</b>：读 anthropics/skills 的规范 + mattpocock/skills 的实践对照，半天可上手——这是当前性价比最高的新技能投资。</li>
+    <li><b>MCP server 开发</b>：rea 是「专业领域能力封装给 agent」的完整范本（工具目录、契约、多语言、防仿冒声明一应俱全）。</li>
+    <li><b>HTML→视频</b>：hyperframes 当天可产出作品，内容工程师的新基本功。</li>
+  </ul></div>
+
+  <div class="opp"><b>🔧 可二次开发 / 接棒空窗</b>
+  <ul>
+    <li><b>security-audit-skill 停更 55 天</b>：6.6 万星项目无官方维护，社区维护 fork 或「审计编排即服务」存在明确空窗。</li>
+    <li><b>t3code 的企业版空位</b>：个人免费工具爆红后，团队权限/审计/多云版是经典商业化路径（注意先确认其商业计划）。</li>
+    <li><b>VoiceStudio 的语种产品化</b>：本地语音栈 + 中文/垂直语种 + 行业打包（播客、有声书、配音）仍有大片空位。</li>
+  </ul></div>
+
+  <div class="opp"><b>🚀 潜在产品机会</b>
+  <ul>
+    <li><b>Skills 分发与安全平台</b>：skills 生态的「npm moment」——目录、评分、依赖审计、恶意 skill 检测（rea 被仿冒已是现实需求）。</li>
+    <li><b>Anti-slop 设计层工具链</b>：impeccable（105.6K ⭐）+ hallmark（50.3K ⭐）验证了「AI 审美治理」的真实付费潜力，从 CLI skill 到设计系统平台还有很大空间。</li>
+    <li><b>Agent 记忆的团队层</b>：claude-mem 解决单人跨会话，团队共享记忆/组织知识沉淀是下一个空位（114.5K ⭐ 的需求背书）。</li>
+    <li><b>中文垂直与文化方向</b>：ziwei-doushu（紫微斗数引擎）周增 +4,906 证明文化垂直 + 开源工程化同样能爆发；中文 agent 记忆/长会话（billion-context）值得跟进。</li>
+  </ul></div>
+</section>
+
+<!-- ============ 最终结论 ============ -->
+<section>
+  <div class="sec-head"><h2>🎯 今日最终结论</h2></div>
+  <div class="final">
+    <div class="qa"><span class="q">当前最火的项目是什么？</span><br>
+    <a href="https://github.com/cloudflare/security-audit-skill" target="_blank">cloudflare/security-audit-skill</a>——停更 55 天仍连续第二日日增第一（+2,085），月增扩大到 +39,571，是「官方品牌 + 安全刚需」的余温燃烧；新项目中最火的是 <a href="https://github.com/milind-soni/OpenMausBot" target="_blank">OpenMausBot</a>（日增 +1,955，昨天刚发新版）。</div>
+    <div class="qa"><span class="q">当前最值得长期关注的项目是什么？</span><br>
+    Agent Skills 生态整体（anthropics 官方规范 + google 官方入场 + mattpocock 个人爆款）与 agent 外设层：<a href="https://github.com/pingdotgg/t3code" target="_blank">t3code</a>（控制）、<a href="https://github.com/thedotmack/claude-mem" target="_blank">claude-mem</a>（记忆）、<a href="https://github.com/heygen-com/hyperframes" target="_blank">hyperframes</a>（媒体）——三者分别代表 agent 的显示器、硬盘和打印机。</div>
+    <div class="qa"><span class="q">如果只能研究一个项目？</span><br>
+    <a href="https://github.com/morluto/rea" target="_blank">morluto/rea</a>。月增 42.98 万星的现象级增长 + MCP 逆向工程的真实技术纵深，一个项目同时教你看懂「agent 工具设计范式」与「爆品传播规律」，研究性价比全网最高。</div>
+    <div class="qa"><span class="q">最近最值得关注的技术趋势？</span><br>
+    ① Agent Skills 从单厂规范变成跨厂商事实标准（今日 8 项目同框）；② agent 外设生态（记忆/控制台/并行工作区）成型；③ 安全与逆向成为 agent 变现最快的垂直；④「写代码生成媒体」成为新的创作范式。</div>
+  </div>
+
+  <div class="foot">
+    📊 数据说明：三榜单（今日 15 / 本周 19 / 本月 10）由真实浏览器抓取 GitHub Trending 页获得，去重后 35 项；其中 17 个重点项目的 Star / Fork / Issue / 贡献者 / 更新时间经 GitHub API 逐项核实（总星数以 API 为准，与抓取时点可能有微小差异）。周增/月增为 Trending 页展示口径。凡无法核实的原因判断均标注「推测」或「无法确认」。<br>
+    📅 生成时间：2026-11-08（周日）· Multica 开源情报智能体 · 历史日报见仓库归档
+  </div>
+</section>
+
+</div>
+</body>
+</html>
