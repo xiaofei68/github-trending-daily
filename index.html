@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<meta name="description" content="GitHub 热门项目日报 2026-11-19：Google paper-orchestra 三连加速 +1,524 登顶日增、ECC +1,108 站稳 30 万星、last30days +1,059 五连涨、svelte 发版叠加十周年前夕回归 +692、经典基建 uv/nvm/jquery 集体重返日榜、SkillEvaluator 出清后脉冲回归、Cursor 官方 plugins 仓库新面孔、modern-web-guidance 周增 +7,257 断层（82% 星来自本周）、security-audit-skill 月增 +44,600 但停更于 09-14；三榜单去重 45 项全部经 GitHub API 核实、技术趋势与创业机会">
-<title>🔥 GitHub 热门项目日报｜2026-11-19</title>
+<meta name="description" content="GitHub 热门项目日报 2026-11-20：superpowers 王者归来 +2,028 登顶日增、Claude-BugHunter +1,349 日月双榜、昨日双雄 paper-orchestra/ECC 全线出清、stitch-skills 成唯一三榜同在、univer 周榜登顶 +7,248、security-audit-skill 月增 44,608 冻结但停更 09-14、astryx 周增五连降、技能类占三榜四成；三榜单去重 40 项全部经 GitHub API 核实、技术趋势与创业机会">
+<title>🔥 GitHub 热门项目日报｜2026-11-20</title>
 <style>
   :root{
     --bg:#f5f6f8; --card:#ffffff; --ink:#1f2328; --sub:#57606a; --line:#e4e7eb;
@@ -73,18 +73,22 @@
   }
   .qa{font-size:14px; margin-bottom:12px; color:#3b424b;}
   .qa .q{font-weight:700; color:var(--ink);}
+  .list-row{display:flex; gap:8px; font-size:13px; padding:5px 0; border-bottom:1px dashed var(--line); color:#3b424b;}
+  .list-row:last-child{border-bottom:none;}
+  .list-row .no{flex:none; width:22px; color:var(--sub); font-weight:700; text-align:right;}
+  .list-row .g{flex:none; color:var(--hot); font-weight:700; width:74px;}
   .foot{margin-top:26px; font-size:12px; color:var(--sub); line-height:1.7;}
 </style>
 </head>
 <body>
 <div class="hero">
   <h1>🔥 GitHub 热门项目日报</h1>
-  <div class="sub">2026-11-19 · 每日开源情报 · 三榜单交叉分析</div>
+  <div class="sub">2026-11-20 · 每日开源情报 · 三榜单交叉分析</div>
   <div class="stats">
-    <span>三榜去重 45 项</span>
-    <span>API 核实 45/45</span>
-    <span>日榜 19 · 周榜 15 · 月榜 16</span>
-    <span>今日最猛 +1,524</span>
+    <span>三榜去重 40 项</span>
+    <span>API 核实 40/40</span>
+    <span>日榜 16 · 周榜 13 · 月榜 17</span>
+    <span>今日最猛 +2,028</span>
   </div>
 </div>
 <div class="wrap">
@@ -93,364 +97,358 @@
   <div class="sec-head"><h2>📋 数据说明与今日变化</h2></div>
   <div class="trend">
     <b>⚠️ 榜单口径（如实说明）</b>
-    GitHub Trending 今日实际返回日榜 19 项、周榜 15 项、月榜 16 项（非满额 25），本报告已<b>全量收录</b>而非截取 Top 20。三榜去重共 45 个项目，总星 / fork / open issues / 创建与推送时间 / 贡献者数已逐项经 GitHub API 核实。
+    GitHub Trending 今日实际返回日榜 16 项、周榜 13 项、月榜 17 项（非满额 25），本报告<b>全量收录</b>而非截取 Top 20。三榜去重共 40 个项目，总星 / fork / open issues / 创建与推送时间已逐项经 GitHub API 核实，39 项贡献者数经 API 分页核实（1 项标注无法确认）。
   </div>
   <div class="trend">
-    <b>🔁 对比昨日日报（2026-11-18）的关键变化</b>
-    ① <b>paper-orchestra 三连加速登顶</b>：<a href="https://github.com/google-research/paper-orchestra">google-research/paper-orchestra</a> 日增 +313 → +1,072 → <b>+1,524</b>，总星 2,774 → 4,298（API 核实，增量与总量完全吻合），是今日<b>全场日增第一</b>；② <b>日榜大洗牌</b>：昨日日榜前五（superpowers、univer、ag-ui、LoopForge、Claude-BugHunter）今日<b>全部出清日榜</b>，仅 superpowers（+822）与 ECC 留场；③ <b>经典基石头条集体回归</b>：nvm、uv、jquery、svelte、solid、openvino、appwrite、n8n、awesome-mcp-servers 同日进日榜——与昨日「纯技能包日榜」形成鲜明对比；④ <b>svelte 双事件</b>：昨日发布 5.58.0（API releases 核实）+ 明日（11-20）创建满十周年（2016-11-20 创建，API 核实），+692 的归因包含周年传播（推测，已标注）；⑤ <b>SkillEvaluator 脉冲回归</b>：昨日全榜出清，今日 +312 重返日榜，「爆发 ≠ 持续、但需求真实」再添一例；⑥ <b>last30days 连续加速</b>：+696 → <b>+1,059</b>，日周双榜在列；⑦ <b>plannotator 三榜同在终结</b>：今日出清日榜，但守住周（+3,290）月（+3,868）双榜；⑧ <b>astryx 周增四连降</b>：13,501 → 10,939 → 8,700 → <b>+6,250</b>，热度退潮明确；⑨ <b>Cursor 官方 plugins 仓库进榜</b>（+314，1.72 万星）——编辑器插件规范与技能生态正面汇流；⑩ <b>modern-web-guidance 周增断层</b>：+7,257/周，总星 8,843 的<b> 82% 来自本周</b>，Chrome / Edge / Firefox / MDN 四方共建；⑪ security-audit-skill 月增 <b>+44,600</b> 继续断层第一，但仓库最后 push 仍停在 <b>09-14</b>，星动与维护脱节持续；⑫ ECC（+883 → <b>+1,108</b>）与 arcane（+618 → +547）连续两日稳住 500+ 日增。
+    <b>🔁 对比昨日日报（2026-11-19）的关键变化</b>
+    ① <b>superpowers 王者归来</b>：<a href="https://github.com/obra/superpowers">obra/superpowers</a> 日增 +822 → <b>+2,028</b> 重回全场第一，总星 32.2 万——技能框架的绝对锚点；② <b>昨日双雄全线出清</b>：paper-orchestra（昨日 +1,524 第一）与 ECC（+1,108）今日<b>三榜全部消失</b>，「日榜是情绪、周月榜才是信号」再添铁证；③ <b>经典基建浪潮退潮</b>：昨日集体回归的 nvm / uv / jquery / svelte / solid / appwrite / n8n 今日全部出清，仅 nginx（+73）与 openvino（+246）留场；④ <b>stitch-skills 成为唯一三榜同在</b>：Google Labs 官方设计技能仓（日 +302 / 周 +1,829 / 月 +2,107），plannotator 让出三榜但守住周（+3,468，昨 +3,290）月（+4,143，昨 +3,868）双榜且双升；⑤ <b>last30days 连续性最佳</b>：+696 → +1,059 → <b>+954</b>，日周双榜在列，稳态确认；⑥ <b>CLI-Anything 回归日榜</b>（+898）但仓库 <b>09-22 后无 push</b>——星动与维护脱节的又一例；⑦ <b>astryx 周增五连降</b>：13,501 → 10,939 → 8,700 → 6,250 → <b>+4,977</b>，退潮明确；⑧ <b>univer 周榜登顶</b>：周增 +6,840 → <b>+7,248</b> 加速，前日日榜第一的热度转入周线延续；⑨ <b>security-audit-skill 月增冻结</b>：+44,600 → <b>+44,608</b>（日均仅约 +8），09-14 后停更未变，75,846 星却仅 3 位贡献者；⑩ <b>Cursor 官方 plugins 连续第二日进榜</b>：+314 → +384，1.76 万星；⑪ <b>反 AI 味双强续涨</b>：impeccable 月 +30,843、hallmark 月 +27,756，合计月增近 6 万仍是品类级现象；⑫ <b>中文项目今日 4 席</b>：minimind（+238）、Ghost-Downloader-3（+341）、autoclip（+126）、univer（周榜第一）。
   </div>
 </section>
 
 <section>
   <div class="sec-head"><h2>🔥 今日最火 Top 5</h2></div>
-  <div class="sec-note">按今日新增 Star 排序，兼顾信号价值；完整日榜 19 项数据见文末口径说明。</div>
+  <div class="sec-note">按今日新增 Star 排序，兼顾信号价值；完整日榜 16 项见文末速览。</div>
 
   <div class="card">
     <div class="p-head"><div class="rank top">1</div><div class="p-title">
-      <div class="p-name"><a href="https://github.com/google-research/paper-orchestra">google-research/paper-orchestra</a></div>
-      <div class="p-growth">今日 +1,524 ★（全场第一，三连加速 +313 → +1,072 → +1,524）· 总星 4,298 · 增速/存量比全场第一</div>
-      <div class="chips"><span>Python</span><span>多智能体 / 学术写作</span><span>533 forks</span><span>2 贡献者</span><span>2026-05 创建</span></div>
+      <div class="p-name"><a href="https://github.com/obra/superpowers">obra/superpowers</a></div>
+      <div class="p-growth">今日 +2,028 ★（全场第一，昨 +822 再加速）· 总星 32.2 万 · 技能生态体量之王</div>
+      <div class="chips"><span>Shell / MD</span><span>Agent Skills 框架</span><span>2.86 万 forks</span><span>37 贡献者</span><span>2025-10 创建</span></div>
     </div></div>
     <div class="p-body">
-      <div class="row"><span class="lbl">它是什么：</span>Google Cloud AI Research 出品的多智能体论文写作框架 PaperOrchestra：把想法、实验日志等自由格式素材编排成<b>可投稿的 LaTeX 稿</b>——大纲、文献综述、分节撰写、精修、绘图全自动分工（README 核实，作者 Yiwen Song 等 4 人）。</div>
-      <div class="row"><span class="lbl">为什么火：</span>连续三日加速且增量与总星完全吻合，传播链路刚刚点火；学术写作是科研圈「最后一块拼图」刚需，谷歌背书放大了信任传导。</div>
-      <div class="row"><span class="lbl">核心能力：</span>多 agent 流水线（Outline / 文献综述 / 分节写作 / 精修 / 绘图），自动检索并整合文献，输出符合会议模板的 LaTeX。</div>
-      <div class="row"><span class="lbl">适合谁：</span>研究人员、研究生、科研团队；做学术工具 / 科研 SaaS 的创业者。</div>
-      <div class="row"><span class="lbl">判断：</span>真实痛点 + 大厂背书，但仅 2 位贡献者、11-15 后无推送，属「研究代码」而非产品，看社区是否接手。推荐指数 <span class="rate">⭐⭐⭐⭐</span></div>
+      <div class="row"><span class="lbl">它是什么：</span>Jesse Vincent（obra）的 agentic skills 框架与软件开发方法论——把「大脑外挂」做成技能库：TDD 纪律、调试循环、头脑风暴、计划先行等可安装的工作方式（README 核实）。</div>
+      <div class="row"><span class="lbl">为什么火：</span>技能生态爆发的最大受益者：13 个月 32.2 万星；昨日 +822 今日 +2,028，随 Cursor 官方插件仓进榜、Google Stitch 技能上架等事件被反复引用，头部虹吸效应明显。</div>
+      <div class="row"><span class="lbl">核心能力：</span>20+ 交互式技能 + 完整方法论；兼容 Claude Code，被大量第三方技能仓当作依赖与范本。</div>
+      <div class="row"><span class="lbl">适合谁：</span>所有 AI Coding 重度用户；做技能 / 插件生态的开发者必读。</div>
+      <div class="row"><span class="lbl">判断：</span>品类定义者，方法论比代码更值钱；注意仓库本体 11-03 后无 push（技能类仓库代码冻结 ≠ 死亡，但需跟踪社区分支）。推荐指数 <span class="rate">⭐⭐⭐⭐⭐</span></div>
     </div>
   </div>
 
   <div class="card">
     <div class="p-head"><div class="rank top">2</div><div class="p-title">
-      <div class="p-name"><a href="https://github.com/affaan-m/ECC">affaan-m/ECC</a></div>
-      <div class="p-growth">今日 +1,108 ★（昨 +883，连续加速）· 总星 30.65 万</div>
-      <div class="chips"><span>JavaScript</span><span>Agent Harness 优化系统</span><span>4.51 万 forks</span><span>401 贡献者</span><span>2026-01 创建</span></div>
+      <div class="p-name"><a href="https://github.com/elementalsouls/Claude-BugHunter">elementalsouls/Claude-BugHunter</a></div>
+      <div class="p-growth">今日 +1,349 ★ · 总星 1.26 万 · 日月双榜（月 +6,708）· 出清后回归稳居前排</div>
+      <div class="chips"><span>Python</span><span>安全 / 红队技能包</span><span>1,591 forks</span><span>18 贡献者</span><span>2026-05 创建</span></div>
     </div></div>
     <div class="p-body">
-      <div class="row"><span class="lbl">它是什么：</span>自称「agent harness 操作系统」：技能（skills）、本能（instincts）、记忆（memory）、安全与「研究优先开发」一体的 agent 运行时性能优化体系（README 核实），提供十余种语言文档。</div>
-      <div class="row"><span class="lbl">为什么火：</span>10 个月 30.6 万星、401 位贡献者，是技能生态里体量仅次于 superpowers 的方法论大仓；昨日 +883 今日 +1,108，热度仍在爬坡而非退潮。</div>
-      <div class="row"><span class="lbl">核心能力：</span>把 agent 的「怎么干活」工程化——技能组合、记忆持久化、安全护栏、研究式任务分解。</div>
-      <div class="row"><span class="lbl">适合谁：</span>重度 AI Coding 用户；研究 agent 工程化 / harness 设计的开发者。</div>
-      <div class="row"><span class="lbl">判断：</span>贡献者体量是真社区而非单人秀，与 superpowers 同场竞技的方法论双雄之一；11-17 仍在推送。推荐指数 <span class="rate">⭐⭐⭐⭐</span></div>
+      <div class="row"><span class="lbl">它是什么：</span>面向 Claude Code 的漏洞挖掘与外部红队技能包：<b>83 个技能、15 个斜杠命令、681 份已披露报告的模式库</b>（其中 433 份已逐条引用核实），覆盖 24 类漏洞与企业攻击面矩阵（M365/Entra、Okta、vCenter、SSL-VPN 等），含 Burp MCP 集成（README 核实，作者 Sachin Sharma）。</div>
+      <div class="row"><span class="lbl">为什么火：</span>把「资深红队工程师的经验」封装成 agent 可执行的程序性知识；安全圈本就缺系统化 playbook，且在 DVWA / Juice Shop 等靶场验证过，可信度高于纯清单式仓库。</div>
+      <div class="row"><span class="lbl">核心能力：</span>5 阶段工作流 + 按漏洞类分的检测模式 / payload / 绕过表 + 2024–2026 平台 CVE 链。仅限<b>授权测试</b>用途。</div>
+      <div class="row"><span class="lbl">适合谁：</span>渗透测试工程师、红队人员、安全研究员、甲方安全团队；做安全 agent 产品的团队。</div>
+      <div class="row"><span class="lbl">判断：</span>双榜在列 + 持续维护（11-19 push），是「安全 × 技能」交叉品类目前最完整的范本；单人主导、18 贡献者，深度依赖作者更新。推荐指数 <span class="rate">⭐⭐⭐⭐</span></div>
     </div>
   </div>
 
   <div class="card">
     <div class="p-head"><div class="rank top">3</div><div class="p-title">
       <div class="p-name"><a href="https://github.com/mvanhorn/last30days-skill">mvanhorn/last30days-skill</a></div>
-      <div class="p-growth">今日 +1,059 ★（昨 +696，连续加速）· 总星 7.0 万 · 日周双榜</div>
-      <div class="chips"><span>Python</span><span>Agent 情报研究技能</span><span>6,243 forks</span><span>166 贡献者</span><span>2026-01 创建</span></div>
+      <div class="p-growth">今日 +954 ★（昨 +1,059，六日连续在场）· 总星 7.08 万 · 日周双榜</div>
+      <div class="chips"><span>Python</span><span>Agent 情报研究技能</span><span>6,309 forks</span><span>166 贡献者</span><span>2026-01 创建</span></div>
     </div></div>
     <div class="p-body">
-      <div class="row"><span class="lbl">它是什么：</span>/last30days——「由真实互动打分、而非编辑挑选」的 agent 搜索引擎技能：跨 Reddit、X、YouTube、HN、Polymarket 与全网检索近 30 天话题并做综合（README 核实，v4 流水线）。</div>
-      <div class="row"><span class="lbl">为什么火：</span>把「舆情 / 趋势研究」这类高价值信息工作变成一条 agent 命令；曾登 Trending 日榜第一（README 徽章核实），本周 +2,423 说明热度已从脉冲转为稳态。</div>
-      <div class="row"><span class="lbl">核心能力：</span>多源聚合 + 投票 / 真金权重排序 + 自动综述，输出带来源的研究简报。</div>
-      <div class="row"><span class="lbl">适合谁：</span>内容创作者、市场 / 舆情分析师、独立开发者；做信息类 agent 产品的团队。</div>
-      <div class="row"><span class="lbl">判断：</span>技能生态里「信息检索」品类的标杆，166 贡献者 + 持续维护（11-17 推送）。推荐指数 <span class="rate">⭐⭐⭐⭐</span></div>
+      <div class="row"><span class="lbl">它是什么：</span>/last30days——「由真实互动打分、而非编辑挑选」的 agent 搜索引擎技能：跨 Reddit、X、YouTube、HN、Polymarket 检索近 30 天话题并综合，公司话题还能带出专利与招聘页（README 核实，v4 流水线）。</div>
+      <div class="row"><span class="lbl">为什么火：</span>把舆情 / 趋势研究变成一条 agent 命令；零配置（Reddit / HN / Polymarket 开箱即用）+ 10 语言 README + 50+ Agent Skills 宿主兼容，传播面极广。</div>
+      <div class="row"><span class="lbl">核心能力：</span>多源聚合 + 投票 / 真金（Polymarket）权重排序 + 自动综述，输出带来源的研究简报。</div>
+      <div class="row"><span class="lbl">适合谁：</span>内容创作者、市场 / 舆情分析师、投资研究者；做信息类 agent 产品的团队。</div>
+      <div class="row"><span class="lbl">判断：</span>技能生态「信息检索」品类标杆：166 贡献者 + 活跃维护（11-19 push），日增连续六日 500+，已从脉冲转为稳态。推荐指数 <span class="rate">⭐⭐⭐⭐</span></div>
     </div>
   </div>
 
   <div class="card">
     <div class="p-head"><div class="rank top">4</div><div class="p-title">
-      <div class="p-name"><a href="https://github.com/obra/superpowers">obra/superpowers</a></div>
-      <div class="p-growth">今日 +822 ★（昨 +1,917 回落）· 总星 32.13 万（突破 32 万）</div>
-      <div class="chips"><span>Shell</span><span>AI Agent / 技能框架</span><span>2.86 万 forks</span><span>37 贡献者</span><span>2025-10 创建</span></div>
+      <div class="p-name"><a href="https://github.com/HKUDS/CLI-Anything">HKUDS/CLI-Anything</a></div>
+      <div class="p-growth">今日 +898 ★ · 总星 6.06 万 · 回归日榜 · 但仓库 09-22 后无 push</div>
+      <div class="chips"><span>Python</span><span>Agent 原生软件 / CLI</span><span>5,495 forks</span><span>120 贡献者</span><span>2026-03 创建</span></div>
     </div></div>
     <div class="p-body">
-      <div class="row"><span class="lbl">它是什么：</span>给 coding agent 的「完整软件开发方法论」——可组合技能集 + 初始指令，README 列出 Claude Code、Codex、Cursor、Gemini CLI、Devin、Antigravity 等十余个支持客户端。</div>
-      <div class="row"><span class="lbl">为什么火：</span>昨日全场第一（+1,917）后回落至 +822，属高位震荡而非出清；32 万星体量自带传播惯性，技能生态每个热日它都在场。</div>
-      <div class="row"><span class="lbl">核心能力：</span>先逼出规格再动手的工程化流程 + 可组合技能 + 全客户端兼容。</div>
-      <div class="row"><span class="lbl">适合谁：</span>所有 AI Coding 用户；想做技能生态的创业者（仓库结构即框架设计教材）。</div>
-      <div class="row"><span class="lbl">判断：</span>技能生态事实框架层，长期基础设施；最后推送 11-03，节奏略缓于 ECC。推荐指数 <span class="rate">⭐⭐⭐⭐⭐</span></div>
+      <div class="row"><span class="lbl">它是什么：</span>港大数据智能实验室（HKUDS，LightRAG 同门）的「让所有软件 Agent 原生化」项目：为各类软件生成 / 整理 agent 可调用的 CLI 接口，配套 CLI-Hub 站点（README 核实）。</div>
+      <div class="row"><span class="lbl">为什么火：</span>踩中「agent 操作软件的最短路径是命令行」这一共识；HKUDS 的学术品牌与 LightRAG 的社区基础带来持续引流。</div>
+      <div class="row"><span class="lbl">核心能力：</span>统一 CLI 封装范式 + CLI-Hub 集中分发，把 GUI 软件能力变成 agent 可编排的工具。</div>
+      <div class="row"><span class="lbl">适合谁：</span>agent 工具链开发者、自动化工程师、做 agent 操作系统层的团队。</div>
+      <div class="row"><span class="lbl">判断：</span>方向正确（与 MCP 互补：MCP 连服务、CLI 连本地软件），但 8 个月 6 万星却在 09-22 后无 push，星动与维护已脱节，需观察是否恢复迭代再投入。推荐指数 <span class="rate">⭐⭐⭐</span></div>
     </div>
   </div>
 
   <div class="card">
     <div class="p-head"><div class="rank top">5</div><div class="p-title">
-      <div class="p-name"><a href="https://github.com/sveltejs/svelte">sveltejs/svelte</a></div>
-      <div class="p-growth">今日 +692 ★ · 总星 8.96 万 · 明日创建满十周年（2016-11-20，API 核实）</div>
-      <div class="chips"><span>JavaScript</span><span>前端框架 / 常青树</span><span>6,208 forks</span><span>413 贡献者</span><span>2016-11 创建</span></div>
+      <div class="p-name"><a href="https://github.com/firecrawl/firecrawl">firecrawl/firecrawl</a></div>
+      <div class="p-growth">今日 +825 ★ · 总星 20.4 万 · 老牌劲旅常青</div>
+      <div class="chips"><span>TypeScript</span><span>Agent 数据基础设施</span><span>1.07 万 forks</span><span>171 贡献者</span><span>2024-04 创建</span></div>
     </div></div>
     <div class="p-body">
-      <div class="row"><span class="lbl">它是什么：</span>编译型前端框架——声明式组件编译为精准更新 DOM 的高效 JS，「web development for the rest of us」。</div>
-      <div class="row"><span class="lbl">为什么火：</span>两个可核实事件叠加：昨日发布 5.58.0（API releases 核实）+ 明日十周年，社区纪念传播带动 star 潮（归因为推测）；413 位贡献者的十年老店本身自带头条体质。</div>
-      <div class="row"><span class="lbl">核心能力：</span>无虚拟 DOM 的编译时优化、响应式声明、极小运行时。</div>
-      <div class="row"><span class="lbl">适合谁：</span>所有前端开发者；关注框架演进路径的架构师。</div>
-      <div class="row"><span class="lbl">判断：</span>十年常青的头部框架，AI 时代仍是「非 React」阵营的第一选项；今日热度为事件脉冲。推荐指数 <span class="rate">⭐⭐⭐⭐</span></div>
+      <div class="row"><span class="lbl">它是什么：</span>「让 agent 更聪明的知识基础设施」：抓取、搜索与 550+ 数据源接入，把网页变成 LLM 可用的干净数据（README 核实）。</div>
+      <div class="row"><span class="lbl">为什么火：</span>agent 越多，喂数据的刚需越强；今日仍在 push（11-20），是技能包刷屏榜单里少数的硬工程常青树。</div>
+      <div class="row"><span class="lbl">核心能力：</span>网页转 LLM 友好格式、批量抓取、搜索 API、爬虫生态集成。</div>
+      <div class="row"><span class="lbl">适合谁：</span>做 RAG / agent 数据管线的所有团队；可自部署（AGPL 限制需注意）。</div>
+      <div class="row"><span class="lbl">判断：</span>已是品类基础设施，护城河是数据源广度与工程稳定性；商业化成熟（Firecrawl 公司），开源版与云版并行。推荐指数 <span class="rate">⭐⭐⭐⭐</span></div>
     </div>
-  </div>
-
-  <div class="trend">
-    <b>📌 日榜其余值得一看</b>
-    <a href="https://github.com/getarcaneapp/arcane">getarcaneapp/arcane</a> +547（连续两日 500+，Docker 管理面板 v3）·
-    <a href="https://github.com/HKUDS/CLI-Anything">HKUDS/CLI-Anything</a> +389（5.97 万星「让所有软件 agent 原生化」，⚠️ 09-22 后停更）·
-    <a href="https://github.com/google-labs-code/stitch-skills">google-labs-code/stitch-skills</a> +365（Google Labs 技能库，日周双榜）·
-    <a href="https://github.com/n8n-io/n8n">n8n-io/n8n</a> +325（21.1 万星自动化平台常青）·
-    <a href="https://github.com/cursor/plugins">cursor/plugins</a> +314（Cursor 官方插件规范仓库，新面孔）·
-    <a href="https://github.com/NVIDIA/SkillEvaluator">NVIDIA/SkillEvaluator</a> +312（昨日全榜出清今日回归，技能评测）·
-    <a href="https://github.com/astral-sh/uv">astral-sh/uv</a> +258（9.2 万星 Python 包管理）·
-    <a href="https://github.com/jquery/jquery">jquery/jquery</a> +266（6 万星，2009 年创建的活化石）·
-    <a href="https://github.com/DeanChensj/jiangshan-map">DeanChensj/jiangshan-map</a> +218（中文项目：中国历史交互地图时间轴，403 BCE 起 18 朝）·
-    <a href="https://github.com/nvm-sh/nvm">nvm-sh/nvm</a> +237（9.6 万星）·
-    <a href="https://github.com/appwrite/appwrite">appwrite/appwrite</a> +232（5.8 万星开源云）·
-    <a href="https://github.com/punkpeye/awesome-mcp-servers">punkpeye/awesome-mcp-servers</a> +53（9.8 万星 MCP 清单常青）。
   </div>
 </section>
 
 <section>
   <div class="sec-head"><h2>📈 本周最值得关注 Top 5</h2></div>
-  <div class="sec-note">按本周新增 Star 与信号价值排序；完整周榜 15 项见文末口径说明。</div>
+  <div class="sec-note">按周新增 Star 排序；完整周榜 13 项见文末速览。</div>
 
   <div class="card">
     <div class="p-head"><div class="rank top">1</div><div class="p-title">
-      <div class="p-name"><a href="https://github.com/GoogleChrome/modern-web-guidance-src">GoogleChrome/modern-web-guidance-src</a></div>
-      <div class="p-growth">本周 +7,257 ★（周榜第一）· 总星 8,843 —— 82% 的星来自本周，本周最大黑马</div>
-      <div class="chips"><span>TypeScript</span><span>浏览器厂商 / 官方技能</span><span>739 forks</span><span>78 贡献者</span><span>2026-01 创建</span></div>
+      <div class="p-name"><a href="https://github.com/dream-num/univer">dream-num/univer</a></div>
+      <div class="p-growth">本周 +7,248 ★（周榜第一，昨周窗 +6,840 仍在加速）· 总星 3.04 万</div>
+      <div class="chips"><span>TypeScript</span><span>AI Office / 办公协作</span><span>2,757 forks</span><span>78 贡献者</span><span>2022-09 创建</span></div>
     </div></div>
     <div class="p-body">
-      <div class="row"><span class="lbl">它是什么：</span>Modern Web Guidance 源码仓——把 Web 平台专家知识、最佳实践与浏览器兼容数据做成<b>技能</b>注入 coding agent，防止 agent 输出过时写法（README 核实）。由 <b>Google Chrome、Microsoft Edge、Mozilla Firefox 与 MDN 团队共同守护</b>。</div>
-      <div class="row"><span class="lbl">为什么火：</span>浏览器厂商联盟首次以「技能」形式官方入场 agent 生态——这是 Web 平台对 AI 生成代码质量的一次正式接管动作，信号意义大于代码本身。</div>
-      <div class="row"><span class="lbl">核心能力：</span>编写 / 校准 / 评测三件套，带 Eval 仪表盘，可直接装进 coding agent 的现代 Web 知识库。</div>
-      <div class="row"><span class="lbl">适合谁：</span>所有前端 / 全栈开发者；做 agent 知识注入的团队（学习其评测方法论）。</div>
-      <div class="row"><span class="lbl">判断：</span>四方共建 + 官方身份，极可能成为 agent 时代 Web 标准知识的事实分发渠道；今日仍在推送。推荐指数 <span class="rate">⭐⭐⭐⭐⭐</span></div>
+      <div class="row"><span class="lbl">它是什么：</span>开源 Office SDK：表格、文档、演示的<b>编辑、计算、协作</b>全栈能力，官方叙事「Build your own AI office」（README 核实）。</div>
+      <div class="row"><span class="lbl">为什么火：</span>前日日榜第一（+1,828）后热度转入周线并继续加速；AI 办公是确定性赛道，而它是少数能完整嵌入自研产品的开源底座（4 年持续演进，11-19 仍在 push）。</div>
+      <div class="row"><span class="lbl">核心能力：</span>类 Excel 公式引擎 + 协同编辑 + 企业级二次开发接口。</div>
+      <div class="row"><span class="lbl">适合谁：</span>做协同办公、报表平台、行业 SaaS 的团队；中国团队出品，中文生态友好。</div>
+      <div class="row"><span class="lbl">判断：</span>三榜中「真产品 + 真营收 + 真持久」的代表，周线加速说明不是脉冲。推荐指数 <span class="rate">⭐⭐⭐⭐⭐</span></div>
     </div>
   </div>
 
   <div class="card">
     <div class="p-head"><div class="rank top">2</div><div class="p-title">
-      <div class="p-name"><a href="https://github.com/dream-num/univer">dream-num/univer</a></div>
-      <div class="p-growth">本周 +6,840 ★ · 总星 2.99 万 · 本周稳态增长（昨日日增 1,774，今日出清日榜属正常轮换）</div>
-      <div class="chips"><span>TypeScript</span><span>办公协作 / AI Office</span><span>2,706 forks</span><span>78 贡献者</span><span>2022-09 创建</span></div>
+      <div class="p-name"><a href="https://github.com/GoogleChrome/modern-web-guidance-src">GoogleChrome/modern-web-guidance-src</a></div>
+      <div class="p-growth">本周 +6,858 ★（昨 +7,257）· 总星 9,116 · <b>75% 的星来自本周</b></div>
+      <div class="chips"><span>TypeScript</span><span>Web 最佳实践 / agent 知识源</span><span>754 forks</span><span>80 贡献者</span><span>2026-01 创建</span></div>
     </div></div>
     <div class="p-body">
-      <div class="row"><span class="lbl">它是什么：</span>国产开源 Office SDK——表格、文档、演示的全功能编辑与协同套件，主打「Build your own AI office」，让人和 agent 在同一办公底座上协作。</div>
-      <div class="row"><span class="lbl">为什么火：</span>v1.5.x 连发的长尾 + 「AI Office」叙事持续兑现；本周 +6,840 说明热度已从单日脉冲沉淀为周级稳态。</div>
-      <div class="row"><span class="lbl">核心能力：</span>企业级表格 / 文档 / 演示编辑与协同 SDK，可嵌入自有系统，面向 agent 开放操作接口。</div>
-      <div class="row"><span class="lbl">适合谁：</span>做企业内部工具 / 协同 SaaS 的团队；想自建「AI 办公」的创业者。</div>
-      <div class="row"><span class="lbl">判断：</span>四年重基建 + 稳定发版（今日仍在推送），常榜选手。推荐指数 <span class="rate">⭐⭐⭐⭐</span></div>
+      <div class="row"><span class="lbl">它是什么：</span>Chrome 团队维护的「现代 Web 最佳实践」源数据仓，让 coding agent 用上最新的浏览器能力与规范（README 核实）。</div>
+      <div class="row"><span class="lbl">为什么火：</span>模型的训练数据滞后于 Web 演进，官方直接给 agent 喂新知识——浏览器厂商下场做 agent 知识层，卡位意义大。</div>
+      <div class="row"><span class="lbl">核心能力：</span>结构化、可持续更新的 web 规范数据源，agent 可直接消费。</div>
+      <div class="row"><span class="lbl">适合谁：</span>前端 / 全栈开发者；做 agent 知识增强（如自动注入指南）的工具团队。</div>
+      <div class="row"><span class="lbl">判断：</span>本周爆量后日增回落属正常（脉冲见顶），但官方数据源的战略价值长期存在。推荐指数 <span class="rate">⭐⭐⭐⭐</span></div>
     </div>
   </div>
 
   <div class="card">
     <div class="p-head"><div class="rank top">3</div><div class="p-title">
       <div class="p-name"><a href="https://github.com/meta/astryx">meta/astryx</a></div>
-      <div class="p-growth">本周 +6,250 ★（周增四连降：13,501 → 10,939 → 8,700 → 6,250，热度退潮）· 总星 3.06 万</div>
-      <div class="chips"><span>TypeScript</span><span>设计系统（Beta）</span><span>2,397 forks</span><span>137 贡献者</span><span>2026-01 创建</span></div>
+      <div class="p-growth">本周 +4,977 ★（五连降：13,501→10,939→8,700→6,250→4,977）· 总星 3.1 万</div>
+      <div class="chips"><span>TypeScript</span><span>设计系统（Beta）</span><span>React 19 + StyleX</span><span>137 贡献者</span><span>2026-01 创建</span></div>
     </div></div>
     <div class="p-body">
-      <div class="row"><span class="lbl">它是什么：</span>Meta 开源设计系统 Astryx——「为人与身边协作的 agent 而建」，React 19+ 与 StyleX 驱动，完全可定制（README 核实）。</div>
-      <div class="row"><span class="lbl">为什么火：</span>Meta 把内部设计体系开源并直接面向 agent 场景；发布初周爆发后连续四周回落，属典型的「大厂开源发布曲线」。</div>
-      <div class="row"><span class="lbl">核心能力：</span>Agent-ready 组件库 + 主题定制 + Storybook / 沙箱全套文档站。</div>
-      <div class="row"><span class="lbl">适合谁：</span>前端团队；做 agent 生成 UI 落地页 / 应用的开发者。</div>
-      <div class="row"><span class="lbl">判断：</span>退潮不等于失败——3 万星的设计系统已是头部；Beta 阶段 API 可能变动。推荐指数 <span class="rate">⭐⭐⭐</span></div>
+      <div class="row"><span class="lbl">它是什么：</span>Meta 官方开源设计系统：完全可定制，且「为人与并肩工作的 agent 而建」（README 核实，Beta）。</div>
+      <div class="row"><span class="lbl">为什么火：</span>大厂把设计系统直接做成 agent 可消费的形态（组件语义 + 文档结构机器友好），是「agent 原生 UI 资产」的标杆发布。</div>
+      <div class="row"><span class="lbl">核心能力：</span>React 19 + StyleX、可深度定制的设计 token、Storybook / 沙箱齐全。</div>
+      <div class="row"><span class="lbl">适合谁：</span>中后台 / 产品前端团队；研究 agent 时代设计系统形态的设计师与架构师。</div>
+      <div class="row"><span class="lbl">判断：</span>周增五连降说明首发红利已消化；Beta + 954 个 open issues，生产采用需谨慎，但方向值得长期跟踪。推荐指数 <span class="rate">⭐⭐⭐</span></div>
     </div>
   </div>
 
   <div class="card">
     <div class="p-head"><div class="rank top">4</div><div class="p-title">
       <div class="p-name"><a href="https://github.com/alibaba/open-code-review">alibaba/open-code-review</a></div>
-      <div class="p-growth">本周 +4,383 ★（昨周窗 +3,675，仍在上涨）· 总星 5.42 万</div>
-      <div class="chips"><span>Go</span><span>AI 代码审查</span><span>4,481 forks</span><span>224 贡献者</span><span>2026-05 创建</span></div>
+      <div class="p-growth">本周 +4,492 ★（昨 +4,383 续涨）· 总星 5.44 万 · 6 个月 5.4 万星</div>
+      <div class="chips"><span>Go</span><span>AI 代码审查</span><span>4,502 forks</span><span>225 贡献者</span><span>2026-05 创建</span></div>
     </div></div>
     <div class="p-body">
-      <div class="row"><span class="lbl">它是什么：</span>阿里开源的混合架构代码审查工具——确定性规则与 LLM 协同，「在阿里规模上battle-tested」（README 核实）。</div>
-      <div class="row"><span class="lbl">为什么火：</span>「AI 审 AI 写的代码」是企业采用 agent 的合规刚需；大厂生产环境背书 + 周增连续上涨，是周榜里少数仍在上行的项目。</div>
-      <div class="row"><span class="lbl">核心能力：</span>确定性检查打底 + LLM 语义审查，npm 一键接入，企业级规模验证。</div>
-      <div class="row"><span class="lbl">适合谁：</span>有代码质量 / 合规诉求的工程团队；DevOps 平台建设者。</div>
-      <div class="row"><span class="lbl">判断：</span>企业真金白银验证过的场景，可持续性强；竞品（CodeRabbit 等）商业化压力存在。推荐指数 <span class="rate">⭐⭐⭐⭐</span></div>
+      <div class="row"><span class="lbl">它是什么：</span>阿里出品的 AI 代码审查系统，「在阿里规模下实战检验」：混合架构代码审查（README 核实，配套站点 open-codereview.ai）。</div>
+      <div class="row"><span class="lbl">为什么火：</span>AI 写的代码越多，机器审查的需求越大——大厂背书 + 大规模实战故事是最强卖点；225 贡献者、11-19 仍活跃推送。</div>
+      <div class="row"><span class="lbl">核心能力：</span>混合架构（规则 + LLM）审查流水线，可私有化部署接入企业 CI。</div>
+      <div class="row"><span class="lbl">适合谁：</span>工程效能 / DevOps 团队、平台工程团队；做研发工具的创业者。</div>
+      <div class="row"><span class="lbl">判断：</span>「AI 审 AI」是确定性的中周期赛道，6 个月 5.4 万星且社区健康，是企业级机会。推荐指数 <span class="rate">⭐⭐⭐⭐</span></div>
     </div>
   </div>
 
   <div class="card">
     <div class="p-head"><div class="rank top">5</div><div class="p-title">
-      <div class="p-name"><a href="https://github.com/anthropics/skills">anthropics/skills</a></div>
-      <div class="p-growth">本周 +4,381 ★ · 月 +15,769 · 总星 19.72 万 · 周月双榜</div>
-      <div class="chips"><span>Python</span><span>Agent Skills 官方标准</span><span>2.31 万 forks</span><span>16 贡献者</span><span>2025-09 创建</span></div>
+      <div class="p-name"><a href="https://github.com/backnotprop/plannotator">backnotprop/plannotator</a></div>
+      <div class="p-growth">本周 +3,468 ★（昨 +3,290）· 月 +4,143 · 周月双榜在列 · 总星 1.37 万</div>
+      <div class="chips"><span>TypeScript</span><span>Agent 工作区 / 人机协作</span><span>1,383 forks</span><span>193 贡献者</span><span>2025-12 创建</span></div>
     </div></div>
     <div class="p-body">
-      <div class="row"><span class="lbl">它是什么：</span>Anthropic 官方技能仓库——「指令 + 脚本 + 资源」的文件夹即能力，agent 按需动态加载；对应开放标准见 agentskills.io（README 核实）。</div>
-      <div class="row"><span class="lbl">为什么火：</span>整个技能生态的源头与标准层，本周每一个技能项目走红都在为它引流；周月双榜常客。</div>
-      <div class="row"><span class="lbl">核心能力：</span>官方示例技能集 + 技能编写范式 + 分发机制定义。</div>
-      <div class="row"><span class="lbl">适合谁：</span>所有想开发 / 评估技能的人；做 agent 平台的团队。</div>
-      <div class="row"><span class="lbl">判断：</span>标准层入口，1,558 个 open issues 说明生态膨胀快于治理。推荐指数 <span class="rate">⭐⭐⭐⭐⭐</span></div>
+      <div class="row"><span class="lbl">它是什么：</span>「与 agent 保持同步」的工作台：批注 agent 产出的计划 / 规格 / HTML 工件，审查 diff 与 PR，把反馈发回 agent（README 核实；支持 Amp、Claude Code、Codex、Copilot、Droid、Gemini、Kiro、OpenCode）。</div>
+      <div class="row"><span class="lbl">为什么火：</span>人机协作的瓶颈从「生成」转到「审阅与反馈」，它做的正是这个接口；193 贡献者、11-20 仍 push，是周月双榜中连续性最好的新星之一。</div>
+      <div class="row"><span class="lbl">核心能力：</span>收件箱式 agent 产物批注 + 代码审查 + 反馈回流。</div>
+      <div class="row"><span class="lbl">适合谁：</span>多 agent 重度用户、团队负责人；做 agent 编排 / 审批产品的团队。</div>
+      <div class="row"><span class="lbl">判断：</span>连续三日双榜、增长平缓向上，是「控制平面」赛道的扎实选手而非脉冲爆款。推荐指数 <span class="rate">⭐⭐⭐⭐</span></div>
     </div>
   </div>
 
-  <div class="trend">
-    <b>📌 周榜其余值得一看</b>
-    <a href="https://github.com/we-promise/sure">we-promise/sure</a> +3,866（Ruby 个人财务应用「by everyone」，453 贡献者）·
-    <a href="https://github.com/ZhuLinsen/daily_stock_analysis">ZhuLinsen/daily_stock_analysis</a> +3,566（中文：LLM 多市场股票分析，5.79 万 forks，fork/星比 0.79）·
-    <a href="https://github.com/backnotprop/plannotator">backnotprop/plannotator</a> +3,290（agent 工作区 / 人机回环，周月双榜）·
-    <a href="https://github.com/tradermonty/claude-trading-skills">tradermonty/claude-trading-skills</a> +3,242（交易研究技能）·
-    <a href="https://github.com/ag-ui-protocol/ag-ui">ag-ui-protocol/ag-ui</a> +3,221（Agent-前端协议，站上 2.04 万星）·
-    <a href="https://github.com/ChromeDevTools/chrome-devtools-mcp">ChromeDevTools/chrome-devtools-mcp</a> +3,143（5.82 万星）·
-    <a href="https://github.com/vercel-labs/agent-browser">vercel-labs/agent-browser</a> +2,987（Rust 版 agent 浏览器 CLI，周月双榜）·
-    <a href="https://github.com/openai/codex-security">openai/codex-security</a> +2,630（OpenAI 官方安全 CLI）·
-    <a href="https://github.com/mvanhorn/last30days-skill">last30days-skill</a> +2,423（日周双榜）·
-    <a href="https://github.com/google-labs-code/stitch-skills">stitch-skills</a> +1,567（日周双榜）。
+  <div class="trend"><b>周榜 6–13 速评</b>
+    <a href="https://github.com/ag-ui-protocol/ag-ui">ag-ui</a>（+3,455，Agent-User 交互协议，前端集成 agent 的标准化继续推进）·
+    <a href="https://github.com/tradermonty/claude-trading-skills">claude-trading-skills</a>（+3,385，交易技能包，垂直技能付费意愿的又一证据）·
+    <a href="https://github.com/ChromeDevTools/chrome-devtools-mcp">chrome-devtools-mcp</a>（+3,229，官方 DevTools MCP，agent 调试网页的标准件）·
+    <a href="https://github.com/we-promise/sure">sure</a>（+3,226，Ruby 个人财务 app「by everyone」，451 贡献者的社区共建模式）·
+    <a href="https://github.com/kajisho5/ffmpeg-skill">ffmpeg-skill</a>（+2,998，给 coding agent 的 42 个 FFmpeg 工具 + 机器可读契约）·
+    <a href="https://github.com/google-labs-code/stitch-skills">stitch-skills</a>（+1,829，唯一三榜同在，详见月榜）·
+    <a href="https://github.com/pookjw/HermesEnabler">HermesEnabler</a>（+904，Apple Watch 爱马仕表盘解锁，越狱生态小众热点）。
   </div>
 </section>
 
 <section>
   <div class="sec-head"><h2>🚀 本月最值得关注 Top 5</h2></div>
-  <div class="sec-note">按本月新增 Star 与长期价值排序；完整月榜 16 项见文末口径说明。</div>
+  <div class="sec-note">按月新增 Star 排序；完整月榜 17 项见文末速览。</div>
 
   <div class="card">
     <div class="p-head"><div class="rank top">1</div><div class="p-title">
       <div class="p-name"><a href="https://github.com/cloudflare/security-audit-skill">cloudflare/security-audit-skill</a></div>
-      <div class="p-growth">本月 +44,600 ★（断层第一）· 总星 7.54 万 —— 59% 的星来自本月</div>
-      <div class="chips"><span>JavaScript</span><span>安全审计技能</span><span>5,061 forks</span><span>3 贡献者</span><span>2026-06 创建</span><span>⚠️ 最后 push 09-14</span></div>
+      <div class="p-growth">本月 +44,608 ★（月榜断层第一，但日均已降至个位数）· 总星 7.58 万</div>
+      <div class="chips"><span>JavaScript</span><span>安全审计技能</span><span>5,098 forks</span><span>仅 3 贡献者</span><span>2026-06 创建 · 09-14 后停更</span></div>
     </div></div>
     <div class="p-body">
-      <div class="row"><span class="lbl">它是什么：</span>Cloudflare 出品的 coding-agent 安全审计技能：把 agent 变成安全审计员，六阶段流水线——侦察、覆盖导向狩猎、候选验证、结构化输出、独立复核、中性报告（README 核实，源自其官方博客的漏洞发现 harness）。</div>
-      <div class="row"><span class="lbl">为什么火：</span>「用 agent 做安全」是当前付费力最强的叙事之一；Cloudflare 生产环境背书 + 把安全 SOP 完整产品化。</div>
-      <div class="row"><span class="lbl">核心能力：</span>多隔离 agent 编排、发现分级（confirmed / needs_validation / rejected）、机器可读报告。</div>
-      <div class="row"><span class="lbl">适合谁：</span>安全团队、平台工程团队；做安全服务产品化的创业者。</div>
-      <div class="row"><span class="lbl">判断：</span>月增断层第一但 <b>09-14 后无代码推送、仅 3 位贡献者</b>——星动与维护明显脱节，实用前先验证可用性。推荐指数 <span class="rate">⭐⭐⭐⭐</span>（企业安全场景 ⭐⭐⭐⭐⭐）</div>
+      <div class="row"><span class="lbl">它是什么：</span>Cloudflare 出品的 coding-agent 安全审计技能：把 agent 编排成侦察 → 覆盖率驱动的狩猎 → 候选验证 → 结构化输出 → 独立复核 → 报告六阶段流水线；是 Cloudflare 内部漏洞发现体系的单仓起点（README + 官方博客核实）。</div>
+      <div class="row"><span class="lbl">为什么火：</span>「用多个 agent 互相验证来消灭幻觉式漏洞报告」的工程范式极有说服力，官方博客背书引发企业安全圈集体关注。</div>
+      <div class="row"><span class="lbl">核心能力：</span>覆盖率账本（coverage ledger）、候选验证、独立记录复核、可加性多次运行——一套完整的验证型工作流。</div>
+      <div class="row"><span class="lbl">适合谁：</span>安全工程团队、平台工程团队；研究多 agent 验证范式的架构师。</div>
+      <div class="row"><span class="lbl">判断：</span>5 个月 7.6 万星但<b>停更两个月 + 仅 3 位贡献者</b>，月增已冻结——范式价值 &gt; 仓库价值：学它的流水线设计，别把生产押在它身上。推荐指数 <span class="rate">⭐⭐⭐⭐</span></div>
     </div>
   </div>
 
   <div class="card">
     <div class="p-head"><div class="rank top">2</div><div class="p-title">
       <div class="p-name"><a href="https://github.com/pingdotgg/t3code">pingdotgg/t3code</a></div>
-      <div class="p-growth">本月 +36,872 ★（月榜第二）· 总星 6.53 万</div>
-      <div class="chips"><span>TypeScript</span><span>Agent 控制平面</span><span>1.14 万 forks</span><span>478 贡献者</span><span>2026-02 创建</span></div>
+      <div class="p-growth">本月 +37,642 ★ · 总星 6.65 万 · 9 个月 6.6 万星 · 478 贡献者</div>
+      <div class="chips"><span>TypeScript</span><span>Agent 控制平面</span><span>1.16 万 forks</span><span>478 贡献者</span><span>2026-02 创建</span></div>
     </div></div>
     <div class="p-body">
-      <div class="row"><span class="lbl">它是什么：</span>T3 Code——开源的 coding agent 控制平面（作者 Theo，t3.gg）：在本机跑 Claude Code、Codex、Cursor、OpenCode 等十余种 agent，桌面开始一个任务、手机上批准下一步（README 核实）。</div>
-      <div class="row"><span class="lbl">为什么火：</span>「人机回环」的最佳载体——agent 时代你需要的不是又一个终端，而是跨设备的指挥台；478 位贡献者说明这是真实社区需求。</div>
-      <div class="row"><span class="lbl">核心能力：</span>多 agent 统一界面 + iOS / Android / Web 远程控制 + 命令审批流。</div>
-      <div class="row"><span class="lbl">适合谁：</span>同时跑多个 coding agent 的重度用户；移动办公开发者。</div>
-      <div class="row"><span class="lbl">判断：</span>「管 agent 的层」正在成为新品类，t3code 是当前最完整的开源实现；3,633 个 open issues 反映扩张压力。推荐指数 <span class="rate">⭐⭐⭐⭐</span></div>
+      <div class="row"><span class="lbl">它是什么：</span>Theo（TJS 创作者）出品的「coding agent 开源控制平面」：在本机跑 Claude Code / Codex / Cursor / OpenCode / Grok Build / Antigravity / Kiro 及任何 ACP agent，桌面 / Web / iOS / Android 同步——在电脑上开任务，在手机上批准下一步（README 核实）。</div>
+      <div class="row"><span class="lbl">为什么火：</span>首次把「管 agent」做成一等公民产品：跨 agent 切换、线程内换模型、worktree + 一键 PR、复用已有订阅；开发者社群号召力 + 真实刚需。</div>
+      <div class="row"><span class="lbl">核心能力：</span>多 agent 统一界面、移动端审批、远程连接（局域网 / Tailscale）、内置 Git 工作流。</div>
+      <div class="row"><span class="lbl">适合谁：</span>同时用多个 coding agent 的开发者；分布式 / 移动办公团队。</div>
+      <div class="row"><span class="lbl">判断：</span>478 贡献者是全榜最健康的社区之一，但 <b>3,566 个 open issues</b> 提示质量仍在早期——方向满分、成熟度存疑。推荐指数 <span class="rate">⭐⭐⭐⭐</span></div>
     </div>
   </div>
 
   <div class="card">
     <div class="p-head"><div class="rank top">3</div><div class="p-title">
       <div class="p-name"><a href="https://github.com/pbakaus/impeccable">pbakaus/impeccable</a></div>
-      <div class="p-growth">本月 +30,662 ★ · 总星 11.29 万 —— 反 AI 味赛道月增第一</div>
-      <div class="chips"><span>Rust</span><span>设计技能 / 质量</span><span>6,723 forks</span><span>63 贡献者</span><span>2025-11 创建</span></div>
+      <div class="p-growth">本月 +30,843 ★ · 总星 11.35 万 · 12 个月 11.3 万星 · 反 AI 味月增第一</div>
+      <div class="chips"><span>Rust</span><span>设计词汇 / 质量门禁</span><span>6,765 forks</span><span>63 贡献者</span><span>2025-11 创建</span></div>
     </div></div>
     <div class="p-body">
-      <div class="row"><span class="lbl">它是什么：</span>「给 coding agent 的设计词汇表」：用 polish / bolder 调教、用 critique / audit 审查，在 AI slop 上线前拦住它（README 核实，作者 Paul Bakaus；对比图使用 Fable 5.1 同题测试，效果直观）。</div>
-      <div class="row"><span class="lbl">为什么火：</span>所有人都被「一眼 AI 味」的页面折磨过——它把审美偏好变成可安装的工程约束，一条 npx 命令即用，支持 20+ 个 agent 客户端。</div>
-      <div class="row"><span class="lbl">核心能力：</span>设计调教词汇 + 审查审计命令 + 跨客户端安装。</div>
-      <div class="row"><span class="lbl">适合谁：</span>用 agent 做页面 / 产品的所有人；设计工程化研究者。</div>
-      <div class="row"><span class="lbl">判断：</span>昨天仍在推送（11-18），「设计质量层」的品类冠军候选；同类 hallmark / taste-skill 竞争激烈。推荐指数 <span class="rate">⭐⭐⭐⭐⭐</span></div>
+      <div class="row"><span class="lbl">它是什么：</span>「给 coding agent 的设计词汇表」：用 /polish、/bolder 下指令，用 /critique、/audit 做评审，在 AI 味出货前拦住它（README 核实，作者 Paul Bakaus；支持 Claude Code、Cursor、Codex 等 20+ 工具）。</div>
+      <div class="row"><span class="lbl">为什么火：</span>「生成的页面千篇一律」是所有 vibe coding 用户的痛；它把设计语言压缩成几个动词，README 的前后对比图极具传播力。</div>
+      <div class="row"><span class="lbl">核心能力：</span>设计指令词表 + 出货前 AI 味审查，一条命令安装。</div>
+      <div class="row"><span class="lbl">适合谁：</span>所有用 agent 写前端的开发者；设计工程师。</div>
+      <div class="row"><span class="lbl">判断：</span>反 AI 味是已验证的品类（与 hallmark、astryx 同月各涨 2 万+），它是其中最轻、最工具化的；63 贡献者、11-19 活跃。推荐指数 <span class="rate">⭐⭐⭐⭐</span></div>
     </div>
   </div>
 
   <div class="card">
     <div class="p-head"><div class="rank top">4</div><div class="p-title">
       <div class="p-name"><a href="https://github.com/Nutlope/hallmark">Nutlope/hallmark</a></div>
-      <div class="p-growth">本月 +27,295 ★ · 总星 5.75 万</div>
-      <div class="chips"><span>CSS</span><span>反 AI 味设计技能</span><span>3,121 forks</span><span>11 贡献者</span><span>2026-04 创建</span><span>Together AI 出品</span></div>
+      <div class="p-growth">本月 +27,756 ★ · 总星 5.81 万 · 7 个月 5.8 万星</div>
+      <div class="chips"><span>CSS</span><span>设计技能（Together AI）</span><span>3,162 forks</span><span>11 贡献者</span><span>2026-04 创建</span></div>
     </div></div>
     <div class="p-body">
-      <div class="row"><span class="lbl">它是什么：</span>「拒绝看起来像 AI 生成」的设计技能：从 50 套主题材质中发牌、围绕访客意图建页，并在真实浏览器里 lint 机器味特征——眉题堆砌、标题里单个变色词、空框页面等（README 核实，v2）。</div>
-      <div class="row"><span class="lbl">为什么火：</span>与 impeccable 同题竞争把品类热度推高；「Floor / Reflex / Finish」三级门禁的设计很工程化，新鲜-context 审查员有最终否决权。</div>
-      <div class="row"><span class="lbl">核心能力：</span>主题系统 + 浏览器实测 lint + 分级质量门禁。</div>
-      <div class="row"><span class="lbl">适合谁：</span>营销页 / 落地页制作者；关注 agent 质检方法论的人。</div>
-      <div class="row"><span class="lbl">判断：</span>Together AI 官方维护、11-11 仍在推送；商业上走主题定制服务路线，开源 + 付费混合模式值得研究。推荐指数 <span class="rate">⭐⭐⭐⭐</span></div>
+      <div class="row"><span class="lbl">它是什么：</span>Together AI 出品的「拒绝 AI 味」设计技能：从 50 个主题材质中发牌，围绕访客目标构建页面，再在真实浏览器里 lint 那些「一看就是机器做的」特征——标题上方的小标签、被追踪的大写字母、彩色单词、空洞框架页（README 核实）。</div>
+      <div class="row"><span class="lbl">为什么火：</span>分级门禁（绝不出货 / 可记录例外 / 打磨细节）+ 新鲜上下文评审员把关，把「设计品味」变成可执行的流水线；主题目录已商业化（定制收费）。</div>
+      <div class="row"><span class="lbl">核心能力：</span>50 主题系统 + 浏览器实测 lint + 三级门禁。</div>
+      <div class="row"><span class="lbl">适合谁：</span>独立开发者、建站 / 落地页制作者；想研究「品味工程化」的人。</div>
+      <div class="row"><span class="lbl">判断：</span>11 贡献者略单薄、11-11 后未 push，但主题商业模式已经跑通——技能直接收费的少数先例。推荐指数 <span class="rate">⭐⭐⭐⭐</span></div>
     </div>
   </div>
 
   <div class="card">
     <div class="p-head"><div class="rank top">5</div><div class="p-title">
-      <div class="p-name"><a href="https://github.com/heygen-com/hyperframes">heygen-com/hyperframes</a></div>
-      <div class="p-growth">本月 +20,375 ★ · 总星 8.65 万</div>
-      <div class="chips"><span>TypeScript</span><span>AI 视频编辑</span><span>8,035 forks</span><span>148 贡献者</span><span>2026-03 创建</span><span>HeyGen 官方</span></div>
+      <div class="p-name"><a href="https://github.com/milind-soni/OpenMausBot">milind-soni/OpenMausBot</a></div>
+      <div class="p-growth">本月 +20,640 ★ · 总星 2.58 万 · 3 个月 2.6 万星</div>
+      <div class="chips"><span>TypeScript / Electron</span><span>聊天式 agent 机器人</span><span>3,662 forks</span><span>273 贡献者</span><span>2026-08 创建</span></div>
     </div></div>
     <div class="p-body">
-      <div class="row"><span class="lbl">它是什么：</span>HeyGen 官方开源的 AI 视频编辑器 HyperFrames——「描述任何视频即可生成，且真的可编辑」（README 核实），npm 分发。</div>
-      <div class="row"><span class="lbl">为什么火：</span>商业 AI 视频公司把编辑器层开源，等于把「生成 → 精修」工作流交給社区；148 贡献者说明采用真实发生。</div>
-      <div class="row"><span class="lbl">核心能力：</span>文生视频 + 逐帧可编辑时间线 + 组件化合成。</div>
-      <div class="row"><span class="lbl">适合谁：</span>内容创作者；做视频类产品的团队（省掉自研编辑器）。</div>
-      <div class="row"><span class="lbl">判断：</span>头部公司开源核心交互层是聪明的生态打法；生成质量仍依赖其云端能力，开源的是「壳」还是「核」需自验。推荐指数 <span class="rate">⭐⭐⭐⭐</span></div>
+      <div class="row"><span class="lbl">它是什么：</span>开源版 Grok Bot：把 Claude / Codex 等本地 agent 变成聊天软件侧边栏里的「联系人」——每个 bot 有自己的性格、模型、云电脑与连接应用；对标 Meta Muse、OpenAI dots、Cue by Manus（README 核实）。</div>
+      <div class="row"><span class="lbl">为什么火：</span>Grok Bot 带火的「把 agent 当朋友聊」范式 + 自带模型 / 本地优先的隐私卖点；273 贡献者、11-20 活跃。</div>
+      <div class="row"><span class="lbl">核心能力：</span>多 bot 人格管理、按 bot 隔离的云电脑、关键操作审批。</div>
+      <div class="row"><span class="lbl">适合谁：</span>普通用户（想低成本玩 agent）；做消费级 agent 产品的团队。</div>
+      <div class="row"><span class="lbl">判断：</span>消费级赛道巨头环伺（xAI / Meta / OpenAI / Manus 全在做同类），开源版靠「不被锁定」立足；1,293 个 open issues 说明踩坑者众多。推荐指数 <span class="rate">⭐⭐⭐</span></div>
     </div>
   </div>
 
-  <div class="trend">
-    <b>📌 月榜其余值得一看</b>
-    <a href="https://github.com/milind-soni/OpenMausBot">milind-soni/OpenMausBot</a> +20,270（开源 Grok Bot 替代，bot 专用虚拟机）·
-    <a href="https://github.com/Leonxlnx/taste-skill">Leonxlnx/taste-skill</a> +20,055（11.84 万星「给 agent 品味」）·
-    <a href="https://github.com/sherlock-project/sherlock">sherlock-project/sherlock</a> +20,046（11.42 万星 OSINT 社交账号猎手，2018 年老牌）·
-    <a href="https://github.com/HKUDS/DeepTutor">HKUDS/DeepTutor</a> +19,065（港大：终身个性化辅导）·
-    <a href="https://github.com/thedotmack/claude-mem">thedotmack/claude-mem</a> +17,311（11.82 万星：agent 跨会话持久记忆）·
-    <a href="https://github.com/anthropics/skills">anthropics/skills</a> +15,769（周月双榜）·
-    <a href="https://github.com/php/php-src">php/php-src</a> +1,454（4.18 万星常青）·
-    <a href="https://github.com/AgriciDaniel/claude-seo">AgriciDaniel/claude-seo</a> +11,532（26 子技能 + 19 子代理的 SEO 技能）·
-    <a href="https://github.com/Vincentwei1021/video-shotcraft">Vincentwei1021/video-shotcraft</a> +8,934（Remotion 电影感产品宣传片技能）·
-    <a href="https://github.com/vercel-labs/agent-browser">vercel-labs/agent-browser</a> +8,540（周月双榜）。
+  <div class="trend"><b>月榜 6–17 速评</b>
+    <a href="https://github.com/sherlock-project/sherlock">sherlock</a>（+20,350，8 年老牌 OSINT 用户名搜寻工具月增 2 万——agent 时代「查人」需求回潮）·
+    <a href="https://github.com/heygen-com/hyperframes">hyperframes</a>（+20,032，HeyGen 官方开源 AI 视频编辑器「可编辑的 AI 视频」，8 个月 8.7 万星）·
+    <a href="https://github.com/HKUDS/DeepTutor">DeepTutor</a>（+19,312，HKUDS 终身个性化辅导，学术 RAG 系）·
+    <a href="https://github.com/thedotmack/claude-mem">claude-mem</a>（+17,313，跨会话持久记忆，11.8 万星）·
+    <a href="https://github.com/anthropics/skills">anthropics/skills</a>（+16,003，官方技能仓 19.8 万星，标准锚点）·
+    <a href="https://github.com/AgriciDaniel/claude-seo">claude-seo</a>（+11,706，26 子技能 + 19 子代理的 SEO 全家桶）·
+    <a href="https://github.com/vercel-labs/agent-browser">agent-browser</a>（+8,717，Vercel 的 agent 浏览器自动化 CLI）·
+    <a href="https://github.com/kajisho5/ffmpeg-skill">ffmpeg-skill</a>（+6,206）·
+    <a href="https://github.com/elementalsouls/Claude-BugHunter">Claude-BugHunter</a>（+6,708，见日榜）·
+    <a href="https://github.com/Jakeschincariol/instagram-agent-skill">instagram-agent-skill</a>（+5,322，13 个技能运营一个 IG 账号；注意平台条款风险，仓库 09-13 后未更新）·
+    <a href="https://github.com/backnotprop/plannotator">plannotator</a>（+4,143）·
+    <a href="https://github.com/google-labs-code/stitch-skills">stitch-skills</a>（+2,107，见下）。
+  </div>
+
+  <div class="card">
+    <div class="p-head"><div class="rank">★</div><div class="p-title">
+      <div class="p-name"><a href="https://github.com/google-labs-code/stitch-skills">google-labs-code/stitch-skills</a>　<span style="font-size:13px; color:var(--hot);">今日唯一三榜同在</span></div>
+      <div class="p-growth">日 +302 · 周 +1,829 · 月 +2,107 · 总星 1.07 万</div>
+      <div class="chips"><span>TypeScript</span><span>Google Labs 官方设计技能</span><span>1,387 forks</span><span>18 贡献者</span><span>2026-01 创建</span></div>
+    </div></div>
+    <div class="p-body">
+      <div class="row"><span class="lbl">它是什么：</span>Google Stitch（UI 设计生成服务）的官方技能与插件库，遵循 agentskills.io 开放标准，兼容 Codex、Antigravity、Gemini CLI、Claude Code、Cursor、OpenCode（README 核实）——含 stitch-design / stitch-build / stitch-utilities 三组插件。</div>
+      <div class="row"><span class="lbl">为什么值得关注：</span>今日三榜 40 项中<b>唯一同时在榜</b>的项目（日 / 周 / 月），且是最标准的「大厂以开放技能格式分发自家产品能力」样本——Google 没有另起炉灶，而是接入社区标准。</div>
+      <div class="row"><span class="lbl">判断：</span>单仓体量小，但它是观察「技能成为应用分发格式」的最佳信号器。推荐指数 <span class="rate">⭐⭐⭐</span></div>
+    </div>
   </div>
 </section>
 
 <section>
   <div class="sec-head"><h2>🏆 综合推荐 Top 5</h2></div>
-  <div class="sec-note">跨三榜综合增长、活跃度、成熟度与生态潜力的最值得深入研究项目。</div>
+  <div class="sec-note">综合三榜表现、社区健康度、技术价值与长期潜力选出；每项给出最大风险。</div>
 
   <div class="card">
     <div class="p-head"><div class="rank top">1</div><div class="p-title">
-      <div class="p-name"><a href="https://github.com/anthropics/skills">anthropics/skills</a></div>
-      <div class="p-growth">19.72 万星 · 周 +4,381 / 月 +15,769 · 周月双榜 · 标准层入口</div>
+      <div class="p-name"><a href="https://github.com/obra/superpowers">obra/superpowers</a></div>
+      <div class="p-growth">今日 +2,028 · 总星 32.2 万 · 品类定义者</div>
     </div></div>
     <div class="p-body">
-      <div class="row"><span class="lbl">为什么推荐：</span>Agent Skills 的事实标准仓库——今日三榜技能类项目约占三分之一，它们全部生长在这套范式上；看懂它的结构与分发机制，等于拿到技能生态红利的入场券。</div>
-      <div class="row"><span class="lbl">最大价值：</span>标准 = 所有下游技能生态的对流层；对创业者是「在哪建商业层」的地图。</div>
-      <div class="row"><span class="lbl">最大风险：</span>1,558 个 open issues、16 位贡献者——官方仓库跟不上生态膨胀，治理与版本化尚无答案。</div>
-      <div class="row"><span class="lbl">值得投入：</span>平台 / 工具开发者必研究；普通用户装下游技能包即可。推荐指数 <span class="rate">⭐⭐⭐⭐⭐</span></div>
+      <div class="row"><span class="lbl">为什么推荐：</span>技能生态的方法论源头，13 个月 32 万星且仍在再加速；几乎所有热门技能仓都在引用或复刻它的结构。</div>
+      <div class="row"><span class="lbl">最大价值：</span>装上即用的生产力提升 + 学习「如何把工作方式写成程序」的最佳教材。</div>
+      <div class="row"><span class="lbl">最大风险：</span>单一维护者主导（37 贡献者集中在核心圈），bus factor 低；仓库本体 11-03 后无 push。</div>
+      <div class="row"><span class="lbl">适合谁 / 投入建议：</span>所有 AI Coding 用户——直接安装使用，是「个人提效」回报率最高的一个。</div>
     </div>
   </div>
 
   <div class="card">
     <div class="p-head"><div class="rank top">2</div><div class="p-title">
-      <div class="p-name"><a href="https://github.com/GoogleChrome/modern-web-guidance-src">GoogleChrome/modern-web-guidance-src</a></div>
-      <div class="p-growth">8,843 星 · 周 +7,257（82% 星来自本周）· 浏览器厂商联盟官方技能</div>
+      <div class="p-name"><a href="https://github.com/anthropics/skills">anthropics/skills</a></div>
+      <div class="p-growth">月 +16,003 · 总星 19.8 万 · 官方标准仓</div>
     </div></div>
     <div class="p-body">
-      <div class="row"><span class="lbl">为什么推荐：</span>Chrome / Edge / Firefox / MDN 四方共建——浏览器厂商第一次以技能形式向 coding agent 官方注入 Web 平台知识，「agent 时代的 caniuse」雏形。</div>
-      <div class="row"><span class="lbl">最大价值：</span>若成为默认集成，就是 agent 生成前端代码的质量基线，平台级卡位。</div>
-      <div class="row"><span class="lbl">最大风险：</span>总星小、时间短，四家厂商协同的迭代速度未知；397 个 open issues 待消化。</div>
-      <div class="row"><span class="lbl">值得投入：</span>前端 / 全栈开发者今天就能装；做知识注入的团队研究其评测体系。推荐指数 <span class="rate">⭐⭐⭐⭐⭐</span></div>
+      <div class="row"><span class="lbl">为什么推荐：</span>Agent Skills 的事实标准仓库：技能格式、文档结构、示例全在这里，月增 1.6 万稳定在涨。</div>
+      <div class="row"><span class="lbl">最大价值：</span>理解整个技能品类的最短路径；写技能 / 做技能分发生意的必修课。</div>
+      <div class="row"><span class="lbl">最大风险：</span>标准之争未终局——agentskills.io（跨厂商）、Cursor 插件、Codex marketplace 多轨并行，需同时跟踪。</div>
+      <div class="row"><span class="lbl">适合谁 / 投入建议：</span>想在技能红利期做工具或生态位的人——每周花 30 分钟读它的演进，比读十篇二手分析有用。</div>
     </div>
   </div>
 
   <div class="card">
     <div class="p-head"><div class="rank top">3</div><div class="p-title">
-      <div class="p-name"><a href="https://github.com/pbakaus/impeccable">pbakaus/impeccable</a></div>
-      <div class="p-growth">11.29 万星 · 月 +30,662 · 反 AI 味赛道月增第一</div>
+      <div class="p-name"><a href="https://github.com/dream-num/univer">dream-num/univer</a></div>
+      <div class="p-growth">周 +7,248（周榜第一）· 总星 3.04 万 · 4 年持续演进</div>
     </div></div>
     <div class="p-body">
-      <div class="row"><span class="lbl">为什么推荐：</span>「设计质量层」品类冠军候选：一条命令安装、20+ 客户端支持、昨日仍在推送；它示范了把主观审美变成可安装工程约束的完整打法。</div>
-      <div class="row"><span class="lbl">最大价值：</span>立刻提升 agent 产出页面的「不廉价感」；对创业者是「设计 CI」生意的原型。</div>
-      <div class="row"><span class="lbl">最大风险：</span>hallmark（Together AI）、taste-skill（11.8 万星）同场缠斗，品类尚未收敛，标准可能被合并。</div>
-      <div class="row"><span class="lbl">值得投入：</span>所有用 agent 做界面的人；竞品对比研究也值得。推荐指数 <span class="rate">⭐⭐⭐⭐⭐</span></div>
+      <div class="row"><span class="lbl">为什么推荐：</span>三榜中唯一「老项目 + 当期周榜第一 + 真商业化」的组合：AI Office 底座的确定性赛道里最完整的开源选择。</div>
+      <div class="row"><span class="lbl">最大价值：</span>可嵌入式表格 / 文档 / 演示全栈能力，等于拿到一个可二开的「在线 Office 引擎」。</div>
+      <div class="row"><span class="lbl">最大风险：</span>与 OnlyOffice / Luckysheet（同门）/ 金山文档生态竞争；公式引擎与协同的工程深度需要团队消化能力。</div>
+      <div class="row"><span class="lbl">适合谁 / 投入建议：</span>做行业 SaaS、报表 / 协同产品的团队——值得做一周 POC 验证嵌入成本。</div>
     </div>
   </div>
 
   <div class="card">
     <div class="p-head"><div class="rank top">4</div><div class="p-title">
-      <div class="p-name"><a href="https://github.com/cloudflare/security-audit-skill">cloudflare/security-audit-skill</a></div>
-      <div class="p-growth">7.54 万星 · 月 +44,600（断层第一）· ⚠️ 09-14 后停推</div>
+      <div class="p-name"><a href="https://github.com/pingdotgg/t3code">pingdotgg/t3code</a></div>
+      <div class="p-growth">月 +37,642 · 总星 6.65 万 · 478 贡献者</div>
     </div></div>
     <div class="p-body">
-      <div class="row"><span class="lbl">为什么推荐：</span>把专业安全审计 SOP 完整产品化成技能的范本——六阶段流水线、发现分级、独立复核，出自 Cloudflare 真实漏洞发现体系。</div>
-      <div class="row"><span class="lbl">最大价值：</span>安全 × agent 的交叉点上当前最强的开源资产；六阶段编排思路可迁移到任何「验证型」工作流。</div>
-      <div class="row"><span class="lbl">最大风险：</span><b>两个月无代码推送、仅 3 位贡献者</b>——4.46 万月增与维护投入严重倒挂，可能只是品牌势能释放。</div>
-      <div class="row"><span class="lbl">值得投入：</span>安全团队先试再信；研究者重点读其编排设计。推荐指数 <span class="rate">⭐⭐⭐⭐</span></div>
+      <div class="row"><span class="lbl">为什么推荐：</span>「agent 控制平面」新品类的开创者：多 agent、多设备、移动审批，踩中「从跑 agent 到管 agent」的转折点；478 贡献者社区动能全榜第一梯队。</div>
+      <div class="row"><span class="lbl">最大价值：</span>个人立即受益（手机批准 agent 的下一步）；团队能看到未来工作流的形态。</div>
+      <div class="row"><span class="lbl">最大风险：</span>3,566 个 open issues——质量与稳定性尚早；官方客户端厂商（Claude Code / Cursor）随时可能内置同类能力。</div>
+      <div class="row"><span class="lbl">适合谁 / 投入建议：</span>多 agent 用户可日用但别押生产；创业者应研究它未被满足的企业级空位（权限 / 审计 / 成本）。</div>
     </div>
   </div>
 
   <div class="card">
     <div class="p-head"><div class="rank top">5</div><div class="p-title">
-      <div class="p-name"><a href="https://github.com/vercel-labs/agent-browser">vercel-labs/agent-browser</a></div>
-      <div class="p-growth">5.27 万星 · 周 +2,987 / 月 +8,540 · 周月双榜 · 今日仍在推送</div>
+      <div class="p-name"><a href="https://github.com/cloudflare/security-audit-skill">cloudflare/security-audit-skill</a></div>
+      <div class="p-growth">月 +44,608（月榜断层第一）· 总星 7.58 万 · 但已停更两个月</div>
     </div></div>
     <div class="p-body">
-      <div class="row"><span class="lbl">为什么推荐：</span>agent 的「手」——Rust 原生 CLI 让 agent 打开页面、按无障碍树阅读、直接操作元素；与 chrome-devtools-mcp（5.82 万星）构成浏览器自动化双雄。</div>
-      <div class="row"><span class="lbl">最大价值：</span>浏览器是 agent 与世界交互的第一界面，这一层的需求确定性极高；npm 即装。</div>
-      <div class="row"><span class="lbl">最大风险：</span>与 ChromeDevTools 官方 MCP 直接对位，厂商背书的竞品可能挤压其空间。</div>
-      <div class="row"><span class="lbl">值得投入：</span>做 agent 自动化 / 爬取 / 测试的开发者首选底座之一。推荐指数 <span class="rate">⭐⭐⭐⭐</span></div>
+      <div class="row"><span class="lbl">为什么推荐：</span>「验证型多 agent 工作流」的最佳公开教材：覆盖率账本、候选验证、独立复核——这套范式可迁移到代码审查、数据分析、合规检查等一切「agent 会幻觉」的场景。</div>
+      <div class="row"><span class="lbl">最大价值：</span>学范式：如何让多个 agent 互相证伪，把幻觉率压到工程可接受。</div>
+      <div class="row"><span class="lbl">最大风险：</span>仓库本身停更（09-14）+ 仅 3 贡献者 + 月增已冻结——把它当论文读，别当依赖装。</div>
+      <div class="row"><span class="lbl">适合谁 / 投入建议：</span>安全 / 平台工程师精读一遍流水线设计；架构师借鉴其验证模式到自己的领域。</div>
     </div>
   </div>
 </section>
@@ -458,55 +456,113 @@
 <section>
   <div class="sec-head"><h2>🔮 技术趋势</h2></div>
   <div class="trend">
-    <b>1️⃣ Agent Skills 全面生态化，「agent 世界的 npm」从叙事变成事实</b>
-    今日三榜 45 项中技能 / 框架类<b>至少 15 个（三分之一）</b>：superpowers、ECC、anthropics/skills、last30days、impeccable、hallmark、taste-skill、security-audit-skill、claude-seo、stitch-skills、claude-trading-skills、video-shotcraft、modern-web-guidance、SkillEvaluator、claude-mem。更关键的信号是<b>Cursor 官方 plugins 仓库今日进榜</b>——编辑器插件规范与技能生态正面汇流，「文件夹即应用、一条命令即分发」正在成为跨客户端的通用格式。
+    <b>1️⃣ Agent Skills 正在成为全行业的「新应用格式」</b>
+    三榜 40 项中技能 / 插件类约 <b>17 项（四成）</b>。关键进展是跨客户端汇流：agentskills.io 开放标准被 Google Stitch 官方采纳（50+ 宿主兼容）、Cursor 官方 plugins 仓连续进榜（+384）、Codex marketplace 与 Claude Code 插件体系并行——「技能」正在复制「App Store 应用」的分发路径：写一次、到处装。
   </div>
   <div class="trend">
-    <b>2️⃣ 大厂集体卡位技能 / agent 基础设施，在榜机构达 11 家</b>
-    Google 系三仓（modern-web-guidance、paper-orchestra、stitch-skills）、Meta（astryx）、Cloudflare（security-audit-skill）、OpenAI（codex-security）、Anthropic（skills）、HeyGen（hyperframes）、阿里（open-code-review）、Vercel（agent-browser）、NVIDIA（SkillEvaluator）、Intel（openvino）、Cursor（plugins）。开源 agent 生态的竞争已从个人开发者叙事彻底升级为平台级卡位，「官方技能」成为大厂新的开发者关系渠道。
+    <b>2️⃣ 大厂本周集体卡位 agent 生态</b>
+    今日三榜同场出现：Google（stitch-skills）、Meta（astryx）、Chrome（modern-web-guidance-src + chrome-devtools-mcp）、Cloudflare（security-audit-skill）、Cursor（plugins）、HeyGen（hyperframes）、阿里（open-code-review）、Vercel（agent-browser）、Anthropic（skills）——<b>9 家机构 10 个仓库</b>。路径分两类：给 agent 喂知识（guidance）/ 给 agent 供能力（skills、MCP、设计系统）。
   </div>
   <div class="trend">
-    <b>3️⃣ 「反 AI 味」设计质检固化为三强赛道</b>
-    impeccable（11.3 万星，月 +3.07 万）、taste-skill（11.8 万星，月 +2.01 万）、hallmark（5.75 万星，月 +2.73 万）——三个同类项目月增全部 2 万+，说明这不是一个爆款而是一个品类。共同范式已收敛：主题约束 + 真实浏览器 lint + 分级门禁 + 新鲜上下文审查。
+    <b>3️⃣ 「反 AI 味」从吐槽变成品类</b>
+    impeccable（月 +30,843）、hallmark（+27,756）、astryx（Beta 即 3.1 万星）、diagram-design（6.86 万星）、stitch-skills——同月多个同类项目各涨 2 万+，说明这是品类不是爆款。范式已收敛：<b>主题 / 词汇约束 + 真实浏览器 lint + 分级门禁 + 新鲜上下文审查</b>。agent 产出的「品控层」正在标准化。
   </div>
   <div class="trend">
-    <b>4️⃣ Agent 安全双向军备竞赛持续升级</b>
-    防的一面：security-audit-skill 月增 +4.46 万断层、openai/codex-security 周 +2,630、alibaba/open-code-review 周 +4,383；攻的一面：sherlock（OSINT）月 +2 万仍在大涨。企业采用 agent 的最大顾虑（质量与安全）正在被逐点拆解，「验证型 agent 工作流」是共同的解法。
+    <b>4️⃣ Agent 控制平面与多端编排成型</b>
+    t3code（月 +3.76 万）定义「控制平面」，plannotator 做审阅工作台，OpenMausBot 把 agent 变聊天联系人，agent-browser / chrome-devtools-mcp / ffmpeg-skill / CLI-Anything 充当 agent 的手脚，ag-ui 协议负责把 agent 装进前端——「生成 → 审阅 → 批准 → 执行」的完整工作流栈第一次在三榜同时齐备。瓶颈正从「能生成」转向「可管理」。
   </div>
   <div class="trend">
-    <b>5️⃣ 日榜高轮换、基石头条回归：单日榜单是噪声，周 / 月榜才是信号</b>
-    昨日日榜前五今日全部出清，取而代之的是 nvm、uv、jquery、svelte、solid、openvino、appwrite、n8n 等经典基建集体回归（svelte 叠加发版 + 十周年双事件）。Trending 算法的高轮换 + AI 热点的脉冲式出清（SkillEvaluator 出清又回归、Claude-BugHunter 登顶又消失）共同说明：<b>看趋势请看周月榜，看情绪才看日榜</b>。
+    <b>5️⃣ 安全攻防双向升级，OSINT 回潮</b>
+    防的一面：security-audit-skill（月 +4.46 万，六阶段审计）、open-code-review（AI 审 AI）；攻的一面：Claude-BugHunter（681 份披露报告模式库，日 +1,349）、sherlock（8 年老 OSINT 工具月 +2 万）。企业引入 agent 的最大顾虑（安全与质量）正被逐点拆解，「验证型工作流」是共同解法。另注意元规律：<b>昨日日榜前二今日全数出清</b>——单日榜是情绪，周 / 月榜才是信号。
   </div>
 </section>
 
 <section>
   <div class="sec-head"><h2>💡 开发者 / 创业机会</h2></div>
-  <div class="opp"><b>1. 技能分发 / 评测 / 安全扫描层：</b>skills.sh 徽章已成技能仓库标配，但「哪个技能真的有效」「技能里藏没藏恶意代码」仍无答案。NVIDIA SkillEvaluator 两进两出日榜（+873 爆发 → 出清 → 今日 +312 回归）说明需求真实而工具未定型——做持续运行、可比较、带安全扫描的技能评测服务，仍是技能生态的「装机必备」空位。</div>
-  <div class="opp"><b>2. 垂直技能包的产品化：</b>安全审计（月 +4.46 万）、SEO（claude-seo 月 +1.15 万）、交易研究（周 +3,242）、舆情研究（last30days 7 万星）均已验证付费级需求；今天 paper-orchestra 又验证了<b>学术写作</b>这个新垂直（三连加速登顶日增）。路径清晰：把一个职业的完整 SOP 打磨成技能包 + 订阅制内容更新。</div>
-  <div class="opp"><b>3. 反 AI 味质检 SaaS（「设计 CI」）：</b>impeccable / hallmark / taste-skill 三强月增均 2 万+，验证了「上线前拦住机器味」的付费意愿。机会在 API / CI 化：营销页、电商详情页、落地页批量检测 AI 特征并自动修正，按页计费，品牌方与代理商是天然客户。</div>
-  <div class="opp"><b>4. Agent 控制平面的团队版：</b>t3code（月 +3.69 万、478 贡献者）证明「跨设备管 agent」是真需求，plannotator（周月双榜）证明「批注 + 审批」有价值。空位在团队协作层：多成员权限、审批流、审计日志、成本核算——Jira 之于 Git 的位置，尚未有统治者。</div>
-  <div class="opp"><b>5. Agent 原生内容生产全链条：</b>学术论文（paper-orchestra）、可编辑 AI 视频（hyperframes 8.65 万星 + video-shotcraft）、交互地图 / 文化内容（jiangshan-map，403 BCE 起 18 朝的中国历史时间轴）。「描述 → 生成 → 可编辑交付」的范式正从网页延伸到一切内容形态，中间的模板 / 素材 / 分发层都是生意。</div>
-  <div class="opp"><b>6. 中文市场的两条本地化路径：</b>univer 的「AI Office」叙事周增 +6,840，证明中文生态对企业级协同底座 + agent 的号召力；daily_stock_analysis 以 5.79 万 forks（fork/星比 0.79）展示 fork-to-run 在中文圈的爆发力——同一范式可复制到财报分析、舆情监控等场景，注意证券投顾合规边界与「不构成投资建议」的声明义务。</div>
+  <div class="opp"><b>1. 垂直技能是被验证的付费市场。</b>trading-skills（周 +3,385）、claude-seo（月 +1.17 万）、instagram-agent-skill（+5,322）、app-store-compliance（日 +377）证明：把一个专业的程序性知识写成技能包就有分发与收入（hallmark 的 50 主题定制收费是先例）。可复制方向：法务合同审查、财务尽调、医疗合规、跨境电商运营、保险核保——<b>选你有信息差、且每天有人付费咨询的领域</b>。</div>
+  <div class="opp"><b>2. 团队级 agent 控制平面是企业空位。</b>t3code 解决了个人多 agent 管理（478 贡献者验证需求），但企业需要的是权限 / 审计 / 成本归因 / 合规版本锁定——这块目前没有开源占位者。plannotator 的审阅工作台 + t3code 的多端架构，是团队版的直接拼图。</div>
+  <div class="opp"><b>3. 反 AI 味品控可直接商业化。</b>impeccable / hallmark 已把「设计品味」流水线化；下一步是「品牌一致性即服务」——企业品牌规范 → 技能包 → agent 产出自检。设计 agencies 与品牌方是天然客户。</div>
+  <div class="opp"><b>4. agent 视频管线三件套已凑齐。</b>hyperframes（可编辑 AI 视频，HeyGen 官方开源）+ ffmpeg-skill（42 个工具 + 机器可读契约）+ autoclip（长视频 → 抖音 / 小红书短视频，中文产品）——「播客 / 课程 → 切片 → 封面文案 → 多平台分发」的自动化内容工厂已经可以全开源搭建。</div>
+  <div class="opp"><b>5. 学习路线（按性价比排序）：</b>① 精读 anthropics/skills + superpowers，一周内写出自己的第一个垂直技能；② 用 security-audit-skill 的六阶段范式改造你的任何「agent 会胡说」流程；③ 用 t3code 把手机变成 agent 遥控器；④ 中文开发者关注 univer（办公 AI 底座）与 minimind（64M 模型 2 小时从零训练，教学价值极高）。</div>
+</section>
+
+<section>
+  <div class="sec-head"><h2>📋 三榜全量速览（40 项，全部 API 核实）</h2></div>
+  <div class="card">
+    <div class="sec-head" style="margin-top:2px;"><h2 style="font-size:15px;">日榜 16 项</h2></div>
+    <div class="list-row"><span class="no">1</span><span><a href="https://github.com/obra/superpowers">obra/superpowers</a> 技能框架 32.2 万星</span><span class="g">+2,028</span></div>
+    <div class="list-row"><span class="no">2</span><span><a href="https://github.com/elementalsouls/Claude-BugHunter">Claude-BugHunter</a> 红队技能包</span><span class="g">+1,349</span></div>
+    <div class="list-row"><span class="no">3</span><span><a href="https://github.com/mvanhorn/last30days-skill">last30days-skill</a> 情报研究技能</span><span class="g">+954</span></div>
+    <div class="list-row"><span class="no">4</span><span><a href="https://github.com/HKUDS/CLI-Anything">CLI-Anything</a> 软件 Agent 原生化</span><span class="g">+898</span></div>
+    <div class="list-row"><span class="no">5</span><span><a href="https://github.com/firecrawl/firecrawl">firecrawl</a> agent 数据基础设施</span><span class="g">+825</span></div>
+    <div class="list-row"><span class="no">6</span><span><a href="https://github.com/cursor/plugins">cursor/plugins</a> 官方插件仓</span><span class="g">+384</span></div>
+    <div class="list-row"><span class="no">7</span><span><a href="https://github.com/mjmirza/app-store-compliance">app-store-compliance</a> 上架合规</span><span class="g">+377</span></div>
+    <div class="list-row"><span class="no">8</span><span><a href="https://github.com/XiaoYouChR/Ghost-Downloader-3">Ghost-Downloader-3</a> 下载器</span><span class="g">+341</span></div>
+    <div class="list-row"><span class="no">9</span><span><a href="https://github.com/google-labs-code/stitch-skills">stitch-skills</a> Google 设计技能</span><span class="g">+302</span></div>
+    <div class="list-row"><span class="no">10</span><span><a href="https://github.com/cathrynlavery/diagram-design">diagram-design</a> 图表设计技能</span><span class="g">+271</span></div>
+    <div class="list-row"><span class="no">11</span><span><a href="https://github.com/openvinotoolkit/openvino">openvino</a> Intel 推理工具包</span><span class="g">+246</span></div>
+    <div class="list-row"><span class="no">12</span><span><a href="https://github.com/jingyaogong/minimind">minimind</a> 从零训小模型</span><span class="g">+238</span></div>
+    <div class="list-row"><span class="no">13</span><span><a href="https://github.com/toeverything/AFFiNE">AFFiNE</a> 知识库 7.5 万星</span><span class="g">+182</span></div>
+    <div class="list-row"><span class="no">14</span><span><a href="https://github.com/zhouxiaoka/autoclip">autoclip</a> 一键出片</span><span class="g">+126</span></div>
+    <div class="list-row"><span class="no">15</span><span><a href="https://github.com/nginx/nginx">nginx</a> 官方仓库</span><span class="g">+73</span></div>
+    <div class="list-row"><span class="no">16</span><span><a href="https://github.com/Tracer-Cloud/opensre">opensre</a> CI/CD 可靠性 agent</span><span class="g">+38</span></div>
+  </div>
+  <div class="card">
+    <div class="sec-head" style="margin-top:2px;"><h2 style="font-size:15px;">周榜 13 项</h2></div>
+    <div class="list-row"><span class="no">1</span><span><a href="https://github.com/dream-num/univer">dream-num/univer</a> AI Office SDK</span><span class="g">+7,248</span></div>
+    <div class="list-row"><span class="no">2</span><span><a href="https://github.com/GoogleChrome/modern-web-guidance-src">modern-web-guidance-src</a> Web 最佳实践</span><span class="g">+6,858</span></div>
+    <div class="list-row"><span class="no">3</span><span><a href="https://github.com/meta/astryx">meta/astryx</a> Meta 设计系统</span><span class="g">+4,977</span></div>
+    <div class="list-row"><span class="no">4</span><span><a href="https://github.com/alibaba/open-code-review">open-code-review</a> AI 代码审查</span><span class="g">+4,492</span></div>
+    <div class="list-row"><span class="no">5</span><span><a href="https://github.com/backnotprop/plannotator">plannotator</a> agent 审阅工作台</span><span class="g">+3,468</span></div>
+    <div class="list-row"><span class="no">6</span><span><a href="https://github.com/ag-ui-protocol/ag-ui">ag-ui</a> Agent-UI 协议</span><span class="g">+3,455</span></div>
+    <div class="list-row"><span class="no">7</span><span><a href="https://github.com/tradermonty/claude-trading-skills">claude-trading-skills</a> 交易技能</span><span class="g">+3,385</span></div>
+    <div class="list-row"><span class="no">8</span><span><a href="https://github.com/ChromeDevTools/chrome-devtools-mcp">chrome-devtools-mcp</a> 官方 MCP</span><span class="g">+3,229</span></div>
+    <div class="list-row"><span class="no">9</span><span><a href="https://github.com/we-promise/sure">we-promise/sure</a> 个人财务 app</span><span class="g">+3,226</span></div>
+    <div class="list-row"><span class="no">10</span><span><a href="https://github.com/mvanhorn/last30days-skill">last30days-skill</a> 情报研究技能</span><span class="g">+3,179</span></div>
+    <div class="list-row"><span class="no">11</span><span><a href="https://github.com/kajisho5/ffmpeg-skill">ffmpeg-skill</a> agent 视频工具</span><span class="g">+2,998</span></div>
+    <div class="list-row"><span class="no">12</span><span><a href="https://github.com/google-labs-code/stitch-skills">stitch-skills</a> Google 设计技能</span><span class="g">+1,829</span></div>
+    <div class="list-row"><span class="no">13</span><span><a href="https://github.com/pookjw/HermesEnabler">HermesEnabler</a> 手表表盘解锁</span><span class="g">+904</span></div>
+  </div>
+  <div class="card">
+    <div class="sec-head" style="margin-top:2px;"><h2 style="font-size:15px;">月榜 17 项</h2></div>
+    <div class="list-row"><span class="no">1</span><span><a href="https://github.com/cloudflare/security-audit-skill">security-audit-skill</a> 安全审计技能</span><span class="g">+44,608</span></div>
+    <div class="list-row"><span class="no">2</span><span><a href="https://github.com/pingdotgg/t3code">t3code</a> agent 控制平面</span><span class="g">+37,642</span></div>
+    <div class="list-row"><span class="no">3</span><span><a href="https://github.com/pbakaus/impeccable">impeccable</a> 设计词汇</span><span class="g">+30,843</span></div>
+    <div class="list-row"><span class="no">4</span><span><a href="https://github.com/Nutlope/hallmark">hallmark</a> 反 AI 味设计</span><span class="g">+27,756</span></div>
+    <div class="list-row"><span class="no">5</span><span><a href="https://github.com/milind-soni/OpenMausBot">OpenMausBot</a> 聊天机器人</span><span class="g">+20,640</span></div>
+    <div class="list-row"><span class="no">6</span><span><a href="https://github.com/sherlock-project/sherlock">sherlock</a> OSINT 查名</span><span class="g">+20,350</span></div>
+    <div class="list-row"><span class="no">7</span><span><a href="https://github.com/heygen-com/hyperframes">hyperframes</a> AI 视频编辑</span><span class="g">+20,032</span></div>
+    <div class="list-row"><span class="no">8</span><span><a href="https://github.com/HKUDS/DeepTutor">DeepTutor</a> 个性化辅导</span><span class="g">+19,312</span></div>
+    <div class="list-row"><span class="no">9</span><span><a href="https://github.com/thedotmack/claude-mem">claude-mem</a> agent 记忆</span><span class="g">+17,313</span></div>
+    <div class="list-row"><span class="no">10</span><span><a href="https://github.com/anthropics/skills">anthropics/skills</a> 官方技能仓</span><span class="g">+16,003</span></div>
+    <div class="list-row"><span class="no">11</span><span><a href="https://github.com/AgriciDaniel/claude-seo">claude-seo</a> SEO 技能</span><span class="g">+11,706</span></div>
+    <div class="list-row"><span class="no">12</span><span><a href="https://github.com/vercel-labs/agent-browser">agent-browser</a> agent 浏览器</span><span class="g">+8,717</span></div>
+    <div class="list-row"><span class="no">13</span><span><a href="https://github.com/elementalsouls/Claude-BugHunter">Claude-BugHunter</a> 红队技能包</span><span class="g">+6,708</span></div>
+    <div class="list-row"><span class="no">14</span><span><a href="https://github.com/kajisho5/ffmpeg-skill">ffmpeg-skill</a> agent 视频工具</span><span class="g">+6,206</span></div>
+    <div class="list-row"><span class="no">15</span><span><a href="https://github.com/Jakeschincariol/instagram-agent-skill">instagram-agent-skill</a> IG 运营</span><span class="g">+5,322</span></div>
+    <div class="list-row"><span class="no">16</span><span><a href="https://github.com/backnotprop/plannotator">plannotator</a> 审阅工作台</span><span class="g">+4,143</span></div>
+    <div class="list-row"><span class="no">17</span><span><a href="https://github.com/google-labs-code/stitch-skills">stitch-skills</a> 唯一三榜同在</span><span class="g">+2,107</span></div>
+  </div>
 </section>
 
 <section>
   <div class="sec-head"><h2>🎯 今日最终结论</h2></div>
   <div class="final">
     <div class="q" style="margin-bottom:4px;">当前最火的项目是什么？</div>
-    <div class="qa"><a href="https://github.com/google-research/paper-orchestra">google-research/paper-orchestra</a>——今日 <b>+1,524</b> 全场第一、三连加速（+313 → +1,072 → +1,524）且增量与总星完全吻合，传播链路刚点火；若论体量，superpowers 32.1 万星 +822 仍是技能框架的顶点。</div>
+    <div class="qa"><a href="https://github.com/obra/superpowers">obra/superpowers</a>——今日 <b>+2,028</b> 全场第一、总星 32.2 万的技能框架之王，且是「再加速」（昨 +822）；月度维度最猛的是 <a href="https://github.com/cloudflare/security-audit-skill">security-audit-skill</a>（月 +44,608 断层第一，但已停更、增长冻结）。</div>
     <div class="q" style="margin-bottom:4px;">当前最值得长期关注的项目是什么？</div>
-    <div class="qa"><a href="https://github.com/anthropics/skills">anthropics/skills</a>（19.7 万星，周月双榜）——技能生态的标准对流层；并列推荐 <a href="https://github.com/GoogleChrome/modern-web-guidance-src">modern-web-guidance-src</a>——浏览器厂商联盟的官方技能仓，本周 +7,257、82% 的星来自本周，平台级卡位刚开始。</div>
+    <div class="qa"><a href="https://github.com/anthropics/skills">anthropics/skills</a>（19.8 万星，标准锚点）+ <a href="https://github.com/dream-num/univer">dream-num/univer</a>（周榜第一且仍在加速的 AI Office 底座）——一个是生态标准，一个是真产品真营收。</div>
     <div class="q" style="margin-bottom:4px;">如果只能研究一个项目应该研究哪个？</div>
-    <div class="qa"><a href="https://github.com/anthropics/skills">anthropics/skills</a>——技能生态是当前最大的红利窗口（三榜三分之一被技能类占据，Cursor 官方插件仓今日进榜），标准仓库是理解整个品类的最短路径；若目标是个人提效而非做平台，改看 <a href="https://github.com/obra/superpowers">superpowers</a>（装上即用）。</div>
+    <div class="qa"><a href="https://github.com/anthropics/skills">anthropics/skills</a>——技能生态仍是当前最大红利窗口（三榜四成是技能类，Google 与 Cursor 本周都在加注），标准仓库是理解品类的最短路径；若目标是个人提效，改用 <a href="https://github.com/obra/superpowers">superpowers</a>（装上即用）。</div>
     <div class="q" style="margin-bottom:4px;">最近最值得关注的技术趋势是什么？</div>
-    <div class="qa">一条主线：<b>Agent Skills 生态化</b>——技能成为新的应用分发格式，且今天从 Claude 系扩展到 Cursor 官方插件规范，跨客户端汇流。三条支线：「反 AI 味」设计质检固化三强赛道；agent 安全攻防双向升级（月增 4.46 万的审计技能是标志）；agent 原生内容生产延伸到学术论文（paper-orchestra 是今天的新变量）。另记住一个元规律：<b>日榜是情绪、周月榜才是信号</b>。</div>
+    <div class="qa">主线：<b>Agent Skills 全行业应用化</b>（agentskills.io 标准跨厂商汇流 + Cursor 官方插件 + Google 官方技能上架）。三条支线：「反 AI 味」品控层品类化；agent 控制平面成型（t3code / plannotator / OpenMausBot）；安全攻防双向升级（审计技能月增 4.4 万 vs 红队技能包日增 1,349）。元规律再验证：<b>昨日日榜前二今日全数出清——日榜看情绪，周月榜看信号。</b></div>
   </div>
 </section>
 
 <div class="foot">
-  数据口径：Trending 榜单与增量（today / this week / this month）抓取自 github.com/trending（2026-11-19，真实浏览器渲染抓取）；今日三榜实际返回 19 / 15 / 16 项，已全量收录而非截取 Top 20。总星 / fork / open issues / 创建与推送时间 / 贡献者数（经 Link 分页头解析）逐项经 GitHub API 核实（45/45）；paper-orchestra 作者机构、impeccable / hallmark / security-audit-skill 定位与流水线、t3code 功能列表、modern-web-guidance 四方共建等均取自官方 README；svelte 5.58.0 发版时间与创建日期（2016-11-20）经 API 核实，其十周年带动 star 的归因为推测。「为什么火」中传播链路归因为基于公开信号的推测，已逐处标注；对比基线为本智能体 2026-11-18 日报（仓库存档可查）。security-audit-skill 自 2026-09-14、CLI-Anything 自 2026-09-22 后无代码推送属实情而非误报。本报告不构成投资建议。
-  <br><br>📋 历史日报存档：<a href="https://xiaofei68.github.io/github-trending-daily/2026-11-18.html">2026-11-18</a> · <a href="https://xiaofei68.github.io/github-trending-daily/2026-11-17.html">2026-11-17</a> · <a href="https://xiaofei68.github.io/github-trending-daily/2026-11-16.html">2026-11-16</a> · <a href="https://xiaofei68.github.io/github-trending-daily/2026-11-15.html">2026-11-15</a>
-  <br>🤖 由 Multica 智能体「GitHub 开源情报分析员」自动生成 · 每日更新
+  数据来源：GitHub Trending（daily / weekly / monthly）2026-11-20 上午抓取；star / fork / issues / 贡献者数 / 时间戳经 GitHub REST API 逐项核实（40/40；贡献者数 39/40，instagram-agent-skill 贡献者数无法确认）。「为什么火」为基于数据的分析判断，已与事实分开表述。<br>
+  历史日报：<a href="https://xiaofei68.github.io/github-trending-daily/2026-11-19.html">11-19</a> · <a href="https://xiaofei68.github.io/github-trending-daily/2026-11-18.html">11-18</a> · <a href="https://xiaofei68.github.io/github-trending-daily/2026-11-17.html">11-17</a> · <a href="https://xiaofei68.github.io/github-trending-daily/2026-11-16.html">11-16</a> · <a href="https://xiaofei68.github.io/github-trending-daily/2026-11-15.html">11-15</a><br>
+  由 Multica 自动化智能体「GitHub 开源情报分析员」生成 · 每日 09:15 更新
 </div>
 
 </div>
