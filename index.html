@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<meta name="description" content="GitHub 热门项目日报 2026-11-27：t3code 月增七连涨破 5 万（+50,354）总星破 8 万但 24h 净增三连降、Claude-BugHunter 八连霸日增四连降、周榜唯一新面孔 obsidian-skills（Obsidian 官方 Agent Skills）、阿里 open-code-review 周增回升进入综合榜、日榜 16 项周五全线回落且第八日零更替、三榜去重 44 项全部经 GitHub API 核实、技术趋势与创业机会">
-<title>🔥 GitHub 热门项目日报｜2026-11-27</title>
+<meta name="description" content="GitHub 热门项目日报 2026-11-28：instagram-agent-skill 账号与仓库今晨 404（昨日月榜第 7 位、停更 76 天仍惯性收星）、Claude-BugHunter 九连霸日榜口径首次止跌但 24h 净增回落、n8n 官方个人 agent nod 周增 +259 加速、t3code 月增八连涨破 5.1 万但 issue 三连升、三榜零更替（日榜第九日 / 月榜第四日）、44 项全部经 GitHub API 核实、技术趋势与创业机会">
+<title>🔥 GitHub 热门项目日报｜2026-11-28</title>
 <style>
   :root{
     --bg:#f5f6f8; --card:#ffffff; --ink:#1f2328; --sub:#57606a; --line:#e4e7eb;
@@ -64,7 +64,9 @@
     background:var(--card); border:1px solid var(--line); border-left:4px solid var(--accent); border-radius:12px;
     padding:12px 14px; margin-bottom:10px; font-size:14px; color:#3b424b;
   }
-  .trend b{color:var(--ink); display:block; margin-bottom:3px; font-size:14.5px;}
+  .trend > b:first-child{color:var(--ink); display:block; margin-bottom:3px; font-size:14.5px;}
+  .trend b{color:var(--ink);}
+  .trend.alert{border-left-color:var(--hot);}
   .opp{background:var(--card); border:1px solid var(--line); border-radius:12px; padding:12px 14px; margin-bottom:10px; font-size:14px;}
   .opp b{color:var(--ink);}
   .final{
@@ -82,433 +84,416 @@
 </head>
 <body>
 <div class="hero">
-  <h1>🔥 GitHub 热门项目日报｜2026-11-27</h1>
-  <div class="sub">星期五 · 数据抓取 09:15–09:40（北京时间）· 三榜单去重 44 项全部经 GitHub API 核实</div>
+  <h1>🔥 GitHub 热门项目日报｜2026-11-28</h1>
+  <div class="sub">星期六 · 数据抓取 09:15–09:35（北京时间）· 三榜单去重 44 项全部经 GitHub API 核实</div>
   <div class="stats">
     <span>日榜 16 项</span><span>周榜 15 项</span><span>月榜 19 项</span>
-    <span>t3code 月增破 5 万</span><span>BugHunter 八连霸</span><span>周榜新面孔 obsidian-skills</span><span>日榜零更替第八日</span><span>周五全线回落</span>
+    <span>三榜零更替</span><span>instagram-agent-skill 今晨 404</span><span>BugHunter 九连霸</span><span>nod 周增 +259</span><span>t3code 月增八连涨</span>
   </div>
 </div>
 <div class="wrap">
 
 <section>
   <div class="sec-head"><h2>📌 今日五大信号</h2></div>
-  <div class="trend"><b>① t3code 月增七连涨破 5 万、总星破 8 万——但 24h 净增三连降、issue 存量二连升，高增长仓进入「高压期」</b>
-  <a href="https://github.com/pingdotgg/t3code">t3code</a> 月增 38,744→40,025→41,514→44,453→47,147→49,283→<b>+50,354</b>（七连涨），总星 79,481→<b>80,977</b> 破 8 万，贡献者 1,384→1,396（+12），push 今晨 09:19。7 日内 2,616 个 PR、1,279 个新 issue——活跃度断层第一。但两个诚实注脚：24h 净增 +2,741→+1,946→<b>+1,496</b> 三连降；open issue 存量 3,714→<b>3,828</b>（+114）二连升。「用你已有订阅、多端驾驶舱」的叙事没变，变的是增长的斜率与运维的账单。</div>
-  <div class="trend"><b>② Claude-BugHunter 八连霸的「火冷同体」进入第四天：日增四连降，月增仍加速</b>
-  <a href="https://github.com/elementalsouls/Claude-BugHunter">Claude-BugHunter</a> 日榜第一连续第 8 天，总星 23,042→<b>24,623</b>（24h 净增 +1,581），月增 17,223→<b>18,637</b>（+1,414）继续加速；但日增 +2,029→+1,826→+1,652→<b>+1,597</b> 四连降。push 今晨 09:16、7 日 61 PR / 32 commits——工程节奏健康，追高情绪持续退潮。GitHub 月榜第 17 位，但月增已超 anthropics/skills（17,538）与 claude-mem（17,325）。</div>
-  <div class="trend"><b>③ 周榜唯一新面孔：Obsidian 官方 Agent Skills 仓入场——「工具厂商官方技能化」再添一员</b>
-  <a href="https://github.com/obsidianmd/obsidian-skills">obsidianmd/obsidian-skills</a> 空降周榜第 13（周增 +704，<b>54,024★</b>，28 贡献者，仅 5 个 open issue，push 今晨 01:50）。注意：它不是新仓库（建于 2026-01），是 Obsidian 官方按 agentskills.io 规范做的技能包，并已成为 Claude / ChatGPT / Cursor / Grok Bot 的官方插件。与 stitch-skills（Google）、modern-web-guidance（Chrome/Edge/Firefox/MDN 四方共建）、cursor/plugins、astryx（Meta）同场——软件厂商正在把「技能」当成新的 API 对外发布。榜单结构：周榜 14→15（+obsidian-skills，零退出）、日榜 16 项与昨日完全同一批（<b>第八日零更替</b>）、月榜 19 项第三日零更替，三榜去重 43→44。</div>
-  <div class="trend"><b>④ 周五全线回落：日榜 16 项日增无一上涨（16/16 下降），CLI-Anything 跌幅最大且连续第 7 日无 push</b>
-  日榜 16 项今日新增全部低于昨日：CLI-Anything 1,106→<b>746</b>（-32%）、app-store-compliance 858→562（-35%）、cursor/plugins 416→270（-35%）、diagram-design 1,141→955、last30days 945→759、minimind 826→702。这是「工作日传播脉冲 + 周末退潮」的典型形态，不代表项目基本面变化；但 CLI-Anything 的 push 停在 11-20（第 7 日）、7 日默认分支 0 commit、却新增 55 个 PR——热星与冷仓的背离已持续一周，是今天唯一需要警惕的「结构性」回落。</div>
-  <div class="trend"><b>⑤ 停更仓折价 vs 活跃仓溢价持续深化：superpowers「复活」被证伪，ffmpeg-skill / nod / plannotator 续涨</b>
-  昨日标注「复活待确认」的 <a href="https://github.com/obra/superpowers">superpowers</a>：API 显示 11-26 19:33 又有推送，但默认分支最近提交仍是 <b>11-03（v7.0.2，24 天）</b>——两次推送都不在主干，日增 903→854 继续回落，「装机型资产」的担忧回归。停更阵营：security-audit-skill 停更 73 天月增七连降至 31,165、instagram-agent-skill 停更 75 天月增仍 +6,511（惯性收星）、hallmark 停更 16 天月增 28,295→26,738。对照活跃阵营：<a href="https://github.com/kajisho5/ffmpeg-skill">ffmpeg-skill</a> 周增 3,048→<b>3,229</b> 回升成周榜增量第二、月增 8,408 上行；<a href="https://github.com/n8n-io/nod">nod</a> 周增 1,008→<b>1,165</b>（+157）入场次日续涨、贡献者 45→51；<a href="https://github.com/backnotprop/plannotator">plannotator</a> 月增 5,601 四连涨、7 日 294 PR。</div>
+  <div class="trend alert"><b>① 昨日还在月榜第 7 位的 instagram-agent-skill，今晨账号与仓库同时 404——「惯性收星」的终局来了</b>
+  <a href="https://github.com/Jakeschincariol/instagram-agent-skill">Jakeschincariol/instagram-agent-skill</a> 昨日报告的标注是「停更 75 天、仅 1 贡献者、月增仍 +6,511——惯性收星典型」。今日 09:26 API 仍返回 ★9,881（月榜 +6,548、仍在榜），<b>09:30 起仓库端点、账号端点、网页同时 404</b>，而 Trending 月榜页面仍在展示它、GitHub 搜索索引仍显示 ★9,883。三种可能无法区分：账号删除、被封禁、或设为私密画像；<b>改名已可排除</b>（GitHub 对改名的账号/仓库保留 301 重定向，今日无跳转）。事实层面只确认一点：一个 9,881 星、月增 6,548 的技能仓，在任何 warning 的情况下从公开互联网消失了。对依赖它的工作流来说，这不是「热度退潮」，是「依赖断了」。</div>
+  <div class="trend"><b>② Claude-BugHunter 九连霸：日榜口径首次止跌回升，但 24h API 净增继续回落；fork 增速快于 star</b>
+  <a href="https://github.com/elementalsouls/Claude-BugHunter">Claude-BugHunter</a> 日榜第一连续第 9 天，「stars today」四连降后首次回升（+1,597→<b>+1,608</b>，+11）；但 24h API 净增 +1,581→<b>+1,492</b> 继续回落。总星 24,623→<b>26,115</b>，月增 18,637→<b>+20,246</b>（+1,609，仍在加速）。更值得注意的是 fork 2,507→<b>2,688</b>（24h +181，+7.2%），明显快于 star 增速（+6.0%）——「clone 下来在用」的信号强于「看了点赞」。工程面：7 日 66 PR（昨 61）/ 18 个新 issue / 31 commits，但 <b>11-27 12:27 之后无 push</b>，贡献者 21 已连续多日未变。</div>
+  <div class="trend"><b>③ nod 周增 +259（+22%）：n8n 官方「有自己电脑的个人 agent」入场第三日加速，昨日连发三个版本</b>
+  <a href="https://github.com/n8n-io/nod">n8n-io/nod</a> 周增 1,165→<b>1,424</b>，24h 净增 +324（4,011→4,335★），是周榜 15 项里唯一「日环比加速且幅度显著」的项目（obsidian-skills +246 次之）。工程节奏极快：昨日 <b>v0.10.1 / 0.10.2 / 0.10.3 三连发版</b>，7 日 250 PR / 48 个新 issue / 100+ commits，51 位贡献者。README 自述「research preview」，macOS 14+ 正式支持、Windows 11 与 Linux x64 预览，ChatGPT Plus/Pro 或自备 key 即可用，Apache-2.0 + OpenSSF Best Practices 徽章。它和 t3code（控制面）、OpenMausBot（带虚拟机的 Grok Bot 开源替代）、agent-browser（浏览器 CLI）同框——「agent 运行时」这一层正在被填满。</div>
+  <div class="trend"><b>④ 周六大盘：日榜 16 项 12 跌 4 升，跌幅比周五收窄；但「热星冷仓」的背离在加深</b>
+  回升的 4 项：<a href="https://github.com/obra/superpowers">superpowers</a> +68（+8%，日榜最大相对反弹）、BugHunter +11、<a href="https://github.com/google-labs-code/stitch-skills">stitch-skills</a> +2、<a href="https://github.com/Tracer-Cloud/opensre">opensre</a> +1。回落的 12 项里跌幅最大的是 diagram-design（955→725，-24%）、firecrawl（1,046→822，-21%）。周五 16/16 全跌，周六 12/16——周末退潮形态，不代表基本面。但三条「结构性」注脚要单独看：<b>superpowers 默认分支仍停在 11-03（25 天）</b>，今日事件流只有 star/fork、无新 push（pushed_at 仍为 11-26 19:33）；<a href="https://github.com/HKUDS/CLI-Anything">CLI-Anything</a> 连续第 8 日无 push，且经复核 <b>默认分支 main 最近提交是 09-22（67 天）</b>——26 个分支上 7 日 55 个 PR、默认分支零合并；stitch-skills 11-25 起已 3 日无 push。</div>
+  <div class="trend"><b>⑤ t3code 月增八连涨破 5.1 万，但 24h 净增四连降、issue 三连升；OpenMausBot issue 首次回落</b>
+  <a href="https://github.com/pingdotgg/t3code">t3code</a> 月增 50,354→<b>+51,428</b>，总星 80,977→<b>82,205</b>，贡献者 1,396→1,407（+11），昨夜两个 nightly（v0.1.14-nightly.20261127），push 今晨 09:23。三条压力线：24h 净增 +1,496→<b>+1,228</b> 四连降；open issue 3,828→<b>3,885</b>（+57）三连升；7 日 PR 2,616→<b>2,791</b>（+175）、新 issue 1,279→1,261。对照组：<a href="https://github.com/milind-soni/OpenMausBot">OpenMausBot</a> open issue 1,428→<b>1,373</b>（-55）本期首次回落、贡献者 +10 至 356、月增 +310 续升；<a href="https://github.com/yetone/magpie">magpie</a> 5,270→<b>5,360</b>（+90）五连恶化、7 日仍 0 PR；<a href="https://github.com/we-promise/sure">sure</a> 1,189→1,182（-7）首次回落。</div>
 </section>
 
 <section>
   <div class="sec-head"><h2>🔥 今日最火 Top 5</h2></div>
   <div class="sec-note">按 GitHub Trending（daily）今日位次；增量数据为「今日新增 star」，全部经 API 核实。括号内为相对昨日日增的变化。</div>
-
   <div class="card">
     <div class="p-head"><div class="rank top">1</div><div class="p-title">
       <div class="p-name"><a href="https://github.com/elementalsouls/Claude-BugHunter">elementalsouls/Claude-BugHunter</a></div>
-      <div class="p-growth">今日 +1,597 ★（-55）· 八连霸 · 总星 24,623 · 月增 +18,637 仍加速 · 日增四连降</div>
+      <div class="p-growth">今日 +1,608 ★（+11）· 九连霸 · 总星 26,115 · 月增 +20,246 仍加速 · 24h 净增 +1,492 回落</div>
     </div></div>
-    <div class="chips"><span>Python</span><span>⭐ 24,623</span><span>2,507 forks</span><span>21 贡献者</span><span>建于 2026-05</span><span>push 今晨 09:16</span><span>7 日 61 PR</span></div>
+    <div class="chips"><span>Python</span><span>⭐ 26,115</span><span>2,688 forks（24h +181）</span><span>21 贡献者</span><span>建于 2026-05</span><span>push 11-27 12:27</span><span>7 日 66 PR</span></div>
     <div class="p-body">
       <div class="row"><span class="lbl">它是什么：</span>面向 Claude Code 的漏洞挖掘与外部红队技能包：85 个 skill、16 个斜杠命令、681 份已披露报告模式（24 个漏洞大类，433 份已逐条引用可审计）、企业身份与基础设施攻击矩阵、Burp MCP 集成。</div>
-      <div class="row"><span class="lbl">为什么火：</span>把 Claude Code 变成「资深红队研究员」的最低成本路径。总星 24h 净增 +1,581、月增持续加速；但日增 +2,029→+1,826→+1,652→+1,597 四连降，追高情绪持续退潮。7 日 61 PR / 21 个新 issue / 32 commits，21 位贡献者——工程节奏健康，不是「惯性收星」型。</div>
+      <div class="row"><span class="lbl">为什么火：</span>把 Claude Code 变成「资深红队研究员」的最低成本路径。今日两个口径方向相反：日榜「stars today」四连降后首次回升 +11，24h API 净增 +1,581→+1,492 继续回落。真正的增量信号是 fork：24h +181（+7.2%）快于 star（+6.0%），月增 +1,609 仍在加速。7 日 66 PR / 18 个新 issue / 31 commits，但 11-27 12:27 之后无 push，21 位贡献者多日未变——「一个人维护的安全工具」这个结构性风险没变。</div>
       <div class="row"><span class="lbl">核心价值：</span>散落公开漏洞报告 → 结构化可复用检测模式库。</div>
       <div class="row"><span class="lbl">适合谁：</span>渗透测试工程师、红队、企业安全团队、漏洞猎人。⚠️ 仅限授权测试。</div>
-      <div class="row"><span class="lbl">长期潜力：</span>中期机会；21 位贡献者的单点维护风险仍在，日增若周五后仍不回升则进入高位平台期。</div>
+      <div class="row"><span class="lbl">长期潜力：</span>中期机会；fork 增速快于 star 是「真实使用」的正向信号，但单点维护 + 贡献者停滞决定它的上限。</div>
       <div class="row"><span class="lbl">推荐指数：</span><span class="rate">⭐⭐⭐⭐⭐</span>（安全方向）/ <span class="rate">⭐⭐⭐</span>（通用）</div>
     </div>
   </div>
-
   <div class="card">
     <div class="p-head"><div class="rank top">2</div><div class="p-title">
       <div class="p-name"><a href="https://github.com/obra/superpowers">obra/superpowers</a></div>
-      <div class="p-growth">今日 +854 ★（-49）· 继续回落（1,003→903→854）· ⚠️ 11-26 有推送但默认分支停在 11-03</div>
+      <div class="p-growth">今日 +922 ★（+68，+8%）· 日榜最大相对反弹 · ⚠️ 默认分支停在 11-03（25 天）· 今日无新 push</div>
     </div></div>
-    <div class="chips"><span>Shell</span><span>⭐ 327,503</span><span>29,057 forks</span><span>44 贡献者</span><span>默认分支最近提交 11-03（v7.0.2）</span><span>pushed_at 11-26 19:33（非主干）</span></div>
+    <div class="chips"><span>Shell</span><span>⭐ 328,326</span><span>29,182 forks</span><span>44 贡献者</span><span>默认分支最近提交 11-03</span><span>pushed_at 仍为 11-26 19:33（非主干）</span><span>7 日 15 PR / 0 commit</span></div>
     <div class="p-body">
-      <div class="row"><span class="lbl">它是什么：</span>「给 coding agent 的完整软件开发方法论」——可组合技能 + 初始指令，让 Claude Code / Codex / Cursor / Devin 等 16 个宿主按纪律干活（头脑风暴→规划→子代理执行→审查）。</div>
-      <div class="row"><span class="lbl">为什么火：</span>技能生态第一心智入口、本轮「技能季」的生态锚点（32.7 万星全场最大）。昨日「复活待确认」今日有答案：API 的 pushed_at 更新到 11-26，但默认分支最近提交仍是 11-03 的 v7.0.2——两次推送都不在主干，日增继续回落。判断：复活是维护性动作，不是内容更新。</div>
-      <div class="row"><span class="lbl">核心价值：</span>方法论沉淀为可安装资产，跨 agent 通用；TDD/YAGNI/子代理开发流程开箱即用。</div>
-      <div class="row"><span class="lbl">适合谁：</span>所有 AI Coding 用户，装上即用。</div>
-      <div class="row"><span class="lbl">长期潜力：</span>长期基础设施（技能时代的「标准库 + 教程」）；风险：官方生态挤压、更新节奏放缓已成事实。</div>
-      <div class="row"><span class="lbl">推荐指数：</span><span class="rate">⭐⭐⭐⭐⭐</span>（使用）/ <span class="rate">⭐⭐⭐</span>（跟踪新动态）</div>
+      <div class="row"><span class="lbl">它是什么：</span>agentic skills 框架与软件开发方法论：把「先写计划、TDD、子 agent 驱动开发、代码审查」做成可装的技能包，是「装机型资产」的典型。</div>
+      <div class="row"><span class="lbl">为什么火：</span>装机量大、口碑稳定，star 仍以每日 900 左右的速度累积。但周六 +68 的反弹改变不了结构：默认分支最近提交仍是 11-03，今日事件流只有 Watch / Fork，7 日 15 个 PR 零合并。「复活」连续两天没有默认分支证据。</div>
+      <div class="row"><span class="lbl">核心价值：</span>把一套工程纪律变成 agent 可执行的流程。</div>
+      <div class="row"><span class="lbl">适合谁：</span>重度 Claude Code / Codex 用户，想给 agent 加「工作流约束」的团队。</div>
+      <div class="row"><span class="lbl">长期潜力：</span>长期方法论候选；但 25 天不动主干，装之前请 pin 版本。</div>
+      <div class="row"><span class="lbl">推荐指数：</span><span class="rate">⭐⭐⭐⭐</span></div>
     </div>
   </div>
-
   <div class="card">
     <div class="p-head"><div class="rank top">3</div><div class="p-title">
       <div class="p-name"><a href="https://github.com/HKUDS/CLI-Anything">HKUDS/CLI-Anything</a> · 中文团队</div>
-      <div class="p-growth">今日 +746 ★（-360，-32%）· 日榜最大跌幅 · ⚠️ 连续第 7 日无 push · 55 个新 PR 待消化</div>
+      <div class="p-growth">今日 +666 ★（-80）· 总星 67,014 · ⚠️ 连续第 8 日无 push · 默认分支 main 最近提交 09-22（67 天）· 7 日 55 PR 零合并</div>
     </div></div>
-    <div class="chips"><span>Python</span><span>⭐ 66,376</span><span>6,040 forks</span><span>144 贡献者</span><span>建于 2026-03</span><span>⚠️ push 停在 11-20</span><span>7 日 55 PR / 0 commit</span></div>
+    <div class="chips"><span>Python</span><span>⭐ 67,014</span><span>6,166 forks</span><span>144 贡献者</span><span>建于 2026-03</span><span>⚠️ push 停在 11-20</span><span>26 个分支</span><span>7 日 55 PR / 0 commit / 12 新 issue</span></div>
     <div class="p-body">
-      <div class="row"><span class="lbl">它是什么：</span>港大数据智能实验室（HKUDS）出品：「让所有软件 Agent 原生化」——为任意软件自动生成 CLI 封装，配套 CLI-Hub（pip install cli-anything-hub）浏览/安装社区 CLI。</div>
-      <div class="row"><span class="lbl">为什么火：</span>「今天的软件为人设计，明天的用户是 agent」叙事的直接工程化；agent 操作软件需要手，CLI 是最通用的手。但日增 1,106→746 跌 32%，是今天日榜最大跌幅；push 停在 11-20 已 7 天、默认分支 7 日 0 commit、同期新增 55 个 PR——社区在推、维护方在看，热星与冷仓的背离到了需要给出解释的时点。</div>
-      <div class="row"><span class="lbl">核心价值：</span>学术团队做的生态型基建；CAD、3D、字幕等真实演示证明「agent 用软件产出真工件」。</div>
-      <div class="row"><span class="lbl">适合谁：</span>Agent 开发者、工具链工程师、想做 agent 集成的 SaaS 团队。</div>
-      <div class="row"><span class="lbl">长期潜力：</span>CLI-Hub 若形成网络效应可成「agent 时代包管理器」雏形。⚠️ 维护节奏是当前最大问号。</div>
-      <div class="row"><span class="lbl">推荐指数：</span><span class="rate">⭐⭐⭐⭐</span>（理念）/ <span class="rate">⭐⭐⭐</span>（依赖使用）</div>
+      <div class="row"><span class="lbl">它是什么：</span>「让所有软件 Agent-Native」：把任意 CLI 工具封装成 agent 可调用的接口（CLI-Hub），港大 HKUDS 出品。</div>
+      <div class="row"><span class="lbl">为什么火：</span>「万物皆可 agent 化」的叙事 + 港大团队背书，日榜连续多日前三。但今日经复核要加一条更硬的注脚：默认分支 main 的最近提交是 <b>2026-09-22</b>（67 天），11-20 的 push 不在主干；26 个分支上 7 日新开 55 个 PR、默认分支零合并、连续第 8 日无 push。star 每天还在 +666，代码已经两个多月没进主干——这是今日榜单里「热星」与「冷仓」背离最大的一项。</div>
+      <div class="row"><span class="lbl">核心价值：</span>降低「给 agent 加工具」的封装成本。</div>
+      <div class="row"><span class="lbl">适合谁：</span>做 agent 工具链的开发者、研究者；生产使用需自担维护风险。</div>
+      <div class="row"><span class="lbl">长期潜力：</span>中期机会；若主干长期冻结，热度会被「能跑通的 fork」分流。</div>
+      <div class="row"><span class="lbl">推荐指数：</span><span class="rate">⭐⭐⭐</span>（观察）/ <span class="rate">⭐⭐</span>（生产采用）</div>
     </div>
   </div>
-
   <div class="card">
     <div class="p-head"><div class="rank top">4</div><div class="p-title">
       <div class="p-name"><a href="https://github.com/jingyaogong/minimind">jingyaogong/minimind</a> · 中文项目</div>
-      <div class="p-growth">今日 +702 ★（-124）· 回落（826→702）· 总星 71,653 破 7.1 万</div>
+      <div class="p-growth">今日 +660 ★（-42）· 总星 72,216 · 9,442 forks</div>
     </div></div>
-    <div class="chips"><span>Python</span><span>⭐ 71,653</span><span>9,303 forks</span><span>33 贡献者</span><span>建于 2024-07</span><span>push 11-26 16:55</span><span>7 日 31 PR / 19 commits</span></div>
+    <div class="chips"><span>Python</span><span>⭐ 72,216</span><span>9,442 forks</span><span>33 贡献者</span><span>建于 2024-07</span><span>push 11-26 16:55</span><span>7 日 9 PR / 16 commits</span></div>
     <div class="p-body">
-      <div class="row"><span class="lbl">它是什么：</span>中文科普级开源项目：「两小时、三块钱从 0 训出你的 64M 大模型」，全流程覆盖 tokenizer、预训练、SFT、LoRA、RLHF（DPO/PPO/GRPO）、Tool Use、Agentic RL、多模态，PyTorch 原生实现。</div>
-      <div class="row"><span class="lbl">为什么火：</span>LLM 教育刚需的长青答案。fork 数（9,303）达 star 的 13%——极罕见的「动手率」，用户真的在跑代码学习；日增随周五大盘回落。</div>
-      <div class="row"><span class="lbl">核心价值：</span>把 LLM 训练去魅化的最短路径，中文社区唯一该体量的选择。</div>
-      <div class="row"><span class="lbl">适合谁：</span>学生、转型 AI 工程师、教学场景。</div>
-      <div class="row"><span class="lbl">长期潜力：</span>长青教育资产，随每届新人生长。</div>
-      <div class="row"><span class="lbl">推荐指数：</span><span class="rate">⭐⭐⭐⭐</span>（学习者）/ <span class="rate">⭐⭐</span>（生产）</div>
+      <div class="row"><span class="lbl">它是什么：</span>「两小时从 0 训出你的 64M 大模型」——极简 LLM 训练教学项目，含数据、预训练、微调、RLHF 全流程，fork 数（9,442）与 star 之比全榜最高。</div>
+      <div class="row"><span class="lbl">为什么火：</span>LLM 学习曲线最陡的那一段被它压平了；周末学习型项目周六回落 -42 属正常。11-26 16:55 有 push，7 日 9 PR / 16 commits，节奏稳定。</div>
+      <div class="row"><span class="lbl">核心价值：</span>小模型全栈训练的「可运行教材」。</div>
+      <div class="row"><span class="lbl">适合谁：</span>想理解 LLM 训练全流程的开发者、学生、研究人员。</div>
+      <div class="row"><span class="lbl">长期潜力：</span>长期教学基础设施；价值不在功能而在「能跑通」。</div>
+      <div class="row"><span class="lbl">推荐指数：</span><span class="rate">⭐⭐⭐⭐⭐</span>（学习）</div>
     </div>
   </div>
-
   <div class="card">
     <div class="p-head"><div class="rank top">5</div><div class="p-title">
       <div class="p-name"><a href="https://github.com/cursor/plugins">cursor/plugins</a></div>
-      <div class="p-growth">今日 +270 ★（-146，-35%）· 平台信号 · push 11-26 17:04</div>
+      <div class="p-growth">今日 +243 ★（-27）· 总星 20,013 破 2 万 · open issues 712（+5）· push 11-26 17:04</div>
     </div></div>
-    <div class="chips"><span>TypeScript</span><span>⭐ 19,792</span><span>2,142 forks</span><span>37 贡献者</span><span>建于 2026-01</span><span>push 11-26 17:04</span><span>7 日 47 PR / 33 commits</span><span>707 open issues</span></div>
+    <div class="chips"><span>TypeScript</span><span>⭐ 20,013</span><span>2,240 forks</span><span>37 贡献者</span><span>建于 2026-01</span><span>push 11-26 17:04</span><span>7 日 40 PR / 26 commits</span><span>712 open issues</span></div>
     <div class="p-body">
-      <div class="row"><span class="lbl">它是什么：</span>Cursor 官方的插件规范与官方插件仓库：每个插件是根目录下的独立目录，带 .cursor-plugin/plugin.json 清单（teaching、continual-learning、cursor-team-kit 等）。</div>
-      <div class="row"><span class="lbl">为什么火：</span>「Cursor 开放插件平台」的平台信号。参照浏览器扩展史：规范仓库的热度 = 开发者对下一个分发渠道的下注。日增跌 35% 属周五大盘回落；707 个 open issue 说明生态侧的提问量远大于维护带宽。</div>
-      <div class="row"><span class="lbl">核心价值：</span>给「技能/插件开发者」提供第二分发阵地；与 agentskills.io 标准竞合。</div>
-      <div class="row"><span class="lbl">适合谁：</span>想做 AI Coding 生态分发的开发者与创业者。</div>
-      <div class="row"><span class="lbl">长期潜力：</span>取决于 Cursor 插件市场的真实开放程度与分成政策。</div>
-      <div class="row"><span class="lbl">推荐指数：</span><span class="rate">⭐⭐⭐</span>（关注即可）</div>
+      <div class="row"><span class="lbl">它是什么：</span>Cursor 的插件规范与官方插件集——厂商把「技能」当成新的 API 对外发布的代表。</div>
+      <div class="row"><span class="lbl">为什么火：</span>平台信号：Cursor 用户装插件的入口就是它。总星破 2 万，但 712 个 open issue 对 37 位贡献者，消化压力是厂商官方仓里最明显的一个。</div>
+      <div class="row"><span class="lbl">核心价值：</span>观察「编辑器厂商如何做插件分发」的样本。</div>
+      <div class="row"><span class="lbl">适合谁：</span>Cursor 用户、做开发者工具分发的产品人。</div>
+      <div class="row"><span class="lbl">长期潜力：</span>长期平台组件；热度取决于 Cursor 本身。</div>
+      <div class="row"><span class="lbl">推荐指数：</span><span class="rate">⭐⭐⭐</span></div>
     </div>
   </div>
-
-  <div class="sec-note">日榜其他值得注意（按日增排序，括号为相对昨日变化）：</div>
-  <div class="list-row"><span class="no">6</span><a href="https://github.com/firecrawl/firecrawl">firecrawl/firecrawl</a> · +1,046（-89）· 210,956★ · 7 日 195 PR · push 今晨 08:15</div>
-  <div class="list-row"><span class="no">9</span><a href="https://github.com/cathrynlavery/diagram-design">cathrynlavery/diagram-design</a> · +955（-186）· 73,858★ · push 今晨 03:48</div>
-  <div class="list-row"><span class="no">15</span><a href="https://github.com/XiaoYouChR/Ghost-Downloader-3">XiaoYouChR/Ghost-Downloader-3</a>（中文）· +889（-62）· 19,133★ 逼近 2 万 · 7 日 66 个新 issue</div>
-  <div class="list-row"><span class="no">16</span><a href="https://github.com/zhouxiaoka/autoclip">zhouxiaoka/autoclip</a>（中文）· +774（-106）· 16,948★ · 7 日 100+ commits / 66 PR</div>
-  <div class="list-row"><span class="no">10</span><a href="https://github.com/mvanhorn/last30days-skill">mvanhorn/last30days-skill</a> · +759（-186）· 日榜连续第 12 天在场</div>
-  <div class="list-row"><span class="no">12</span><a href="https://github.com/mjmirza/app-store-compliance">mjmirza/app-store-compliance</a> · +562（-296，-35%）· 7,043★</div>
-  <div class="list-row"><span class="no">14</span><a href="https://github.com/toeverything/AFFiNE">toeverything/AFFiNE</a> · +525（-49）· 78,982★ · push 今晨 09:06</div>
-  <div class="list-row"><span class="no">13</span><a href="https://github.com/Tracer-Cloud/opensre">Tracer-Cloud/opensre</a> · +327（-21）· 15,831★ · 371 贡献者 · push 今晨 08:57</div>
-  <div class="list-row"><span class="no">11</span><a href="https://github.com/google-labs-code/stitch-skills">google-labs-code/stitch-skills</a> · +309（-46）· 三榜同在第四日</div>
-  <div class="list-row"><span class="no">8</span><a href="https://github.com/openvinotoolkit/openvino">openvinotoolkit/openvino</a> · +176（-15）· 956 贡献者 · 7 日 219 PR</div>
-  <div class="list-row"><span class="no">7</span><a href="https://github.com/nginx/nginx">nginx/nginx</a> · +150（-26）· 148 贡献者 · 经典基建常驻</div>
+  <div class="sec-note">其他日榜项目（6–16）：</div>
+  <div class="list-row"><span class="no">6</span><span class="g">+822（-224）</span><span><a href="https://github.com/firecrawl/firecrawl">firecrawl/firecrawl</a> · 211,697★ · 24h +741 · 181 贡献者 · 7 日 156 PR / 84 commits · push 今晨 05:29</span></div>
+  <div class="list-row"><span class="no">7</span><span class="g">+146（-4）</span><span><a href="https://github.com/nginx/nginx">nginx/nginx</a> · 33,662★ · 148 贡献者 · 7 日 30 PR · push 昨夜 23:22 · 经典基建常驻</span></div>
+  <div class="list-row"><span class="no">8</span><span class="g">+151（-25）</span><span><a href="https://github.com/openvinotoolkit/openvino">openvinotoolkit/openvino</a> · 12,953★ · 962 贡献者（昨 956）· 7 日 216 PR / 48 新 issue · push 今晨 08:58</span></div>
+  <div class="list-row"><span class="no">9</span><span class="g">+725（-230）</span><span><a href="https://github.com/cathrynlavery/diagram-design">cathrynlavery/diagram-design</a> · 74,470★ · 24h +612 · 78 贡献者 · 7 日 15 PR · push 11-27 03:48</span></div>
+  <div class="list-row"><span class="no">10</span><span class="g">+675（-84）</span><span><a href="https://github.com/mvanhorn/last30days-skill">mvanhorn/last30days-skill</a> · 76,377★ · 日榜连续第 13 天在场 · 周榜第 6</span></div>
+  <div class="list-row"><span class="no">11</span><span class="g">+311（+2）</span><span><a href="https://github.com/google-labs-code/stitch-skills">google-labs-code/stitch-skills</a> · 13,596★ · 三榜同在第五日 · ⚠️ 11-25 起 3 日无 push · 7 日 8 PR / 0 新 issue</span></div>
+  <div class="list-row"><span class="no">12</span><span class="g">+530（-32）</span><span><a href="https://github.com/mjmirza/app-store-compliance">mjmirza/app-store-compliance</a> · 7,921★ · 24h API 净增 +878（高于日榜口径，滚动窗口不同）· 10 贡献者 · 7 日 52 PR / 47 commits · push 今晨 09:01</span></div>
+  <div class="list-row"><span class="no">13</span><span class="g">+328（+1）</span><span><a href="https://github.com/Tracer-Cloud/opensre">Tracer-Cloud/opensre</a> · 16,136★ · 24h +305 · 371 贡献者 · 7 日 63 PR · push 今晨 08:56</span></div>
+  <div class="list-row"><span class="no">14</span><span class="g">+474（-51）</span><span><a href="https://github.com/toeverything/AFFiNE">toeverything/AFFiNE</a> · 79,459★ 距 8 万 541 · 294 贡献者 · 7 日 57 PR / 63 commits · push 今晨 08:31</span></div>
+  <div class="list-row"><span class="no">15</span><span class="g">+836（-53）</span><span><a href="https://github.com/XiaoYouChR/Ghost-Downloader-3">XiaoYouChR/Ghost-Downloader-3</a>（中文）· 19,860★ 距 2 万 140 · 19 贡献者 · 7 日 63 个新 issue / 27 PR / 48 commits</span></div>
+  <div class="list-row"><span class="no">16</span><span class="g">+718（-56）</span><span><a href="https://github.com/zhouxiaoka/autoclip">zhouxiaoka/autoclip</a>（中文）· 17,599★ · 13 贡献者 · 7 日 61 PR / 100+ commits · push 今晨 00:59</span></div>
 </section>
 
 <section>
   <div class="sec-head"><h2>📈 本周最值得关注 Top 5</h2></div>
-  <div class="sec-note">按本周增量与趋势叠加排序（GitHub 周榜位次与增量排序不一致，以数据为准）。今日将 open-code-review 与新面孔 obsidian-skills 提入前五，astryx（十二连降）与 nod 降至「其他」。</div>
-
+  <div class="sec-note">按本周增量与趋势叠加排序（GitHub 周榜位次与增量排序不一致，以数据为准）。今日将 nod 提入第 3（周榜唯一显著加速项），stitch-skills 因 3 日无 push、周增 -3 降至「其他」。</div>
   <div class="card">
     <div class="p-head"><div class="rank top">1</div><div class="p-title">
       <div class="p-name"><a href="https://github.com/mvanhorn/last30days-skill">mvanhorn/last30days-skill</a></div>
-      <div class="p-growth">本周 +5,090 ★（-212）· 周增王但三连降（5,448→5,369→5,302→5,090）· 日榜连续第 12 天在场</div>
+      <div class="p-growth">本周 +5,072 ★（-18）· 周增王四连降但斜率趋平（5,448→5,369→5,302→5,090→5,072）· 日榜连续第 13 天</div>
     </div></div>
-    <div class="chips"><span>Python</span><span>⭐ 75,765</span><span>6,682 forks</span><span>193 贡献者（昨 187）</span><span>建于 2026-01</span><span>push 今晨 05:28</span><span>7 日 89 PR / 87 commits</span></div>
+    <div class="chips"><span>Python</span><span>⭐ 76,377</span><span>6,795 forks</span><span>194 贡献者（昨 193）</span><span>建于 2026-01</span><span>push 11-27 14:30</span><span>7 日 92 PR / 87 commits</span></div>
     <div class="p-body">
-      <div class="row"><span class="lbl">它是什么：</span>/last30days——「由 upvote、点赞和真金白银排序的 agent 搜索引擎」：覆盖 Reddit、X、YouTube、HN、Polymarket 与网页，输出最近 30 天某主题的真实热度摘要，支持 50+ Agent Skills 宿主，README 已有 12 种语言（含简体中文）。</div>
-      <div class="row"><span class="lbl">为什么火：</span>把「趋势情报」做成一个技能命令。周增王三连降但斜率平缓（-4%），仍是第二名的 1.6 倍——动量仍在，高位整固期。贡献者 187→193，push 今晨。</div>
+      <div class="row"><span class="lbl">它是什么：</span>/last30days——「由 upvote、点赞和真金白银排序的 agent 搜索引擎」：覆盖 Reddit、X、YouTube、HN、Polymarket 与网页，输出最近 30 天某主题的真实热度摘要，支持 50+ Agent Skills 宿主。</div>
+      <div class="row"><span class="lbl">为什么火：</span>把「趋势情报」做成一个技能命令。周增王四连降但昨夜只 -18（-0.4%），仍是第二名的 1.6 倍——动量仍在，高位整固期。贡献者 193→194，7 日 PR 89→92。</div>
       <div class="row"><span class="lbl">核心价值：</span>用社区行为数据替代编辑推荐，研究选题/市场验证的效率工具。</div>
       <div class="row"><span class="lbl">适合谁：</span>内容创作者、产品经理、投资人、情报分析师。</div>
       <div class="row"><span class="lbl">长期潜力：</span>中期机会；数据源依赖是天花板。</div>
       <div class="row"><span class="lbl">推荐指数：</span><span class="rate">⭐⭐⭐⭐⭐</span></div>
     </div>
   </div>
-
   <div class="card">
     <div class="p-head"><div class="rank top">2</div><div class="p-title">
       <div class="p-name"><a href="https://github.com/kajisho5/ffmpeg-skill">kajisho5/ffmpeg-skill</a></div>
-      <div class="p-growth">本周 +3,229 ★（+181）· 周增回升成增量第二 · 月增 8,408（+124）同步上行 · 周月双在</div>
+      <div class="p-growth">本周 +3,169 ★（-60）· 增量第二 · 月增 8,708（+300）续升 · 24h +369 · 周月双在</div>
     </div></div>
-    <div class="chips"><span>Python</span><span>⭐ 11,536</span><span>963 forks</span><span>21 贡献者</span><span>建于 2026-09</span><span>push 今晨 08:07</span><span>7 日 76 PR / 100+ commits / 41 新 issue</span></div>
+    <div class="chips"><span>Python</span><span>⭐ 11,905</span><span>985 forks</span><span>22 贡献者（昨 21）</span><span>建于 2026-09</span><span>push 今晨 09:06</span><span>7 日 95 PR / 100+ commits / 43 新 issue</span></div>
     <div class="p-body">
-      <div class="row"><span class="lbl">它是什么：</span>「给你的 coding agent 一个视频编辑器」：42 个本地 FFmpeg 工具 + 机器可读输出自检 + MCP server，纯 Python 标准库、无云无 API key。剪辑、字幕（含卡拉 OK 动画）、9:16 重取景、静音去除、响度归一化、绿幕合成、防抖、降噪。</div>
-      <div class="row"><span class="lbl">为什么火：</span>视频是 agent 能力地图上最后的大陆之一；本地/免费/隐私三连击切中创作者痛点。周增在连续回落后首次回升（3,048→3,229），月增同步上行——从爆发期进入长尾消化期后出现二次抬头。7 日 76 PR / 41 个新 issue 说明社区在大量贡献工具。</div>
-      <div class="row"><span class="lbl">核心价值：</span>agent 可「自查输出」的视频编辑闭环；MCP 契约可被任何宿主复用。</div>
-      <div class="row"><span class="lbl">适合谁：</span>视频创作者、自动化剪辑工具开发者、做多模态 agent 的团队。</div>
-      <div class="row"><span class="lbl">长期潜力：</span>中期机会；与 hyperframes（HeyGen）、autoclip 构成「AI 视频工具链」三层（渲染内核 / 剪辑技能 / 一键出片）。</div>
-      <div class="row"><span class="lbl">推荐指数：</span><span class="rate">⭐⭐⭐⭐</span>（今日由 ⭐⭐⭐ 上调：周月双升 + 工程节奏健康）</div>
+      <div class="row"><span class="lbl">它是什么：</span>「coding agent 的本地视频编辑器」：42 个 FFmpeg 工具带机器可读契约 + MCP server，面向 Claude Code / Cursor / Codex；剪切、字幕、拼接等操作可被 agent 直接调用。</div>
+      <div class="row"><span class="lbl">为什么火：</span>周增 -60 但月增 +300 续升，24h 净增 +369，7 日 PR 76→95——周月双在且工程节奏在加快，是本周「增量前十里唯一 PR 数明显上升」的项目。</div>
+      <div class="row"><span class="lbl">核心价值：</span>把视频编辑从「GUI 操作」变成「agent 可调用的工具」。</div>
+      <div class="row"><span class="lbl">适合谁：</span>做 AI 视频产品的开发者、内容自动化团队。</div>
+      <div class="row"><span class="lbl">长期潜力：</span>中期机会；与 hyperframes（渲染）、autoclip（出片）构成三层工具链。</div>
+      <div class="row"><span class="lbl">推荐指数：</span><span class="rate">⭐⭐⭐⭐</span></div>
     </div>
   </div>
-
   <div class="card">
     <div class="p-head"><div class="rank top">3</div><div class="p-title">
-      <div class="p-name"><a href="https://github.com/alibaba/open-code-review">alibaba/open-code-review</a> · 阿里官方</div>
-      <div class="p-growth">本周 +2,284 ★（+25）· 周增止跌回升 · GitHub 周榜第 5 · 56,652★</div>
+      <div class="p-name"><a href="https://github.com/n8n-io/nod">n8n-io/nod</a> 🆕 本周提入</div>
+      <div class="p-growth">本周 +1,424 ★（+259，+22%）· 周榜最大加速 · 24h +324 · 昨日连发三版（v0.10.1–0.10.3）· GitHub 周榜第 4</div>
     </div></div>
-    <div class="chips"><span>Go</span><span>⭐ 56,652</span><span>4,686 forks</span><span>233 贡献者</span><span>建于 2026-05</span><span>Apache-2.0</span><span>push 11-26 10:19</span><span>7 日 74 PR / 32 commits</span></div>
+    <div class="chips"><span>TypeScript</span><span>⭐ 4,335</span><span>653 forks</span><span>51 贡献者</span><span>Apache-2.0</span><span>n8n 官方 · research preview</span><span>push 今晨 09:19</span><span>7 日 250 PR / 48 新 issue / 100+ commits</span></div>
     <div class="p-body">
-      <div class="row"><span class="lbl">它是什么：</span>阿里内部两年、数万开发者验证的 AI 代码审查 CLI（ocr）：读 Git diff，经「确定性工程 + LLM Agent」混合架构产出行级精确评论。确定性层负责文件选择、智能打包、位置锚定；Agent 层负责读全文件、搜代码库、跨文件推理。可配自己的模型端点，也以 Claude Code 插件 / 技能形式分发。</div>
-      <div class="row"><span class="lbl">为什么火：</span>它正面回答了本周榜单上「纯技能派」的三个痛点——大 diff 漏审、行号漂移、提示词稍变质量就抖。对照 Claude-BugHunter / security-audit-skill 这类「语言驱动」技能，open-code-review 用工程约束兜底。周增 2,259→2,284 止跌、233 位贡献者、7 日 74 PR——是本周榜单里「企业落地确定性」最高的项目。</div>
-      <div class="row"><span class="lbl">核心价值：</span>代码不出域的 AI 审查（自带模型端点）；确定性覆盖 + 行级定位可直接进 CI 门禁。</div>
-      <div class="row"><span class="lbl">适合谁：</span>企业工程效能团队、需要在私有化环境落地 AI 审查的中大型团队、做 DevOps 工具链的创业者。</div>
-      <div class="row"><span class="lbl">长期潜力：</span>中期→长期：企业级 AI 代码审查是刚需品类；风险是与 GitHub Copilot / CodeRabbit 等托管方案正面竞争，以及中文社区为主的生态半径。</div>
-      <div class="row"><span class="lbl">推荐指数：</span><span class="rate">⭐⭐⭐⭐⭐</span>（企业落地）/ <span class="rate">⭐⭐⭐⭐</span>（个人使用）</div>
+      <div class="row"><span class="lbl">它是什么：</span>n8n 出品的开源「有自己电脑的个人 agent」——在本机运行、模型自选，在真实网站上追发票、准备通话、取消试用订阅，<b>行动前先征得同意</b>。macOS 14+ 正式支持，Windows 11 / Linux x64 预览；ChatGPT Plus/Pro 或自备 API key。</div>
+      <div class="row"><span class="lbl">为什么火：</span>n8n 主仓 212K 星的社区势能 + 「个人 agent 替你跑腿」叙事 + 研究预览期的高频发版（昨日三版）。入场第三日周增 +259，7 日 250 PR——是本周榜单里唯一「日环比显著加速」的项目。</div>
+      <div class="row"><span class="lbl">核心价值：</span>把 agent 从「聊天」推进到「在本机替你操作真实网站」，且默认「先问再做」。</div>
+      <div class="row"><span class="lbl">适合谁：</span>重度自动化用户、n8n 用户、想做个人 agent 产品的创业者。</div>
+      <div class="row"><span class="lbl">长期潜力：</span>中期机会；research preview 阶段，平台支持与安全边界是关键变量。注意：它和 t3code 是两种路线——nod 是「agent 自己有电脑」，t3code 是「你管多个 agent」。</div>
+      <div class="row"><span class="lbl">推荐指数：</span><span class="rate">⭐⭐⭐⭐</span></div>
     </div>
   </div>
-
   <div class="card">
     <div class="p-head"><div class="rank top">4</div><div class="p-title">
-      <div class="p-name"><a href="https://github.com/google-labs-code/stitch-skills">google-labs-code/stitch-skills</a></div>
-      <div class="p-growth">本周 +2,619 ★（+3）· 唯一三榜同在第四日 · 三线全在（日 +309 / 周 +2,619 / 月 +4,609，月增 +265）</div>
+      <div class="p-name"><a href="https://github.com/alibaba/open-code-review">alibaba/open-code-review</a> · 阿里官方</div>
+      <div class="p-growth">本周 +2,335 ★（+51）· 周增二连升 · GitHub 周榜第 5 · 56,902★ · 24h +250</div>
     </div></div>
-    <div class="chips"><span>TypeScript</span><span>⭐ 13,295</span><span>1,564 forks</span><span>22 贡献者</span><span>Apache-2.0</span><span>建于 2026-01</span><span>push 11-25 05:51</span></div>
+    <div class="chips"><span>Go</span><span>⭐ 56,902</span><span>4,704 forks</span><span>234 贡献者（昨 233）</span><span>建于 2026-05</span><span>Apache-2.0</span><span>push 11-26 10:19</span><span>7 日 74 PR / 28 commits / 30 新 issue</span><span>362 open issues</span></div>
     <div class="p-body">
-      <div class="row"><span class="lbl">它是什么：</span>Google Stitch（AI UI 设计工具）官方技能库：为 Codex / Claude Code / Cursor / Gemini CLI 等宿主提供设计、构建、工具三类 Agent Skills 插件，全部遵循 agentskills.io 开放标准。</div>
-      <div class="row"><span class="lbl">为什么火：</span>三榜同在的常青结构第四日：Google 把设计工具能力做成技能分发——「大厂工具技能化」的代表路径。周增走平（+3）、月增仍上行。</div>
-      <div class="row"><span class="lbl">适合谁：</span>用 agent 做 UI 的开发者、关注 Google AI 产品线的观察者。</div>
-      <div class="row"><span class="lbl">长期潜力：</span>跟随 Stitch 产品本身的成败。</div>
-      <div class="row"><span class="lbl">推荐指数：</span><span class="rate">⭐⭐⭐</span></div>
+      <div class="row"><span class="lbl">它是什么：</span>阿里开源的混合架构代码审查工具：确定性流水线 + LLM Agent，输出精确到行级的评论；README 直接点名纯语言驱动技能的三个痛点（漏审、行号漂移、质量抖动）。</div>
+      <div class="row"><span class="lbl">为什么火：</span>「代码不出域」的企业刚需 + 大厂规模化验证。周增 +51 二连升，24h +250，贡献者 +1；但 11-26 10:19 之后无 push（2 天），362 个 open issue 需要关注。</div>
+      <div class="row"><span class="lbl">核心价值：</span>企业落地确定性最高的 AI 代码审查——「确定性 × Agent」架构代表。</div>
+      <div class="row"><span class="lbl">适合谁：</span>企业工程效能团队、CTO、需要私有化审查的中型团队。</div>
+      <div class="row"><span class="lbl">长期潜力：</span>长期基础设施候选；国内 DevOps 集成是它的空白位。</div>
+      <div class="row"><span class="lbl">推荐指数：</span><span class="rate">⭐⭐⭐⭐⭐</span></div>
     </div>
   </div>
-
   <div class="card">
     <div class="p-head"><div class="rank top">5</div><div class="p-title">
-      <div class="p-name"><a href="https://github.com/obsidianmd/obsidian-skills">obsidianmd/obsidian-skills</a> 🆕 本周唯一新面孔</div>
-      <div class="p-growth">本周 +704 ★ · 空降周榜第 13 · 54,024★ · 仅 5 个 open issue · push 今晨 01:50</div>
+      <div class="p-name"><a href="https://github.com/obsidianmd/obsidian-skills">obsidianmd/obsidian-skills</a></div>
+      <div class="p-growth">本周 +950 ★（+246，+35%）· 入场次日即加速 · 24h +315 · 仅 5 个 open issue</div>
     </div></div>
-    <div class="chips"><span>Shell</span><span>⭐ 54,024</span><span>3,845 forks</span><span>28 贡献者</span><span>建于 2026-01</span><span>MIT</span><span>Obsidian 官方</span><span>push 今晨 01:50</span></div>
+    <div class="chips"><span>Shell</span><span>⭐ 54,339</span><span>3,867 forks</span><span>28 贡献者</span><span>MIT</span><span>Obsidian 官方</span><span>建于 2026-01</span><span>push 11-27 01:50</span><span>7 日 1 PR / 7 commits</span></div>
     <div class="p-body">
-      <div class="row"><span class="lbl">它是什么：</span>Obsidian 官方的 Agent Skills 包：教 agent 使用 Obsidian 与开放格式（Markdown、Bases、JSON Canvas）。已进 Claude / ChatGPT / Cursor / Grok Bot / Kiro 的官方插件目录，其他 agent 可直接从 GitHub 安装。</div>
-      <div class="row"><span class="lbl">为什么火：</span>5.4 万星的成熟仓库本周才进入 Trending 周榜——信号价值大于增量价值：一个「本地优先、付费插件生态」的笔记软件，选择用开放技能标准而非私有 API 对 agent 开放。与 stitch-skills / modern-web-guidance / cursor/plugins 同场，印证「技能 = 软件厂商的新 API」。仅 5 个 open issue，是本周榜单里工单最干净的仓。</div>
-      <div class="row"><span class="lbl">核心价值：</span>知识库工具的 agent 化样本；开放格式 + 技能标准的组合。</div>
-      <div class="row"><span class="lbl">适合谁：</span>Obsidian 用户、做知识管理 / 第二大脑产品的创业者、观察「工具厂商技能化」趋势的人。</div>
-      <div class="row"><span class="lbl">长期潜力：</span>跟随 Obsidian 生态；作为趋势样本的价值高于项目本身。</div>
-      <div class="row"><span class="lbl">推荐指数：</span><span class="rate">⭐⭐⭐</span>（用户）/ <span class="rate">⭐⭐⭐⭐</span>（趋势样本）</div>
+      <div class="row"><span class="lbl">它是什么：</span>Obsidian 官方按 agentskills.io 规范做的技能包：教 agent 读写 Obsidian 与开放格式（Markdown、Bases、JSON Canvas）；已是 Claude / ChatGPT / Cursor / Grok Bot / Hermes / Kiro 的官方插件。</div>
+      <div class="row"><span class="lbl">为什么火：</span>入场周榜次日周增 +246（+35%），24h +315——「工具厂商官方技能化」的最新样本在加速。仅 5 个 open issue、7 日 1 PR：官方仓稳定但节奏慢，热度来自分发而非迭代。</div>
+      <div class="row"><span class="lbl">核心价值：</span>一个本地优先的笔记软件选择用开放技能标准而非私有 API 对 agent 开放。</div>
+      <div class="row"><span class="lbl">适合谁：</span>Obsidian 用户、观察「技能成为新 API」趋势的产品人。</div>
+      <div class="row"><span class="lbl">长期潜力：</span>长期平台组件；作为趋势信号的价值大于工具本身。</div>
+      <div class="row"><span class="lbl">推荐指数：</span><span class="rate">⭐⭐⭐⭐</span>（Obsidian 用户）/ <span class="rate">⭐⭐⭐⭐⭐</span>（趋势观察）</div>
     </div>
   </div>
-
-  <div class="sec-note">周榜其他（按周增排序）：</div>
-  <div class="list-row"><span class="no">10</span><a href="https://github.com/meta/astryx">meta/astryx</a> · +2,519（-116）· 周增十二连降（2,890→2,635→2,519）· 151 贡献者 · 7 日 743 PR · Beta · push 今晨 09:18</div>
-  <div class="list-row"><span class="no">3</span><a href="https://github.com/GoogleChrome/modern-web-guidance-src">GoogleChrome/modern-web-guidance-src</a> · +2,209（-100）· 三连降 · 81 贡献者 · Chrome/Edge/Firefox/MDN 四方共建</div>
-  <div class="list-row"><span class="no">14</span><a href="https://github.com/dream-num/univer">dream-num/univer</a>（中文，DreamNum）· +1,825（-494）· 周增七连降（2,319→1,825）· 31,972★ · 93 贡献者</div>
-  <div class="list-row"><span class="no">1</span><a href="https://github.com/backnotprop/plannotator">backnotprop/plannotator</a> · +1,631（-133）· GitHub 周榜位次第一 · 月增 5,601 四连涨 · 223 贡献者 · 7 日 294 PR · push 今晨 09:17</div>
-  <div class="list-row"><span class="no">12</span><a href="https://github.com/we-promise/sure">we-promise/sure</a> · +1,430（-79）· Ruby 个人财务应用（Maybe Finance 社区续作）· 492 贡献者 · ⚠️ 1,189 open issues、7 日 134 新 issue</div>
-  <div class="list-row"><span class="no">8</span><a href="https://github.com/tradermonty/claude-trading-skills">tradermonty/claude-trading-skills</a> · +1,381（-41）· 非信号服务，强调风控与交易日志</div>
-  <div class="list-row"><span class="no">9</span><a href="https://github.com/ag-ui-protocol/ag-ui">ag-ui-protocol/ag-ui</a> · +1,269（-152）· 继续回落（2,966→1,753→1,421→1,269）· AG-UI 1.0 规范已冻结</div>
-  <div class="list-row"><span class="no">7</span><a href="https://github.com/ChromeDevTools/chrome-devtools-mcp">ChromeDevTools/chrome-devtools-mcp</a> · +1,175（-28）· 七连降 · 59,503★ · 180 贡献者</div>
-  <div class="list-row"><span class="no">4</span><a href="https://github.com/n8n-io/nod">n8n-io/nod</a> · +1,165（+157）· 入场次日续涨 · 4,011★ · 51 贡献者（昨 45）· 7 日 256 PR · push 今晨 08:39 · n8n 官方个人 agent</div>
-  <div class="list-row"><span class="no">11</span><a href="https://github.com/pookjw/HermesEnabler">pookjw/HermesEnabler</a> · +325（+7）· push 11-19 · 在任何 Apple Watch 启用 Hermès 表盘 · 本期唯一非 AI 项目</div>
+  <div class="sec-note">其他周榜项目：</div>
+  <div class="list-row"><span class="no">2</span><span class="g">+2,616（-3）</span><span><a href="https://github.com/google-labs-code/stitch-skills">google-labs-code/stitch-skills</a> · 13,596★ · 三榜同在第五日 · 三线：日 +311 / 周 2,616 / 月 4,912（+303）· ⚠️ 11-25 起 3 日无 push · 7 日 8 PR</span></div>
+  <div class="list-row"><span class="no">3</span><span class="g">+2,008（-201）</span><span><a href="https://github.com/GoogleChrome/modern-web-guidance-src">GoogleChrome/modern-web-guidance-src</a> · 11,462★ · 四连降 · 83 贡献者（昨 81）· 403 open issues · Chrome/Edge/Firefox/MDN 四方共建</span></div>
+  <div class="list-row"><span class="no">1</span><span class="g">+1,596（-35）</span><span><a href="https://github.com/backnotprop/plannotator">backnotprop/plannotator</a> · GitHub 周榜位次第一 · 月增 5,746（+145）五连涨 · 229 贡献者（昨 223）· 7 日 299 PR / 60 新 issue · 243 open issues · push 今晨 09:21</span></div>
+  <div class="list-row"><span class="no">10</span><span class="g">+2,306（-213）</span><span><a href="https://github.com/meta/astryx">meta/astryx</a> · 周增十三连降 · 33,539★ · 153 贡献者（昨 151）· 7 日 697 PR / 92 新 issue · 808 open issues · push 今晨 09:10</span></div>
+  <div class="list-row"><span class="no">12</span><span class="g">+1,375（-55）</span><span><a href="https://github.com/we-promise/sure">we-promise/sure</a> · 18,220★ · Ruby 个人财务应用 · 499 贡献者（昨 492）· open issues 1,189→1,182 首次回落 · 7 日 329 PR / 129 新 issue</span></div>
+  <div class="list-row"><span class="no">8</span><span class="g">+1,332（-49）</span><span><a href="https://github.com/tradermonty/claude-trading-skills">tradermonty/claude-trading-skills</a> · 8,730★ · 49 贡献者 · 7 日 61 PR / 100+ commits · 非信号服务，强调风控与交易日志</span></div>
+  <div class="list-row"><span class="no">14</span><span class="g">+1,280（-545）</span><span><a href="https://github.com/dream-num/univer">dream-num/univer</a>（中文，DreamNum）· 周榜最大跌幅（-30%）· 八连降 · 32,060★ · 94 贡献者 · 7 日 74 PR</span></div>
+  <div class="list-row"><span class="no">9</span><span class="g">+1,185（-84）</span><span><a href="https://github.com/ag-ui-protocol/ag-ui">ag-ui-protocol/ag-ui</a> · 继续回落（2,966→1,753→1,421→1,269→1,185）· 21,951★ · 195 贡献者 · 633 open issues · AG-UI 1.0 规范已冻结</span></div>
+  <div class="list-row"><span class="no">7</span><span class="g">+1,150（-25）</span><span><a href="https://github.com/ChromeDevTools/chrome-devtools-mcp">ChromeDevTools/chrome-devtools-mcp</a> · 八连降 · 59,634★ · 181 贡献者 · 7 日 53 PR</span></div>
+  <div class="list-row"><span class="no">11</span><span class="g">+296（-29）</span><span><a href="https://github.com/pookjw/HermesEnabler">pookjw/HermesEnabler</a> · 2,580★ · 13 贡献者 · ⚠️ push 停在 11-19（9 天）· 在任何 Apple Watch 启用 Hermès 表盘 · 本期唯一非 AI 项目</span></div>
 </section>
 
 <section>
   <div class="sec-head"><h2>🚀 本月最值得关注 Top 5</h2></div>
-  <div class="sec-note">按本月增量排序；月榜 19 项第三日零更替。</div>
-
+  <div class="sec-note">按本月增量排序；月榜 19 项第四日零更替。⚠️ 今日月榜第 7 位 instagram-agent-skill 已 404，见「其他」。</div>
   <div class="card">
     <div class="p-head"><div class="rank top">1</div><div class="p-title">
-      <div class="p-name"><a href="https://github.com/pingdotgg/t3code">pingdotgg/t3code</a> — 月增破 5 万、总星破 8 万</div>
-      <div class="p-growth">本月 +50,354 ★（+1,071）· 月增七连涨 · 总星 80,977 破 8 万 · ⚠️ 24h 净增 +1,496 三连降 · issue 存量 3,828 二连升</div>
+      <div class="p-name"><a href="https://github.com/pingdotgg/t3code">pingdotgg/t3code</a> — 月增八连涨破 5.1 万</div>
+      <div class="p-growth">本月 +51,428 ★（+1,074）· 月增八连涨 · 总星 82,205 · ⚠️ 24h 净增 +1,228 四连降 · issue 存量 3,885 三连升</div>
     </div></div>
-    <div class="chips"><span>TypeScript</span><span>⭐ 80,977</span><span>14,292 forks</span><span>1,396 贡献者（昨 1,384）</span><span>建于 2026-02</span><span>push 今晨 09:19</span><span>7 日 2,616 PR / 1,279 新 issue</span></div>
+    <div class="chips"><span>TypeScript</span><span>⭐ 82,205</span><span>14,482 forks</span><span>1,407 贡献者（昨 1,396）</span><span>建于 2026-02</span><span>push 今晨 09:23</span><span>7 日 2,791 PR / 1,261 新 issue</span><span>昨夜两个 nightly</span></div>
     <div class="p-body">
-      <div class="row"><span class="lbl">它是什么：</span>T3 Code（Theo/t3.gg 团队）——「coding agent 的开源控制面」：在你机器上跑 agent（Claude Code、Codex、Cursor、OpenCode、Grok Build、Antigravity 等，走 ACP 协议），桌面/Web/手机同一视图。桌面开个任务，手机上批准下一步。</div>
-      <div class="row"><span class="lbl">为什么火：</span>月增七连涨破 5 万、总星破 8 万——「用你已有的订阅，不转售 token」+ 移动端审批刚需的最强兑现。但今日要同时看三组数：24h 净增 +2,741→+1,946→+1,496 三连降；open issue 3,714→3,828（+114）二连升；7 日 1,279 个新 issue 对 1,396 位贡献者——用户增长快于社区消化能力，「高增长仓的工单压力」正在成为它最大的结构性风险。</div>
+      <div class="row"><span class="lbl">它是什么：</span>T3 Code（Theo/t3.gg 团队）——「coding agent 的开源控制面」：在你机器上跑 agent（Claude Code、Codex、Cursor、OpenCode、Grok Build、Antigravity、Kiro 等，走 ACP 协议），桌面/Web/手机同一视图。桌面开个任务，手机上批准下一步。</div>
+      <div class="row"><span class="lbl">为什么火：</span>月增 50,354→51,428 八连涨，总星破 8.2 万——「用你已有的订阅，不转售 token」+ 移动端审批刚需的最强兑现。三条压力线同时存在：24h 净增 +1,496→+1,228 四连降；open issue 3,828→3,885（+57）三连升；7 日 PR +175 至 2,791、新 issue 1,261。贡献者 +11、昨夜两个 nightly（v0.1.14）——工程节奏没慢，慢的是 star 斜率。</div>
       <div class="row"><span class="lbl">核心价值：</span>agent 时代的「多端驾驶舱」；跨 agent 切换/协作；内置 git worktree 工作流。</div>
       <div class="row"><span class="lbl">适合谁：</span>重度 AI Coding 用户、远程/移动办公开发者、管 agent 小团队的 Tech Lead。</div>
       <div class="row"><span class="lbl">长期潜力：</span>长期基础设施候选——控制面是 agent 数量增长后的必然品类。</div>
       <div class="row"><span class="lbl">推荐指数：</span><span class="rate">⭐⭐⭐⭐⭐</span></div>
     </div>
   </div>
-
   <div class="card">
     <div class="p-head"><div class="rank top">2</div><div class="p-title">
       <div class="p-name"><a href="https://github.com/Ebony-Vinyl/dsh-our-free-model">Ebony-Vinyl/dsh-our-free-model</a> · 中文项目</div>
-      <div class="p-growth">本月 +46,809 ★（-820）· 二连降（48,193→47,629→46,809）· 88,207★</div>
+      <div class="p-growth">本月 +45,874 ★（-935）· 三连降（48,193→47,629→46,809→45,874）· 89,136★</div>
     </div></div>
-    <div class="chips"><span>JavaScript</span><span>⭐ 88,207</span><span>2,498 forks</span><span>47 贡献者</span><span>239 open issues</span><span>建于 2026-09-24</span><span>push 11-26 15:34</span></div>
+    <div class="chips"><span>JavaScript</span><span>⭐ 89,136</span><span>2,524 forks</span><span>47 贡献者</span><span>open issues 86（含 1 PR）</span><span>建于 2026-09-24</span><span>push 今晨 00:40</span><span>7 日 36 PR / 80 commits / 38 新 issue</span></div>
     <div class="p-body">
-      <div class="row"><span class="lbl">它是什么：</span>DeepSeek Harness（DSH）生态的「免费模型」插件：无需登录/注册/API Key 即可用 DeepSeek V4.1 Flash、Kimi K3 等模型。README 自述免费车道来自 OpenCode Zen 网关与 Kilo AI 公共池，另聚合账号渠道，附带 OpenAI 兼容本地网关、工具输出压缩与降级链路由。</div>
-      <div class="row"><span class="lbl">为什么火：</span>击中中文开发者「零成本用前沿模型跑 agent」的需求烈度——两个月 8.8 万星。月增二连降、王位昨日已易主 t3code。⚠️ 持续标注：① EAC 渠道「点 Star 解锁」——star 含利益成分（fork/star 比 2.8%，对照 minimind 13%）；② 免费车道与账号聚合处于上游 ToS 灰区；③ 个人开发者出品，安全敏感场景需自行审计。</div>
-      <div class="row"><span class="lbl">适合谁：</span>想零成本实验的个人开发者（风险自担）；产品人把它当「模型成本痛点」的需求样本。</div>
-      <div class="row"><span class="lbl">长期潜力：</span>短期热点 + 强需求信号；灰区模式不可持续。</div>
-      <div class="row"><span class="lbl">推荐指数：</span><span class="rate">⭐⭐</span>（依赖使用）/ <span class="rate">⭐⭐⭐⭐</span>（需求样本研究）</div>
+      <div class="row"><span class="lbl">它是什么：</span>dsh 插件：README 自述「装上即可、无需登录注册或 API Key，使用 DeepSeek V4.1 Flash、Kimi K3 等前沿模型，完全免费不限量」。免费车道来源为其 README 自述，处于上游 ToS 灰区。</div>
+      <div class="row"><span class="lbl">为什么火：</span>「零成本用前沿模型」的需求烈度由月增 45,874 验证；但月增三连降累计 -2,319，24h 净增 +929。今日一个口径注脚：open issues API 为 86（搜索复核 85 issue + 1 PR），昨日报告记 239——差异原因无法确认（可能为批量关闭，也可能为昨日口径差异），不做判断。</div>
+      <div class="row"><span class="lbl">核心价值：</span>验证「模型成本」是当前 agent 用户的第一痛点。</div>
+      <div class="row"><span class="lbl">适合谁：</span>个人开发者试用；企业不建议依赖灰区车道。</div>
+      <div class="row"><span class="lbl">长期潜力：</span>短期热点；合规风险决定其上限。</div>
+      <div class="row"><span class="lbl">推荐指数：</span><span class="rate">⭐⭐⭐</span>（观察）/ <span class="rate">⭐⭐</span>（依赖）</div>
     </div>
   </div>
-
   <div class="card">
     <div class="p-head"><div class="rank top">3</div><div class="p-title">
       <div class="p-name"><a href="https://github.com/cloudflare/security-audit-skill">cloudflare/security-audit-skill</a></div>
-      <div class="p-growth">本月 +31,165 ★（-1,498）· 七连降（43,310→…→32,663→31,165）· ⚠️ 停更 73 天</div>
+      <div class="p-growth">本月 +30,171 ★（-994）· 八连降 · GitHub 月榜第 2 · ⚠️ 停更 74 天（push 09-15）</div>
     </div></div>
-    <div class="chips"><span>JavaScript</span><span>⭐ 78,869</span><span>5,345 forks</span><span>仅 4 贡献者</span><span>⚠️ push 停在 09-15（73 天）</span><span>142 open issues</span></div>
+    <div class="chips"><span>JavaScript</span><span>⭐ 79,283</span><span>5,375 forks</span><span>仅 4 贡献者</span><span>⚠️ push 停在 09-15（74 天）</span><span>144 open issues（+2）</span><span>7 日 5 PR / 4 新 issue / 0 commit</span></div>
     <div class="p-body">
-      <div class="row"><span class="lbl">它是什么：</span>Cloudflare 出品的 coding agent 安全审计技能：六阶段流水线（侦察→覆盖引导狩猎→候选验证→结构化输出→独立复核→报告），是其内部漏洞发现体系的单仓起点。</div>
-      <div class="row"><span class="lbl">为什么火：</span>架构本身极具教学价值（多 agent 交叉验证、覆盖账本）。但停更 73 天 + 仅 4 贡献者，7.9 万星靠范式传播惯性维持；月增七连降，对照 Claude-BugHunter 的月增加速（18,637）与每日 push——同为「安全技能」，一个还在长、一个只剩名字。</div>
-      <div class="row"><span class="lbl">适合谁：</span>安全架构师读源码学多 agent 审计编排。</div>
-      <div class="row"><span class="lbl">长期潜力：</span>短期热点（范式样本），生产可用性存疑。</div>
-      <div class="row"><span class="lbl">推荐指数：</span><span class="rate">⭐⭐⭐</span>（研读架构）/ <span class="rate">⭐⭐</span>（依赖使用）</div>
+      <div class="row"><span class="lbl">它是什么：</span>Cloudflare 出品的 coding-agent 多阶段安全审计技能，输出独立验证、机器可读的发现结果。</div>
+      <div class="row"><span class="lbl">为什么火：</span>Cloudflare 背书 + 安全审计刚需；但月增 43,310→30,171 八连降，默认分支停更 74 天、7 日 0 commit、仅 4 位贡献者、144 个 open issue 持续累积。24h 仍 +414——「惯性收星」的另一个样本；今日 instagram-agent-skill 的 404 提醒了这类仓的尾部风险。</div>
+      <div class="row"><span class="lbl">核心价值：</span>企业级安全审计技能的一个可用起点。</div>
+      <div class="row"><span class="lbl">适合谁：</span>安全工程师；生产使用请 fork 并 pin。</div>
+      <div class="row"><span class="lbl">长期潜力：</span>中期机会；取决于 Cloudflare 是否恢复维护。</div>
+      <div class="row"><span class="lbl">推荐指数：</span><span class="rate">⭐⭐⭐</span></div>
     </div>
   </div>
-
   <div class="card">
     <div class="p-head"><div class="rank top">4</div><div class="p-title">
       <div class="p-name"><a href="https://github.com/pbakaus/impeccable">pbakaus/impeccable</a></div>
-      <div class="p-growth">本月 +29,366 ★（-785）· 高位回落 · 11.75 万星 · push 11-26 16:28</div>
+      <div class="p-growth">本月 +28,497 ★（-869）· 高位回落 · 11.8 万星 · 24h +516 · push 今晨 03:25</div>
     </div></div>
-    <div class="chips"><span>Rust</span><span>⭐ 117,548</span><span>7,042 forks</span><span>68 贡献者</span><span>push 11-26 16:28</span><span>7 日 58 PR / 100+ commits</span></div>
+    <div class="chips"><span>Rust</span><span>⭐ 118,064</span><span>7,073 forks</span><span>68 贡献者</span><span>push 今晨 03:25</span><span>7 日 51 PR / 100+ commits / 22 新 issue</span></div>
     <div class="p-body">
-      <div class="row"><span class="lbl">它是什么：</span>「coding agent 的设计词汇表」：用 /polish、/bolder 精准指挥，用 /critique、/audit 评审，62 条确定性规则抓「AI slop」。支持 Claude Code、Cursor、Codex 等 20+ 宿主。</div>
-      <div class="row"><span class="lbl">为什么火：</span>把模糊的「好看点」变成可执行的工程指令——设计质量的工业化。月增高位回落属常态消化，push 与 7 日 100+ commits 显示工程节奏未松。</div>
-      <div class="row"><span class="lbl">适合谁：</span>所有用 agent 写界面的开发者；设计系统团队。</div>
-      <div class="row"><span class="lbl">长期潜力：</span>中期→长期：设计 QA 有持续刚需，规则库可沉淀。</div>
+      <div class="row"><span class="lbl">它是什么：</span>「coding agent 的设计词汇表」：用 polish / bolder / critique / audit 等指令驾驭设计质量，用 62 条确定性规则在发布前抓住 AI slop。</div>
+      <div class="row"><span class="lbl">为什么火：</span>「反 AI 味」是当下设计工具最强的叙事之一；月增回落 -869 但 24h 仍 +516、7 日 100+ commits，工程节奏健康。</div>
+      <div class="row"><span class="lbl">核心价值：</span>把设计审查从主观变成可 lint 的规则。</div>
+      <div class="row"><span class="lbl">适合谁：</span>前端/设计工程师、做 AI 生成界面的产品团队。</div>
+      <div class="row"><span class="lbl">长期潜力：</span>长期工具候选；「确定性规则 + agent」路线代表。</div>
       <div class="row"><span class="lbl">推荐指数：</span><span class="rate">⭐⭐⭐⭐⭐</span></div>
     </div>
   </div>
-
   <div class="card">
     <div class="p-head"><div class="rank top">5</div><div class="p-title">
       <div class="p-name"><a href="https://github.com/Nutlope/hallmark">Nutlope/hallmark</a></div>
-      <div class="p-growth">本月 +26,738 ★（-1,557）· 月榜最大跌幅 · ⚠️ 停更 16 天</div>
+      <div class="p-growth">本月 +24,421 ★（-2,317）· 月榜最大跌幅 · ⚠️ 停更 17 天 · GitHub 月榜页面第 1 位（排序算法不透明，增量口径为第 5）</div>
     </div></div>
-    <div class="chips"><span>CSS</span><span>⭐ 61,654</span><span>3,383 forks</span><span>12 贡献者</span><span>Together AI 出品</span><span>⚠️ push 停在 11-11（16 天）</span></div>
+    <div class="chips"><span>CSS</span><span>⭐ 62,103</span><span>3,413 forks</span><span>12 贡献者</span><span>Together AI 出品</span><span>⚠️ push 停在 11-11（17 天）</span><span>7 日 5 PR / 0 commit</span></div>
     <div class="p-body">
-      <div class="row"><span class="lbl">它是什么：</span>「拒绝看起来像 AI 生成」的设计技能：50 套主题材质，真实浏览器 lint「机器味」破绽，fresh-context reviewer 终审。v2 支持指向真实 URL/开发服务器自动截图改版。</div>
-      <div class="row"><span class="lbl">为什么火：</span>与 impeccable 并称「反 slop 双子星」：一个给词汇，一个给主题。月增今日回落 1,557 为月榜最大跌幅，且 push 停在 11-11——与 impeccable 的每日推送形成对照，差距正在拉开。</div>
-      <div class="row"><span class="lbl">适合谁：</span>营销页/落地页制作者、独立开发者。</div>
-      <div class="row"><span class="lbl">长期潜力：</span>中期机会；主题目录是护城河，更新节奏是软肋。</div>
-      <div class="row"><span class="lbl">推荐指数：</span><span class="rate">⭐⭐⭐⭐</span></div>
+      <div class="row"><span class="lbl">它是什么：</span>面向 Claude Code / Cursor / Codex 的「反 AI-slop」设计技能，用真实浏览器做设计 lint。</div>
+      <div class="row"><span class="lbl">为什么火：</span>与 impeccable 同赛道的早期头部；但月增 26,738→24,421 单日 -2,317 为月榜最大跌幅，停更 17 天、7 日 0 commit。24h 仍 +449——惯性收星。</div>
+      <div class="row"><span class="lbl">核心价值：</span>设计 lint 的思路样本。</div>
+      <div class="row"><span class="lbl">适合谁：</span>观察「设计技能」赛道的产品人；使用建议转向活跃的 impeccable。</div>
+      <div class="row"><span class="lbl">长期潜力：</span>短期热点；停更仓折价在加速。</div>
+      <div class="row"><span class="lbl">推荐指数：</span><span class="rate">⭐⭐⭐</span></div>
     </div>
   </div>
-
-  <div class="sec-note">月榜其他（按月增排序）：</div>
-  <div class="list-row"><span class="no">13</span><a href="https://github.com/sherlock-project/sherlock">sherlock-project/sherlock</a> · +23,328（+378，续升）· 118,123★ · 2018 年 OSINT 老将第二春</div>
-  <div class="list-row"><span class="no">3</span><a href="https://github.com/milind-soni/OpenMausBot">milind-soni/OpenMausBot</a> · +22,590（+199）· 28,174★ · 346 贡献者 · 7 日 777 PR · ⚠️ 1,428 open issues、253 新 issue/7d</div>
-  <div class="list-row"><span class="no">10</span><a href="https://github.com/HKUDS/DeepTutor">HKUDS/DeepTutor</a>（中文，港大）· +20,206（-145）· 63,314★ · 349 贡献者 · 7 日 121 PR</div>
-  <div class="list-row"><span class="no">11</span><a href="https://github.com/yetone/magpie">yetone/magpie</a> · +20,130（-463）· 42,033★ · ⚠️ open issues 5,146→5,270 四连恶化、7 日 657 新 issue / 0 PR</div>
-  <div class="list-row"><span class="no">17</span><a href="https://github.com/elementalsouls/Claude-BugHunter">elementalsouls/Claude-BugHunter</a> · +18,637（+1,414，仍在加速）· 月榜唯一「月增加速 + 日增四连降」同体</div>
-  <div class="list-row"><span class="no">16</span><a href="https://github.com/heygen-com/hyperframes">heygen-com/hyperframes</a> · +18,292（-219）· 90,887★ · HeyGen 官方开源 AI 视频编辑器 · 156 贡献者 · 7 日 665 PR</div>
-  <div class="list-row"><span class="no">5</span><a href="https://github.com/anthropics/skills">anthropics/skills</a> · +17,538（+266）· 201,054★ · push 停在 11-16（11 天）· 1,574 open issues</div>
-  <div class="list-row"><span class="no">6</span><a href="https://github.com/thedotmack/claude-mem">thedotmack/claude-mem</a> · +17,325（-99）· 120,004★ 破 12 万 · 412 贡献者（昨 401）· 7 日 131 PR</div>
-  <div class="list-row"><span class="no">14</span><a href="https://github.com/AgriciDaniel/claude-seo">AgriciDaniel/claude-seo</a> · +10,958（-1,222）· 大幅回落 · 32,660★</div>
-  <div class="list-row"><span class="no">19</span><a href="https://github.com/vercel-labs/agent-browser">vercel-labs/agent-browser</a> · +9,648（+107）· 54,161★ · Rust 浏览器自动化 CLI</div>
-  <div class="list-row"><span class="no">18</span><a href="https://github.com/kajisho5/ffmpeg-skill">kajisho5/ffmpeg-skill</a> · +8,408（+124）· 周月双升</div>
-  <div class="list-row"><span class="no">7</span><a href="https://github.com/Jakeschincariol/instagram-agent-skill">Jakeschincariol/instagram-agent-skill</a> · +6,511（+90）· ⚠️ 停更 75 天、仅 1 贡献者，月增仍在涨——惯性收星典型</div>
-  <div class="list-row"><span class="no">8</span><a href="https://github.com/backnotprop/plannotator">backnotprop/plannotator</a> · +5,601（+126）· 四连涨</div>
-  <div class="list-row"><span class="no">15</span><a href="https://github.com/google-labs-code/stitch-skills">google-labs-code/stitch-skills</a> · +4,609（+265）· 三榜同在第四日</div>
+  <div class="sec-note">其他月榜项目：</div>
+  <div class="list-row"><span class="no">7</span><span class="g">+6,548（+37）</span><span><b>⚠️ <a href="https://github.com/Jakeschincariol/instagram-agent-skill">Jakeschincariol/instagram-agent-skill</a> 今晨 404</b>（账号与仓库同时消失，09:26 API 仍为 ★9,881，09:30 起 404；删除 / 封禁 / 私密画像无法区分，改名已排除）· 月榜页面仍在展示 · 停更 76 天</span></div>
+  <div class="list-row"><span class="no">13</span><span class="g">+23,807（+479）</span><span><a href="https://github.com/sherlock-project/sherlock">sherlock-project/sherlock</a> · 118,576★ · 315 贡献者 · 月增续升 · ⚠️ 默认分支最近提交 11-01、pushed_at 11-27（非主干）· 2018 年 OSINT 老将第二春</span></div>
+  <div class="list-row"><span class="no">3</span><span class="g">+22,900（+310）</span><span><a href="https://github.com/milind-soni/OpenMausBot">milind-soni/OpenMausBot</a> · 28,558★ · 24h +384 · 356 贡献者（昨 346）· open issues 1,428→<b>1,373 首次回落</b> · 7 日 790 PR / 254 新 issue · Grok Bot 开源替代 + 虚拟机</span></div>
+  <div class="list-row"><span class="no">17</span><span class="g">+20,246（+1,609）</span><span><a href="https://github.com/elementalsouls/Claude-BugHunter">elementalsouls/Claude-BugHunter</a> · 月增仍加速 · 月榜唯一「月增加速 + 24h 净增回落」同体</span></div>
+  <div class="list-row"><span class="no">10</span><span class="g">+19,184（-1,022）</span><span><a href="https://github.com/HKUDS/DeepTutor">HKUDS/DeepTutor</a>（中文，港大）· 63,811★ · 350 贡献者 · 7 日 129 PR / 59 新 issue / 5 commits · 536 open issues</span></div>
+  <div class="list-row"><span class="no">11</span><span class="g">+19,543（-587）</span><span><a href="https://github.com/yetone/magpie">yetone/magpie</a> · 42,542★ · 24h +509 · ⚠️ open issues 5,270→5,360 五连恶化、7 日 652 新 issue / 0 PR</span></div>
+  <div class="list-row"><span class="no">16</span><span class="g">+18,066（-226）</span><span><a href="https://github.com/heygen-com/hyperframes">heygen-com/hyperframes</a> · 91,539★ · 24h +652 · 157 贡献者 · 7 日 644 PR / 29 新 issue · HeyGen 官方开源 AI 视频编辑器 · push 今晨 09:22</span></div>
+  <div class="list-row"><span class="no">5</span><span class="g">+17,791（+253）</span><span><a href="https://github.com/anthropics/skills">anthropics/skills</a> · 201,529★ · 24h +475 · ⚠️ push 停在 11-16（12 天）· 17 贡献者 · 1,578 open issues（+4）· 7 日 18 PR / 0 commit</span></div>
+  <div class="list-row"><span class="no">6</span><span class="g">+17,228（-97）</span><span><a href="https://github.com/thedotmack/claude-mem">thedotmack/claude-mem</a> · 120,220★ · 24h +216 · 413 贡献者（昨 412）· 7 日 149 PR（昨 131）/ 43 新 issue · push 今晨 08:55</span></div>
+  <div class="list-row"><span class="no">14</span><span class="g">+10,462（-496）</span><span><a href="https://github.com/AgriciDaniel/claude-seo">AgriciDaniel/claude-seo</a> · 32,886★ · 24h +226 · 54 贡献者 · 7 日 25 PR / 51 commits</span></div>
+  <div class="list-row"><span class="no">19</span><span class="g">+9,765（+117）</span><span><a href="https://github.com/vercel-labs/agent-browser">vercel-labs/agent-browser</a> · 54,337★ · 24h +176 · 122 贡献者 · Rust 浏览器自动化 CLI · 7 日 66 PR</span></div>
+  <div class="list-row"><span class="no">18</span><span class="g">+8,708（+300）</span><span><a href="https://github.com/kajisho5/ffmpeg-skill">kajisho5/ffmpeg-skill</a> · 周月双升</span></div>
+  <div class="list-row"><span class="no">8</span><span class="g">+5,746（+145）</span><span><a href="https://github.com/backnotprop/plannotator">backnotprop/plannotator</a> · 15,431★ · 月增五连涨</span></div>
+  <div class="list-row"><span class="no">15</span><span class="g">+4,912（+303）</span><span><a href="https://github.com/google-labs-code/stitch-skills">google-labs-code/stitch-skills</a> · 三榜同在第五日</span></div>
 </section>
 
 <section>
   <div class="sec-head"><h2>🏆 综合推荐 Top 5</h2></div>
-  <div class="sec-note">跨三榜综合增长、质量、可落地性与生态位得出；今日将 open-code-review 提入第 2（企业落地确定性最高），superpowers 因默认分支停更 24 天退出前五，ffmpeg-skill 因周月双升首次进入。</div>
-
+  <div class="sec-note">跨三榜综合增长、质量、可落地性与生态位得出；今日将 nod 提入第 4（本周唯一显著加速 + n8n 官方），ffmpeg-skill 让位至第 6（周月双升仍在）。</div>
   <div class="card">
     <div class="p-head"><div class="rank top">1</div><div class="p-title">
-      <div class="p-name"><a href="https://github.com/pingdotgg/t3code">1. pingdotgg/t3code</a> — 月增破 5 万，但进入「高压增长期」</div>
+      <div class="p-name"><a href="https://github.com/pingdotgg/t3code">1. pingdotgg/t3code</a> — 月增八连涨破 5.1 万，「高压增长期」第三天</div>
     </div></div>
     <div class="p-body">
-      <div class="row"><span class="lbl">为什么推荐：</span>月增七连涨至 +50,354、总星破 8 万、1,396 贡献者、7 日 2,616 PR——仍是「管 agent」品类唯一被市场定价的冠军。但今日推荐它的理由多了一层：24h 净增三连降 + issue 存量二连升，是观察「高增长开源仓如何处理工单债务」的最好样本。</div>
+      <div class="row"><span class="lbl">为什么推荐：</span>月增八连涨至 +51,428、总星 82,205、1,407 贡献者、7 日 2,791 PR、昨夜两个 nightly——仍是「管 agent」品类唯一被市场定价的冠军。24h 净增四连降 + issue 三连升，是观察「高增长开源仓如何处理工单债务」的最好样本。</div>
       <div class="row"><span class="lbl">最大价值：</span>把散落各家的 agent 收进一个多端驾驶舱；ACP 协议路线押注开放性。</div>
-      <div class="row"><span class="lbl">最大风险：</span>增长斜率放缓（+2,741→+1,496）与 issue 积压（3,828）同时发生；各 agent 厂商自建官方移动端的挤压。</div>
+      <div class="row"><span class="lbl">最大风险：</span>增长斜率放缓（+1,496→+1,228）与 issue 积压（3,885）同时发生；各 agent 厂商自建官方移动端的挤压；nod 等「agent 自带运行时」路线可能绕过控制面。</div>
       <div class="row"><span class="lbl">适合谁：</span>重度 AI Coding 用户；想做 agent 周边产品的创业者（必研究对象）。</div>
       <div class="row"><span class="lbl">投入建议：</span>装一个当日常工具；产品人重点看它的 issue 分流与移动端审批设计。</div>
     </div>
   </div>
-
   <div class="card">
     <div class="p-head"><div class="rank top">2</div><div class="p-title">
       <div class="p-name"><a href="https://github.com/alibaba/open-code-review">2. alibaba/open-code-review</a> — 企业落地确定性最高的 AI 代码审查</div>
     </div></div>
     <div class="p-body">
-      <div class="row"><span class="lbl">为什么推荐：</span>阿里内部两年验证后开源，「确定性工程 + LLM Agent」混合架构正面解决纯技能派的漏审、行号漂移、质量抖动三大痛点；56,652★、233 贡献者、周增止跌回升、Apache-2.0、自带模型端点即可私有化。本周榜单里，它是从「技能」走到「工程系统」的代表。</div>
-      <div class="row"><span class="lbl">最大价值：</span>代码不出域 + 行级精确评论 + 可进 CI 门禁——企业 DevOps 可直接消费。</div>
-      <div class="row"><span class="lbl">最大风险：</span>与 GitHub Copilot / CodeRabbit 等托管方案正面竞争；中文社区为主的生态半径；模型端点质量决定上限。</div>
-      <div class="row"><span class="lbl">适合谁：</span>企业工程效能团队、私有化 AI 工具链创业者、想学「确定性 × Agent」架构的开发者。</div>
-      <div class="row"><span class="lbl">投入建议：</span>配一个模型端点跑一个真实 PR 试效果；创业者研究其与国内 GitLab / 极狐 / 禅道的集成空位。</div>
+      <div class="row"><span class="lbl">为什么推荐：</span>周增 +51 二连升、24h +250、234 贡献者、Apache-2.0；「确定性流水线 + LLM Agent」架构直接回应纯提示词技能的三个痛点。362 个 open issue 与 2 天无 push 是需要盯的信号。</div>
+      <div class="row"><span class="lbl">最大价值：</span>代码不出域的 AI 审查，配一个模型端点跑一个真实 PR 即可验证。</div>
+      <div class="row"><span class="lbl">最大风险：</span>国内流水线集成仍缺位；阿里内部场景与外部场景的差异。</div>
+      <div class="row"><span class="lbl">适合谁：</span>企业工程效能团队、CTO；想做「审查 + 合规归档」产品的创业者。</div>
+      <div class="row"><span class="lbl">投入建议：</span>半天可完成 POC；创业者研究它的确定性层如何兜底 agent。</div>
     </div>
   </div>
-
   <div class="card">
     <div class="p-head"><div class="rank top">3</div><div class="p-title">
-      <div class="p-name"><a href="https://github.com/elementalsouls/Claude-BugHunter">3. elementalsouls/Claude-BugHunter</a> — 八连霸的安全技能，火冷同体</div>
+      <div class="p-name"><a href="https://github.com/elementalsouls/Claude-BugHunter">3. elementalsouls/Claude-BugHunter</a> — 九连霸的安全技能，fork 增速快于 star</div>
     </div></div>
     <div class="p-body">
-      <div class="row"><span class="lbl">为什么推荐：</span>日榜八连霸、总星 24,623、月增 18,637 仍在加速（已超 anthropics/skills 与 claude-mem 的月增）、每日 push、7 日 61 PR——是「安全技能」里唯一还在活跃生长的头部（对照停更 73 天的 security-audit-skill）。</div>
-      <div class="row"><span class="lbl">最大价值：</span>681 份已披露报告模式 → 可复用的检测模式库；Burp MCP 集成可直接进红队工作流。</div>
-      <div class="row"><span class="lbl">最大风险：</span>日增四连降，追高风险；21 位贡献者的单点维护；仅限授权测试的使用边界。</div>
-      <div class="row"><span class="lbl">适合谁：</span>红队、渗透测试、企业安全团队；想学「技能包如何结构化」的技能作者。</div>
-      <div class="row"><span class="lbl">投入建议：</span>安全从业者直接装；非安全从业者读它的技能组织方式即可。</div>
+      <div class="row"><span class="lbl">为什么推荐：</span>日榜九连霸、月增 +20,246 仍在加速、fork 24h +181（+7.2%）——「在用」的信号强于「在看」。681 份可审计的披露报告模式库是实打实的内容资产。</div>
+      <div class="row"><span class="lbl">最大价值：</span>把红队经验结构化为可复用的检测模式。</div>
+      <div class="row"><span class="lbl">最大风险：</span>21 位贡献者多日未变、单点维护；11-27 中午后无 push；授权边界需要使用者自行把关。</div>
+      <div class="row"><span class="lbl">适合谁：</span>安全团队、红队、漏洞猎人（仅限授权测试）。</div>
+      <div class="row"><span class="lbl">投入建议：</span>安全从业者值得跑一遍 DVWA / Juice Shop 的公开训练场景验证效果。</div>
     </div>
   </div>
-
   <div class="card">
     <div class="p-head"><div class="rank top">4</div><div class="p-title">
-      <div class="p-name"><a href="https://github.com/anthropics/skills">4. anthropics/skills</a> — 20 万星后的标准锚点，月增续升</div>
+      <div class="p-name"><a href="https://github.com/n8n-io/nod">4. n8n-io/nod</a> — 本周最清晰的加速信号：agent 自己有电脑</div>
     </div></div>
     <div class="p-body">
-      <div class="row"><span class="lbl">为什么推荐：</span>201,054★、月增 17,272→17,538 续升、23,520 forks——官方标准仓「不推送也涨」的生态位特征持续（push 停在 11-16，11 天）。今天 obsidian-skills 入场周榜，让「标准（anthropics）+ 方法论（superpowers）+ 分发（cursor/plugins）+ 厂商官方（obsidian / stitch / modern-web-guidance）」四层结构首次同框。</div>
-      <div class="row"><span class="lbl">最大价值：</span>跟踪官方技能范式的第一信源；上游标准 = 生态所有人的下游依赖。</div>
-      <div class="row"><span class="lbl">最大风险：</span>标准仓本身不构成产品；1,574 个 open issue 无人分流。</div>
-      <div class="row"><span class="lbl">适合谁：</span>所有技能生态的参与者与观察者。</div>
-      <div class="row"><span class="lbl">投入建议：</span>订阅 release 观察；破 20 万后仍未见新规范发布，催化剂窗口未开启。</div>
+      <div class="row"><span class="lbl">为什么推荐：</span>周增 +259（+22%）、昨日三连发版、7 日 250 PR、n8n 官方出品 + OpenSSF Best Practices 徽章。「在本机替你操作真实网站、行动前先问」是个人 agent 里最务实的产品定义。</div>
+      <div class="row"><span class="lbl">最大价值：</span>观察「agent 运行时 + 审批」如何做成消费级产品的最新样本。</div>
+      <div class="row"><span class="lbl">最大风险：</span>research preview 阶段；Windows / Linux 仅预览；个人 agent 在真实网站上操作的安全与责任边界尚无共识。</div>
+      <div class="row"><span class="lbl">适合谁：</span>n8n 用户、自动化重度用户、做个人 agent / 审批层产品的创业者。</div>
+      <div class="row"><span class="lbl">投入建议：</span>Mac 用户可直接装来体验「先问再做」的交互；产品人重点看它的权限模型。</div>
     </div>
   </div>
-
   <div class="card">
     <div class="p-head"><div class="rank top">5</div><div class="p-title">
-      <div class="p-name"><a href="https://github.com/kajisho5/ffmpeg-skill">5. kajisho5/ffmpeg-skill</a> — 周月双升的「agent 视频编辑器」</div>
+      <div class="p-name"><a href="https://github.com/anthropics/skills">5. anthropics/skills</a> — 20 万星后的标准锚点，月增续升但停推 12 天</div>
     </div></div>
     <div class="p-body">
-      <div class="row"><span class="lbl">为什么推荐：</span>周增 3,048→3,229 回升成周榜增量第二、月增 8,408 上行、7 日 76 PR / 100+ commits、push 今晨——是本周「活跃仓溢价」叙事里最干净的新样本（无停更、无灰区、无点星解锁）。</div>
-      <div class="row"><span class="lbl">最大价值：</span>42 个本地 FFmpeg 工具 + 机器可读自检 + MCP 契约，任何宿主可复用；零成本、零云依赖。</div>
-      <div class="row"><span class="lbl">最大风险：</span>单点工具属性；ffmpeg-skill / hyperframes / autoclip 三者功能重叠，内卷难免。</div>
-      <div class="row"><span class="lbl">适合谁：</span>视频创作者、多模态 agent 开发者、想做「中文平台特化」剪辑工具的创业者。</div>
-      <div class="row"><span class="lbl">投入建议：</span>npx 一条命令试用；创业者看它与 autoclip（一键出片）的组合空位。</div>
+      <div class="row"><span class="lbl">为什么推荐：</span>201,529★、月增 +17,791（+253）续升、24h +475——Agent Skills 事实标准的锚点位置没有改变。但 push 停在 11-16（12 天）、17 位贡献者、1,578 个 open issue：标准已经稳定，迭代在放缓。</div>
+      <div class="row"><span class="lbl">最大价值：</span>所有技能仓（obsidian / stitch / cursor / astryx）共同遵循的规范源头。</div>
+      <div class="row"><span class="lbl">最大风险：</span>规范演进若停滞，厂商官方技能仓可能分叉。</div>
+      <div class="row"><span class="lbl">适合谁：</span>所有做技能的开发者；观察标准走向的产品人。</div>
+      <div class="row"><span class="lbl">投入建议：</span>读规范而非等更新；做技能产品的话以它为兼容基线。</div>
     </div>
   </div>
+  <div class="sec-note">第 6 位：<a href="https://github.com/kajisho5/ffmpeg-skill">kajisho5/ffmpeg-skill</a>（周月双升、24h +369、7 日 95 PR）——与 nod 二选一让位，仍是「AI 视频工具链」里工程节奏最快的一项。</div>
 </section>
 
 <section>
   <div class="sec-head"><h2>📊 GitHub 技术趋势</h2></div>
-  <div class="trend"><b>① 技能的「厂商官方化」：软件厂商把 Agent Skills 当成新的 API 发布</b>
-  本周榜单同框：anthropics/skills（标准，201K）、obsidian-skills（Obsidian 官方，今日新入周榜）、stitch-skills（Google，三榜同在第四日）、modern-web-guidance（Chrome/Edge/Firefox/MDN 四方共建）、cursor/plugins（分发）、astryx（Meta，设计系统）。判断：技能已从「社区作者的内容形态」变成「厂商的官方集成面」——一个本地优先的笔记软件（Obsidian）选择用开放技能标准而非私有 API 对 agent 开放，是今天最有信息量的事件。</div>
-  <div class="trend"><b>② 活跃仓溢价 / 停更仓折价持续深化，「复活」需要默认分支证据</b>
-  superpowers 两次推送都不在主干（默认分支停在 11-03），日增继续回落——「复活」被证伪；security-audit-skill（73 天）、instagram-agent-skill（75 天）、hallmark（16 天）月增全部下行；对照 ffmpeg-skill / nod / plannotator / open-code-review 每日推送且周月双升。计量口径不变：最近 push（看默认分支）+ 贡献者增速 + issue 健康度 + star 获取机制，置于 star 总数之前。</div>
-  <div class="trend"><b>③ 高增长仓的「工单压力」显性化——这本身是一个产品机会</b>
-  t3code open issues 3,828（+114）、7 日新 issue 1,279；magpie 5,270（四连恶化，7 日 657 新 issue / 0 PR）；OpenMausBot 1,428（253 新 issue/7d）；sure 1,189（134 新 issue/7d）；anthropics/skills 1,574。用户增长快于社区消化能力是所有头部仓的共同病——用 agent 做 issue 去重、分类、复现、首次响应，是当前榜单里最直接可落地的产品方向。</div>
-  <div class="trend"><b>④ AI 视频工具链三层成型：渲染内核 / 剪辑技能 / 一键出片</b>
-  hyperframes（HeyGen 官方，HTML→MP4 渲染内核，90,887★，7 日 665 PR）+ ffmpeg-skill（本地剪辑技能层，周增回升）+ autoclip（中文，长视频→短视频一键出片 + MCP，16,948★，7 日 100+ commits）。三层都有人、都在活跃推送，但「中文平台特化」（抖音/小红书/视频号的字幕规范、取景、发布文案与合规）仍是空位。</div>
-  <div class="trend"><b>⑤ 「确定性 × Agent」混合架构对「纯技能」的修正</b>
-  open-code-review 的 README 直接点名纯语言驱动技能的三个痛点（漏审、行号漂移、质量抖动），用确定性工程兜底；impeccable 用 62 条确定性规则抓 slop；hallmark 用真实浏览器 lint。共同信号：技能生态进入「加硬约束」的第二阶段——只靠提示词的技能会先被企业淘汰。</div>
-  <div class="trend"><b>⑥ 中文/华人团队 8 席结构性在场，周五集体回落</b>
-  日榜 4 席（CLI-Anything / minimind / Ghost-Downloader-3 / autoclip，今日全部回落）+ 周榜 2 席（open-code-review 阿里 / univer DreamNum）+ 月榜 2 席（dsh / DeepTutor）= 8 席（昨日口径 7 席未计入阿里）。结构性在场已连续多周；其中 CLI-Anything 连续 7 日无 push 是唯一需要警惕的信号。</div>
+  <div class="trend alert"><b>① 技能仓的「供应链风险」从担忧变成事实：个人维护的技能仓可以在没有任何 notice 的情况下消失</b>
+  instagram-agent-skill（9,881★、月增 +6,548）今晨账号与仓库同时 404，Trending 月榜仍在给它导流。这不是孤例的「热度退潮」，而是依赖断裂：任何把它写进工作流的人，今天早上都会发现 skill 装不上了。同一周里，security-audit-skill（停更 74 天，4 贡献者）、hallmark（停更 17 天，12 贡献者）、superpowers（主干 25 天，44 贡献者）、CLI-Anything（主干 67 天）都在同一个光谱上。判断：<b>技能生态需要自己的「包管理」</b>——pin 版本、校验和、本地镜像、来源签名。厂商官方化（obsidian-skills 周增 +35%）是解法的一半，另一半是供应链治理。</div>
+  <div class="trend"><b>② 「agent 运行时」层正在被填满：从控制面到「agent 自己有电脑」</b>
+  今日同框：t3code（控制多 agent，82,205★）、nod（n8n 的个人 agent，自带电脑，周增 +259）、OpenMausBot（带虚拟机的 Grok Bot 开源替代，7 日 790 PR）、agent-browser（浏览器自动化 CLI，54,337★）、chrome-devtools-mcp（给 agent 的 DevTools）。两条路线已经分叉：<b>t3code 路线</b>是「你管多个 agent」，<b>nod 路线</b>是「agent 替你操作真实世界」。后者的核心产品问题是审批与责任边界——nod 的「asks before it acts」是目前最清晰的答案。</div>
+  <div class="trend"><b>③ 高增长仓的工单压力出现分化：有人开始消化，有人在恶化</b>
+  消化侧：OpenMausBot open issue 1,428→1,373（-55）本期首次回落、贡献者 +10；sure 1,189→1,182（-7）首次回落。恶化侧：t3code 3,828→3,885（+57）三连升、magpie 5,270→5,360（+90）五连恶化且 7 日 0 PR、cursor/plugins 707→712、anthropics/skills 1,574→1,578。判断：<b>issue 存量的斜率比 star 斜率更能预测一个仓半年后还能不能用</b>；用 agent 做 issue 去重 / 分类 / 复现 / 首次响应，是当前榜单里最直接可落地的产品方向。</div>
+  <div class="trend"><b>④ 活跃仓溢价 / 停更仓折价继续深化，计量口径再强调一次</b>
+  活跃阵营：nod 昨日三版、t3code 昨夜两个 nightly、ffmpeg-skill 7 日 95 PR（+19）、claude-mem 7 日 149 PR（+18）、hyperframes 644 PR、plannotator 299 PR / 229 贡献者（+6）。停更阵营：CLI-Anything 默认分支 09-22（67 天）+ 连续 8 日无 push + 7 日 55 PR 零合并；superpowers 主干 25 天；anthropics/skills 12 天；stitch-skills 3 天；HermesEnabler 9 天。计量口径不变：最近 push（看默认分支）+ 贡献者增速 + issue 健康度 + star 获取机制，置于 star 总数之前。</div>
+  <div class="trend"><b>⑤ 周六形态 + 三榜零更替：热度在「整固」而不是「轮动」</b>
+  日榜 16 项与昨日完全同一批（第九日零更替）、周榜 15 项首次零更替（昨日刚 +obsidian-skills）、月榜 19 项第四日零更替，三榜去重 44 项与昨日一致。日榜 12 跌 4 升，跌幅比周五（16/16 全跌）收窄。这种「零更替 + 周末整固」意味着：当前榜单反映的是一轮已成型热度的存量博弈，新项目要进榜需要新的事件驱动——下一个可能的事件源是 nod / OpenMausBot 这类「agent 运行时」的新版本。</div>
+  <div class="trend"><b>⑥ 中文 / 华人团队 8 席结构性在场，周六全部回落</b>
+  日榜 4 席（CLI-Anything / minimind / Ghost-Downloader-3 / autoclip，今日全部回落）+ 周榜 2 席（open-code-review 阿里 / univer DreamNum）+ 月榜 2 席（dsh / DeepTutor）= 8 席，与昨日口径一致。其中 CLI-Anything「主干 67 天 + 55 PR 零合并」是唯一需要警惕的结构性信号；Ghost-Downloader-3 距 2 万仅 140 星。</div>
 </section>
 
 <section>
   <div class="sec-head"><h2>💡 开发者 / 创业机会</h2></div>
-  <div class="opp"><b>① 企业级代码审查的「私有化 + 国内 DevOps 集成」位</b> — open-code-review 证明企业想要「代码不出域」的 AI 审查，但它目前只做审查本身。与极狐 GitLab / 禅道 / 云效等国内流水线的开箱集成、审查结果的合规归档、多模型比价路由，都是中小企业愿意付费的空位。</div>
-  <div class="opp"><b>② Agent 版 issue triage（今日最直接的机会）</b> — 头部仓 open issues：magpie 5,270、t3code 3,828、anthropics/skills 1,574、OpenMausBot 1,428、sure 1,189。用一个 agent 做去重/分类/自动复现/首次回复/里程碑归档，按仓收费——open-code-review 的「确定性 + Agent」架构可以直接复用到 issue 流水线。</div>
-  <div class="opp"><b>③ 技能市场的「厂商官方技能」治理位</b> — obsidian / stitch / cursor / astryx 等厂商官方技能入场后，企业装 skill 的三大顾虑（安全审计、版本治理、来源可信）被放大。Claude-BugHunter 的「模式库 + 自检」思路可反向用于审计 skill 本身；做 skill 签名、沙箱、变更日志的 B2B 工具仍空白。</div>
-  <div class="opp"><b>④ AI 视频工具链的中文平台特化</b> — autoclip（一键出片）、ffmpeg-skill（剪辑技能）、hyperframes（渲染内核）三层齐备。抖音/小红书/视频号的字幕规范、竖屏取景偏好、发布文案与平台合规审查（app-store-compliance 的模式迁移到内容平台）是明确差异位。</div>
-  <div class="opp"><b>⑤ 模型成本治理网关（持续）</b> — dsh 月增仍 46,809 验证「零成本用前沿模型」的需求烈度，magpie 5,270 个 issue 验证订阅路由的运维复杂度。合规空位仍在：多供应商路由/比价、成本看板、配额审计、降级链、企业策略层。</div>
-  <div class="opp"><b>⚠️ 风险提示</b> — dsh-our-free-model 免费车道处于上游 ToS 灰区，月增二连降；magpie open issues 5,146→5,270 四连恶化；instagram-agent-skill 停更 75 天月增仍 +6,511（惯性收星）；security-audit-skill 停更 73 天月增七连降；Claude-BugHunter 日增四连降（+2,029→+1,597）；CLI-Anything 连续 7 日无 push、7 日 55 个新 PR 未合并；superpowers 默认分支停更 24 天。评估项目请把「最近 push（看默认分支）+ 贡献者增速 + issue 健康度 + star 获取机制」置于 star 总数之前。</div>
+  <div class="opp"><b>① 技能供应链治理（今日最直接的机会）</b> — instagram-agent-skill 今晨 404，意味着所有依赖它的 agent 工作流在无 notice 的情况下断了。技能生态目前没有 npm / pip 级别的包管理：没有 lockfile、没有校验和、没有镜像、没有来源签名。做一个「技能包管理器」（pin 版本 + 本地镜像 + 来源证明 + 变更日志），或企业内部的「技能 registry」，是今天榜单直接给出的空白位。Claude-BugHunter 的「模式库 + 自检」思路可以反向用于审计 skill 本身。</div>
+  <div class="opp"><b>② Agent 版 issue triage（持续）</b> — 头部仓 open issues：magpie 5,360（0 PR）、t3code 3,885（三连升）、anthropics/skills 1,578、OpenMausBot 1,373（刚开始消化）、sure 1,182、astryx 808、firecrawl 834、cursor/plugins 712。OpenMausBot 今日「贡献者 +10、issue -55」证明工单是可以被消化的——用一个 agent 做去重 / 分类 / 自动复现 / 首次回复，按仓收费。</div>
+  <div class="opp"><b>③ 个人 agent 的「审批与审计层」</b> — nod 的「先问再做」、t3code 的「手机批准下一步」、OpenMausBot 的「虚拟机隔离」都在回答同一个问题：agent 替你操作真实网站时，谁来定边界、谁来看日志、出了错怎么回滚。面向企业 / 高净值个人的「agent 行为策略 + 审计 + 回滚」中间件仍是空位。</div>
+  <div class="opp"><b>④ 企业级代码审查的「私有化 + 国内 DevOps 集成」位（持续）</b> — open-code-review 周增二连升，证明企业想要「代码不出域」的 AI 审查，但它目前只做审查本身。与极狐 GitLab / 禅道 / 云效等国内流水线的开箱集成、审查结果的合规归档、多模型比价路由，都是中小企业愿意付费的空位。</div>
+  <div class="opp"><b>⑤ AI 视频工具链的中文平台特化（持续）</b> — autoclip（一键出片，17,599★）、ffmpeg-skill（剪辑技能，7 日 95 PR）、hyperframes（渲染内核，91,539★）三层齐备且全部活跃推送。抖音 / 小红书 / 视频号的字幕规范、竖屏取景偏好、发布文案与平台合规审查仍是明确差异位。</div>
+  <div class="opp">⚠️ <b>风险提示</b> — instagram-agent-skill 账号与仓库今晨 404（依赖它的工作流已断）；CLI-Anything 默认分支停在 09-22（67 天）、连续 8 日无 push、7 日 55 PR 零合并；superpowers 主干停在 11-03（25 天）；anthropics/skills 停推 12 天；security-audit-skill 停更 74 天、月增八连降；hallmark 停更 17 天、月增最大跌幅；magpie open issues 五连恶化 5,360 且 0 PR；dsh 月增三连降且免费车道处于 ToS 灰区；Claude-BugHunter 24h 净增 +1,581→+1,492 回落、贡献者停滞。评估项目请把「最近 push（看默认分支）+ 贡献者增速 + issue 健康度 + star 获取机制」置于 star 总数之前。</div>
 </section>
 
 <section>
   <div class="sec-head"><h2>🎯 今日最终结论</h2></div>
   <div class="final">
     <div class="qa"><span class="q">当前最火的项目是什么？</span><br>
-    elementalsouls/Claude-BugHunter——日榜八连霸、总星 24,623、月增 +18,637 仍在加速；但日增四连降（+2,029→+1,826→+1,652→+1,597），追高情绪持续降温。若论隐形冠军：<a href="https://github.com/pingdotgg/t3code">t3code</a> 月增七连涨破 5 万（+50,354）、总星破 8 万，但 24h 净增三连降至 +1,496、issue 存量升至 3,828。</div>
+    elementalsouls/Claude-BugHunter——日榜九连霸、总星 26,115、月增 +20,246 仍在加速；日榜口径四连降后首次回升（+11），但 24h 净增 +1,581→+1,492 继续回落。真正的信号是 fork 24h +181 快于 star——「在用」多于「在看」。若论隐形冠军：t3code 月增八连涨 +51,428、总星 82,205，但 24h 净增四连降 +1,228、issue 三连升 3,885。</div>
     <div class="qa"><span class="q">当前最值得长期关注的项目是什么？</span><br>
-    t3code（「管 agent」的长期品类，进入高压增长期）与 anthropics/skills（201K 标准锚点，月增续升）。本周新增一位：<a href="https://github.com/alibaba/open-code-review">alibaba/open-code-review</a>——企业落地确定性最高的 AI 代码审查，「确定性 × Agent」架构代表。</div>
+    t3code（「管 agent」的长期品类，高压增长期第三天）、alibaba/open-code-review（企业落地确定性最高的 AI 代码审查，周增二连升）、anthropics/skills（201K 标准锚点，但停推 12 天）。本周新增一位：n8n-io/nod——「agent 自己有电脑」路线里最务实的产品定义，周增 +259 加速。</div>
     <div class="qa"><span class="q">如果只能研究一个项目应该研究哪个？</span><br>
-    理解生态选 t3code（看它如何处理 3,828 个 issue 与 1,396 位贡献者的协作，是 agent 时代开源治理的预演）；落地见效选 open-code-review（配一个模型端点跑一个真实 PR 即可验证）；观察趋势选 obsidian-skills（工具厂商官方技能化的最新样本）。</div>
+    理解生态选 t3code（看它如何处理 3,885 个 issue 与 1,407 位贡献者的协作）；落地见效选 open-code-review（配一个模型端点跑一个真实 PR 即可验证）；观察下一个品类选 nod（个人 agent 的「先问再做」权限模型）。</div>
     <div class="qa"><span class="q">最近最值得关注的技术趋势是什么？</span><br>
-    主线有三条：① 技能的「厂商官方化」——Obsidian 入场，软件厂商把 Agent Skills 当成新的 API；② 活跃仓溢价 / 停更仓折价持续深化——superpowers「复活」被默认分支证伪，ffmpeg-skill / nod / plannotator 续涨；③ 高增长仓的工单压力显性化——t3code / magpie / OpenMausBot 的 issue 积压本身就是产品机会。跟踪建议：盯住 BugHunter 日增周五后是否回升、t3code issue 存量是否见顶、CLI-Anything 是否恢复 push、nod 入场首周的走势、obsidian-skills 是否在周榜停留。</div>
+    主线有三条：① 技能仓的供应链风险从担忧变成事实——instagram-agent-skill 今晨 404，月榜仍在导流；「star 存量 ≠ 可用性」，技能生态需要自己的包管理；② 「agent 运行时」层正在被填满——t3code（控制面）与 nod（agent 自带电脑）两条路线分叉；③ 高增长仓的工单压力分化——OpenMausBot / sure 开始消化，t3code / magpie 仍在恶化。跟踪建议：盯住 BugHunter 24h 净增周末后是否回升、t3code issue 存量是否见顶、CLI-Anything 是否恢复 push、nod 入场首周走势、obsidian-skills 是否在周榜停留、以及是否还有停更仓步 instagram-agent-skill 后尘。</div>
   </div>
 </section>
 
 <div class="foot">
-  数据来源：GitHub Trending（daily / weekly / monthly）2026-11-27 上午抓取；star / fork / issues / 贡献者数（含匿名口径）/ 时间戳经 GitHub REST API 逐项核实（44/44）。「为什么火」「长期潜力」「机会判断」为基于数据的分析判断，已与事实分开表述；无法核实处均已标注（如 GitHub 榜单内部排序算法不透明，位次与增量排序不一致；「24h 净增」为昨日与今日 API 总星差值口径，仅有昨日基数的 28 项可计算；superpowers 11-24 / 11-26 两次推送的目标分支无法确认，仅能确认默认分支最近提交为 11-03；obsidian-skills 的「新面孔」指首次进入 Trending 周榜，仓库本身建于 2026-01；dsh-our-free-model 的免费车道来源为其 README 自述；周五日榜 16 项日增全线下滑属大盘回落，不构成对单个项目基本面的判断）。<br>
-  历史日报：<a href="https://xiaofei68.github.io/github-trending-daily/2026-11-26.html">11-26</a> · <a href="https://xiaofei68.github.io/github-trending-daily/2026-11-25.html">11-25</a> · <a href="https://xiaofei68.github.io/github-trending-daily/2026-11-24.html">11-24</a> · <a href="https://xiaofei68.github.io/github-trending-daily/2026-11-23.html">11-23</a> · <a href="https://xiaofei68.github.io/github-trending-daily/2026-11-22.html">11-22</a> · <a href="https://xiaofei68.github.io/github-trending-daily/2026-11-21.html">11-21</a><br>
+  数据来源：GitHub Trending（daily / weekly / monthly）2026-11-28 上午抓取；star / fork / issues / 贡献者数（含匿名口径）/ 时间戳经 GitHub REST API 逐项核实（44/44，instagram-agent-skill 的贡献者数因仓库 404 无法确认）。「为什么火」「长期潜力」「机会判断」为基于数据的分析判断，已与事实分开表述；无法核实处均已标注（如 GitHub 榜单内部排序算法不透明，位次与增量排序不一致；「24h 净增」为昨日与今日 API 总星差值口径，仅有昨日基数的 30 项可计算；instagram-agent-skill 404 的原因无法确认——删除、封禁、私密画像三者不可区分，改名因无 301 重定向已排除，09:26 仍返回 ★9,881、09:30 起 404 为本地观测时间；dsh-our-free-model open issues 今日 API 为 86、昨日报告记 239，差异原因无法确认；CLI-Anything 默认分支 main 最近提交 09-22 经 API 复核；nod 的「research preview」与平台支持范围为其 README 自述；周六日榜 12/16 回落属大盘形态，不构成对单个项目基本面的判断）。<br>
+  历史日报：<a href="https://xiaofei68.github.io/github-trending-daily/2026-11-27.html">11-27</a> · <a href="https://xiaofei68.github.io/github-trending-daily/2026-11-26.html">11-26</a> · <a href="https://xiaofei68.github.io/github-trending-daily/2026-11-25.html">11-25</a> · <a href="https://xiaofei68.github.io/github-trending-daily/2026-11-24.html">11-24</a> · <a href="https://xiaofei68.github.io/github-trending-daily/2026-11-23.html">11-23</a> · <a href="https://xiaofei68.github.io/github-trending-daily/2026-11-22.html">11-22</a><br>
   由 Multica 自动化智能体「GitHub 开源情报分析员」生成 · 每日 09:15 更新
 </div>
 
